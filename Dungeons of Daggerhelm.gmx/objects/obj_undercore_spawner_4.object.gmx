@@ -47,7 +47,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>golem_amount = instance_number(obj_undercore_golem);
+            <string>geyser_amount = instance_number(obj_lava_geyser);
 
 
 do
@@ -58,9 +58,9 @@ do
     yy=random(room_height); //Set random y
     }
 until place_empty(xx,yy);
-    if(golem_amount &lt; 150) {
+    if(geyser_amount &lt; 250) {
         //The loop has ended, create the enemy if there are less than 30
-        instance_create(xx,yy,obj_undercore_golem); //Create object
+        instance_create(xx,yy,obj_lava_geyser); //Create object
    
 }
     

@@ -29,30 +29,9 @@
 
 image_speed = 0;
 hp = 1050;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
+alarm[1] = 60;
 instance_create(x,y,obj_red_gromling);
+
 </string>
           </argument>
         </arguments>
@@ -78,14 +57,14 @@ instance_create(x,y,obj_red_gromling);
             <string>if(sprite_index == spr_burrower_hole){
     sprite_index = spr_burrower_activate;
     image_speed = 0.1;
-    alarm[1] = 1;
+    
 }
 
 if(sprite_index == spr_burrower_activate){
     if(image_index == 12){
         sprite_index = spr_burrower_idle;
         image_speed = 0.12;
-        alarm[1] = 90;
+        
     }
 }
 
@@ -199,6 +178,31 @@ if(hp &lt;= 0) {
             global.player_xp = global.player_xp+14;
         
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>gromling_count = instance_number(obj_red_gromling);
+
+if(gromling_count &lt; 3) {
+    instance_create(x,y,obj_red_gromling);
 }
 </string>
           </argument>

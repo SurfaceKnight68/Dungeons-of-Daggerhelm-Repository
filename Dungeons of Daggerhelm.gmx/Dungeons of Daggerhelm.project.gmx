@@ -54,6 +54,7 @@
       </sprites>
       <sprites name="Undercore">
         <sprite>sprites\spr_lava</sprite>
+        <sprite>sprites\spr_lava_large</sprite>
       </sprites>
       <sprite>sprites\spr_collision_space</sprite>
     </sprites>
@@ -398,6 +399,7 @@
         </objects>
       </objects>
       <object>objects\obj_wall</object>
+      <object>objects\obj_lava_pool</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
@@ -562,6 +564,7 @@
         </objects>
         <objects name="Undercore">
           <object>objects\obj_Ash_Grid</object>
+          <object>objects\obj_Lava_Pool_spawner</object>
           <object>objects\obj_Ash_Grid_small</object>
           <object>objects\obj_Lava_Grid</object>
           <object>objects\obj_undercore_spawner</object>

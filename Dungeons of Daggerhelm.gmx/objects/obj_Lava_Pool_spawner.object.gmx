@@ -25,7 +25,42 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>TILESIZE = 32;
+cols = 2 + (room_width div TILESIZE);
+rows = 2 + (room_height div TILESIZE);
+// +2 size to avoid having to cheeck for borders when iterating in scr_iterate()
+grid = ds_grid_create(cols, rows); // Used to store the raw, non-iterated grid
+final_grid = ds_grid_create(cols, rows); // The final grid after iterations used to draw
+wall_chance = 9; // 8% chance to generate lava pool by default
+iterations = 12; // How many iterations to do on the grid
+// Generate new grid
+alarm[0] = 2;
+scr_generate();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = 2;
+instance_destroy();
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,23 +82,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>golem_amount = instance_number(obj_undercore_golem);
+            <string>/// Draw the final_grid
 
-
-do
+for(var c = 1; c &lt; cols-1; c++)
+{
+    for(var r = 1; r &lt; rows-1; r++)
     {
-    var xx,yy;
-
-    xx=random(room_width); //Set random x
-    yy=random(room_height); //Set random y
+        if (final_grid[# c, r] == 1) {
+            if(distance_to_object(obj_player) &gt; 200) {
+                if(!place_meeting(x,y,obj_player)){
+            
+                    instance_create((c-1)*TILESIZE, (r-1)*TILESIZE, obj_lava_pool);
+                }
+            }
+        }    
     }
-until place_empty(xx,yy);
-    if(golem_amount &lt; 150) {
-        //The loop has ended, create the enemy if there are less than 30
-        instance_create(xx,yy,obj_undercore_golem); //Create object
-   
 }
-    
+
+
+scr_iterate(iterations);
+
 </string>
           </argument>
         </arguments>

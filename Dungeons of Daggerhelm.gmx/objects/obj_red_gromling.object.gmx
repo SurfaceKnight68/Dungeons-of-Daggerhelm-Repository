@@ -28,15 +28,94 @@
             <string>depth = phy_position_y * -1;
 
 image_speed = 0.4;
-hp = 80;
+hp = 60;
+dir = 0;
 alarm[0] = random(20);
+agressive = 0;
 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[4] = 120;
+agressive = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[3] = 60;
+agressive = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// AI change event
+randomize();
+change_chance = random(100);
+
+if(change_chance &lt;= 30) {
+    agressive = 0;
+} else {
+    agressive = 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -77,7 +156,8 @@ dir = choose(0,90,180,270,360);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>phy_fixed_rotation = true;
+            <string>/// Sprite Rotation fix
+phy_fixed_rotation = true;
 </string>
           </argument>
         </arguments>
@@ -132,10 +212,12 @@ if(hp &lt;= 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_dist = distance_to_object(obj_player);
+            <string>/// Movement
+player_dist = distance_to_object(obj_player);
 player_dir = point_direction(x, y, obj_player.x, obj_player.y);
-if(player_dist &gt; 60) {
-if(dir == 0 || dir == 360) {
+
+if(agressive = 0) {
+    if(dir == 0 || dir == 360) {
     sprite_index = spr_red_gromling_walk;
     phy_position_y -= 1.5;
 }
@@ -160,10 +242,13 @@ if(dir == 270) {
     sprite_index = spr_red_gromling_walk_right;
     phy_position_x += 1.5;
     }
-}
+
+
+    }
 
 if(player_dist &lt;= 60) {
-    ldx = lengthdir_x(1.1,player_dir);
+    if(agressive = 1) {
+            ldx = lengthdir_x(1.1,player_dir);
     ldy = lengthdir_y(1.1,player_dir);
     phy_position_x += ldx;
     phy_position_y += ldy;
@@ -181,7 +266,9 @@ if(player_dist &lt;= 60) {
             image_speed = 0.5;
         }
     }
-}
+        }       
+    }
+
 </string>
           </argument>
         </arguments>
@@ -306,7 +393,7 @@ if(player_dist &lt;= 60) {
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>100</PhysicsObjectDensity>
+  <PhysicsObjectDensity>0.00999999977648258</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>

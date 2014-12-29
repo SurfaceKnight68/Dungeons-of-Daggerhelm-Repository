@@ -90,6 +90,29 @@ global.armor = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_hp = player_hp - 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="5">
       <action>
         <libid>1</libid>
@@ -217,7 +240,7 @@ with(arrow) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hp = player_hp - 40;
+            <string>player_hp = player_hp - 30;
 </string>
           </argument>
         </arguments>
@@ -546,6 +569,33 @@ if(global.lv &lt; 12) {
 } else {
     instance_activate_object(obj_NPC_Thaumaturge);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Lava damage from lava pools
+if(place_meeting(x,y,obj_lava_pool)) {
+    alarm[6] = 1;
+}
+
+scr_draw_shadow(1);
+
 </string>
           </argument>
         </arguments>
