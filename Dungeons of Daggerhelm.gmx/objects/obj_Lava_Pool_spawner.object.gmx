@@ -31,8 +31,8 @@ rows = 2 + (room_height div TILESIZE);
 // +2 size to avoid having to cheeck for borders when iterating in scr_iterate()
 grid = ds_grid_create(cols, rows); // Used to store the raw, non-iterated grid
 final_grid = ds_grid_create(cols, rows); // The final grid after iterations used to draw
-wall_chance = 9; // 8% chance to generate lava pool by default
-iterations = 12; // How many iterations to do on the grid
+wall_chance = 20; // 8% chance to generate lava pool by default
+iterations = 20; // How many iterations to do on the grid
 // Generate new grid
 alarm[0] = 2;
 scr_generate();

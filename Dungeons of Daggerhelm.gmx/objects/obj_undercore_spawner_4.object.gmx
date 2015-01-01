@@ -58,7 +58,7 @@ do
     yy=random(room_height); //Set random y
     }
 until place_empty(xx,yy);
-    if(demon_amount &lt; 100) {
+    if(demon_amount &lt; 200) {
         //The loop has ended, create the enemy if there are less than 30
         instance_create(xx,yy,obj_UC_demon); //Create object
    
