@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 480;
+            <string>alarm[0] = 420;
 image_speed = 0.2;
 </string>
           </argument>

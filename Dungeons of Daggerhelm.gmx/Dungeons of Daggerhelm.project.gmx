@@ -446,6 +446,9 @@
         <objects name="Undercore Golem">
           <object>objects\obj_undercore_golem</object>
         </objects>
+        <objects name="Undercore Demon">
+          <object>objects\obj_UC_demon</object>
+        </objects>
       </objects>
       <objects name="Guides">
         <object>objects\obj_NPC_controls_guide</object>
@@ -492,6 +495,7 @@
           <object>objects\obj_enemy_phaseshot</object>
           <object>objects\obj_enemy_fireball</object>
           <object>objects\obj_imp_spitfire</object>
+          <object>objects\obj_enemy_melee</object>
           <object>objects\obj_boss_laser</object>
         </objects>
       </objects>
@@ -570,6 +574,7 @@
           <object>objects\obj_undercore_spawner</object>
           <object>objects\obj_undercore_spawner_2</object>
           <object>objects\obj_undercore_spawner_3</object>
+          <object>objects\obj_undercore_spawner_4</object>
           <object>objects\obj_undercore_spawn_ctrl</object>
         </objects>
         <object>objects\obj_loading_object</object>
