@@ -188,7 +188,8 @@
             <sprite>sprites\spr_sentinel_activate</sprite>
           </sprites>
           <sprites name="Black Knight">
-            <sprite>sprites\spr_BK_idle</sprite>
+            <sprite>sprites\spr_BK_left</sprite>
+            <sprite>sprites\spr_BK_right</sprite>
           </sprites>
           <sprites name="Pyromancer">
             <sprite>sprites\spr_pyro_right</sprite>
