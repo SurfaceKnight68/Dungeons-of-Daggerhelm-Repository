@@ -266,16 +266,23 @@
         <sprite>sprites\spr_health_globe</sprite>
       </sprites>
       <sprites name="Projectiles">
-        <sprite>sprites\spr_arrow</sprite>
-        <sprite>sprites\spr_ice_blast</sprite>
-        <sprite>sprites\spr_fireball</sprite>
-        <sprite>sprites\spr_melee_swing</sprite>
-        <sprite>sprites\spr_blank</sprite>
         <sprites name="Enemy_Projectiles">
           <sprite>sprites\spr_evil_arrow</sprite>
           <sprite>sprites\spr_phaseshot</sprite>
           <sprite>sprites\spr_imp_spitfire</sprite>
           <sprite>sprites\spr_boss_laser</sprite>
+        </sprites>
+        <sprites name="Primary">
+          <sprite>sprites\spr_arrow</sprite>
+          <sprite>sprites\spr_melee_swing</sprite>
+          <sprite>sprites\spr_blank</sprite>
+          <sprite>sprites\spr_fireball</sprite>
+          <sprite>sprites\spr_ice_blast</sprite>
+        </sprites>
+        <sprites name="Secondary">
+          <sprite>sprites\spr_blast_wave</sprite>
+          <sprite>sprites\spr_paladin_hammer</sprite>
+          <sprite>sprites\spr_electric_lash</sprite>
         </sprites>
       </sprites>
       <sprites name="Grassland">
@@ -489,10 +496,6 @@
         </objects>
       </objects>
       <objects name="Projectiles">
-        <object>objects\obj_arrow</object>
-        <object>objects\obj_ice_blast</object>
-        <object>objects\obj_melee_swing</object>
-        <object>objects\obj_fireball</object>
         <objects name="Enemy_Projectiles">
           <object>objects\obj_evil_arrow</object>
           <object>objects\obj_enemy_phaseshot</object>
@@ -500,6 +503,17 @@
           <object>objects\obj_imp_spitfire</object>
           <object>objects\obj_enemy_melee</object>
           <object>objects\obj_boss_laser</object>
+        </objects>
+        <objects name="Primary">
+          <object>objects\obj_melee_swing</object>
+          <object>objects\obj_ice_blast</object>
+          <object>objects\obj_arrow</object>
+          <object>objects\obj_fireball</object>
+        </objects>
+        <objects name="Secondary">
+          <object>objects\obj_blast_wave</object>
+          <object>objects\obj_electric_lash</object>
+          <object>objects\obj_paladin_hammer</object>
         </objects>
       </objects>
       <objects name="Grassland">

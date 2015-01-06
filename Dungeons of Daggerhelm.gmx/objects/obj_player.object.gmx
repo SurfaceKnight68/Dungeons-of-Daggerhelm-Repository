@@ -1340,6 +1340,135 @@ if(global.identity == 5) {
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="54">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Battle-Mage secondary
+
+if(global.identity == 3) {
+    if(player_mp &gt;= 40) {
+        wave1 = instance_create(x,y,obj_blast_wave); //Follows mouse
+        wave2 = instance_create(x,y,obj_blast_wave); //Follows mouse + 45 degrees
+        wave3 = instance_create(x,y,obj_blast_wave); //Follows mouse + 90 degrees
+        wave4 = instance_create(x,y,obj_blast_wave); //Follows mouse + 135 degrees
+        wave5 = instance_create(x,y,obj_blast_wave); //Follows mouse + 180 degrees
+        wave6 = instance_create(x,y,obj_blast_wave); //Follows mouse + 225 degrees        
+        wave7 = instance_create(x,y,obj_blast_wave); //Follows mouse + 270 degrees
+        wave8 = instance_create(x,y,obj_blast_wave); //Follows mouse + 315 degrees
+        
+
+            with(wave1) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+45);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+45);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+            with(wave2) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+90;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+90);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+90);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+            with(wave3) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+135;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+135);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+135);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+            with(wave4) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+180;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+180);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+180);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+            with(wave5) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+225;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+225);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+225);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+            with(wave6) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+270;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+270);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+270);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+            with(wave7) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+315;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+315);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+315);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+            with(wave8) {
+                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+360;
+    
+    
+                    ldx = lengthdir_x(1.0,-other.mouse_dir+360);
+                    ldy = lengthdir_y(1.0,-other.mouse_dir+360);
+                    physics_apply_impulse(x,y,ldx,ldy);
+        }
+        player_mp = player_mp - 40;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.identity == 2) {
+    if(player_mp &gt;= 80) {
+        instance_create(mouse_x,mouse_y,obj_paladin_hammer);
+        player_mp = player_mp - 80;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="53">
       <action>
         <libid>1</libid>
