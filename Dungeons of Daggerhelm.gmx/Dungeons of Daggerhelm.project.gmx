@@ -190,6 +190,8 @@
           <sprites name="Black Knight">
             <sprite>sprites\spr_BK_left</sprite>
             <sprite>sprites\spr_BK_right</sprite>
+            <sprite>sprites\spr_BK_down</sprite>
+            <sprite>sprites\spr_BK_up</sprite>
           </sprites>
           <sprites name="Pyromancer">
             <sprite>sprites\spr_pyro_right</sprite>
