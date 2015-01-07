@@ -90,6 +90,70 @@ global.armor = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[7] = 10;
+if(player_mp &gt;= 2) {
+arrow1 = instance_create(x,y,obj_flame_cone);
+arrow2 = instance_create(x,y,obj_flame_cone);
+arrow3 = instance_create(x,y,obj_flame_cone);
+arrow4 = instance_create(x,y,obj_flame_cone);
+
+with(arrow1) {
+    phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+    ldx = lengthdir_x(1.2,-other.mouse_dir+30);
+    ldy = lengthdir_y(1.2,-other.mouse_dir+30);
+    physics_apply_impulse(x,y,ldx,ldy);
+}
+
+with(arrow2) {
+    phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+    ldx = lengthdir_x(1.2,-other.mouse_dir+40);
+    ldy = lengthdir_y(1.2,-other.mouse_dir+40);
+    physics_apply_impulse(x,y,ldx,ldy);
+}
+with(arrow3) {
+    phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+    ldx = lengthdir_x(1.2,-other.mouse_dir+50);
+    ldy = lengthdir_y(1.2,-other.mouse_dir+50);
+    physics_apply_impulse(x,y,ldx,ldy);
+}
+with(arrow4) {
+    phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+    ldx = lengthdir_x(1.2,-other.mouse_dir+60);
+    ldy = lengthdir_y(1.2,-other.mouse_dir+60);
+    physics_apply_impulse(x,y,ldx,ldy);
+        }  
+    player_mp = player_mp - 2;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="6">
       <action>
         <libid>1</libid>
@@ -1303,6 +1367,31 @@ player_hp = player_hp - choose(40,42,44,46,48,50);
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="57">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.identity == 4) {
+    alarm[7] = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="56">
       <action>
         <libid>1</libid>
@@ -1341,6 +1430,33 @@ if(global.identity == 5) {
       </action>
     </event>
     <event eventtype="6" enumb="54">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Sorcerer secondary attack
+if(global.identity == 4) {
+    if(player_mp &gt;= 2) {
+        alarm[7] = 1;
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -1458,10 +1574,47 @@ if(global.identity == 3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.identity == 2) {
+            <string>/// Paladin secondary attack
+if(global.identity == 2) {
     if(player_mp &gt;= 80) {
         instance_create(mouse_x,mouse_y,obj_paladin_hammer);
         player_mp = player_mp - 80;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Ranger secondary attack
+if(global.identity == 1) {
+    if(player_mp &gt;= 20) {
+        arrow = instance_create(x,y,obj_swift_arrow);
+        
+        with(arrow) {
+            phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+            ldx = lengthdir_x(2.5,-other.mouse_dir+45);
+            ldy = lengthdir_y(2.5,-other.mouse_dir+45);
+            physics_apply_impulse(x,y,ldx,ldy);
+        }
+        player_mp = player_mp - 20;
     }
 }
 </string>

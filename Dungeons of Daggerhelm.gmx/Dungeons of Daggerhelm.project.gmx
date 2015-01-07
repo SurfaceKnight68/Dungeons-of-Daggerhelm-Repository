@@ -188,10 +188,18 @@
             <sprite>sprites\spr_sentinel_activate</sprite>
           </sprites>
           <sprites name="Black Knight">
-            <sprite>sprites\spr_BK_left</sprite>
-            <sprite>sprites\spr_BK_right</sprite>
-            <sprite>sprites\spr_BK_down</sprite>
-            <sprite>sprites\spr_BK_up</sprite>
+            <sprites name="SnS">
+              <sprite>sprites\spr_BK_up</sprite>
+              <sprite>sprites\spr_BK_right</sprite>
+              <sprite>sprites\spr_BK_down</sprite>
+              <sprite>sprites\spr_BK_left</sprite>
+            </sprites>
+            <sprites name="Bastard Sword">
+              <sprite>sprites\spr_BK_BS_left</sprite>
+              <sprite>sprites\spr_BK_BS_right</sprite>
+              <sprite>sprites\spr_BK_BS_down</sprite>
+              <sprite>sprites\spr_BK_BS_up</sprite>
+            </sprites>
           </sprites>
           <sprites name="Pyromancer">
             <sprite>sprites\spr_pyro_right</sprite>
@@ -282,6 +290,8 @@
         <sprites name="Secondary">
           <sprite>sprites\spr_blast_wave</sprite>
           <sprite>sprites\spr_paladin_hammer</sprite>
+          <sprite>sprites\spr_swift_arrow</sprite>
+          <sprite>sprites\spr_flame_cone</sprite>
           <sprite>sprites\spr_electric_lash</sprite>
         </sprites>
       </sprites>
@@ -511,8 +521,10 @@
           <object>objects\obj_fireball</object>
         </objects>
         <objects name="Secondary">
+          <object>objects\obj_swift_arrow</object>
           <object>objects\obj_blast_wave</object>
           <object>objects\obj_electric_lash</object>
+          <object>objects\obj_flame_cone</object>
           <object>objects\obj_paladin_hammer</object>
         </objects>
       </objects>

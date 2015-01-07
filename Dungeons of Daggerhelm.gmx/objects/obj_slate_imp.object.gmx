@@ -122,6 +122,30 @@ dir = choose(0,90,180,270,360);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>if(place_meeting(x,y,obj_swift_arrow)) {
+    part_particles_create(global.ps,x,y,global.pt_blood,15);
+    hp = hp - 20;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Control rotation from force
 
 phy_fixed_rotation = true;
@@ -276,6 +300,30 @@ with(arrow3) {
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_flame_cone">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp = hp-3;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_electric_lash">
       <action>
         <libid>1</libid>
@@ -347,7 +395,7 @@ with(arrow3) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_melee_swing">
+    <event eventtype="4" ename="obj_arrow">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -365,7 +413,6 @@ with(arrow3) {
           <argument>
             <kind>1</kind>
             <string>hp = hp-25;
-
 </string>
           </argument>
         </arguments>
@@ -394,7 +441,7 @@ with(arrow3) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_arrow">
+    <event eventtype="4" ename="obj_melee_swing">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -412,6 +459,7 @@ with(arrow3) {
           <argument>
             <kind>1</kind>
             <string>hp = hp-25;
+
 </string>
           </argument>
         </arguments>
