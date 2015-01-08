@@ -193,6 +193,7 @@
               <sprite>sprites\spr_BK_right</sprite>
               <sprite>sprites\spr_BK_down</sprite>
               <sprite>sprites\spr_BK_left</sprite>
+              <sprite>sprites\spr_BK_GB_left</sprite>
             </sprites>
             <sprites name="Bastard Sword">
               <sprite>sprites\spr_BK_BS_left</sprite>
