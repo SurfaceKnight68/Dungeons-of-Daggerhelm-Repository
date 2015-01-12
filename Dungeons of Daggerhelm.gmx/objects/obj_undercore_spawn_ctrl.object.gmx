@@ -52,6 +52,7 @@
 instance_create(x,y,obj_undercore_spawner_2);
 instance_create(x,y,obj_undercore_spawner_3);
 instance_create(x,y,obj_undercore_spawner_4);
+instance_create(x,y,obj_undercore_spawner_5);
 alarm[4] = 0;
 </string>
           </argument>

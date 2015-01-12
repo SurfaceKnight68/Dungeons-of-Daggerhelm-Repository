@@ -52,15 +52,19 @@
   </views>
   <instances>
     <instance objName="obj_grassland_portal" x="1264" y="5321" name="inst_5CC735C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="1256" y="5326" name="inst_A06AAE08" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="2262" y="4418" name="inst_A06AAE08" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loading" x="64" y="32" name="inst_3F467806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="5320" y="1006" name="inst_4FC07766" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grassland_portal" x="5328" y="1000" name="inst_FA7F5723" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="5625" y="647" name="inst_4FC07766" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grassland_portal" x="5632" y="640" name="inst_FA7F5723" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grassland_portal" x="3248" y="3145" name="inst_8AB8DDD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="3240" y="3150" name="inst_1BEDDAC6" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loading_bar" x="192" y="32" name="inst_AD9128DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loading_object" x="256" y="0" name="inst_439B7F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grass_spawn_ctrl" x="288" y="0" name="inst_ABC312BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="1257" y="5328" name="inst_7461FC1C" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grassland_portal" x="2271" y="4410" name="inst_592CDA24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grassland_portal" x="4512" y="1952" name="inst_BFB906E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="4504" y="1957" name="inst_3F181CC5" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

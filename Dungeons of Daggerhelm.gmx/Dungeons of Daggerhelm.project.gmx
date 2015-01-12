@@ -200,9 +200,6 @@
               <sprite>sprites\spr_BK_BS_down</sprite>
               <sprite>sprites\spr_BK_BS_up</sprite>
             </sprites>
-            <sprites name="Greatbow">
-              <sprite>sprites\spr_BK_GB_left</sprite>
-            </sprites>
           </sprites>
           <sprites name="Pyromancer">
             <sprite>sprites\spr_pyro_right</sprite>
@@ -253,6 +250,12 @@
         <sprites name="Undercore Demon">
           <sprite>sprites\spr_UC_demon_left</sprite>
           <sprite>sprites\spr_UC_demon_right</sprite>
+        </sprites>
+        <sprites name="Burned Soul">
+          <sprite>sprites\spr_burned_soul_right</sprite>
+          <sprite>sprites\spr_burned_soul_left</sprite>
+          <sprite>sprites\spr_burned_soul_up</sprite>
+          <sprite>sprites\spr_burned_soul_down</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -472,6 +475,9 @@
         <objects name="Undercore Demon">
           <object>objects\obj_UC_demon</object>
         </objects>
+        <objects name="Burned Soul">
+          <object>objects\obj_burned_soul</object>
+        </objects>
       </objects>
       <objects name="Guides">
         <object>objects\obj_NPC_controls_guide</object>
@@ -607,6 +613,7 @@
           <object>objects\obj_undercore_spawner_2</object>
           <object>objects\obj_undercore_spawner_3</object>
           <object>objects\obj_undercore_spawner_4</object>
+          <object>objects\obj_undercore_spawner_5</object>
           <object>objects\obj_undercore_spawn_ctrl</object>
         </objects>
         <object>objects\obj_loading_object</object>

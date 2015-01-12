@@ -69,7 +69,7 @@ image_speed = choose(0.01,0.02,0.03);
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>24,68</point>
+    <point>24,64</point>
     <point>14,24</point>
   </PhysicsShapePoints>
 </object>
