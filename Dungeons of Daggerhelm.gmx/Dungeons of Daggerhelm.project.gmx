@@ -333,6 +333,7 @@
       <sprite>sprites\spr_exit_on</sprite>
       <sprite>sprites\spr_main_menu_cursor</sprite>
       <sprite>sprites\spr_main_cursor</sprite>
+      <sprite>sprites\spr_Game_Maker</sprite>
     </sprites>
     <sprites name="Headings">
       <sprite>sprites\spr_main_heading</sprite>
