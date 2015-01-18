@@ -451,8 +451,9 @@
         </objects>
         <objects name="Bosses">
           <object>objects\obj_lava_golem</object>
-          <object>objects\obj_pyromancer</object>
           <object>objects\obj_sentinel</object>
+          <object>objects\obj_black_knight</object>
+          <object>objects\obj_pyromancer</object>
         </objects>
         <objects name="Prime Slate Imp">
           <object>objects\obj_prime_slate_imp</object>
@@ -658,9 +659,11 @@
     <room>rooms\rm_dungeon</room>
     <room>rooms\rm_lava_golem_boss</room>
     <room>rooms\rm_dungeon_lv2</room>
-    <room>rooms\rm_snowy_mountains</room>
     <room>rooms\rm_grey_sentry_boss</room>
+    <room>rooms\rm_snowy_mountains</room>
+    <room>rooms\rm_black_knight_boss</room>
     <room>rooms\rm_undercore</room>
+    <room>rooms\rm_pyromancer_boss</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">41964.0560678704</constant>
