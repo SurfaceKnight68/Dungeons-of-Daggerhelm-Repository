@@ -200,6 +200,9 @@
               <sprite>sprites\spr_BK_BS_down</sprite>
               <sprite>sprites\spr_BK_BS_up</sprite>
             </sprites>
+            <sprites name="Great Shield">
+              <sprite>sprites\spr_BK_GS</sprite>
+            </sprites>
           </sprites>
           <sprites name="Pyromancer">
             <sprite>sprites\spr_pyro_right</sprite>
@@ -523,6 +526,7 @@
           <object>objects\obj_enemy_fireball</object>
           <object>objects\obj_imp_spitfire</object>
           <object>objects\obj_enemy_melee</object>
+          <object>objects\obj_fire_swing</object>
           <object>objects\obj_boss_laser</object>
         </objects>
         <objects name="Primary">
