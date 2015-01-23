@@ -48,6 +48,7 @@
           <argument>
             <kind>1</kind>
             <string>demon_amount = instance_number(obj_burned_soul);
+gromling_amount = instance_number(obj_red_gromling);
 
 
 do
@@ -61,6 +62,20 @@ until place_empty(xx,yy);
     if(demon_amount &lt; 75) {
         //The loop has ended, create the enemy if there are less than 30
         instance_create(xx,yy,obj_burned_soul); //Create object
+   
+}
+
+do
+    {
+    var xx,yy;
+
+    xx=random(room_width); //Set random x
+    yy=random(room_height); //Set random y
+    }
+until place_empty(xx,yy);
+    if(gromling_amount &lt; 200) {
+        //The loop has ended, create the enemy if there are less than 30
+        instance_create(xx,yy,obj_red_gromling); //Create object
    
 }
     

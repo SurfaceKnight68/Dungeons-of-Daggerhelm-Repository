@@ -278,6 +278,7 @@
         <sprite>sprites\spr_portal_blue</sprite>
         <sprite>sprites\spr_grasslands_boss</sprite>
         <sprite>sprites\spr_portal_red</sprite>
+        <sprite>sprites\spr_portal_maroon</sprite>
         <sprite>sprites\spr_portal_black</sprite>
         <sprite>sprites\spr_portal_green</sprite>
         <sprite>sprites\spr_health_globe</sprite>
@@ -301,6 +302,7 @@
           <sprite>sprites\spr_paladin_hammer</sprite>
           <sprite>sprites\spr_swift_arrow</sprite>
           <sprite>sprites\spr_flame_cone</sprite>
+          <sprite>sprites\spr_ice_cone</sprite>
           <sprite>sprites\spr_electric_lash</sprite>
         </sprites>
       </sprites>
@@ -351,6 +353,9 @@
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\spr_inv_slot</sprite>
+      <sprites name="Minimap">
+        <sprite>sprites\spr_empty</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -398,6 +403,7 @@
     <scripts name="Particle Scripts">
       <script>scripts\scr_part_blood_init.gml</script>
       <script>scripts\scr_part_snow_init.gml</script>
+      <script>scripts\scr_part_fire_init.gml</script>
     </scripts>
     <scripts name="Miscillaneous Scripts">
       <script>scripts\scr_dungeon_walls.gml</script>
@@ -540,6 +546,7 @@
           <object>objects\obj_blast_wave</object>
           <object>objects\obj_electric_lash</object>
           <object>objects\obj_flame_cone</object>
+          <object>objects\obj_ice_cone</object>
           <object>objects\obj_paladin_hammer</object>
         </objects>
       </objects>
@@ -587,6 +594,7 @@
           <object>objects\obj_portal_red</object>
           <object>objects\obj_portal_black</object>
           <object>objects\obj_grassland_portal</object>
+          <object>objects\obj_snowy_mtns_portal</object>
         </objects>
       </objects>
       <objects name="Generation">
@@ -628,7 +636,10 @@
       <objects name="Pause Menu">
         <object>objects\obj_pause</object>
       </objects>
-      <object>objects\obj_minimap</object>
+      <objects name="Minimap">
+        <object>objects\obj_minimap</object>
+        <object>objects\minimap_visible</object>
+      </objects>
     </objects>
     <objects name="System">
       <object>objects\obj_gamestate</object>

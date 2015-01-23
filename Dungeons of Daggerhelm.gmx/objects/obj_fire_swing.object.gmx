@@ -53,6 +53,12 @@
         instance_destroy();
     }
 }
+
+if(instance_exists(obj_black_knight)) {
+    if(distance_to_object(obj_black_knight) &gt; 75) {
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>

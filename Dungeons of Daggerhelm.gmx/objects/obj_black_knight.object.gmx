@@ -154,6 +154,29 @@ if(global.attack_state == 'attack1') {
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Globe drop rate
+randomize();
+globe_drop = random(100);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Bastard Sword Attack
 
 randomize();
@@ -164,7 +187,7 @@ shoot_player = distance_to_object(obj_player);
 // Attack
 if(global.attack_state == 'attack1') {
     if(shoot_player &lt;= 70) {
-        if(shoot &lt;= 14) {
+        if(shoot &lt;= 12) {
         arrow1 = instance_create(x,y,obj_fire_swing);
         arrow2 = instance_create(x,y,obj_enemy_melee);
         arrow3 = instance_create(x,y,obj_enemy_melee);
@@ -172,8 +195,8 @@ with(arrow1) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(1.0,other.player_dir+45);
-    ldy = lengthdir_y(1.0,other.player_dir+45);
+    ldx = lengthdir_x(1.0,other.player_dir);
+    ldy = lengthdir_y(1.0,other.player_dir);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
@@ -181,8 +204,8 @@ with(arrow2) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(1.0,other.player_dir+35);
-    ldy = lengthdir_y(1.0,other.player_dir+35);
+    ldx = lengthdir_x(1.0,other.player_dir-10);
+    ldy = lengthdir_y(1.0,other.player_dir-10);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
@@ -190,8 +213,8 @@ with(arrow3) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(1.0,other.player_dir+55);
-    ldy = lengthdir_y(1.0,other.player_dir+55);
+    ldx = lengthdir_x(1.0,other.player_dir+10);
+    ldy = lengthdir_y(1.0,other.player_dir+10);
     physics_apply_impulse(x,y,ldx,ldy);
             }
         }
@@ -308,6 +331,29 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Control rotation from force
+
+phy_fixed_rotation = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Sword and Shield attack
 
 randomize();
@@ -319,15 +365,15 @@ shoot_player = distance_to_object(obj_player);
 if(global.attack_state == 'attack2') {
     
     if(shoot_player &lt;= 70) {
-        if(shoot &lt;= 18) {
+        if(shoot &lt;= 22) {
         arrow2 = instance_create(x,y,obj_enemy_melee);
         arrow3 = instance_create(x,y,obj_enemy_melee);
 with(arrow2) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(1.0,-other.player_dir+40);
-    ldy = lengthdir_y(1.0,-other.player_dir+40);
+    ldx = lengthdir_x(1.0,-other.player_dir-5);
+    ldy = lengthdir_y(1.0,-other.player_dir-5);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
@@ -335,13 +381,73 @@ with(arrow3) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(1.0,-other.player_dir+50);
-    ldy = lengthdir_y(1.0,-other.player_dir+50);
+    ldx = lengthdir_x(1.0,-other.player_dir+5);
+    ldy = lengthdir_y(1.0,-other.player_dir+5);
     physics_apply_impulse(x,y,ldx,ldy);
             }
         }
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Death scene and object removal
+if(hp &lt;= 0) {
+    part_particles_create(global.ps,x,y,global.pt_shadow_death,65);
+    if(globe_drop &lt;= 100) {
+        instance_create(x,y,obj_health_globe);   
+    }
+    instance_destroy();
+        if(global.lv &lt; 10) {
+            global.player_xp = global.player_xp+800;
+        } else if(global.lv &gt; 10 &amp;&amp; global.lv &lt; 16) {
+            global.player_xp = global.player_xp+330;
+        } else if(global.lv &gt; 16 &amp;&amp; global.lv &lt; 24) {
+            global.player_xp = global.player_xp+160;
+        
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_ice_cone">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp = hp-3;
+
 </string>
           </argument>
         </arguments>
@@ -364,9 +470,9 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.attack_state != 'defense'){
+            <string>
     hp = hp-3;
-}
+
 </string>
           </argument>
         </arguments>
@@ -389,9 +495,9 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.attack_state != 'defense'){
+            <string>
     hp = hp-8;
-}
+
 </string>
           </argument>
         </arguments>
@@ -414,9 +520,9 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.attack_state != 'defense'){
+            <string>
     hp = hp-12;
-}
+
 </string>
           </argument>
         </arguments>
@@ -439,9 +545,9 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.attack_state != 'defense'){
+            <string>
     hp = hp-(75 - armor);
-}
+
 </string>
           </argument>
         </arguments>
@@ -464,9 +570,9 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.attack_state != 'defense'){
+            <string>
     hp = hp-(25 - armor);
-}
+
 </string>
           </argument>
         </arguments>
@@ -489,9 +595,9 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.attack_state != 'defense'){
+            <string>
     hp = hp-(25 - armor);
-}
+
 </string>
           </argument>
         </arguments>
@@ -514,9 +620,9 @@ with(arrow3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.attack_state != 'defense'){
+            <string>
     hp = hp-(25 - armor);
-}
+
 </string>
           </argument>
         </arguments>
