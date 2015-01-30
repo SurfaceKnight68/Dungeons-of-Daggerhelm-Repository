@@ -26,8 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>depth = y * -1;
-randomize();
-image_speed = choose(0.01,0.02,0.03);
 </string>
           </argument>
         </arguments>
@@ -50,7 +48,7 @@ image_speed = choose(0.01,0.02,0.03);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_draw_shadow(2);
+            <string>scr_draw_shadow_tree(3);
 </string>
           </argument>
         </arguments>
@@ -69,7 +67,7 @@ image_speed = choose(0.01,0.02,0.03);
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>24,64</point>
-    <point>14,24</point>
+    <point>40,88</point>
+    <point>20,24</point>
   </PhysicsShapePoints>
 </object>

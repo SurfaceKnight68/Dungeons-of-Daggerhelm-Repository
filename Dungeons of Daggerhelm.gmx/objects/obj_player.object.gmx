@@ -69,18 +69,18 @@ friction = 10;
 sword = -1;
 damage = 1;
 
-player_hp = 300;
-player_mhp = 300;
+global.player_hp = 300;
+global.player_mhp = 300;
 // Beginning Mana
-player_mp = 100;
-player_mmp = 100;
+global.player_mp = 100;
+global.player_mmp = 100;
 // Beginning xp and level
 
 global.player_mxp = 200;
 global.mlv = 60;
 
 // Health globe benefits
-player_hv = 25;
+global.player_hv = 25;
 
 global.player_xp = 0;
 global.lv = 1;
@@ -109,7 +109,7 @@ global.armor = 0;
             <kind>1</kind>
             <string>alarm[7] = 10;
 if(global.identity == 4) {
-if(player_mp &gt;= 2) {
+if(global.player_mp &gt;= 2) {
 arrow1 = instance_create(x,y,obj_flame_cone);
 arrow2 = instance_create(x,y,obj_flame_cone);
 arrow3 = instance_create(x,y,obj_flame_cone);
@@ -148,12 +148,12 @@ with(arrow4) {
     ldy = lengthdir_y(1.2,-other.mouse_dir+60);
     physics_apply_impulse(x,y,ldx,ldy);
         }  
-    player_mp = player_mp - 2;
+    global.player_mp = global.player_mp - 2;
     }
 }
 
 if(global.identity == 5) {
-    if(player_mp &gt;= 2) {
+    if(global.player_mp &gt;= 2) {
 arrow1 = instance_create(x,y,obj_ice_cone);
 arrow2 = instance_create(x,y,obj_ice_cone);
 arrow3 = instance_create(x,y,obj_ice_cone);
@@ -192,7 +192,7 @@ with(arrow4) {
     ldy = lengthdir_y(1.2,-other.mouse_dir+60);
     physics_apply_impulse(x,y,ldx,ldy);
         }  
-    player_mp = player_mp - 2;
+    global.player_mp = global.player_mp - 2;
     }
 }
 
@@ -471,8 +471,8 @@ with(arrow) {
           <argument>
             <kind>1</kind>
             <string>alarm[0] = room_speed/2;
-player_hp = player_hp+1;
-player_mp = player_mp+1;
+global.player_hp = global.player_hp+1;
+global.player_mp = global.player_mp+1;
 </string>
           </argument>
         </arguments>
@@ -587,21 +587,21 @@ if(sword != -1) {
 if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
     global.lv += 1;
     global.player_mxp = round(global.player_mxp*1.8);
-    player_mhp = round(player_mhp*1.5);
-    player_hv = round(player_hv*1.5);
-    player_mmp = round(player_mmp*1.2);
+    global.player_mhp = round(global.player_mhp*1.5);
+    global.player_hv = round(global.player_hv*1.5);
+    global.player_mmp = round(global.player_mmp*1.2);
     global.player_xp = 0;
-    player_hp = player_mhp;
-    player_mp = player_mmp;
+    global.player_hp = global.player_mhp;
+    global.player_mp = global.player_mmp;
     
 }
 
-if(player_hp &gt; player_mhp) {
-    player_hp = player_mhp;
+if(global.player_hp &gt; global.player_mhp) {
+    global.player_hp = global.player_mhp;
 }
 
-if(player_mp &gt; player_mmp) {
-    player_mp = player_mmp;
+if(global.player_mp &gt; global.player_mmp) {
+    global.player_mp = global.player_mmp;
 }
 </string>
           </argument>
@@ -625,7 +625,7 @@ if(player_mp &gt; player_mmp) {
             <kind>1</kind>
             <string>/// Player death
 
-if(obj_player.player_hp &lt;= 0) {
+if(global.player_hp &lt;= 0) {
     sound_stop_all();
     game_restart();
     
@@ -798,7 +798,7 @@ scr_draw_shadow(1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hp = player_hp + player_hv;
+            <string>global.player_hp = global.player_hp + global.player_hv;
 </string>
           </argument>
         </arguments>
@@ -891,7 +891,7 @@ scr_draw_shadow(1);
           <argument>
             <kind>1</kind>
             <string>randomize();
-player_hp = player_hp - choose(40,44,46,48,50,54);
+global.player_hp = global.player_hp - choose(40,44,46,48,50,54);
 </string>
           </argument>
         </arguments>
@@ -915,7 +915,7 @@ player_hp = player_hp - choose(40,44,46,48,50,54);
           <argument>
             <kind>1</kind>
             <string>randomize();
-player_hp = player_hp - choose(32,34,36,38,40,42);
+global.player_hp = global.player_hp - choose(32,34,36,38,40,42);
 </string>
           </argument>
         </arguments>
@@ -939,7 +939,7 @@ player_hp = player_hp - choose(32,34,36,38,40,42);
           <argument>
             <kind>1</kind>
             <string>randomize();
-player_hp = player_hp - choose(40,42,44,46,48,50);
+global.player_hp = global.player_hp - choose(40,42,44,46,48,50);
 </string>
           </argument>
         </arguments>
@@ -1519,7 +1519,7 @@ if(global.identity == 5) {
             <kind>1</kind>
             <string>///Sorcerer secondary attack
 if(global.identity == 4) {
-    if(player_mp &gt;= 2) {
+    if(global.player_mp &gt;= 2) {
         alarm[7] = 1;
     }
 }
@@ -1546,7 +1546,7 @@ if(global.identity == 4) {
             <kind>1</kind>
             <string>///Thaumaturge secondary attack
 if(global.identity == 5) {
-    if(player_mp &gt;= 2) {
+    if(global.player_mp &gt;= 2) {
         alarm[7] = 1;
     }
 }
@@ -1574,7 +1574,7 @@ if(global.identity == 5) {
             <string>/// Battle-Mage secondary
 
 if(global.identity == 3) {
-    if(player_mp &gt;= 40) {
+    if(global.player_mp &gt;= 40) {
         wave1 = instance_create(x,y,obj_blast_wave); //Follows mouse
         wave2 = instance_create(x,y,obj_blast_wave); //Follows mouse + 45 degrees
         wave3 = instance_create(x,y,obj_blast_wave); //Follows mouse + 90 degrees
@@ -1649,7 +1649,7 @@ if(global.identity == 3) {
                     ldy = lengthdir_y(1.0,-other.mouse_dir+360);
                     physics_apply_impulse(x,y,ldx,ldy);
         }
-        player_mp = player_mp - 40;
+        global.player_mp = global.player_mp - 40;
     }
 }
 </string>
@@ -1674,9 +1674,9 @@ if(global.identity == 3) {
             <kind>1</kind>
             <string>/// Paladin secondary attack
 if(global.identity == 2) {
-    if(player_mp &gt;= 80) {
+    if(global.player_mp &gt;= 80) {
         instance_create(mouse_x,mouse_y,obj_paladin_hammer);
-        player_mp = player_mp - 80;
+        global.player_mp = global.player_mp - 80;
     }
 }
 </string>
@@ -1701,7 +1701,7 @@ if(global.identity == 2) {
             <kind>1</kind>
             <string>/// Ranger secondary attack
 if(global.identity == 1) {
-    if(player_mp &gt;= 20) {
+    if(global.player_mp &gt;= 20) {
         arrow = instance_create(x,y,obj_swift_arrow);
         
         with(arrow) {
@@ -1712,7 +1712,7 @@ if(global.identity == 1) {
             ldy = lengthdir_y(2.5,-other.mouse_dir+45);
             physics_apply_impulse(x,y,ldx,ldy);
         }
-        player_mp = player_mp - 20;
+        global.player_mp = global.player_mp - 20;
     }
 }
 </string>
@@ -1756,6 +1756,29 @@ if(global.identity == 5) {
     alarm[1] = 10;
     scr_player_attack();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_savegame();
 </string>
           </argument>
         </arguments>

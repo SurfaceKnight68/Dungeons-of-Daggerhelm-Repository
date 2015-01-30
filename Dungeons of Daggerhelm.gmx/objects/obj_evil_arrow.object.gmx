@@ -119,7 +119,7 @@
           <argument>
             <kind>1</kind>
             <string>part_particles_create(global.ps,x,y,global.pt_blood,15);
-obj_player.player_hp = obj_player.player_hp - 15;
+global.player_hp = global.player_hp - 15;
 instance_destroy();
 </string>
           </argument>

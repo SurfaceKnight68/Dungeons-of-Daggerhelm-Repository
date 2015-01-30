@@ -50,7 +50,7 @@ draw_set_alpha(1);
           <argument>
             <kind>1</kind>
             <string>/// Draw healthbar
-draw_healthbar(10, 465, 300, 490, obj_player.player_hp/obj_player.player_mhp*100, c_gray, c_red, c_green, 0, true, true); 
+draw_healthbar(10, 465, 300, 490, global.player_hp/global.player_mhp*100, c_gray, c_red, c_green, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -72,7 +72,7 @@ draw_healthbar(10, 465, 300, 490, obj_player.player_hp/obj_player.player_mhp*100
           <argument>
             <kind>1</kind>
             <string>/// Draw manabar
-draw_healthbar(10, 500, 300, 525, obj_player.player_mp/obj_player.player_mmp*100, c_gray, c_aqua, c_blue, 0, true, true); 
+draw_healthbar(10, 500, 300, 525, global.player_mp/global.player_mmp*100, c_gray, c_aqua, c_blue, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -123,9 +123,9 @@ draw_set_font(fnt_HUD);
 
 draw_text(12,395,"Level: "+string(global.lv));
 draw_set_color(c_lime);
-draw_text(12,465,"H P: "+string(obj_player.player_hp)+"/ "+string(obj_player.player_mhp));
+draw_text(12,465,"H P: "+string(global.player_hp)+"/ "+string(global.player_mhp));
 draw_set_color(c_aqua);
-draw_text(12,500,"Mana: "+string(obj_player.player_mp)+"/ "+string(obj_player.player_mmp));
+draw_text(12,500,"Mana: "+string(global.player_mp)+"/ "+string(global.player_mmp));
 
 draw_set_color(c_black);
 </string>

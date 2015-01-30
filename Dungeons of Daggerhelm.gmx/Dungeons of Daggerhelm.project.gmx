@@ -260,6 +260,21 @@
           <sprite>sprites\spr_burned_soul_up</sprite>
           <sprite>sprites\spr_burned_soul_down</sprite>
         </sprites>
+        <sprites name="Frosted Atronauch">
+          <sprite>sprites\spr_FR_AT_right</sprite>
+          <sprite>sprites\spr_FR_AT_left</sprite>
+        </sprites>
+        <sprites name="Risen Skeleton">
+          <sprite>sprites\spr_R_S_right</sprite>
+          <sprite>sprites\spr_R_S_left</sprite>
+        </sprites>
+        <sprites name="Valerikye">
+          <sprite>sprites\spr_VK_left</sprite>
+        </sprites>
+        <sprites name="Risen Corpse">
+          <sprite>sprites\spri_R_C_right</sprite>
+          <sprite>sprites\spr_R_C_left</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="World_Objects">
@@ -321,6 +336,9 @@
         <sprite>sprites\spr_lava_geyser</sprite>
         <sprite>sprites\spr_stalagmite</sprite>
       </sprites>
+      <sprites name="Rimeworld">
+        <sprite>sprites\spr_necromancy_obelisk</sprite>
+      </sprites>
     </sprites>
     <sprites name="Cursor">
       <sprite>sprites\spr_cursor</sprite>
@@ -330,6 +348,8 @@
       <sprite>sprites\spr_adv_mode_off</sprite>
       <sprite>sprites\spr_how_to_play</sprite>
       <sprite>sprites\spr_how_to_play_on</sprite>
+      <sprite>sprites\spr_load_game</sprite>
+      <sprite>sprites\spr_load_game_on</sprite>
       <sprite>sprites\spr_adv_mode_on</sprite>
       <sprite>sprites\spr_story_mode_off</sprite>
       <sprite>sprites\spr_story_mode_on</sprite>
@@ -393,6 +413,7 @@
   <scripts name="scripts">
     <scripts name="Player Scripts">
       <script>scripts\scr_draw_shadow.gml</script>
+      <script>scripts\scr_draw_shadow_tree.gml</script>
       <script>scripts\scr_player_move.gml</script>
       <script>scripts\scr_player_attack.gml</script>
     </scripts>
@@ -407,6 +428,8 @@
     </scripts>
     <scripts name="Miscillaneous Scripts">
       <script>scripts\scr_dungeon_walls.gml</script>
+      <script>scripts\scr_savegame.gml</script>
+      <script>scripts\scr_loadgame.gml</script>
     </scripts>
     <scripts name="Generation Scripts">
       <script>scripts\scr_generate.gml</script>
@@ -575,6 +598,7 @@
       <object>objects\obj_main_menu_cursor</object>
       <objects name="Main_Menu">
         <object>objects\obj_adv_mode</object>
+        <object>objects\obj_load_game</object>
         <object>objects\obj_how_to_play</object>
         <object>objects\obj_story_mode</object>
         <object>objects\obj_exit</object>

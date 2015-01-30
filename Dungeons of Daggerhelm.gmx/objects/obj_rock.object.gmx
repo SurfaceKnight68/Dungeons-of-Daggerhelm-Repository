@@ -50,7 +50,7 @@ image_speed = choose(0.01,0.02,0.03);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_draw_shadow(3);
+            <string>scr_draw_shadow_tree(3);
 </string>
           </argument>
         </arguments>
