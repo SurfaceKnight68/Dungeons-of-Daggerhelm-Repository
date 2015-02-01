@@ -2,9 +2,6 @@ if(file_exists("savedata.ini")) {
     file_delete("savedata.ini");
 }
 ini_open("savedata.ini");
-var SavedRoom = room;
-
-ini_write_real("Save1","room",SavedRoom);
 // Save level
 ini_write_real("Save1","playerlevel",global.lv);
 // Save health values
@@ -21,3 +18,4 @@ ini_write_real("Save1","currentclass",global.identity);
 
 // Close ini file
 ini_close();
+show_debug_message("Save file activated!");

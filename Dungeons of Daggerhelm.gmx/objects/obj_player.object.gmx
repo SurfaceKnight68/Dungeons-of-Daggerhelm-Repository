@@ -27,23 +27,15 @@
             <kind>1</kind>
             <string>sprite_index = spr_ghost_up;
 image_speed = 0.04;
-global.identity = 0;
+
 depth = phy_position_y * -1;
-
-view_visible[0]=true; 
-width=300;
-height=168;
-
-view_wview[0]=width;
-view_hview[0]=height;
-view_wport[0]=width;
-view_hport[0]=height;
 
 action = false;
 
 alarm[0] = room_speed/2;
 
 friction = 10;
+show_debug_message("Player initialized!");
 </string>
           </argument>
         </arguments>
@@ -69,22 +61,30 @@ friction = 10;
 sword = -1;
 damage = 1;
 
-global.player_hp = 300;
-global.player_mhp = 300;
-// Beginning Mana
-global.player_mp = 100;
-global.player_mmp = 100;
-// Beginning xp and level
 
-global.player_mxp = 200;
-global.mlv = 60;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// View follow offset
 
-// Health globe benefits
-global.player_hv = 25;
-
-global.player_xp = 0;
-global.lv = 1;
-global.armor = 0;
+instance_create(x,y+32,obj_view_follow);
 </string>
           </argument>
         </arguments>
@@ -218,7 +218,7 @@ with(arrow4) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hp = player_hp - 1;
+            <string>global.player_hp = global.player_hp - 1;
 </string>
           </argument>
         </arguments>
@@ -351,7 +351,7 @@ with(arrow) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hp = player_hp - 30;
+            <string>global.player_hp = global.player_hp - 30;
 </string>
           </argument>
         </arguments>
@@ -398,7 +398,7 @@ with(arrow) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hp = player_hp - 10;
+            <string>global.player_hp = global.player_hp - 10;
 </string>
           </argument>
         </arguments>
@@ -478,6 +478,31 @@ global.player_mp = global.player_mp+1;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// View follow object movement
+obj_view_follow.x = x;
+obj_view_follow.y = y + 32;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -518,9 +543,7 @@ global.player_mp = global.player_mp+1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Views and rotation fix
-view_xview[0]=x-(view_wview[0]/2);
-view_yview[0]=y-(view_hview[0]/2);
+            <string>///rotation fix
 
 phy_fixed_rotation = true;
 </string>
@@ -602,7 +625,7 @@ if(global.player_hp &gt; global.player_mhp) {
 
 if(global.player_mp &gt; global.player_mmp) {
     global.player_mp = global.player_mmp;
-}
+} 
 </string>
           </argument>
         </arguments>
@@ -652,6 +675,7 @@ if(global.player_hp &lt;= 0) {
             <kind>1</kind>
             <string>if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
     sound_play(snd_lvl_up);
+    show_debug_message("Player stat change");
 }
 </string>
           </argument>
@@ -1756,29 +1780,6 @@ if(global.identity == 5) {
     alarm[1] = 10;
     scr_player_attack();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>scr_savegame();
 </string>
           </argument>
         </arguments>

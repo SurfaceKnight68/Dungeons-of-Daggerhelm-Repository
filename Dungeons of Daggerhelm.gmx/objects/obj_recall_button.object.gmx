@@ -162,11 +162,11 @@ if(place_meeting(x,y,obj_cursor)) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>view_xview[0]+280</string>
+            <string>view_xview[0]+20</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>view_yview[0]+158</string>
+            <string>view_yview[0]+215</string>
           </argument>
         </arguments>
       </action>
@@ -188,9 +188,9 @@ if(place_meeting(x,y,obj_cursor)) {
             <kind>1</kind>
             <string>/// Button change color
 if (place_meeting(x,y,obj_cursor)) {
-    draw_sprite(spr_recall_on,1,view_xview[0]+280,view_yview[0]+158);
+    draw_sprite(spr_recall_on,1,view_xview[0]+20,view_yview[0]+215);
 } else {
-    draw_sprite(spr_recall_on,0,view_xview[0]+280,view_yview[0]+158);
+    draw_sprite(spr_recall_on,0,view_xview[0]+20,view_yview[0]+215);
 }
 </string>
           </argument>

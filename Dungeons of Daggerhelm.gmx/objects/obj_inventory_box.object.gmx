@@ -107,7 +107,7 @@ if (item != -1 &amp;&amp; global.game_state == 'pause') {
           <argument>
             <kind>1</kind>
             <string>/// Draw inventory box and item
-
+/*
 if (global.game_state == 'pause') {
     draw_set_alpha(.25);
     draw_roundrect(view_xview[0]+xstart+64, view_yview[0]+ystart+128, view_xview[0]+xstart+80, view_yview[0]+ystart+144, false);

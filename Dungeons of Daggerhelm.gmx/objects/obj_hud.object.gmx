@@ -25,10 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Draw HUD box
-draw_set_alpha(.25);
-draw_roundrect(0,390,310,540,false);
+            <string>/// Draw HUD boxes
+draw_set_alpha(.99);
+draw_roundrect(0,690,900,900,false);
 draw_set_alpha(1);
+
+// Draw stats borders
+draw_set_alpha(1);
+draw_set_color(c_silver);
+draw_roundrect(0,689,309,901,true);
+draw_set_color(c_gray);
+draw_roundrect(0,689,310,901,true);
+draw_set_alpha(1);
+draw_set_color(c_black);
+
+// Draw HUD border
+draw_set_alpha(1);
+draw_set_color(c_silver);
+draw_roundrect(0,689,901,901,true);
+draw_set_alpha(1);
+draw_set_color(c_black);
+
 </string>
           </argument>
         </arguments>
@@ -50,7 +67,7 @@ draw_set_alpha(1);
           <argument>
             <kind>1</kind>
             <string>/// Draw healthbar
-draw_healthbar(10, 465, 300, 490, global.player_hp/global.player_mhp*100, c_gray, c_red, c_green, 0, true, true); 
+draw_healthbar(10, 765, 300, 790, global.player_hp/global.player_mhp*100, c_gray, c_red, c_green, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -72,7 +89,7 @@ draw_healthbar(10, 465, 300, 490, global.player_hp/global.player_mhp*100, c_gray
           <argument>
             <kind>1</kind>
             <string>/// Draw manabar
-draw_healthbar(10, 500, 300, 525, global.player_mp/global.player_mmp*100, c_gray, c_aqua, c_blue, 0, true, true); 
+draw_healthbar(10, 800, 300, 825, global.player_mp/global.player_mmp*100, c_gray, c_aqua, c_blue, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -94,7 +111,7 @@ draw_healthbar(10, 500, 300, 525, global.player_mp/global.player_mmp*100, c_gray
           <argument>
             <kind>1</kind>
             <string>/// Draw xp bar
-draw_healthbar(10, 420, 250, 430, global.player_xp/global.player_mxp*100, c_olive, c_purple, c_green, 0, true, true); 
+draw_healthbar(10, 720, 250, 730, global.player_xp/global.player_mxp*100, c_olive, c_purple, c_green, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -121,11 +138,74 @@ draw_set_color(c_red);
 draw_set_alpha(1);
 draw_set_font(fnt_HUD);
 
-draw_text(12,395,"Level: "+string(global.lv));
+draw_text(12,695,"Level: "+string(global.lv));
 draw_set_color(c_lime);
-draw_text(12,465,"H P: "+string(global.player_hp)+"/ "+string(global.player_mhp));
+draw_text(12,765,"Health: "+string(global.player_hp)+"/ "+string(global.player_mhp));
 draw_set_color(c_aqua);
-draw_text(12,500,"Mana: "+string(global.player_mp)+"/ "+string(global.player_mmp));
+draw_text(12,800,"Mana: "+string(global.player_mp)+"/ "+string(global.player_mmp));
+
+draw_set_color(c_black);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw class faces
+draw_sprite(spr_hud_faces,0,20,850);
+draw_sprite(spr_hud_faces,1,65,850);
+draw_sprite(spr_hud_faces,2,110,850);
+draw_sprite(spr_hud_faces,3,155,850);
+draw_sprite(spr_hud_faces,4,200,850);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Selected class border
+draw_set_color(c_silver);
+if(global.identity == 0) {
+    //do nothing
+} else if(global.identity == 1) {
+    draw_roundrect(14,840,55,880,true)
+} else if(global.identity == 2) {
+    draw_roundrect(55,840,100,880,true)
+} else if(global.identity == 3) {
+    draw_roundrect(100,840,145,880,true)
+} else if(global.identity == 4) {
+    draw_roundrect(145,840,190,880,true)
+} else if(global.identity == 5) {
+    draw_roundrect(180,840,225,880,true)
+}
 
 draw_set_color(c_black);
 </string>

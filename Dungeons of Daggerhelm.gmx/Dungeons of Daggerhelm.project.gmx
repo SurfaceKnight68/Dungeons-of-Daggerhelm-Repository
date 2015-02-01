@@ -336,7 +336,7 @@
         <sprite>sprites\spr_lava_geyser</sprite>
         <sprite>sprites\spr_stalagmite</sprite>
       </sprites>
-      <sprites name="Rimeworld">
+      <sprites name="Death Foundry">
         <sprite>sprites\spr_necromancy_obelisk</sprite>
       </sprites>
     </sprites>
@@ -375,6 +375,9 @@
       <sprite>sprites\spr_inv_slot</sprite>
       <sprites name="Minimap">
         <sprite>sprites\spr_empty</sprite>
+      </sprites>
+      <sprites name="HUD Faces">
+        <sprite>sprites\spr_hud_faces</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -462,6 +465,7 @@
     </objects>
     <objects name="Player">
       <object>objects\obj_player</object>
+      <object>objects\obj_view_follow</object>
     </objects>
     <objects name="NPCs">
       <objects name="Enemies">
@@ -677,6 +681,7 @@
         <object>objects\obj_ps</object>
         <object>objects\obj_snow</object>
       </objects>
+      <object>objects\obj_player_stats</object>
     </objects>
     <objects name="Item">
       <object>objects\obj_item_parent</object>

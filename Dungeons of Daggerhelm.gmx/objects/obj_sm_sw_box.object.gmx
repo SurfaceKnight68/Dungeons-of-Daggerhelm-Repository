@@ -78,7 +78,7 @@ obj_player.sword = item;
           <argument>
             <kind>1</kind>
             <string>/// Draw inventory box and item
-
+/*
 if(global.game_state == 'pause') {
     draw_sprite_ext(spr_small_sword, 0, view_xview[0]+xstart+64, view_yview[0]+ystart+128, 1, 1, 0, c_black, .25);
 }
