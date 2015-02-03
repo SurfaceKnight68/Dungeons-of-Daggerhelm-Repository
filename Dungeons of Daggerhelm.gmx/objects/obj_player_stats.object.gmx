@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>0</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -145,6 +145,7 @@ if(global.identity == 1) {
     global.base_str = 12;
     global.base_wis = 10;
     global.base_for = 3;
+    
 } 
 if(global.identity == 2) {
     global.base_pri = 10;
@@ -153,6 +154,7 @@ if(global.identity == 2) {
     global.base_str = 10;
     global.base_wis = 5;
     global.base_for = 6;
+    
 }
 if(global.identity == 3) {
     global.base_pri = 10;
@@ -161,6 +163,7 @@ if(global.identity == 3) {
     global.base_str = 8;
     global.base_wis = 12;
     global.base_for = 4;
+    
 }
 if(global.identity == 4) {
     global.base_pri = 14;
@@ -169,6 +172,7 @@ if(global.identity == 4) {
     global.base_str = 18;
     global.base_wis = 6;
     global.base_for = 1;
+    
 }
 if(global.identity == 5) {
     global.base_pri = 8;
@@ -177,6 +181,7 @@ if(global.identity == 5) {
     global.base_str = 12;
     global.base_wis = 6;
     global.base_for = 8;
+    
 }
 if(global.identity == 0) {
     global.base_pri = 0;
@@ -185,6 +190,7 @@ if(global.identity == 0) {
     global.base_str = 0;
     global.base_wis = 0;
     global.base_for = 0;
+    
 }
 
 // Conversion values

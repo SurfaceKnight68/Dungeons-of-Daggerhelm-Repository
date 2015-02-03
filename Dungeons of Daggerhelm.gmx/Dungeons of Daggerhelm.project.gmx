@@ -441,6 +441,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_HUD</font>
+    <font>fonts\fnt_damage_counter</font>
   </fonts>
   <objects name="objects">
     <objects name="Tiles">
@@ -563,12 +564,14 @@
           <object>objects\obj_boss_laser</object>
         </objects>
         <objects name="Primary">
+          <object>objects\par_projectile</object>
           <object>objects\obj_melee_swing</object>
           <object>objects\obj_ice_blast</object>
           <object>objects\obj_arrow</object>
           <object>objects\obj_fireball</object>
         </objects>
         <objects name="Secondary">
+          <object>objects\par_projectile_sec</object>
           <object>objects\obj_swift_arrow</object>
           <object>objects\obj_blast_wave</object>
           <object>objects\obj_electric_lash</object>
@@ -668,6 +671,7 @@
         <object>objects\obj_minimap</object>
         <object>objects\minimap_visible</object>
       </objects>
+      <object>objects\obj_damage_counter</object>
     </objects>
     <objects name="System">
       <object>objects\obj_gamestate</object>
