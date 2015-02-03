@@ -212,6 +212,38 @@ draw_set_color(c_black);
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Player minor stats in HUD
+
+draw_set_color(c_silver);
+draw_set_alpha(1);
+draw_set_font(fnt_HUD);
+
+draw_text(320,700,"STRENGTH: " + string(global.total_str));
+draw_text(320,750,"WISDOM: " + string(global.total_wis));
+draw_text(320,800,"FORTITUDE: " + string(global.total_for));
+draw_text(320,850,"ARMOR: " + string(global.total_armor));
+
+draw_set_color(c_black);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.identity = 0;
+            <string>/// Player stats
+global.identity = 0;
 global.player_hp = 300;
 global.player_mhp = 300;
 // Beginning Mana
@@ -42,11 +43,33 @@ global.player_hv = 25;
 global.player_xp = 0;
 global.lv = 1;
 
-global.player_armor = 0;
-
-global.strength = 0;
-global.wisdom = 0;
-global.dexterity = 0;
+// base armor value
+global.base_armor = 10;
+//additional armor from leveling up, items, gear, etc.
+global.bonus_armor = 0;
+// total = base + bonus
+global.total_armor = 0;
+// base stats
+global.base_str = 0;
+global.base_wis = 0;
+global.base_for = 0;
+// bonus stats from leveling up, armor, items, etc.
+global.bonus_str = 0;
+global.bonus_wis = 0;
+global.bonus_for = 0;
+// totals = base + bonus
+global.total_str = 0;
+global.total_wis = 0;
+global.total_for = 0;
+// base primary and secondary damage values
+global.base_pri = 0;
+global.base_sec = 0;
+// bonus primary and secondary damage values, calculated from STR, WIS
+global.bonus_pri = 0;
+global.bonus_sec = 0;
+// total damage values, total = base (starting) + bonus (STR, WIS)
+global.total_pri = 0;
+global.total_sec = 0;
 </string>
           </argument>
         </arguments>
@@ -71,7 +94,6 @@ global.dexterity = 0;
             <kind>1</kind>
             <string>/// Health, mana and xp values
 
-
 if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
     global.lv += 1;
     global.player_mxp = round(global.player_mxp*1.8);
@@ -81,6 +103,9 @@ if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.ml
     global.player_xp = 0;
     global.player_hp = global.player_mhp;
     global.player_mp = global.player_mmp;
+    global.bonus_str += 2;
+    global.bonus_wis += 1;
+    global.bonus_for += 1;
     
 }
 
@@ -91,6 +116,91 @@ if(global.player_hp &gt; global.player_mhp) {
 if(global.player_mp &gt; global.player_mmp) {
     global.player_mp = global.player_mmp;
 } 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Strength, wisdom, dexterity, attack values
+
+if(global.identity == 1) {
+    global.base_pri = 8;
+    global.base_sec = 12;
+    
+    global.base_str = 12;
+    global.base_wis = 10;
+    global.base_for = 3;
+} 
+if(global.identity == 2) {
+    global.base_pri = 10;
+    global.base_sec = 10;
+    
+    global.base_str = 10;
+    global.base_wis = 5;
+    global.base_for = 6;
+}
+if(global.identity == 3) {
+    global.base_pri = 10;
+    global.base_sec = 10;
+    
+    global.base_str = 8;
+    global.base_wis = 12;
+    global.base_for = 4;
+}
+if(global.identity == 4) {
+    global.base_pri = 14;
+    global.base_sec = 2;
+    
+    global.base_str = 18;
+    global.base_wis = 6;
+    global.base_for = 1;
+}
+if(global.identity == 5) {
+    global.base_pri = 8;
+    global.base_sec = 3;
+    
+    global.base_str = 12;
+    global.base_wis = 6;
+    global.base_for = 8;
+}
+if(global.identity == 0) {
+    global.base_pri = 0;
+    global.base_sec = 0;
+    
+    global.base_str = 0;
+    global.base_wis = 0;
+    global.base_for = 0;
+}
+
+// Conversion values
+
+global.total_str = global.base_str + global.bonus_str;
+global.total_wis = global.base_wis + global.bonus_wis;
+global.total_for = global.base_for + global.bonus_for;
+global.bonus_armor = global.total_for;
+
+global.bonus_pri = global.total_str;
+global.bonus_sec = global.total_wis;
+
+global.total_pri = global.base_pri + global.bonus_pri;
+global.total_sec = global.base_sec + global.bonus_sec;
+
+global.total_armor = global.base_armor + global.bonus_armor;
 </string>
           </argument>
         </arguments>
