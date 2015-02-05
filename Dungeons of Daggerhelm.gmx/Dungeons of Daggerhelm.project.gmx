@@ -338,6 +338,8 @@
       </sprites>
       <sprites name="Death Foundry">
         <sprite>sprites\spr_necromancy_obelisk</sprite>
+        <sprite>sprites\spr_DF_bridge_base</sprite>
+        <sprite>sprites\spr_DF_bridge</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -555,6 +557,7 @@
       </objects>
       <objects name="Projectiles">
         <objects name="Enemy_Projectiles">
+          <object>objects\par_enemy_projectile</object>
           <object>objects\obj_evil_arrow</object>
           <object>objects\obj_enemy_phaseshot</object>
           <object>objects\obj_enemy_fireball</object>
@@ -686,6 +689,7 @@
         <object>objects\obj_snow</object>
       </objects>
       <object>objects\obj_player_stats</object>
+      <object>objects\obj_enemy_stats</object>
     </objects>
     <objects name="Item">
       <object>objects\obj_item_parent</object>

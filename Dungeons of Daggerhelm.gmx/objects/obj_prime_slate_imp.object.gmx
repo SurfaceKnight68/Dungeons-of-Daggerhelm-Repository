@@ -52,7 +52,7 @@ dir = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 225;
+            <string>hp = global.health_2;
 </string>
           </argument>
         </arguments>

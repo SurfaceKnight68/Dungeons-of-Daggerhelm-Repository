@@ -915,7 +915,7 @@ scr_draw_shadow(1);
           <argument>
             <kind>1</kind>
             <string>randomize();
-global.player_hp = global.player_hp - choose(40,44,46,48,50,54);
+global.player_hp = global.player_hp - (choose(40,44,46,48,50,54) - global.total_armor);
 </string>
           </argument>
         </arguments>
@@ -939,7 +939,7 @@ global.player_hp = global.player_hp - choose(40,44,46,48,50,54);
           <argument>
             <kind>1</kind>
             <string>randomize();
-global.player_hp = global.player_hp - choose(32,34,36,38,40,42);
+global.player_hp = global.player_hp - (choose(32,34,36,38,40,42) - global.total_armor);
 </string>
           </argument>
         </arguments>

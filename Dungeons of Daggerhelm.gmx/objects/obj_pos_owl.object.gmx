@@ -31,7 +31,7 @@ depth = phy_position_y * -1;
 image_speed = 0.2;
 alarm[0] = random(20);
 dir = 0;
-hp = 75;
+hp = global.health_1;
 </string>
           </argument>
         </arguments>

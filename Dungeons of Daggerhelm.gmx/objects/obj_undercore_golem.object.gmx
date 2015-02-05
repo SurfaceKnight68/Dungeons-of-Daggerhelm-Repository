@@ -53,7 +53,7 @@ armor = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 2200;
+            <string>hp = global.health_3;
 </string>
           </argument>
         </arguments>
