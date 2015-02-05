@@ -15,6 +15,13 @@ if(file_exists("savedata.ini")) {
     
     global.identity = ini_read_real("Save1","currentclass",0);
     
+    global.bonus_armor = ini_read_real("Save1","bonusarmor",0);
+    global.bonus_str = ini_read_real("Save1","bonusstrength",0);
+    global.bonus_wis = ini_read_real("Save1","bonuswisdom",0);
+    global.bonus_for = ini_read_real("Save1","bonusfortitude",0);
+    global.bonus_pri = ini_read_real("Save1","bonusprimary",0);
+    global.bonus_sec = ini_read_real("Save1","bonussecondary",0);
+    
     ini_close();
     room_goto(rm_broken_shield_castle);
 } else {

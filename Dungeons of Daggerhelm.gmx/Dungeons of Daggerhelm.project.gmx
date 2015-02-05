@@ -340,6 +340,8 @@
         <sprite>sprites\spr_necromancy_obelisk</sprite>
         <sprite>sprites\spr_DF_bridge_base</sprite>
         <sprite>sprites\spr_DF_bridge</sprite>
+        <sprite>sprites\spr_gravesigns</sprite>
+        <sprite>sprites\spr_skull</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">

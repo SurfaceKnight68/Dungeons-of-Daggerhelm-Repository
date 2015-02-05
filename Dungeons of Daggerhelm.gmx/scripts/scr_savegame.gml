@@ -16,6 +16,14 @@ ini_write_real("Save1","maxplayerxp",global.player_mxp);
 // Save current class
 ini_write_real("Save1","currentclass",global.identity);
 
+// Save player attributes
+ini_write_real("Save1","bonusarmor",global.bonus_armor);
+ini_write_real("Save1","bonusstrength",global.bonus_str);
+ini_write_real("Save1","bonuswisdom",global.bonus_wis);
+ini_write_real("Save1","bonusfortitude",global.bonus_for);
+ini_write_real("Save1","bonusprimary",global.bonus_pri);
+ini_write_real("Save1","bonussecondary",global.bonus_sec);
+
 // Close ini file
 ini_close();
 show_debug_message("Save file activated!");
