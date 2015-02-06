@@ -543,9 +543,11 @@ obj_view_follow.y = y + 32;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///rotation fix
+            <string>///rotation fix and room clamp
 
 phy_fixed_rotation = true;
+x = clamp(x,0,room_width - sprite_width);
+y = clamp(y,0,room_height - sprite_height);
 </string>
           </argument>
         </arguments>
