@@ -384,6 +384,16 @@
         <sprite>sprites\spr_hud_faces</sprite>
       </sprites>
     </sprites>
+    <sprites name="STORY MODE">
+      <sprites name="Tirranus">
+        <sprite>sprites\spr_tyrranus_young_L</sprite>
+        <sprite>sprites\spr_tyrranus_young_R</sprite>
+      </sprites>
+      <sprites name="Joanne">
+        <sprite>sprites\spri_joanne_young_l</sprite>
+        <sprite>sprites\spr_joanne_young_R</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Grassland">
