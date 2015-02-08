@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,65 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pause = 0;
+            <string>global.pause = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.pause) {
+    draw_set_color(c_black);
+    draw_rectangle(0,0,900,900,0);
+    draw_set_font(fnt_menu);
+    draw_set_color(c_white);
+    draw_text(390,300,"Game Paused");
+    draw_set_color(c_red);
+    draw_text(350,400,"Press K to Save Game");
+    draw_text(355,500,"Press ESC to Resume");
+    draw_set_color(c_black);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="75">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.pause){
+    scr_savegame();
+}
 </string>
           </argument>
         </arguments>
@@ -48,11 +106,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!pause) {
-    pause = 1;
+            <string>if(!global.pause) {
+    global.pause = 1;
     instance_deactivate_all(true);
 } else {
-    pause = 0;
+    global.pause = 0;
     instance_activate_all();
 }
 </string>

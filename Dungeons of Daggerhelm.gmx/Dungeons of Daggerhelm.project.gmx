@@ -461,6 +461,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_HUD</font>
     <font>fonts\fnt_damage_counter</font>
+    <font>fonts\fnt_menu</font>
   </fonts>
   <objects name="objects">
     <objects name="Tiles">
