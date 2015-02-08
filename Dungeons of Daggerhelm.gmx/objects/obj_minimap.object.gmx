@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -58,6 +58,8 @@ map_visible = 'nonvisible';
         case 'visible':
             map_visible = 'nonvisible';
             break;
+        
+        
     }
 }
 </string>
@@ -83,7 +85,7 @@ map_visible = 'nonvisible';
           <argument>
             <kind>1</kind>
             <string>if(map_visible == 'visible') {
-    draw_set_alpha(.6);
+    draw_set_alpha(.5);
     draw_surface(sMap, 150, 75);
     draw_set_alpha(1);
 }
