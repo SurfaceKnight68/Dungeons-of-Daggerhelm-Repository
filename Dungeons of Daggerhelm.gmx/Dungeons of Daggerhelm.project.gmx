@@ -378,7 +378,11 @@
     <sprites name="HUD">
       <sprite>sprites\spr_inv_slot</sprite>
       <sprites name="Minimap">
-        <sprite>sprites\spr_empty</sprite>
+        <sprite>sprites\spr_player_minimap</sprite>
+        <sprite>sprites\spr_Unknown</sprite>
+        <sprite>sprites\spr_enemy</sprite>
+        <sprite>sprites\sprite219</sprite>
+        <sprite>sprites\spr_minimap_sub</sprite>
       </sprites>
       <sprites name="HUD Faces">
         <sprite>sprites\spr_hud_faces</sprite>
@@ -415,6 +419,7 @@
     </backgrounds>
     <backgrounds name="Main Menu">
       <background>background\bg_main_menu_scroll</background>
+      <background>background\bg_Minimap</background>
     </backgrounds>
     <backgrounds name="Undercore">
       <background>background\bg_undercore</background>
@@ -683,8 +688,8 @@
         <object>objects\obj_pause</object>
       </objects>
       <objects name="Minimap">
-        <object>objects\obj_minimap</object>
-        <object>objects\minimap_visible</object>
+        <object>objects\obj_minimap_visible</object>
+        <object>objects\obj_Minimap</object>
       </objects>
       <object>objects\obj_damage_counter</object>
     </objects>

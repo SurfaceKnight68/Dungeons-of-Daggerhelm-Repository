@@ -47,5 +47,9 @@ var dist = point_distance(obj_player.phy_position_x,obj_player.phy_position_y,x,
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>48,0</point>
+    <point>48,32</point>
+  </PhysicsShapePoints>
 </object>

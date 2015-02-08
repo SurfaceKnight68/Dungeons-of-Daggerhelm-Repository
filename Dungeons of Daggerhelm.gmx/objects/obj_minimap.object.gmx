@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,8 +25,41 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mmsize = 200;
+            <string>mmsize = 600;
 sMap = surface_create(mmsize,mmsize);
+map_visible = 'nonvisible';
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(keyboard_check_pressed(ord("M"))) {
+    switch (map_visible) {
+        case 'nonvisible':
+            map_visible = 'visible';
+            break;
+        case 'visible':
+            map_visible = 'nonvisible';
+            break;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -49,7 +82,11 @@ sMap = surface_create(mmsize,mmsize);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_surface(sMap,10,10);
+            <string>if(map_visible == 'visible') {
+    draw_set_alpha(.6);
+    draw_surface(sMap, 150, 75);
+    draw_set_alpha(1);
+}
 </string>
           </argument>
         </arguments>
@@ -74,10 +111,23 @@ sMap = surface_create(mmsize,mmsize);
             <kind>1</kind>
             <string>surface_set_target(sMap);
 
-with(obj_player){
-    draw_sprite(sprite_index,image_index,other.mmsize / 2,other.mmsize / 2);
+p_offx = (obj_player.x / view_wview[1]) * mmsize;
+p_offy = (obj_player.y / view_hview[1]) * mmsize;
+
+draw_background_tiled(bg_Minimap, -p_offx, -p_offy);
+
+with(obj_minimap_visible) {
+    draw_sprite_ext(minimap_sprite, image_index, ((x / view_wview[1]) * other.mmsize) - other.p_offx + (other.mmsize / 2), ((y / view_hview[1]) * other.mmsize) - other.p_offy + (other.mmsize / 2), 1, 1, 0, c_white, 1);
+    
 }
 
+with(obj_player) {
+    draw_sprite(spr_player_minimap,image_index,other.mmsize / 2, other.mmsize / 2);
+}
+
+draw_set_blend_mode(bm_subtract);
+draw_sprite_stretched(spr_minimap_sub, 0,0,0,mmsize,mmsize);
+draw_set_blend_mode(bm_normal);
 
 surface_reset_target();
 </string>

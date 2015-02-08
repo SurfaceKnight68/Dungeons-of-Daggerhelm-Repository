@@ -42,7 +42,7 @@
   </backgrounds>
   <views>
     <view visible="-1" objName="obj_view_follow" xview="0" yview="0" wview="300" hview="300" xport="0" yport="0" wport="900" hport="900" hborder="150" vborder="150" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="450" hview="450" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -3387,12 +3387,12 @@
     <instance objName="obj_Evil_Ranger" x="480" y="752" name="inst_235EB25D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Evil_Ranger" x="400" y="864" name="inst_4860C011" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Evil_Ranger" x="720" y="1072" name="inst_E06805AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_portal_blue" x="1552" y="1617" name="inst_4A49203A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="1544" y="1624" name="inst_5E3FB98F" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_lava_golem_boss;&#xA;&#xA;    dest_x = 352;&#xA;    dest_y = 272;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shadowsoul" x="1632" y="1728" name="inst_0FFF7430" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shadowsoul" x="1632" y="1520" name="inst_78DE8994" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shadowsoul" x="1456" y="1648" name="inst_924D0023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brickwall" x="2016" y="1760" name="inst_2020EEDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="1544" y="1624" name="inst_5E3FB98F" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_lava_golem_boss;&#xA;&#xA;    dest_x = 352;&#xA;    dest_y = 272;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_portal_green" x="1552" y="1616" name="inst_33F0E071" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_spawn" x="1920" y="3056" w="16" h="16" xo="0" yo="32" id="10006421" name="inst_ECF73532" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
