@@ -342,6 +342,7 @@
         <sprite>sprites\spr_DF_bridge</sprite>
         <sprite>sprites\spr_gravesigns</sprite>
         <sprite>sprites\spr_skull</sprite>
+        <sprite>sprites\spr_skull_staff</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -389,7 +390,7 @@
       </sprites>
     </sprites>
     <sprites name="STORY MODE">
-      <sprites name="Tirranus">
+      <sprites name="Tyrranus">
         <sprite>sprites\spr_tyrranus_young_L</sprite>
         <sprite>sprites\spr_tyrranus_young_R</sprite>
       </sprites>
@@ -430,6 +431,13 @@
       <background>background\bg_undercore_lava_2</background>
       <background>background\bg_undercore_lava_3</background>
     </backgrounds>
+    <backgrounds name="Death Foundry">
+      <background>background\bg_death_foundry</background>
+      <background>background\bg_death_foundry_large</background>
+      <background>background\bg_death_foundry_soil</background>
+      <background>background\bg_death_foundry_soil2</background>
+      <background>background\bg_death_foundry_soil3</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -462,6 +470,7 @@
     <font>fonts\fnt_HUD</font>
     <font>fonts\fnt_damage_counter</font>
     <font>fonts\fnt_menu</font>
+    <font>fonts\fnt_textbox</font>
   </fonts>
   <objects name="objects">
     <objects name="Tiles">
@@ -734,6 +743,7 @@
     <room>rooms\rm_black_knight_boss</room>
     <room>rooms\rm_undercore</room>
     <room>rooms\rm_pyromancer_boss</room>
+    <room>rooms\rm_death_foundry</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">41964.0560678704</constant>

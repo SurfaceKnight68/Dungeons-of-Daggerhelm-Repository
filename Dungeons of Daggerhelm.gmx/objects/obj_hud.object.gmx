@@ -233,8 +233,13 @@ draw_set_color(c_black);
 draw_set_color(c_silver);
 draw_set_alpha(1);
 draw_set_font(fnt_HUD);
-
-draw_text(320,700,"STRENGTH: " + string(global.total_str));
+if(global.identity == 0 || global.identity == 2 || global.identity == 3) {
+    draw_text(320,700,"STRENGTH: " + string(global.total_str));
+} else if(global.identity == 4) {
+    draw_text(320,700,"INTELLECT: " + string(global.total_str));
+} else if(global.identity == 1) {
+    draw_text(320,700,"DEXTERITY: " + string(global.total_str));
+}
 draw_text(320,750,"WISDOM: " + string(global.total_wis));
 draw_text(320,800,"FORTITUDE: " + string(global.total_for));
 draw_text(320,850,"ARMOR: " + string(global.total_armor));
