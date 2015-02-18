@@ -266,15 +266,39 @@
         </sprites>
         <sprites name="Risen Skeleton">
           <sprite>sprites\spr_R_S_right</sprite>
+          <sprite>sprites\spr_R_S_idle_right</sprite>
+          <sprite>sprites\spr_R_S_idle_left</sprite>
           <sprite>sprites\spr_R_S_left</sprite>
         </sprites>
         <sprites name="Valerikye">
           <sprite>sprites\spr_VK_left</sprite>
+          <sprite>sprites\spr_VK_right</sprite>
         </sprites>
         <sprites name="Risen Corpse">
-          <sprite>sprites\spri_R_C_right</sprite>
+          <sprite>sprites\spr_R_C_right</sprite>
           <sprite>sprites\spr_R_C_left</sprite>
+          <sprite>sprites\spr_R_C_idle_R</sprite>
+          <sprite>sprites\spr_R_C_idle_L</sprite>
         </sprites>
+        <sprites name="Soulmass">
+          <sprite>sprites\spr_soulmass_right</sprite>
+          <sprite>sprites\spr_soulmass_left</sprite>
+        </sprites>
+        <sprites name="Half-Dead Cultist">
+          <sprite>sprites\spr_HD_C_right</sprite>
+          <sprite>sprites\spr_HD_C_left</sprite>
+          <sprite>sprites\spr_HD_C_idle_R</sprite>
+          <sprite>sprites\spr_HD_C_idle_L</sprite>
+        </sprites>
+        <sprites name="Matured Soulmass">
+          <sprite>sprites\spr_matured_soulmass_right</sprite>
+          <sprite>sprites\spr_MS_idle_right</sprite>
+          <sprite>sprites\spr_MS_idle_left</sprite>
+          <sprite>sprites\spr_matured_soulmass_left</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Necromancer">
+        <sprite>sprites\spr_necromancer_illusion</sprite>
       </sprites>
     </sprites>
     <sprites name="World_Objects">
@@ -291,6 +315,7 @@
       <sprites name="Global">
         <sprite>sprites\spr_noticed</sprite>
         <sprite>sprites\spr_portal_blue</sprite>
+        <sprite>sprites\spr_portal_cyan</sprite>
         <sprite>sprites\spr_grasslands_boss</sprite>
         <sprite>sprites\spr_portal_red</sprite>
         <sprite>sprites\spr_portal_maroon</sprite>
@@ -343,6 +368,11 @@
         <sprite>sprites\spr_gravesigns</sprite>
         <sprite>sprites\spr_skull</sprite>
         <sprite>sprites\spr_skull_staff</sprite>
+        <sprite>sprites\spr_DF_walkway</sprite>
+        <sprite>sprites\spr_DF_steps</sprite>
+        <sprite>sprites\spr_DF_pillar</sprite>
+        <sprite>sprites\spr_DF_doorway</sprite>
+        <sprite>sprites\spr_summoning_circle</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -375,6 +405,7 @@
     <sprites name="Warp">
       <sprite>sprites\spr_player_start</sprite>
       <sprite>sprites\spr_player_warp</sprite>
+      <sprite>sprites\spr_collision</sprite>
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\spr_inv_slot</sprite>
@@ -444,6 +475,7 @@
     <scripts name="Player Scripts">
       <script>scripts\scr_draw_shadow.gml</script>
       <script>scripts\scr_draw_shadow_tree.gml</script>
+      <script>scripts\scr_draw_shadow_bridge.gml</script>
       <script>scripts\scr_player_move.gml</script>
       <script>scripts\scr_player_attack.gml</script>
     </scripts>
@@ -546,6 +578,19 @@
         <objects name="Burned Soul">
           <object>objects\obj_burned_soul</object>
         </objects>
+        <objects name="Necromancer Stuff">
+          <object>objects\obj_necromancer_illusion</object>
+        </objects>
+        <objects name="Death Foundry">
+          <object>objects\obj_DF_Valerikye</object>
+          <object>objects\obj_risen_skeleton</object>
+          <object>objects\obj_matured_soulmass</object>
+          <object>objects\obj_risen_corpse</object>
+          <object>objects\obj_frost_atronauch</object>
+          <object>objects\obj_half_dead_cultist</object>
+          <object>objects\obj_soulmass</object>
+          <object>objects\obj_summoning_circle</object>
+        </objects>
       </objects>
       <objects name="Guides">
         <object>objects\obj_NPC_controls_guide</object>
@@ -629,6 +674,12 @@
         <object>objects\obj_lava_geyser</object>
         <object>objects\obj_stalagmite</object>
       </objects>
+      <objects name="Death Foundry">
+        <object>objects\obj_DF_bridge_base</object>
+        <object>objects\obj_DF_bridge</object>
+        <object>objects\obj_necromancy_obelisk</object>
+        <object>objects\obj_skull_staff</object>
+      </objects>
     </objects>
     <objects name="Utility">
       <object>objects\obj_cursor</object>
@@ -654,12 +705,17 @@
           <object>objects\obj_portal_green</object>
           <object>objects\obj_portal_red</object>
           <object>objects\obj_portal_black</object>
+          <object>objects\obj_portal_cyan</object>
           <object>objects\obj_grassland_portal</object>
           <object>objects\obj_snowy_mtns_portal</object>
         </objects>
       </objects>
       <objects name="Generation">
-        <object>objects\obj_loading</object>
+        <objects name="General">
+          <object>objects\obj_loading</object>
+          <object>objects\obj_loading_bar</object>
+          <object>objects\obj_loading_object</object>
+        </objects>
         <objects name="Grassland">
           <object>objects\obj_Grid</object>
           <object>objects\obj_Grid_Small</object>
@@ -671,28 +727,35 @@
           <object>objects\obj_grass_spawn_ctrl</object>
         </objects>
         <objects name="Snowy Mountains">
-          <object>objects\obj_Snow_Grid</object>
-          <object>objects\obj_Snow_Grid_small</object>
-          <object>objects\obj_snow_spawner</object>
+          <object>objects\obj_snow_grid</object>
+          <object>objects\obj_snow_grid_small</object>
+          <object>objects\obj_snow_spawner_1</object>
           <object>objects\obj_snow_spawner_2</object>
           <object>objects\obj_snow_spawner_3</object>
           <object>objects\obj_snow_spawner_4</object>
           <object>objects\obj_snow_spawn_ctrl</object>
         </objects>
         <objects name="Undercore">
-          <object>objects\obj_Ash_Grid</object>
-          <object>objects\obj_Lava_Pool_spawner</object>
-          <object>objects\obj_Ash_Grid_small</object>
-          <object>objects\obj_Lava_Grid</object>
-          <object>objects\obj_undercore_spawner</object>
+          <object>objects\obj_undercore_grid</object>
+          <object>objects\obj_undercore_grid_small</object>
+          <object>objects\obj_lava_pool_spawner</object>
+          <object>objects\obj_undercore_spawner_1</object>
           <object>objects\obj_undercore_spawner_2</object>
           <object>objects\obj_undercore_spawner_3</object>
           <object>objects\obj_undercore_spawner_4</object>
-          <object>objects\obj_undercore_spawner_5</object>
           <object>objects\obj_undercore_spawn_ctrl</object>
         </objects>
-        <object>objects\obj_loading_object</object>
-        <object>objects\obj_loading_bar</object>
+        <objects name="Death Foundry">
+          <object>objects\obj_DF_grid</object>
+          <object>objects\obj_DF_grid_small</object>
+          <object>objects\obj_DF_grid_small2</object>
+          <object>objects\obj_DF_spawner_1</object>
+          <object>objects\obj_DF_spawner_2</object>
+          <object>objects\obj_DF_spawner_3</object>
+          <object>objects\obj_DF_spawner_4</object>
+          <object>objects\obj_DF_spawner_5</object>
+          <object>objects\obj_DF_spawn_ctrl</object>
+        </objects>
       </objects>
       <objects name="Pause Menu">
         <object>objects\obj_pause</object>

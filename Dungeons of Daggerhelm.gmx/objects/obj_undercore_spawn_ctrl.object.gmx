@@ -25,35 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 60;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(x,y,obj_undercore_spawner);
-instance_create(x,y,obj_undercore_spawner_2);
-instance_create(x,y,obj_undercore_spawner_3);
-instance_create(x,y,obj_undercore_spawner_4);
-instance_create(x,y,obj_undercore_spawner_5);
-alarm[4] = 0;
+            <string>alarm[1] = 60;
 </string>
           </argument>
         </arguments>
@@ -76,8 +48,11 @@ alarm[4] = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,obj_Lava_Pool_spawner);
-alarm[4] = 30;
+            <string>instance_create(x,y,obj_lava_pool_spawner);
+instance_create(x,y,obj_undercore_spawner_1);
+instance_create(x,y,obj_undercore_spawner_2);
+instance_create(x,y,obj_undercore_spawner_3);
+instance_create(x,y,obj_undercore_spawner_4);
 alarm[3] = 0;
 </string>
           </argument>
@@ -101,7 +76,7 @@ alarm[3] = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,obj_Lava_Grid);
+            <string>instance_create(x,y,obj_undercore_grid_small);
 alarm[3] = 30;
 alarm[2] = 0;
 </string>
@@ -126,33 +101,9 @@ alarm[2] = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,obj_Ash_Grid_small);
+            <string>instance_create(x,y,obj_undercore_grid);
 alarm[2] = 30;
 alarm[1] = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(x,y,obj_Ash_Grid);
-alarm[1] = 40;
 </string>
           </argument>
         </arguments>
@@ -176,9 +127,8 @@ alarm[1] = 40;
           <argument>
             <kind>1</kind>
             <string>instance_deactivate_object(obj_lava_pool);
-instance_deactivate_object(obj_red_gromling);
 
-instance_activate_region(view_xview[0]-20, view_yview[0]-20, view_wview[0]+20, view_hview[0]+20, true);
+instance_activate_region(view_xview[0] - 20, view_yview[0] - 20, view_wview[0] + 20, view_hview[0] + 20, true);
 </string>
           </argument>
         </arguments>

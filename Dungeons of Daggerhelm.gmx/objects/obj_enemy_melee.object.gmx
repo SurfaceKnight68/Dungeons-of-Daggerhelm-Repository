@@ -59,6 +59,12 @@ if(instance_exists(obj_black_knight)) {
         instance_destroy();
     }
 }
+
+if(instance_exists(obj_frost_atronauch)) {
+    if(distance_to_object(obj_frost_atronauch) &gt; 75) {
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -54,6 +54,33 @@
     <instance objName="obj_loading" x="64" y="32" name="inst_B5C9DF06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loading_bar" x="192" y="32" name="inst_E8248D29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loading_object" x="256" y="0" name="inst_E1C74C34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_reposition" x="0" y="128" name="inst_29DF05E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_necromancer_illusion" x="3285" y="4478" name="inst_4AE46371" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="147" y="3301" name="inst_D616969B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="439" y="3301" name="inst_D692D076" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="731" y="3301" name="inst_467DB6F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="1023" y="3301" name="inst_914217D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="1315" y="3301" name="inst_03A4F05B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="1607" y="3301" name="inst_2254BF6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="1899" y="3301" name="inst_76C45D9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="2191" y="3301" name="inst_A310BE9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="2483" y="3301" name="inst_C8490A45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="2775" y="3301" name="inst_EFDF72E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="3067" y="3301" name="inst_F22C3171" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="3359" y="3301" name="inst_0E5447DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="3651" y="3301" name="inst_EB596AE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="3943" y="3301" name="inst_53B5690B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="4236" y="3301" name="inst_442F51B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="4527" y="3301" name="inst_C0377D3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="4819" y="3301" name="inst_A928F70F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="5111" y="3301" name="inst_9AA2905B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="5403" y="3301" name="inst_70F07E27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="5695" y="3301" name="inst_5C42A344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="5987" y="3301" name="inst_97E9544E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_bridge" x="6279" y="3301" name="inst_DE58FC69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_spawn_ctrl" x="384" y="0" name="inst_43970F16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_summoning_circle" x="3840" y="3520" name="inst_AA1D36B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_summoning_circle" x="1152" y="3521" name="inst_CA5EA185" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_death_foundry_large" x="0" y="0" w="128" h="128" xo="0" yo="0" id="10029527" name="inst_A7CA6D5A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

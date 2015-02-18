@@ -7,22 +7,22 @@ can_shoot = false;
 can_melee = false;
 if(keyboard_check(ord("A"))) {
     sprite_index = spr_ghost_left;
-    phy_position_x -= move_speed;            
+    phy_position_x -= move_speed*2;            
     }
     
 if(keyboard_check(ord("D"))) {
     sprite_index = spr_ghost_right;
-    phy_position_x += move_speed;
+    phy_position_x += move_speed*2;
     }
 
 if(keyboard_check(ord("W"))) {
     sprite_index = spr_ghost_up;
-    phy_position_y -= move_speed;
+    phy_position_y -= move_speed*2;
     }
 
 if(keyboard_check(ord("S"))) {
     sprite_index = spr_ghost_down;
-    phy_position_y += move_speed;
+    phy_position_y += move_speed*2;
     }
 
 

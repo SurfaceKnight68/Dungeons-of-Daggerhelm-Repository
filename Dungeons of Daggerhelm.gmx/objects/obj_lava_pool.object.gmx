@@ -50,6 +50,10 @@ image_speed = choose(0.02,0.03,0.04);
             <string>if(distance_to_object(obj_player) &lt;= 100) {
     instance_destroy();
 }
+
+if(distance_to_object(obj_necromancer_illusion) &lt;= 60) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

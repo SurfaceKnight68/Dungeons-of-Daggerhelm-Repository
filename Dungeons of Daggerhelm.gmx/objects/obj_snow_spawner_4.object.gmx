@@ -48,13 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 3;
+            <string>alarm[0] = 2;
 player_dist = distance_to_object(obj_player);
-// Place Enemies
-owl_amount = instance_number(obj_pos_owl);
-penguin_amount = instance_number(obj_z_penguin);
-slain_hero_amount = instance_number(obj_slain_hero);
-burrower_amount = instance_number(obj_ice_burrower);
 //Keep creating new coordinates until I find a place free from any object
 do
     {
@@ -64,16 +59,14 @@ do
     yy=random(room_height); //Set random y
     }
 until place_empty(xx,yy);
-if(player_dist &gt;= 800) {
-    if(player_dist &lt;= 1600) {
-    // Check enemy amounts
-   
-    if(burrower_amount &lt; 60) {
-        instance_create(xx,yy,obj_ice_burrower); //Create object
-        }
-    } 
+if(player_dist &gt;= 400) {
+    // Check if there are 30 rangers
+    if(instance_number(obj_z_penguin) &lt; 200) {    
+        instance_create(xx,yy,obj_z_penguin);
+    } else {
+        // do nothing
+    }
 }
-
 </string>
           </argument>
         </arguments>

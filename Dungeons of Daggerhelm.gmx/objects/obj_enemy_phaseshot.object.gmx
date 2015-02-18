@@ -53,6 +53,12 @@
         instance_destroy();
     }
 }
+
+if(instance_exists(obj_half_dead_cultist)) {
+    if(distance_to_object(obj_half_dead_cultist) &gt; 90) {
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -25,14 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mmsize = 200;
-sMap = surface_create(mmsize,mmsize);
+            <string>TILESIZE = 16;
+cols = 2 + (room_width div TILESIZE);
+rows = 2 + (room_height div TILESIZE);
+// +2 size to avoid having to cheeck for borders when iterating in scr_iterate()
+grid = ds_grid_create(cols, rows); // Used to store the raw, non-iterated grid
+final_grid = ds_grid_create(cols, rows); // The final grid after iterations used to draw
+wall_chance = 5; // 10% chance to generate wall piece by default
+iterations = 1; // How many iterations to do on the grid
+// Generate new grid
+alarm[0] = 2;
+scr_generate();
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,7 +58,35 @@ sMap = surface_create(mmsize,mmsize);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_surface(sMap,10,10);
+            <string>alarm[0] = 2;
+instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Handles random terrain events
+randomize();
+
+big_dirt = random(100);
+small_dirt = random(100);
 </string>
           </argument>
         </arguments>
@@ -72,14 +109,23 @@ sMap = surface_create(mmsize,mmsize);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(sMap);
+            <string>/// Draw the final_grid
 
-with(obj_player){
-    draw_sprite(sprite_index,image_index,other.mmsize / 2,other.mmsize / 2);
+for(var c = 1; c &lt; cols-1; c++)
+{
+    for(var r = 1; r &lt; rows-1; r++)
+    {
+        if (final_grid[# c, r] == 1) {
+            
+            tile_add(bg_death_foundry_soil3, 0, 0, 48, 48, (c-1)*TILESIZE, (r-1)*TILESIZE, 0);
+            
+        }    
+    }
 }
 
 
-surface_reset_target();
+scr_iterate(iterations);
+
 </string>
           </argument>
         </arguments>

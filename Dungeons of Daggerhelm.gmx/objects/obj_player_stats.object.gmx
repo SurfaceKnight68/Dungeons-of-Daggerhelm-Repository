@@ -103,9 +103,9 @@ if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.ml
     global.player_xp = 0;
     global.player_hp = global.player_mhp;
     global.player_mp = global.player_mmp;
-    global.bonus_str += 2;
-    global.bonus_wis += 1;
-    global.bonus_for += 1;
+    global.bonus_str += 4;
+    global.bonus_wis += 2;
+    global.bonus_for += 2;
     
 }
 

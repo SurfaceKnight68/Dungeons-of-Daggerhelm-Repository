@@ -25,12 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>alarm[0] = room_speed/3;
+</string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -47,9 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spike_amount = instance_number(obj_stalagmite);
-
-
+            <string>alarm[0] = 2;
+player_dist = distance_to_object(obj_player);
+//Keep creating new coordinates until I find a place free from any object
 do
     {
     var xx,yy;
@@ -58,12 +59,16 @@ do
     yy=random(room_height); //Set random y
     }
 until place_empty(xx,yy);
-    if(spike_amount &lt; 250) {
+if(player_dist &gt;= 400) {
+    // Check if there are 30 rangers
+    if(instance_number(obj_red_gromling) &lt; 250) {
         //The loop has ended, create the enemy if there are less than 30
-        instance_create(xx,yy,obj_stalagmite); //Create object
-   
-}
+        instance_create(xx,yy,obj_red_gromling); //Create object
+    } else {
+        // do nothing
+    }
     
+}
 </string>
           </argument>
         </arguments>
