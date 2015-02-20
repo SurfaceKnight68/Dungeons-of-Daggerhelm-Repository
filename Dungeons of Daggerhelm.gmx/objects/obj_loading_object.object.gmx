@@ -50,6 +50,8 @@ instance_deactivate_object(obj_hud);
           <argument>
             <kind>1</kind>
             <string>instance_activate_object(obj_hud);
+instance_create(x,y,obj_minimap_visible);
+instance_create(x,y,obj_Minimap);
 instance_destroy();
 </string>
           </argument>

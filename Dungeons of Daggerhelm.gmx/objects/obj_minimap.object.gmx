@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-10</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -85,9 +85,11 @@ map_visible = 'nonvisible';
           <argument>
             <kind>1</kind>
             <string>if(map_visible == 'visible') {
-    draw_set_alpha(.5);
-    draw_surface(sMap, 150, 75);
-    draw_set_alpha(1);
+   
+        draw_set_alpha(.5);
+        draw_surface(sMap, 150, 75);
+        draw_set_alpha(1);
+    
 }
 </string>
           </argument>
@@ -113,8 +115,8 @@ map_visible = 'nonvisible';
             <kind>1</kind>
             <string>surface_set_target(sMap);
 
-p_offx = (obj_player.x / view_wview[1]) * mmsize;
-p_offy = (obj_player.y / view_hview[1]) * mmsize;
+    p_offx = (obj_player.x / view_wview[1]) * mmsize;
+    p_offy = (obj_player.y / view_hview[1]) * mmsize;
 
 draw_background_tiled(bg_Minimap, -p_offx, -p_offy);
 
@@ -125,7 +127,8 @@ with(obj_minimap_visible) {
 
 with(obj_player) {
     draw_sprite(spr_player_minimap,image_index,other.mmsize / 2, other.mmsize / 2);
-}
+    }
+
 
 draw_set_blend_mode(bm_subtract);
 draw_sprite_stretched(spr_minimap_sub, 0,0,0,mmsize,mmsize);

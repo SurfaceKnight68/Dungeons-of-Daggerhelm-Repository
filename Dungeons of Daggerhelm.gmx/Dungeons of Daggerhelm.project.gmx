@@ -322,6 +322,7 @@
         <sprite>sprites\spr_portal_black</sprite>
         <sprite>sprites\spr_portal_green</sprite>
         <sprite>sprites\spr_health_globe</sprite>
+        <sprite>sprites\spr_guide_arrow</sprite>
       </sprites>
       <sprites name="Projectiles">
         <sprites name="Enemy_Projectiles">
@@ -373,6 +374,11 @@
         <sprite>sprites\spr_DF_pillar</sprite>
         <sprite>sprites\spr_DF_doorway</sprite>
         <sprite>sprites\spr_summoning_circle</sprite>
+        <sprite>sprites\spr_cave_entrance</sprite>
+        <sprites name="Death Foundry mines">
+          <sprite>sprites\spr_DF_mines_floor</sprite>
+          <sprite>sprites\spr_DF_mines_wall</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -679,6 +685,15 @@
         <object>objects\obj_DF_bridge</object>
         <object>objects\obj_necromancy_obelisk</object>
         <object>objects\obj_skull_staff</object>
+        <object>objects\obj_DF_entrance</object>
+        <object>objects\obj_DF_wall</object>
+        <object>objects\obj_DF_stairs</object>
+        <object>objects\obj_mineshaft_entrance</object>
+        <object>objects\obj_guide_arrow</object>
+        <objects name="Death Foundry mines">
+          <object>objects\obj_DF_mines_floor</object>
+          <object>objects\obj_DF_mines_wall</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Utility">
@@ -715,6 +730,11 @@
           <object>objects\obj_loading</object>
           <object>objects\obj_loading_bar</object>
           <object>objects\obj_loading_object</object>
+          <objects name="Miscillaneous">
+            <object>objects\obj_loading_long</object>
+            <object>objects\obj_loading_graph_long</object>
+            <object>objects\obj_loading_object_long</object>
+          </objects>
         </objects>
         <objects name="Grassland">
           <object>objects\obj_Grid</object>
@@ -755,6 +775,10 @@
           <object>objects\obj_DF_spawner_4</object>
           <object>objects\obj_DF_spawner_5</object>
           <object>objects\obj_DF_spawn_ctrl</object>
+          <objects name="Death Foundry mines">
+            <object>objects\obj_DF_mines_spawn_ctrl</object>
+            <object>objects\obj_DF_mines_spawner</object>
+          </objects>
         </objects>
       </objects>
       <objects name="Pause Menu">
@@ -807,6 +831,9 @@
     <room>rooms\rm_undercore</room>
     <room>rooms\rm_pyromancer_boss</room>
     <room>rooms\rm_death_foundry</room>
+    <rooms name="Death Foundry rooms">
+      <room>rooms\rm_DF_mine</room>
+    </rooms>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">41964.0560678704</constant>

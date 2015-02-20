@@ -79,8 +79,26 @@
     <instance objName="obj_DF_bridge" x="5987" y="3301" name="inst_97E9544E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_bridge" x="6279" y="3301" name="inst_DE58FC69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_spawn_ctrl" x="384" y="0" name="inst_43970F16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_summoning_circle" x="3840" y="3520" name="inst_AA1D36B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_summoning_circle" x="4936" y="3529" name="inst_AA1D36B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_summoning_circle" x="1152" y="3521" name="inst_CA5EA185" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_entrance" x="3265" y="78" name="inst_F1D6F4C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="2997" y="78" name="inst_F182F4F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="2863" y="78" name="inst_12457301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3533" y="78" name="inst_AE11C3A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3667" y="78" name="inst_33FF5967" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3131" y="211" name="inst_DA6DD4D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3399" y="210" name="inst_8B5B6824" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_stairs" x="3265" y="382" name="inst_A98C9476" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3131" y="323" name="inst_B0C91430" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3399" y="323" name="inst_1F84A79B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="2729" y="78" name="inst_62E09A09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3801" y="78" name="inst_F1FE3901" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_stairs" x="3265" y="230" name="inst_6E18CF1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3131" y="446" name="inst_BACC190D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_wall" x="3399" y="446" name="inst_6C73FD36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skull_staff" x="3184" y="520" name="inst_7CFA271C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_skull_staff" x="3344" y="519" name="inst_D9F0A6FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mineshaft_entrance" x="5438" y="1471" name="inst_6D0F538E" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_mine;&#xA;&#xA;    dest_x = room_width/2;&#xA;    dest_y = room_height/2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_death_foundry_large" x="0" y="0" w="128" h="128" xo="0" yo="0" id="10029527" name="inst_A7CA6D5A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

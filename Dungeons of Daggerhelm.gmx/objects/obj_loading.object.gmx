@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 480;
+            <string>image_speed = 0;
+alarm[0] = 480;
 
 x = obj_player.x;
 y = obj_player.y;
 
-obj_Minimap.map_visible = 'nonvisible';
 </string>
           </argument>
         </arguments>

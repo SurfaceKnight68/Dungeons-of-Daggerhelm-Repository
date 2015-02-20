@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 60;
+            <string>alarm[0] = 120;
 </string>
           </argument>
         </arguments>
@@ -49,7 +49,6 @@
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
-alarm[0] = 0;
 </string>
           </argument>
         </arguments>
@@ -72,9 +71,8 @@ alarm[0] = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>skullstaff_amount = instance_number(obj_skull_staff);
-
-
+            <string>player_dist = distance_to_object(obj_player);
+//Keep creating new coordinates until I find a place free from any object
 do
     {
     var xx,yy;
@@ -83,14 +81,19 @@ do
     yy=random(room_height); //Set random y
     }
 until place_empty(xx,yy);
-    
-            if(skullstaff_amount &lt; 200) {
-            //The loop has ended, create the enemy if there are less than 30
-            instance_create(xx,yy,obj_skull_staff); //Create object
-        
-}
+if(player_dist &gt;= 400) {
 
+    if(yy &gt; 1600 &amp;&amp; yy &lt; 3000 &amp;&amp; xx &gt; 3200) {
+    // Check if there are 30 rangers
+        if(instance_number(obj_mineshaft_entrance) &lt; 1) {
+                //The loop has ended, create the enemy if there are less than 30
+            instance_create(xx,yy,obj_mineshaft_entrance); //Create object
+        } else {
+        // do nothing
+        }
     
+    }
+}
 </string>
           </argument>
         </arguments>

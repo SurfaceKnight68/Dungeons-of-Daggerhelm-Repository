@@ -157,7 +157,7 @@ if(change_chance &lt;= 30) {
           <argument>
             <kind>1</kind>
             <string>alarm[0] = random(100);
-dir = choose(0,90,180,270,360);
+dir = choose(0,90,180,270);
 </string>
           </argument>
         </arguments>
@@ -267,7 +267,7 @@ randomize();
 shoot = random(1000);
 
 if(agressive = 0) {
-    if(dir == 0 || dir == 360) {
+    if(dir == 0) {
     sprite_index = spr_HD_C_left;
     phy_position_y -= 0.5;
 }
@@ -334,6 +334,30 @@ with(arrow2) {
         }
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_DF_mines_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = random(100);
+dir = choose(0,90,180,270);
 </string>
           </argument>
         </arguments>
