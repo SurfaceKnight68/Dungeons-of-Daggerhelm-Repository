@@ -22,6 +22,8 @@ if(file_exists("savedata.ini")) {
     global.bonus_pri = ini_read_real("Save1","bonusprimary",0);
     global.bonus_sec = ini_read_real("Save1","bonussecondary",0);
     
+    global.coin_num = ini_read_real("Save1","coinamount",0);
+    
     ini_close();
     room_goto(rm_broken_shield_castle);
 } else {

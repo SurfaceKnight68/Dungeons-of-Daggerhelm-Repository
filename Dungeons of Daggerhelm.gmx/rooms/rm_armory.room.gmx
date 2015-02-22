@@ -99,7 +99,6 @@
     <instance objName="obj_brickwall" x="64" y="160" name="inst_586F16F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brickwall" x="336" y="400" name="inst_2E888862" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="256" y="352" name="inst_5E78A35D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_small_sword" x="119" y="174" name="inst_CA63550A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brickwall" x="320" y="400" name="inst_850146CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brickwall" x="304" y="400" name="inst_7738E532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="0" y="0" name="inst_AD44BCD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -156,10 +155,6 @@
     <instance objName="obj_weapon_rack" x="320" y="192" name="inst_771FDF76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="232" y="360" name="inst_B9A25A00" locked="0" code="event_inherited();&#xA;dest_room = rm_broken_shield_castle;&#xA;&#xA;dest_x = 192;&#xA;dest_y = 1088;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_loot_chest" x="352" y="176" name="inst_72A9D906" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_splintered_bow" x="310" y="173" name="inst_54C369BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_crude_talisman" x="184" y="175" name="inst_4CFE3272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_simple_mace" x="247" y="171" name="inst_4F5DDCE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_potion" x="400" y="208" name="inst_2F417045" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_spawn" x="0" y="464" w="16" h="16" xo="32" yo="16" id="10005238" name="inst_2FEA60A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

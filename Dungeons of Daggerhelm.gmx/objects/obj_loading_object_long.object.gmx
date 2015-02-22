@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = room_speed * 16;
+            <string>alarm[0] = room_speed * 15;
 instance_deactivate_object(obj_hud);
 </string>
           </argument>

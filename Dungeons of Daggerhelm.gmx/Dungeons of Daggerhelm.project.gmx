@@ -14,6 +14,7 @@
     <sounds name="Sounds">
       <sound>sound\snd_hit</sound>
       <sound>sound\snd_lvl_up</sound>
+      <sound>sound\snd_pickup</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -112,6 +113,15 @@
           <sprite>sprites\spr_player_thau_left</sprite>
           <sprite>sprites\spr_player_thau_right</sprite>
         </sprites>
+        <sprites name="Pyromancer">
+          <sprite>sprites\spr_pyro_right</sprite>
+          <sprite>sprites\spr_pyro_down</sprite>
+          <sprite>sprites\spr_pyro_up</sprite>
+          <sprite>sprites\spr_pyro_left</sprite>
+        </sprites>
+        <sprites name="Swaiyar">
+          <sprite>sprites\spr_swaiyar_right</sprite>
+        </sprites>
       </sprites>
       <sprites name="NPCs">
         <sprites name="Holly_Vendor">
@@ -205,10 +215,7 @@
             </sprites>
           </sprites>
           <sprites name="Pyromancer">
-            <sprite>sprites\spr_pyro_right</sprite>
-            <sprite>sprites\spr_pyro_down</sprite>
-            <sprite>sprites\spr_pyro_up</sprite>
-            <sprite>sprites\spr_pyro_left</sprite>
+            <sprite>sprites\spr_pyromancer</sprite>
           </sprites>
         </sprites>
         <sprites name="Slain Hero">
@@ -414,7 +421,6 @@
       <sprite>sprites\spr_collision</sprite>
     </sprites>
     <sprites name="HUD">
-      <sprite>sprites\spr_inv_slot</sprite>
       <sprites name="Minimap">
         <sprite>sprites\spr_player_minimap</sprite>
         <sprite>sprites\spr_Unknown</sprite>
@@ -424,6 +430,12 @@
       </sprites>
       <sprites name="HUD Faces">
         <sprite>sprites\spr_hud_faces</sprite>
+      </sprites>
+      <sprites name="Inventory">
+        <sprite>sprites\spr_inv_slot</sprite>
+        <sprite>sprites\spr_inventory_border</sprite>
+        <sprite>sprites\spr_gold_coin</sprite>
+        <sprite>sprites\spr_HUD_coin</sprite>
       </sprites>
     </sprites>
     <sprites name="STORY MODE">
@@ -617,10 +629,10 @@
     </objects>
     <objects name="HUD">
       <object>objects\obj_hud</object>
-      <object>objects\obj_inventory_box</object>
-      <object>objects\obj_sm_sw_box</object>
-      <object>objects\obj_chest_box</object>
       <object>objects\obj_recall_button</object>
+      <objects name="Inventory">
+        <object>objects\obj_coin</object>
+      </objects>
     </objects>
     <objects name="World_Objects">
       <objects name="Spawn_Level">
@@ -804,17 +816,6 @@
       </objects>
       <object>objects\obj_player_stats</object>
       <object>objects\obj_enemy_stats</object>
-    </objects>
-    <objects name="Item">
-      <object>objects\obj_item_parent</object>
-      <objects name="Weapons">
-        <object>objects\obj_small_sword</object>
-        <object>objects\obj_crude_talisman</object>
-        <object>objects\obj_simple_mace</object>
-        <object>objects\obj_splintered_bow</object>
-      </objects>
-      <object>objects\obj_item</object>
-      <object>objects\obj_potion</object>
     </objects>
   </objects>
   <rooms name="rooms">

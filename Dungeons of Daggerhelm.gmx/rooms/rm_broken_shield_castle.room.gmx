@@ -60,26 +60,9 @@
     <instance objName="obj_portal_blue" x="160" y="792" name="inst_991D9B3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ps" x="32" y="16" name="inst_DCC623B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_controller_spawn" x="16" y="16" name="inst_724DC90B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sm_sw_box" x="46" y="0" name="inst_EE538BDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="163" y="872" name="inst_55A96B1A" locked="0" code="&#xA;event_inherited();&#xA;dest_room = rm_dungeon;&#xA;randomize();&#xA;location = random(25);&#xA;&#xA;if(location &lt; 5) {&#xA;    dest_x = 224;&#xA;    dest_y = 2496;&#xA;    &#xA;} else if(location &gt;= 5 &amp;&amp; location &lt;= 10) {&#xA;&#xA;    dest_x = 1904;&#xA;    dest_y = 3024;&#xA;    &#xA;} else if(location &gt;= 10 &amp;&amp; location &lt; 15) {&#xA;    dest_x = 144;&#xA;    dest_y = 224;&#xA;    &#xA;} else if(location &gt;= 15 &amp;&amp; location &lt; 20) {&#xA;    dest_x = 176;&#xA;    dest_y = 1280;&#xA;} else if(location &gt;= 20 &amp;&amp; location &lt; 25) {&#xA;    dest_x = 2064;&#xA;    dest_y = 2784;&#xA;&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_Astor" x="784" y="880" name="inst_E3AF83F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="154" y="19" name="inst_D72950E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="134" y="19" name="inst_76A30170" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="194" y="0" name="inst_673407A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="174" y="0" name="inst_F412A79E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="154" y="0" name="inst_C45805FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="134" y="0" name="inst_572A3107" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="174" y="19" name="inst_F3A4A7EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_armory_door" x="160" y="880" name="inst_8181D8CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="106" y="19" name="inst_2F0CD549" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="86" y="19" name="inst_35A6F3D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="66" y="19" name="inst_4DE612BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="46" y="19" name="inst_E10205A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest_box" x="194" y="19" name="inst_20D08828" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="106" y="0" name="inst_66F14E99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="86" y="0" name="inst_050470FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="66" y="0" name="inst_6932E80C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_item" x="0" y="32" name="inst_32EE03D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="16" y="0" name="inst_4E9911BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_sleeping_colossus" x="315" y="1148" name="inst_DA96AF11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_armory_door" x="147" y="1072" name="inst_7643DD2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -838,6 +821,7 @@
     <instance objName="obj_portal_cyan" x="160" y="552" name="inst_E1D68BC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Minimap" x="208" y="0" name="inst_1A6698D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minimap_visible" x="224" y="0" name="inst_53EE612B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coin" x="416" y="1072" name="inst_D14DF544" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_spawn" x="0" y="32" w="16" h="16" xo="0" yo="0" id="10000026" name="inst_CE69AD59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

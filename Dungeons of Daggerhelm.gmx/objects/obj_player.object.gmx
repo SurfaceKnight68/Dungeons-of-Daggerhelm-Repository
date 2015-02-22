@@ -523,8 +523,6 @@ obj_view_follow.y = y + 32;
             <string>///Depth Correction
 
 //depth = phy_position_y * -1;
-
-show_debug_message("FPS: " + (string(fps)));
 </string>
           </argument>
         </arguments>
@@ -678,7 +676,7 @@ if(global.player_hp &lt;= 0) {
           <argument>
             <kind>1</kind>
             <string>if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
-    sound_play(snd_lvl_up);
+    audio_play_sound(snd_lvl_up,10,false);
     show_debug_message("Player stat change");
 }
 </string>

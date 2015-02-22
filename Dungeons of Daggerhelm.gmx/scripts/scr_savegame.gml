@@ -23,6 +23,7 @@ ini_write_real("Save1","bonuswisdom",global.bonus_wis);
 ini_write_real("Save1","bonusfortitude",global.bonus_for);
 ini_write_real("Save1","bonusprimary",global.bonus_pri);
 ini_write_real("Save1","bonussecondary",global.bonus_sec);
+ini_write_real("Save1","coinamount",global.coin_num);
 
 // Close ini file
 ini_close();

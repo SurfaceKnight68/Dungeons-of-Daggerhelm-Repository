@@ -70,6 +70,8 @@ global.bonus_sec = 0;
 // total damage values, total = base (starting) + bonus (STR, WIS)
 global.total_pri = 0;
 global.total_sec = 0;
+
+global.coin_num = 0;
 </string>
           </argument>
         </arguments>
