@@ -330,6 +330,9 @@
         <sprite>sprites\spr_portal_green</sprite>
         <sprite>sprites\spr_health_globe</sprite>
         <sprite>sprites\spr_guide_arrow</sprite>
+        <sprite>sprites\spr_guide_arrow_left</sprite>
+        <sprite>sprites\spr_guide_arrow_right</sprite>
+        <sprite>sprites\spr_guide_arrow_up</sprite>
       </sprites>
       <sprites name="Projectiles">
         <sprites name="Enemy_Projectiles">
@@ -371,6 +374,7 @@
       </sprites>
       <sprites name="Death Foundry">
         <sprite>sprites\spr_necromancy_obelisk</sprite>
+        <sprite>sprites\spr_DF_statue</sprite>
         <sprite>sprites\spr_DF_bridge_base</sprite>
         <sprite>sprites\spr_DF_bridge</sprite>
         <sprite>sprites\spr_gravesigns</sprite>
@@ -386,6 +390,7 @@
           <sprite>sprites\spr_DF_mines_floor</sprite>
           <sprite>sprites\spr_DF_mines_wall</sprite>
         </sprites>
+        <sprite>sprites\spr_DF_inner_door</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -437,6 +442,10 @@
         <sprite>sprites\spr_gold_coin</sprite>
         <sprite>sprites\spr_HUD_coin</sprite>
       </sprites>
+      <sprites name="Screen effects">
+        <sprite>sprites\spr_death_warning</sprite>
+        <sprite>sprites\spr_you_died</sprite>
+      </sprites>
     </sprites>
     <sprites name="STORY MODE">
       <sprites name="Tyrranus">
@@ -486,6 +495,7 @@
       <background>background\bg_death_foundry_soil</background>
       <background>background\bg_death_foundry_soil2</background>
       <background>background\bg_death_foundry_soil3</background>
+      <background>background\bg_floor_tile</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -633,6 +643,10 @@
       <objects name="Inventory">
         <object>objects\obj_coin</object>
       </objects>
+      <objects name="Screen effects">
+        <object>objects\obj_death_warning</object>
+        <object>objects\obj_game_restart</object>
+      </objects>
     </objects>
     <objects name="World_Objects">
       <objects name="Spawn_Level">
@@ -681,6 +695,10 @@
       </objects>
       <objects name="General">
         <object>objects\obj_health_globe</object>
+        <object>objects\obj_guide_arrow</object>
+        <object>objects\obj_guide_arrow_left</object>
+        <object>objects\obj_guide_arrow_right</object>
+        <object>objects\obj_guide_arrow_up</object>
       </objects>
       <objects name="Snowy Mountains">
         <object>objects\obj_snowy_boulder</object>
@@ -695,17 +713,18 @@
       <objects name="Death Foundry">
         <object>objects\obj_DF_bridge_base</object>
         <object>objects\obj_DF_bridge</object>
+        <object>objects\obj_DF_statue</object>
         <object>objects\obj_necromancy_obelisk</object>
         <object>objects\obj_skull_staff</object>
         <object>objects\obj_DF_entrance</object>
         <object>objects\obj_DF_wall</object>
         <object>objects\obj_DF_stairs</object>
         <object>objects\obj_mineshaft_entrance</object>
-        <object>objects\obj_guide_arrow</object>
         <objects name="Death Foundry mines">
           <object>objects\obj_DF_mines_floor</object>
           <object>objects\obj_DF_mines_wall</object>
         </objects>
+        <object>objects\obj_DF_inner_door</object>
       </objects>
     </objects>
     <objects name="Utility">
@@ -834,6 +853,7 @@
     <room>rooms\rm_death_foundry</room>
     <rooms name="Death Foundry rooms">
       <room>rooms\rm_DF_mine</room>
+      <room>rooms\rm_DF_atrium</room>
     </rooms>
   </rooms>
   <constants number="2">

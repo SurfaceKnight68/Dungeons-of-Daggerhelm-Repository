@@ -471,8 +471,10 @@ with(arrow) {
           <argument>
             <kind>1</kind>
             <string>alarm[0] = room_speed/2;
-global.player_hp = global.player_hp+1;
-global.player_mp = global.player_mp+1;
+if(global.player_hp &gt;= 1) {
+    global.player_hp = global.player_hp+1;
+    global.player_mp = global.player_mp+1;
+}
 </string>
           </argument>
         </arguments>
@@ -570,14 +572,16 @@ y = clamp(y,0,room_height - sprite_height);
             <kind>1</kind>
             <string>/// Controls player stats
 mouse_dir = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+if(global.player_hp &gt;= 1) {
 if(mouse_check_button(mb_left)) {
     
     scr_player_attack();
     
-} else {
+    } else {
 
     scr_player_move();
     
+    }
 }
 if(sword != -1) {
     damage = scr_get_item_value(sword, 'damage');
@@ -627,33 +631,10 @@ if(global.player_hp &gt; global.player_mhp) {
 
 if(global.player_mp &gt; global.player_mmp) {
     global.player_mp = global.player_mmp;
-} 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Player death
+}
 
-if(global.player_hp &lt;= 0) {
-    sound_stop_all();
-    game_restart();
-    
+if(global.player_hp &lt; 0) {
+    global.player_hp = 0;
 }
 </string>
           </argument>
@@ -1495,6 +1476,29 @@ global.player_hp = global.player_hp - choose(40,42,44,46,48,50);
           <argument>
             <kind>1</kind>
             <string>alarm[3] = 2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_castle_outside">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collide With
 </string>
           </argument>
         </arguments>

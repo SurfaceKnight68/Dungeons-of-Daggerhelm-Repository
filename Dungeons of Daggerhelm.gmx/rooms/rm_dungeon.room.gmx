@@ -3393,6 +3393,8 @@
     <instance objName="obj_shadowsoul" x="1456" y="1648" name="inst_924D0023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brickwall" x="2016" y="1760" name="inst_2020EEDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal_green" x="1552" y="1616" name="inst_33F0E071" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Minimap" x="48" y="0" name="inst_C7EBFDF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minimap_visible" x="64" y="0" name="inst_BD6CB840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_spawn" x="1920" y="3056" w="16" h="16" xo="0" yo="32" id="10006421" name="inst_ECF73532" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

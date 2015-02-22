@@ -817,11 +817,11 @@
     <instance objName="obj_NPC_adventure_guide" x="368" y="1088" name="inst_4CDE0F94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_controls_guide" x="528" y="1089" name="inst_6D23812C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="160" y="544" name="inst_B19DE75E" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_death_foundry;&#xA;&#xA;    dest_x = 3200;&#xA;    dest_y = 6000;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mineshaft_entrance" x="448" y="976" name="inst_1EDAAEC6" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_mine;&#xA;&#xA;    dest_x = 4000;&#xA;    dest_y = 4000;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mineshaft_entrance" x="448" y="976" name="inst_1EDAAEC6" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium;&#xA;&#xA;    dest_x = 400;&#xA;    dest_y = 544;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal_cyan" x="160" y="552" name="inst_E1D68BC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Minimap" x="208" y="0" name="inst_1A6698D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minimap_visible" x="224" y="0" name="inst_53EE612B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coin" x="416" y="1072" name="inst_D14DF544" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coin" x="448" y="1059" name="inst_D14DF544" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_spawn" x="0" y="32" w="16" h="16" xo="0" yo="0" id="10000026" name="inst_CE69AD59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

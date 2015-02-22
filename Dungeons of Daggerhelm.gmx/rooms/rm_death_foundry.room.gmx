@@ -3,8 +3,8 @@
   <caption></caption>
   <width>6400</width>
   <height>6400</height>
-  <vsnap>128</vsnap>
-  <hsnap>128</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -98,7 +98,10 @@
     <instance objName="obj_DF_wall" x="3399" y="446" name="inst_6C73FD36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_staff" x="3184" y="520" name="inst_7CFA271C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_skull_staff" x="3344" y="519" name="inst_D9F0A6FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mineshaft_entrance" x="5438" y="1471" name="inst_6D0F538E" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_mine;&#xA;&#xA;    dest_x = room_width/2;&#xA;    dest_y = room_height/2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mineshaft_entrance" x="5438" y="1471" name="inst_6D0F538E" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_mine;&#xA;&#xA;    dest_x = 4000;&#xA;    dest_y = 4000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Minimap" x="288" y="0" name="inst_7C69F937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minimap_visible" x="320" y="0" name="inst_57EBE47B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="3202" y="144" name="inst_ADDEB3D4" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_death_foundry_large" x="0" y="0" w="128" h="128" xo="0" yo="0" id="10029527" name="inst_A7CA6D5A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

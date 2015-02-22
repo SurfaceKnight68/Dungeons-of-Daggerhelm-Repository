@@ -224,6 +224,8 @@
     <instance objName="obj_rock" x="608" y="256" name="inst_DAF22110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rock" x="368" y="160" name="inst_AFB74E48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_controller_sentry_boss" x="16" y="0" name="inst_23044F81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Minimap" x="48" y="0" name="inst_D4757532" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minimap_visible" x="64" y="0" name="inst_FEF628B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_dirt_grass" x="0" y="0" w="16" h="16" xo="16" yo="16" id="10019100" name="inst_9373C0A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

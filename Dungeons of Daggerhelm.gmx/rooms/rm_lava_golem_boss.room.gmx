@@ -223,6 +223,8 @@
     <instance objName="obj_music_controller_lava_boss" x="0" y="0" name="inst_C5A9D4BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="16" y="0" name="inst_BF50411B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lava_golem" x="448" y="480" name="inst_9A707D30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Minimap" x="48" y="0" name="inst_F755E353" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minimap_visible" x="64" y="0" name="inst_BBE29976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_spawn" x="144" y="192" w="16" h="16" xo="0" yo="32" id="10015208" name="inst_A8B97EEA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

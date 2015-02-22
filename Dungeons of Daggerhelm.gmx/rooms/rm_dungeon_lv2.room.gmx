@@ -66,6 +66,8 @@
     <instance objName="obj_grassland_portal" x="4512" y="1952" name="inst_BFB906E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="4504" y="1957" name="inst_3F181CC5" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_grey_sentry_boss;&#xA;&#xA;    dest_x = 172;&#xA;    dest_y = 196;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="320" y="0" name="inst_FDA214D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Minimap" x="352" y="0" name="inst_EC4F607C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minimap_visible" x="384" y="0" name="inst_AF9EB6B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
