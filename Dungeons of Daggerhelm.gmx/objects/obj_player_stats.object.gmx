@@ -34,7 +34,7 @@ global.player_mp = 100;
 global.player_mmp = 100;
 // Beginning xp and level
 
-global.player_mxp = 200;
+global.player_mxp = 400;
 global.mlv = 60;
 
 // Health globe benefits

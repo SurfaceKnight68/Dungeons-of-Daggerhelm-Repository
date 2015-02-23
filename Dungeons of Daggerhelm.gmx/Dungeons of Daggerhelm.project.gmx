@@ -854,6 +854,8 @@
     <rooms name="Death Foundry rooms">
       <room>rooms\rm_DF_mine</room>
       <room>rooms\rm_DF_atrium</room>
+      <room>rooms\rm_DF_atrium_left</room>
+      <room>rooms\rm_DF_atrium_right</room>
     </rooms>
   </rooms>
   <constants number="2">

@@ -43,12 +43,12 @@
   <views>
     <view visible="-1" objName="obj_view_follow" xview="0" yview="0" wview="300" hview="300" xport="0" yport="0" wport="900" hport="900" hborder="150" vborder="150" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="obj_player" xview="0" yview="0" wview="450" hview="450" xport="400" yport="800" wport="150" hport="150" hborder="150" vborder="150" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="obj_castle_outside" x="336" y="784" name="inst_A27458AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -270,8 +270,8 @@
     <instance objName="obj_castle_outside" x="464" y="768" name="inst_3BCA9E52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="464" y="784" name="inst_77309393" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="0" y="0" name="inst_D540B7A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="0" y="352" name="inst_561393BA" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="784" y="352" name="inst_D669B0E4" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="0" y="352" name="inst_561393BA" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium_left;&#xA;&#xA;    dest_x = 800;&#xA;    dest_y = 400;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="784" y="352" name="inst_D669B0E4" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium_right;&#xA;&#xA;    dest_x = 32;&#xA;    dest_y = 384;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="352" y="192" name="inst_5C050736" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_statue" x="473" y="326" name="inst_F825D5F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_statue" x="344" y="325" name="inst_88C2F679" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -282,6 +282,8 @@
     <instance objName="obj_guide_arrow_right" x="747" y="360" name="inst_79E65278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_guide_arrow_left" x="54" y="361" name="inst_3E9E660A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="352" y="640" name="inst_EFA6F571" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_death_foundry;&#xA;&#xA;    dest_x = 3264;&#xA;    dest_y = 512;&#xA;" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Minimap" x="32" y="0" name="inst_60F14CEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_minimap_visible" x="48" y="0" name="inst_83DB3D24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor_tile" x="400" y="784" w="16" h="16" xo="0" yo="0" id="10032608" name="inst_F5808D86" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
