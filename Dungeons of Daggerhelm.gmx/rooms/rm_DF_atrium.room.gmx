@@ -270,9 +270,9 @@
     <instance objName="obj_castle_outside" x="464" y="768" name="inst_3BCA9E52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="464" y="784" name="inst_77309393" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="0" y="0" name="inst_D540B7A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="0" y="352" name="inst_561393BA" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium_left;&#xA;&#xA;    dest_x = 800;&#xA;    dest_y = 400;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="0" y="352" name="inst_561393BA" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium_left;&#xA;&#xA;    dest_x = 880;&#xA;    dest_y = 400;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="784" y="352" name="inst_D669B0E4" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium_right;&#xA;&#xA;    dest_x = 32;&#xA;    dest_y = 384;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="352" y="192" name="inst_5C050736" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_inner_door" x="408" y="139" name="inst_762AA10E" locked="0" code="" scaleX="0.851851880550385" scaleY="0.896103918552399" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_statue" x="473" y="326" name="inst_F825D5F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_statue" x="344" y="325" name="inst_88C2F679" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_statue" x="352" y="459" name="inst_D7B41D6E" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -284,6 +284,14 @@
     <instance objName="obj_warp" x="352" y="640" name="inst_EFA6F571" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_death_foundry;&#xA;&#xA;    dest_x = 3264;&#xA;    dest_y = 512;&#xA;" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Minimap" x="32" y="0" name="inst_60F14CEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minimap_visible" x="48" y="0" name="inst_83DB3D24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_1" x="358" y="568" name="inst_F26E9B26" locked="0" code="image_speed += 0.02;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_1" x="358" y="536" name="inst_AFE4D4C3" locked="0" code="image_speed -= 0.01;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_1" x="358" y="504" name="inst_658EBC8F" locked="0" code="image_speed += 0.01;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_1" x="358" y="600" name="inst_5364EB82" locked="0" code="image_speed += 0.01;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="458" y="504" name="inst_CFD36AF6" locked="0" code="image_speed += 0.03;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="458" y="536" name="inst_48120A1E" locked="0" code="image_speed = 0.05;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="458" y="568" name="inst_749D8D87" locked="0" code="image_speed += 0.02;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="458" y="600" name="inst_8C20D5E6" locked="0" code="image_speed -= 0.02;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor_tile" x="400" y="784" w="16" h="16" xo="0" yo="0" id="10032608" name="inst_F5808D86" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

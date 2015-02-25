@@ -374,6 +374,10 @@
     <instance objName="obj_minimap_visible" x="48" y="0" name="inst_6CF3DE39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="576" y="0" name="inst_ADC0853D" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="912" y="416" name="inst_5CAD24C6" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="474" y="296" name="inst_5D9F193A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="474" y="328" name="inst_72DEE6A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="474" y="360" name="inst_9D7F18F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blue_torch_2" x="473" y="392" name="inst_E66B0AF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor_tile" x="0" y="368" w="16" h="16" xo="0" yo="0" id="10034069" name="inst_CF5EADFB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

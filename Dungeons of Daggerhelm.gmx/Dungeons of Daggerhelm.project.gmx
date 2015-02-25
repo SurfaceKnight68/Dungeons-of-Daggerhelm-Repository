@@ -195,6 +195,9 @@
             <sprites name="Cryptmaster Reskyl">
               <sprite>sprites\spr_reskyl_idle_right</sprite>
             </sprites>
+            <sprites name="Spirit-Fused Soulmass">
+              <sprite>sprites\spr_SFS_idle</sprite>
+            </sprites>
           </sprites>
         </sprites>
         <sprites name="Evil_Paladin">
@@ -399,6 +402,8 @@
           <sprite>sprites\spr_DF_mines_wall</sprite>
         </sprites>
         <sprite>sprites\spr_DF_inner_door</sprite>
+        <sprite>sprites\spr_blue_torch</sprite>
+        <sprite>sprites\spr_blue_torch2</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -736,6 +741,8 @@
           <object>objects\obj_DF_mines_wall</object>
         </objects>
         <object>objects\obj_DF_inner_door</object>
+        <object>objects\obj_blue_torch_1</object>
+        <object>objects\obj_blue_torch_2</object>
       </objects>
     </objects>
     <objects name="Utility">
