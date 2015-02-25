@@ -145,6 +145,7 @@ draw_set_color(c_aqua);
 draw_text(12,800,"Mana: "+string(global.player_mp)+"/ "+string(global.player_mmp));
 draw_set_color(c_yellow);
 draw_text(38,735," x " +string(global.coin_num));
+draw_text(175,735," x " +string(global.key_num));
 
 draw_set_color(c_black);
 </string>
@@ -174,6 +175,7 @@ draw_sprite(spr_hud_faces,2,110,850);
 draw_sprite(spr_hud_faces,3,155,850);
 draw_sprite(spr_hud_faces,4,200,850);
 draw_sprite(spr_HUD_coin,0,20,747);
+draw_sprite(spr_HUD_key,0,150,738);
 </string>
           </argument>
         </arguments>

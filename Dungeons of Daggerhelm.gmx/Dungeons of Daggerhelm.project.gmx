@@ -156,35 +156,6 @@
         </sprites>
       </sprites>
       <sprites name="Enemies">
-        <sprites name="Evil_Paladin">
-          <sprite>sprites\spr_evil_paladin_down</sprite>
-          <sprite>sprites\spr_evil_paladin_up</sprite>
-          <sprite>sprites\spr_evil_paladin_left</sprite>
-          <sprite>sprites\spr_evil_paladin_right</sprite>
-        </sprites>
-        <sprites name="Evil_Ranger">
-          <sprite>sprites\spr_evil_ranger_right</sprite>
-          <sprite>sprites\spr_evil_ranger_left</sprite>
-          <sprite>sprites\spr_evil_ranger_up</sprite>
-          <sprite>sprites\spr_evil_ranger_down</sprite>
-        </sprites>
-        <sprites name="Shadowsoul">
-          <sprite>sprites\spr_shadowsoul_float</sprite>
-        </sprites>
-        <sprites name="Slate Imp">
-          <sprite>sprites\spr_slate_imp_fly_left</sprite>
-          <sprite>sprites\spr_slate_imp_fly_right</sprite>
-        </sprites>
-        <sprites name="Slate Bat">
-          <sprite>sprites\spr_slate_bat_left</sprite>
-          <sprite>sprites\spr_slate_bat_right</sprite>
-        </sprites>
-        <sprites name="Skitterers">
-          <sprite>sprites\spr_skitterer_idle_left</sprite>
-          <sprite>sprites\spr_skitterer_walk_left</sprite>
-          <sprite>sprites\spr_skitterer_walk_right</sprite>
-          <sprite>sprites\spr_skitterer_idle_right</sprite>
-        </sprites>
         <sprites name="Bosses">
           <sprites name="Lava Golem">
             <sprite>sprites\spr_lava_golem_idle</sprite>
@@ -217,6 +188,43 @@
           <sprites name="Pyromancer">
             <sprite>sprites\spr_pyromancer</sprite>
           </sprites>
+          <sprites name="Death Foundry">
+            <sprites name="Boneguard Zul">
+              <sprite>sprites\spr_zul_down_idle</sprite>
+            </sprites>
+            <sprites name="Cryptmaster Reskyl">
+              <sprite>sprites\spr_reskyl_idle_right</sprite>
+            </sprites>
+          </sprites>
+        </sprites>
+        <sprites name="Evil_Paladin">
+          <sprite>sprites\spr_evil_paladin_down</sprite>
+          <sprite>sprites\spr_evil_paladin_up</sprite>
+          <sprite>sprites\spr_evil_paladin_left</sprite>
+          <sprite>sprites\spr_evil_paladin_right</sprite>
+        </sprites>
+        <sprites name="Evil_Ranger">
+          <sprite>sprites\spr_evil_ranger_right</sprite>
+          <sprite>sprites\spr_evil_ranger_left</sprite>
+          <sprite>sprites\spr_evil_ranger_up</sprite>
+          <sprite>sprites\spr_evil_ranger_down</sprite>
+        </sprites>
+        <sprites name="Shadowsoul">
+          <sprite>sprites\spr_shadowsoul_float</sprite>
+        </sprites>
+        <sprites name="Slate Imp">
+          <sprite>sprites\spr_slate_imp_fly_left</sprite>
+          <sprite>sprites\spr_slate_imp_fly_right</sprite>
+        </sprites>
+        <sprites name="Slate Bat">
+          <sprite>sprites\spr_slate_bat_left</sprite>
+          <sprite>sprites\spr_slate_bat_right</sprite>
+        </sprites>
+        <sprites name="Skitterers">
+          <sprite>sprites\spr_skitterer_idle_left</sprite>
+          <sprite>sprites\spr_skitterer_walk_left</sprite>
+          <sprite>sprites\spr_skitterer_walk_right</sprite>
+          <sprite>sprites\spr_skitterer_idle_right</sprite>
         </sprites>
         <sprites name="Slain Hero">
           <sprite>sprites\spr_slain_hero_right</sprite>
@@ -440,6 +448,8 @@
         <sprite>sprites\spr_inv_slot</sprite>
         <sprite>sprites\spr_inventory_border</sprite>
         <sprite>sprites\spr_gold_coin</sprite>
+        <sprite>sprites\spr_key</sprite>
+        <sprite>sprites\spr_HUD_key</sprite>
         <sprite>sprites\spr_HUD_coin</sprite>
       </sprites>
       <sprites name="Screen effects">
@@ -642,6 +652,7 @@
       <object>objects\obj_recall_button</object>
       <objects name="Inventory">
         <object>objects\obj_coin</object>
+        <object>objects\obj_key</object>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>
