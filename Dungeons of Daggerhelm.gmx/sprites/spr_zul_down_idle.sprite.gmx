@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>5</bbox_left>
   <bbox_right>121</bbox_right>
-  <bbox_top>15</bbox_top>
+  <bbox_top>14</bbox_top>
   <bbox_bottom>77</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -21,5 +21,9 @@
   <height>96</height>
   <frames>
     <frame index="0">images\spr_zul_down_idle_0.png</frame>
+    <frame index="1">images\spr_zul_down_idle_1.png</frame>
+    <frame index="2">images\spr_zul_down_idle_2.png</frame>
+    <frame index="3">images\spr_zul_down_idle_3.png</frame>
+    <frame index="4">images\spr_zul_down_idle_4.png</frame>
   </frames>
 </sprite>
