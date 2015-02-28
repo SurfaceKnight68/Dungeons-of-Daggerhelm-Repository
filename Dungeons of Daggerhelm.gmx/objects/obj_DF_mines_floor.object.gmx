@@ -28,8 +28,8 @@
             <string>randomize();
 enemy_choose = choose(obj_risen_skeleton,obj_risen_corpse,obj_half_dead_cultist);
 
-enemy_spawn = irandom(20); //chance to spawn an enemy
-
+enemy_spawn = irandom(20); // Chance to spawn an enemy
+chest_spawn = irandom(50); // Chance to spawn a chest
 
 
 </string>
@@ -77,8 +77,8 @@ enemy_spawn = irandom(20); //chance to spawn an enemy
             <kind>1</kind>
             <string>for(i = -32; i &lt;= 32; i += 32) {
     for (j = -32; j &lt;= 32; j += 32) {
-        if place_empty(x+i,y+j) {
-            instance_create(x+i,y+j,obj_DF_mines_wall);
+        if place_empty(x + i,y + j) {
+            instance_create(x + i,y + j,obj_DF_mines_wall);
      
         }
     }
@@ -91,6 +91,12 @@ if distance_to_point(room_width/2,room_height/2) &gt; 320 {
         
     }
 }
+
+if distance_to_point(room_width/2,room_height/2) &gt; 320 {
+    if chest_spawn = 0 {
+        instance_create(x,y,obj_loot_chest);
+    }
+} 
 alarm[0] = 0;
 </string>
           </argument>

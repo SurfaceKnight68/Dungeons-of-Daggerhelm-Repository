@@ -103,9 +103,12 @@ coin_drop = irandom_range(1,10);
         instance_create(x + (irandom_range(-28,28)),y + (irandom_range(-28,28)), obj_key);
     }
     
-    if(coin_drop = 1) {
-        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin); 
+    if(coin_drop == 1) {
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
     } else if(coin_drop &gt;= 2 &amp;&amp; coin_drop &lt;= 4) {
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
     } else if(coin_drop &gt;= 5 &amp;&amp; coin_drop &lt;= 7) {
@@ -113,7 +116,11 @@ coin_drop = irandom_range(1,10);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
     } else if(coin_drop &gt;= 8 &amp;&amp; coin_drop &lt;= 10) {
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
+        instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);

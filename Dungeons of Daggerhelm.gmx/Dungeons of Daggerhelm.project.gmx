@@ -18,15 +18,6 @@
     </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Items">
-      <sprite>sprites\spr_health_potion</sprite>
-      <sprites name="Weapons">
-        <sprite>sprites\spr_small_sword</sprite>
-        <sprite>sprites\spr_simple_mace</sprite>
-        <sprite>sprites\spr_crude_talisman</sprite>
-        <sprite>sprites\spr_splintered_bow</sprite>
-      </sprites>
-    </sprites>
     <sprites name="Tiles">
       <sprites name="Spawn_Level">
         <sprite>sprites\spr_floor</sprite>
@@ -456,6 +447,19 @@
         <sprite>sprites\spr_key</sprite>
         <sprite>sprites\spr_HUD_key</sprite>
         <sprite>sprites\spr_HUD_coin</sprite>
+        <sprites name="Items">
+          <sprite>sprites\spr_health_potion</sprite>
+          <sprites name="Weapons">
+            <sprite>sprites\spr_1h_sword</sprite>
+            <sprite>sprites\spr_2h_sword</sprite>
+            <sprite>sprites\spr_1h_mace</sprite>
+            <sprite>sprites\spr_2h_mace</sprite>
+            <sprite>sprites\spr_2h_staff</sprite>
+            <sprite>sprites\spr_1h_wand</sprite>
+            <sprite>sprites\spr_bow</sprite>
+            <sprite>sprites\spr_crossbow</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Screen effects">
         <sprite>sprites\spr_death_warning</sprite>
