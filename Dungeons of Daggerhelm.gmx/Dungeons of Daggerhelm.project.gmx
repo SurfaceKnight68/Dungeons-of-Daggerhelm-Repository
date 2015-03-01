@@ -34,6 +34,9 @@
           <sprite>sprites\spr_castle_bot_mid</sprite>
           <sprite>sprites\spr_castle_outside</sprite>
         </sprites>
+        <sprites name="Light's Bastion">
+          <sprite>sprites\spr_bastion_wall</sprite>
+        </sprites>
       </sprites>
       <sprites name="Starter_Dungeon">
         <sprite>sprites\spr_cobblestone_floor</sprite>
@@ -145,6 +148,9 @@
             <sprite>sprites\spr_adventure_guide</sprite>
           </sprites>
         </sprites>
+        <sprites name="Light's Bastion NPCs">
+          <sprite>sprites\spr_bastion_guard</sprite>
+        </sprites>
       </sprites>
       <sprites name="Enemies">
         <sprites name="Bosses">
@@ -182,6 +188,13 @@
           <sprites name="Death Foundry">
             <sprites name="Boneguard Zul">
               <sprite>sprites\spr_zul_down_idle</sprite>
+              <sprite>sprites\spr_zul_down_left</sprite>
+              <sprites name="Attacks">
+                <sprite>sprites\spr_zul_spike_attack</sprite>
+                <sprite>sprites\spr_zul_spike_attack_2</sprite>
+                <sprite>sprites\spr_zul_skeleton_summon</sprite>
+                <sprite>sprites\spr_zul_skeleton_summon_2</sprite>
+              </sprites>
             </sprites>
             <sprites name="Cryptmaster Reskyl">
               <sprite>sprites\spr_reskyl_idle_right</sprite>
@@ -516,6 +529,9 @@
       <background>background\bg_death_foundry_soil3</background>
       <background>background\bg_floor_tile</background>
     </backgrounds>
+    <backgrounds name="Light's Bastion">
+      <background>background\bg_bastion_floor</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -655,6 +671,9 @@
         <object>objects\obj_NPC_ranger</object>
         <object>objects\obj_NPC_Thaumaturge</object>
       </objects>
+      <objects name="Light's Bastion NPCs">
+        <object>objects\obj_bastion_guard</object>
+      </objects>
     </objects>
     <objects name="HUD">
       <object>objects\obj_hud</object>
@@ -677,6 +696,9 @@
         <object>objects\obj_loot_chest</object>
         <objects name="Armory">
           <object>objects\obj_weapon_rack</object>
+        </objects>
+        <objects name="Light's Bastion">
+          <object>objects\obj_bastion_wall</object>
         </objects>
       </objects>
       <objects name="Projectiles">
@@ -878,6 +900,9 @@
       <room>rooms\rm_DF_atrium</room>
       <room>rooms\rm_DF_atrium_left</room>
       <room>rooms\rm_DF_atrium_right</room>
+    </rooms>
+    <rooms name="Class Specific locations">
+      <room>rooms\rm_lights_bastion</room>
     </rooms>
   </rooms>
   <constants number="2">
