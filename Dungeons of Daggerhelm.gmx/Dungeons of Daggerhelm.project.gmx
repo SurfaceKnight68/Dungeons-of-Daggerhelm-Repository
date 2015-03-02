@@ -194,6 +194,8 @@
                 <sprite>sprites\spr_zul_spike_attack_2</sprite>
                 <sprite>sprites\spr_zul_skeleton_summon</sprite>
                 <sprite>sprites\spr_zul_skeleton_summon_2</sprite>
+                <sprite>sprites\spr_zul_laser_atk</sprite>
+                <sprite>sprites\spr_zul_laser_atk_2</sprite>
               </sprites>
             </sprites>
             <sprites name="Cryptmaster Reskyl">
