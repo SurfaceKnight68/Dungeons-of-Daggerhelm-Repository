@@ -10,6 +10,7 @@
       <sound>sound\msc_spawn_music</sound>
       <sound>sound\msc_dungeon</sound>
       <sound>sound\msc_lava_golem</sound>
+      <sound>sound\msc_death_foundry</sound>
     </sounds>
     <sounds name="Sounds">
       <sound>sound\snd_hit</sound>
@@ -874,6 +875,7 @@
         <object>objects\obj_music_controller_spawn</object>
         <object>objects\obj_music_controller_lava_boss</object>
         <object>objects\obj_music_controller_sentry_boss</object>
+        <object>objects\obj_music_controller_death_foundry</object>
       </objects>
       <objects name="Particle System">
         <object>objects\obj_ps</object>

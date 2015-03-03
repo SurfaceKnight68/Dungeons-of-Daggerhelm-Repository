@@ -103,6 +103,7 @@
     <instance objName="obj_minimap_visible" x="320" y="0" name="inst_57EBE47B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="3202" y="144" name="inst_ADDEB3D4" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium;&#xA;&#xA;    dest_x = 400;&#xA;    dest_y = 608;&#xA;" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mineshaft_entrance" x="1136" y="1872" name="inst_1EA1C5D3" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_mine;&#xA;&#xA;    dest_x = 4000;&#xA;    dest_y = 4000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_controller_death_foundry" x="352" y="0" name="inst_06C82204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_death_foundry_large" x="0" y="0" w="128" h="128" xo="0" yo="0" id="10029527" name="inst_A7CA6D5A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
