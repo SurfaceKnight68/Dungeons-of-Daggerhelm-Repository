@@ -358,6 +358,7 @@
           <sprite>sprites\spr_phaseshot</sprite>
           <sprite>sprites\spr_imp_spitfire</sprite>
           <sprite>sprites\spr_boss_laser</sprite>
+          <sprite>sprites\spr_bonespike</sprite>
         </sprites>
         <sprites name="Primary">
           <sprite>sprites\spr_arrow</sprite>
@@ -563,6 +564,12 @@
       <script>scripts\scr_generate.gml</script>
       <script>scripts\scr_iterate.gml</script>
     </scripts>
+    <scripts name="Boss Scripts">
+      <script>scripts\scr_zul_wait.gml</script>
+      <script>scripts\scr_zul_bonespike.gml</script>
+      <script>scripts\scr_zul_summon.gml</script>
+      <script>scripts\scr_zul_spitfire.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_HUD</font>
@@ -618,6 +625,7 @@
           <object>objects\obj_sentinel</object>
           <object>objects\obj_black_knight</object>
           <object>objects\obj_pyromancer</object>
+          <object>objects\obj_Boneguard_Zul</object>
         </objects>
         <objects name="Prime Slate Imp">
           <object>objects\obj_prime_slate_imp</object>
@@ -714,6 +722,7 @@
           <object>objects\obj_enemy_melee</object>
           <object>objects\obj_fire_swing</object>
           <object>objects\obj_boss_laser</object>
+          <object>objects\obj_bonespike</object>
         </objects>
         <objects name="Primary">
           <object>objects\par_projectile</object>
@@ -904,6 +913,7 @@
       <room>rooms\rm_DF_atrium</room>
       <room>rooms\rm_DF_atrium_left</room>
       <room>rooms\rm_DF_atrium_right</room>
+      <room>rooms\rm_DF_boss_1</room>
     </rooms>
     <rooms name="Class Specific locations">
       <room>rooms\rm_lights_bastion</room>
