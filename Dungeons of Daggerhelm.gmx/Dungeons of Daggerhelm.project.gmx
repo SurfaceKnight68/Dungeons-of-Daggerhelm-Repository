@@ -108,14 +108,11 @@
           <sprite>sprites\spr_player_thau_left</sprite>
           <sprite>sprites\spr_player_thau_right</sprite>
         </sprites>
-        <sprites name="Pyromancer">
-          <sprite>sprites\spr_pyro_right</sprite>
-          <sprite>sprites\spr_pyro_down</sprite>
-          <sprite>sprites\spr_pyro_up</sprite>
-          <sprite>sprites\spr_pyro_left</sprite>
-        </sprites>
         <sprites name="Swaiyar">
           <sprite>sprites\spr_swaiyar_right</sprite>
+        </sprites>
+        <sprites name="Pyromancer">
+          <sprite>sprites\spr_pyro_idle_left</sprite>
         </sprites>
       </sprites>
       <sprites name="NPCs">
@@ -413,6 +410,11 @@
         <sprite>sprites\spr_blue_torch</sprite>
         <sprite>sprites\spr_blue_torch2</sprite>
       </sprites>
+      <sprites name="Class Specific zones">
+        <sprites name="Lights Bastion">
+          <sprite>sprites\spr_bastion_statue</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Cursor">
       <sprite>sprites\spr_cursor</sprite>
@@ -511,6 +513,7 @@
       <background>background\bg_snow_pile_small</background>
       <background>background\bg_snowy_ground</background>
       <background>background\bg_snow</background>
+      <background>background\bg_ice</background>
     </backgrounds>
     <backgrounds name="Main Menu">
       <background>background\bg_main_menu_scroll</background>
@@ -681,6 +684,7 @@
         <object>objects\obj_NPC_paladin</object>
         <object>objects\obj_NPC_ranger</object>
         <object>objects\obj_NPC_Thaumaturge</object>
+        <object>objects\obj_NPC_Pyromancer</object>
       </objects>
       <objects name="Light's Bastion NPCs">
         <object>objects\obj_bastion_guard</object>
@@ -781,6 +785,11 @@
         <object>objects\obj_DF_inner_door</object>
         <object>objects\obj_blue_torch_1</object>
         <object>objects\obj_blue_torch_2</object>
+      </objects>
+      <objects name="Class Specific zones">
+        <objects name="Light's Bastion">
+          <object>objects\obj_bastion_statue</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Utility">
@@ -894,6 +903,11 @@
       <object>objects\obj_enemy_stats</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timelines name="Boss Timelines">
+      <timeline>timelines\tl_boneguard_zul</timeline>
+    </timelines>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rm_main_menu</room>
     <room>rooms\rm_how_to_play</room>

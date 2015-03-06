@@ -390,7 +390,7 @@
     <instance objName="obj_warp" x="912" y="352" name="inst_CB2F7584" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_atrium;&#xA;&#xA;    dest_x = 32;&#xA;    dest_y = 400;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="0" y="0" name="inst_65E24A13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="128" y="624" name="inst_9B41F1DE" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="80" y="16" name="inst_07641F12" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="80" y="16" name="inst_07641F12" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_boss_1;&#xA;&#xA;    dest_x = 320;&#xA;    dest_y = 352;&#xA;" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_statue" x="368" y="448" name="inst_CADC3DEB" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_DF_statue" x="368" y="336" name="inst_93F90CC2" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Minimap" x="16" y="0" name="inst_7D109895" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
