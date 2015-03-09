@@ -262,6 +262,7 @@
         </sprites>
         <sprites name="Ice Burrower">
           <sprite>sprites\spr_burrower_idle</sprite>
+          <sprite>sprites\spr_ice_worm</sprite>
           <sprite>sprites\spr_burrower_hole</sprite>
           <sprite>sprites\spr_burrower_activate</sprite>
           <sprite>sprites\spr_burrower_inactivate</sprite>
