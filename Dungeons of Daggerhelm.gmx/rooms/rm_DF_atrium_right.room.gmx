@@ -372,8 +372,8 @@
     <instance objName="obj_player_reposition" x="0" y="0" name="inst_C00D0E29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Minimap" x="32" y="0" name="inst_D4AC69C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minimap_visible" x="48" y="0" name="inst_6CF3DE39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="576" y="0" name="inst_ADC0853D" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="912" y="416" name="inst_5CAD24C6" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="576" y="0" name="inst_ADC0853D" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_boss_4;&#xA;&#xA;    dest_x = 320;&#xA;    dest_y = 336;&#xA;" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="912" y="416" name="inst_5CAD24C6" locked="0" code="event_inherited();&#xA;&#xA;    dest_room = rm_DF_boss_3;&#xA;&#xA;    dest_x = 320;&#xA;    dest_y = 48;&#xA;" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_blue_torch_2" x="474" y="296" name="inst_5D9F193A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blue_torch_2" x="474" y="328" name="inst_72DEE6A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blue_torch_2" x="474" y="360" name="inst_9D7F18F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

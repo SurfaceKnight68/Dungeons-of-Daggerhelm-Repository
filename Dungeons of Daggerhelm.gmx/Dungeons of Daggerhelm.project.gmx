@@ -203,6 +203,11 @@
             <sprites name="Spirit-Fused Soulmass">
               <sprite>sprites\spr_SFS_idle</sprite>
             </sprites>
+            <sprites name="Ice Worm">
+              <sprite>sprites\spr_ice_worm_left</sprite>
+              <sprite>sprites\spr_ice_worm_right</sprite>
+              <sprite>sprites\spr_snow_pile</sprite>
+            </sprites>
           </sprites>
         </sprites>
         <sprites name="Evil_Paladin">
@@ -262,7 +267,6 @@
         </sprites>
         <sprites name="Ice Burrower">
           <sprite>sprites\spr_burrower_idle</sprite>
-          <sprite>sprites\spr_ice_worm</sprite>
           <sprite>sprites\spr_burrower_hole</sprite>
           <sprite>sprites\spr_burrower_activate</sprite>
           <sprite>sprites\spr_burrower_inactivate</sprite>
@@ -358,6 +362,7 @@
           <sprite>sprites\spr_imp_spitfire</sprite>
           <sprite>sprites\spr_boss_laser</sprite>
           <sprite>sprites\spr_bonespike</sprite>
+          <sprite>sprites\spr_ice_spike</sprite>
           <sprite>sprites\spr_unholy_imposion</sprite>
           <sprite>sprites\spr_magic_bullet</sprite>
           <sprite>sprites\spr_fire_bullet</sprite>
@@ -641,6 +646,8 @@
             <object>objects\obj_fused_soulmass</object>
             <object>objects\obj_fused_soulmass_copy</object>
           </objects>
+          <object>objects\obj_ice_worm</object>
+          <object>objects\obj_snow_pile</object>
         </objects>
         <objects name="Prime Slate Imp">
           <object>objects\obj_prime_slate_imp</object>
@@ -745,6 +752,7 @@
           <object>objects\obj_unholy_bullet</object>
           <object>objects\obj_dark_bullet</object>
           <object>objects\obj_bonespike</object>
+          <object>objects\obj_ice_spike</object>
         </objects>
         <objects name="Primary">
           <object>objects\par_projectile</object>
@@ -948,6 +956,7 @@
       <room>rooms\rm_DF_boss_1</room>
       <room>rooms\rm_DF_boss_2</room>
       <room>rooms\rm_DF_boss_3</room>
+      <room>rooms\rm_DF_boss_4</room>
     </rooms>
     <rooms name="Class Specific locations">
       <room>rooms\rm_lights_bastion</room>
