@@ -208,6 +208,13 @@
               <sprite>sprites\spr_ice_worm_right</sprite>
               <sprite>sprites\spr_snow_pile</sprite>
             </sprites>
+            <sprites name="Necromancer Tyrranus">
+              <sprite>sprites\spr_necro_left</sprite>
+              <sprite>sprites\spr_necro_right</sprite>
+              <sprite>sprites\spr_necro_down</sprite>
+              <sprite>sprites\spr_necro_up</sprite>
+              <sprite>sprites\spr_dark_succor</sprite>
+            </sprites>
           </sprites>
         </sprites>
         <sprites name="Evil_Paladin">
@@ -648,6 +655,8 @@
           </objects>
           <object>objects\obj_ice_worm</object>
           <object>objects\obj_snow_pile</object>
+          <object>objects\obj_dark_succor</object>
+          <object>objects\obj_necromancer_tyrranus</object>
         </objects>
         <objects name="Prime Slate Imp">
           <object>objects\obj_prime_slate_imp</object>
@@ -741,6 +750,7 @@
           <object>objects\par_enemy_projectile</object>
           <object>objects\obj_evil_arrow</object>
           <object>objects\obj_enemy_phaseshot</object>
+          <object>objects\obj_dark_hex</object>
           <object>objects\obj_enemy_fireball</object>
           <object>objects\obj_unholy_implosion</object>
           <object>objects\obj_imp_spitfire</object>
@@ -811,6 +821,7 @@
         <object>objects\obj_DF_inner_door</object>
         <object>objects\obj_blue_torch_1</object>
         <object>objects\obj_blue_torch_2</object>
+        <object>objects\obj_view_darkness</object>
       </objects>
       <objects name="Class Specific zones">
         <objects name="Light's Bastion">
@@ -932,6 +943,7 @@
   <timelines name="timelines">
     <timelines name="Boss Timelines">
       <timeline>timelines\tl_boneguard_zul</timeline>
+      <timeline>timelines\tl_necromancer_tyrranus</timeline>
     </timelines>
   </timelines>
   <rooms name="rooms">
@@ -957,6 +969,7 @@
       <room>rooms\rm_DF_boss_2</room>
       <room>rooms\rm_DF_boss_3</room>
       <room>rooms\rm_DF_boss_4</room>
+      <room>rooms\rm_DF_boss_final</room>
     </rooms>
     <rooms name="Class Specific locations">
       <room>rooms\rm_lights_bastion</room>

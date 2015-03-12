@@ -389,7 +389,7 @@ i.str = string(global.total_pri - armor);
           <argument>
             <kind>1</kind>
             <string>/// Draw healthbar
-draw_healthbar(x-50, y-95, x+50, y-85, (hp/max_hp)*100, c_gray, c_maroon, c_red, 0, true, true);
+draw_healthbar(x-50, y-95, x+50, y-90, (hp/max_hp)*100, c_gray, c_maroon, c_red, 0, true, true);
 </string>
           </argument>
         </arguments>
@@ -420,7 +420,7 @@ draw_healthbar(x-50, y-95, x+50, y-85, (hp/max_hp)*100, c_gray, c_maroon, c_red,
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
+  <PhysicsObjectDensity>100</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
