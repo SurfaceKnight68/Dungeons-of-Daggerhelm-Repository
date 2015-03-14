@@ -472,8 +472,8 @@ with(arrow) {
             <kind>1</kind>
             <string>alarm[0] = room_speed/2;
 if(global.player_hp &gt;= 1) {
-    global.player_hp = global.player_hp+1;
-    global.player_mp = global.player_mp+1;
+    global.player_hp += global.total_for;
+    global.player_mp += global.total_wis/2;
 }
 </string>
           </argument>

@@ -176,7 +176,7 @@ if(hp &lt;= 0) {
             <kind>1</kind>
             <string>if(place_meeting(x,y,obj_swift_arrow)) {
     part_particles_create(global.ps,x,y,global.pt_blood,15);
-    hp = hp - 20;
+    hp = hp - global.total_sec;
 }
 </string>
           </argument>

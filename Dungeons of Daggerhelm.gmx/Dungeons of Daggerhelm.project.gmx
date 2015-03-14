@@ -212,7 +212,9 @@
               <sprite>sprites\spr_necro_left</sprite>
               <sprite>sprites\spr_necro_right</sprite>
               <sprite>sprites\spr_necro_down</sprite>
+              <sprite>sprites\spr_necro_escape_1</sprite>
               <sprite>sprites\spr_necro_up</sprite>
+              <sprite>sprites\spr_necro_escape_2</sprite>
               <sprite>sprites\spr_dark_succor</sprite>
             </sprites>
           </sprites>
@@ -657,6 +659,7 @@
           <object>objects\obj_snow_pile</object>
           <object>objects\obj_dark_succor</object>
           <object>objects\obj_necromancer_tyrranus</object>
+          <object>objects\obj_necromancer_tyrranus_escape</object>
         </objects>
         <objects name="Prime Slate Imp">
           <object>objects\obj_prime_slate_imp</object>
@@ -790,6 +793,7 @@
       <objects name="General">
         <object>objects\obj_health_globe</object>
         <object>objects\obj_guide_arrow</object>
+        <object>objects\obj_guide_arrow_UI</object>
         <object>objects\obj_guide_arrow_left</object>
         <object>objects\obj_guide_arrow_right</object>
         <object>objects\obj_guide_arrow_up</object>

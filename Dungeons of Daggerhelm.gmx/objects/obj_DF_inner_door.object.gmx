@@ -27,10 +27,6 @@
             <kind>1</kind>
             <string>image_speed = 0;
 
-dest_room = -1;
-
-dest_x = 0;
-dest_y = 0;
 </string>
           </argument>
         </arguments>
@@ -53,13 +49,7 @@ dest_y = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.key_num == 4) {
-    room_goto(dest_room);
-
-    global.dest_x = dest_x;
-    global.dest_y = dest_y;
-
-}
+            <string>/// Collide With
 </string>
           </argument>
         </arguments>
