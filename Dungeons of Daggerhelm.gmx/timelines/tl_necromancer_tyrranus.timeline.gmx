@@ -19,7 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[3] = 30;
+            <string>// Begins shooting dark hex
+alarm[3] = 30;
 </string>
           </argument>
         </arguments>
@@ -45,7 +46,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[3] = 0;
+            <string>// stops shooting dark hex
+alarm[3] = 0;
 </string>
           </argument>
         </arguments>
@@ -71,7 +73,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[4] = 30;
+            <string>// Begins bonespike graveyard
+
+alarm[4] = 30;
+sprite_index = spr_necro_summon;
 </string>
           </argument>
         </arguments>
@@ -97,7 +102,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[4] = 0;
+            <string>// Ends bonespike graveyard
+alarm[4] = 0;
+// moves left
 move = 'left';
 </string>
           </argument>
@@ -106,7 +113,7 @@ move = 'left';
     </event>
   </entry>
   <entry>
-    <step>1480</step>
+    <step>1500</step>
     <event>
       <action>
         <libid>1</libid>
@@ -124,9 +131,8 @@ move = 'left';
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move = 'wait';
-instance_create(room_width/2 + 64, room_height/2, obj_special_circle);
-sprite_index = spr_necro_right;
+            <string>// Stops moving
+move = 'wait';
 </string>
           </argument>
         </arguments>
@@ -134,7 +140,7 @@ sprite_index = spr_necro_right;
     </event>
   </entry>
   <entry>
-    <step>1510</step>
+    <step>1530</step>
     <event>
       <action>
         <libid>1</libid>
@@ -152,8 +158,11 @@ sprite_index = spr_necro_right;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[4] = 30;
+            <string>// Bonespike graveyard
+alarm[4] = 30;
 sprite_index = spr_necro_down;
+// Creates summon circle
+alarm[5] = 30;
 </string>
           </argument>
         </arguments>
@@ -161,7 +170,7 @@ sprite_index = spr_necro_down;
     </event>
   </entry>
   <entry>
-    <step>2110</step>
+    <step>1560</step>
     <event>
       <action>
         <libid>1</libid>
@@ -173,13 +182,13 @@ sprite_index = spr_necro_down;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_special_circle</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>sprite_index = spr_necro_summon;
 </string>
           </argument>
         </arguments>
@@ -205,7 +214,35 @@ sprite_index = spr_necro_down;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move = 'right';
+            <string>// Moves right
+move = 'right';
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>2180</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>obj_special_circle</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Destroys circle
+instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -231,7 +268,11 @@ sprite_index = spr_necro_down;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move = 'wait';
+            <string>// Back to waiting position
+move = 'wait';
+sprite_index = spr_necro_down;
+
+// Timeline loops from the beginning
 </string>
           </argument>
         </arguments>

@@ -373,7 +373,7 @@ if(dist_player &lt; 6) {
     part_particles_create(global.ps,x,y-8,global.pt_lava,20);
     part_particles_create(global.ps,x,y,global.pt_lava,20);
     part_particles_create(global.ps,x,y+8,global.pt_lava,20);
-    global.player_hp -= global.damage_2 + 100;
+    global.player_hp -= global.damage_2;
     instance_destroy();
 }
 </string>

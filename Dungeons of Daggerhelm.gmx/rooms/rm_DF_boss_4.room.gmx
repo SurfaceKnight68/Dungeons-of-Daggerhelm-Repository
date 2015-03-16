@@ -262,6 +262,7 @@
     <instance objName="obj_castle_outside" x="368" y="416" name="inst_DC60A368" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="368" y="432" name="inst_78876C57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ice_worm" x="498" y="117" name="inst_42F4C634" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_controller_DF" x="48" y="0" name="inst_1EF4CE88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor_tile" x="608" y="272" w="16" h="16" xo="0" yo="0" id="10036987" name="inst_27FC7478" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

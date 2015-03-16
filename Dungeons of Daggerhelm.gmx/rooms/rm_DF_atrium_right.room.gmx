@@ -378,6 +378,7 @@
     <instance objName="obj_blue_torch_2" x="474" y="328" name="inst_72DEE6A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blue_torch_2" x="474" y="360" name="inst_9D7F18F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blue_torch_2" x="473" y="392" name="inst_E66B0AF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_controller_atrium" x="64" y="0" name="inst_D89CE330" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor_tile" x="0" y="368" w="16" h="16" xo="0" yo="0" id="10034069" name="inst_CF5EADFB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

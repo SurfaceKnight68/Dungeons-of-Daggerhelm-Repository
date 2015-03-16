@@ -16,6 +16,15 @@
       <sound>sound\snd_hit</sound>
       <sound>sound\snd_lvl_up</sound>
       <sound>sound\snd_pickup</sound>
+      <sounds name="Male">
+        <sound>sound\snd_male_grunt_1</sound>
+        <sound>sound\snd_male_grunt_2</sound>
+        <sound>sound\snd_male_grunt_3</sound>
+        <sound>sound\snd_male_grunt_4</sound>
+        <sound>sound\snd_male_grunt_5</sound>
+        <sound>sound\snd_male_grunt_6</sound>
+        <sound>sound\snd_male_grunt_7</sound>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -216,6 +225,7 @@
               <sprite>sprites\spr_necro_up</sprite>
               <sprite>sprites\spr_necro_escape_2</sprite>
               <sprite>sprites\spr_dark_succor</sprite>
+              <sprite>sprites\spr_necro_summon</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -935,6 +945,8 @@
         <object>objects\obj_music_controller_lava_boss</object>
         <object>objects\obj_music_controller_sentry_boss</object>
         <object>objects\obj_music_controller_death_foundry</object>
+        <object>objects\obj_music_controller_DF</object>
+        <object>objects\obj_music_controller_atrium</object>
       </objects>
       <objects name="Particle System">
         <object>objects\obj_ps</object>
