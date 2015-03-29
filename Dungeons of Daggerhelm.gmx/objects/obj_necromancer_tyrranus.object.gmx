@@ -28,13 +28,14 @@
             <string>depth = phy_position_y * -1;
 image_speed = 0.05;
 
-hp = 100;
+hp = global.health_3 + 16000;
 max_hp = global.health_3 + 16000;
 
 move = 'wait';
 message = 0;
 alarm[0] = 180;
 armor = 0;
+key_num = 0;
 
 timeline_index = tl_necromancer_tyrranus;
 timeline_position = 0;

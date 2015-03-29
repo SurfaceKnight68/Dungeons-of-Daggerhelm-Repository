@@ -29,7 +29,7 @@
 
 depth = y * -1;
 
-message_paladin = "You are about to switch with the PALADIN. This class is a melee hero that swings mighty swords, has high defense, and can equip shields to block damage, but attacks slowly.";
+message_paladin = "By the Light, this world shall not fall! We shall make sure of that.";
 </string>
           </argument>
         </arguments>

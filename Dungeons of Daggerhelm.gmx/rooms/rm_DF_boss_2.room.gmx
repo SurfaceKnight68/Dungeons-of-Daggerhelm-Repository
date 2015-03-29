@@ -232,8 +232,8 @@
     <instance objName="obj_castle_outside" x="576" y="368" name="inst_44602E17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="592" y="368" name="inst_61533AF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="608" y="368" name="inst_F5768F4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_potion_table" x="321" y="305" name="inst_E8425801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Cryptmaster_Reskyl" x="240" y="335" name="inst_83D14177" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_potion_table" x="319" y="227" name="inst_E8425801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cryptmaster_Reskyl" x="269" y="257" name="inst_83D14177" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_special_circle" x="208" y="239" name="inst_7C4BC5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_special_circle" x="432" y="240" name="inst_757C8C2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="272" y="-16" name="inst_0266A795" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -243,7 +243,9 @@
     <instance objName="obj_castle_outside" x="336" y="-16" name="inst_1C50EA66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="352" y="-16" name="inst_40535119" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="368" y="-16" name="inst_781FA67C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music_controller_DF" x="48" y="0" name="inst_5D769562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_controller_lava_boss" x="64" y="0" name="inst_F735A8FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_special_circle" x="320" y="320" name="inst_9D10FC30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_special_circle" x="320" y="161" name="inst_22A4762F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor_tile" x="608" y="272" w="16" h="16" xo="0" yo="0" id="10036987" name="inst_27FC7478" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

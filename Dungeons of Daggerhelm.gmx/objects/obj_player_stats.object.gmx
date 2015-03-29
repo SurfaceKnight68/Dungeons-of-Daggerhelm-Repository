@@ -72,7 +72,8 @@ global.total_pri = 0;
 global.total_sec = 0;
 
 global.coin_num = 0;
-global.key_num = 4;
+global.key_num = 0;
+global.potion_num = 0;
 </string>
           </argument>
         </arguments>
@@ -118,6 +119,13 @@ if(global.player_hp &gt; global.player_mhp) {
 
 if(global.player_mp &gt; global.player_mmp) {
     global.player_mp = global.player_mmp;
+}
+
+if(global.player_hp &lt; 0) {
+    global.player_hp = 0;
+}
+if(global.potion_num &gt; 100) {
+    global.potion_num = 100;
 } 
 </string>
           </argument>
@@ -184,6 +192,15 @@ if(global.identity == 5) {
     global.base_str = 12;
     global.base_wis = 6;
     global.base_for = 8;
+    
+}
+if(global.identity == 6) {
+    global.base_pri = 6;
+    global.base_sec = 12;
+    
+    global.base_str = 10;
+    global.base_wis = 8;
+    global.base_for = 2;
     
 }
 if(global.identity == 0) {

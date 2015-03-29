@@ -29,7 +29,7 @@
 
 depth = y * -1;
 
-message_thaumaturge = "You are about to switch with the THAUMATURGE. This specialized hero class is a spellcaster that deals spell damage from a distance. This class has more natural armor than the Sorcerer and can cast an ice barrier around them to shield from damage.";
+message_thaumaturge = "Our enemies need to chill out. Let's help them out with that.";
 </string>
           </argument>
         </arguments>

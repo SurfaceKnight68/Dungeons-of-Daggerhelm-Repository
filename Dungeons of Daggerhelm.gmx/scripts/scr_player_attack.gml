@@ -148,3 +148,25 @@ if(keyboard_check(ord("S"))) {
     phy_position_y += move_speed;
     }
 }
+
+if(global.identity == 6) {
+if(keyboard_check(ord("A"))) {
+    sprite_index = spr_pyro_left;
+    phy_position_x -= move_speed;
+    }
+    
+if(keyboard_check(ord("D"))) {
+    sprite_index = spr_pyro_right;
+    phy_position_x += move_speed;
+    }
+
+if(keyboard_check(ord("W"))) {
+    sprite_index = spr_pyro_up;
+    phy_position_y -= move_speed;
+    }
+
+if(keyboard_check(ord("S"))) {
+    sprite_index = spr_pyro_down;
+    phy_position_y += move_speed;
+    }
+}

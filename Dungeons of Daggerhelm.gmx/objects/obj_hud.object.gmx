@@ -8,6 +8,54 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*
+Inventory Items
+0 = 1h Sword
+1 = 2h Sword
+2 = 1h Mace
+3 = 2h Mace
+4 = 1h Staff
+5 = 2h Staff
+6 = Bow
+7 = Crossbow
+*/
+
+globalvar maxItems; // Total item slots
+maxItems = 4; // Initialize variable
+inv_rows = 3
+inv_columns = 4;
+
+for(i = 0; i &lt; maxItems; i += 1) { // Loops through maxItems
+    global.inventory[i] = -1; // Creates inventory slots for every maxItem check
+    button[i] = instance_create(0,0,obj_invbutton);
+    button[i].slot = i;
+}
+
+globalvar mouseItem;
+mouseItem = -1;
+instance_create(0,0,obj_mouseitem);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -34,8 +82,11 @@ draw_set_alpha(1);
 draw_set_alpha(1);
 draw_set_color(c_silver);
 draw_roundrect(0,689,309,901,true);
+draw_roundrect(0,689,475,901,true);
+draw_roundrect(500,695,540,735,true);
 draw_set_color(c_gray);
 draw_roundrect(0,689,310,901,true);
+draw_roundrect(0,689,476,901,true);
 draw_set_alpha(1);
 draw_set_color(c_black);
 
@@ -176,6 +227,7 @@ draw_sprite(spr_hud_faces,3,155,850);
 draw_sprite(spr_hud_faces,4,200,850);
 draw_sprite(spr_HUD_coin,0,20,747);
 draw_sprite(spr_HUD_key,0,150,738);
+draw_sprite(spr_HUD_potion,0,520,715);
 </string>
           </argument>
         </arguments>
@@ -240,7 +292,7 @@ draw_set_alpha(1);
 draw_set_font(fnt_HUD);
 if(global.identity == 0 || global.identity == 2 || global.identity == 3) {
     draw_text(320,700,"STRENGTH: " + string(global.total_str));
-} else if(global.identity == 4) {
+} else if(global.identity == 4 || global.identity == 5 || global.identity == 6) {
     draw_text(320,700,"INTELLECT: " + string(global.total_str));
 } else if(global.identity == 1) {
     draw_text(320,700,"DEXTERITY: " + string(global.total_str));
@@ -249,7 +301,73 @@ draw_text(320,750,"WISDOM: " + string(global.total_wis));
 draw_text(320,800,"FORTITUDE: " + string(global.total_for));
 draw_text(320,850,"ARMOR: " + string(global.total_armor));
 
+//Potion amount
+draw_text(515,735,string(global.potion_num));
+//Potion key
+draw_text(550,700,"F");
+
 draw_set_color(c_black);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw inventory
+
+for(i = 0; i &lt; maxItems; i += 1) {
+    draw_sprite(spr_inventory_border,0,600+34+(i * 68),730); // Draws the inventory slots 
+            if(global.inventory[i] != -1) {
+                button[i].x = (600+34+(i * 68))/3;
+                button[i].y = 730/3;
+        }    
+    }
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="70">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.potion_num &gt;= 1) {
+    if(!instance_exists(obj_ability_cooldown)) {
+        if(global.player_hp == global.player_mhp) {
+            global.potion_num -= 1;
+            global.player_hp += (global.player_mhp * 0.4);
+            instance_create(x,y,obj_ability_cooldown);
+        }
+    }
+}
 </string>
           </argument>
         </arguments>

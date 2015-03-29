@@ -79,9 +79,8 @@ max_hp = global.health_3 + 13000;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.key_num &lt; 1) {
-    instance_create(x,y,obj_key);
-}
+            <string>instance_create(x,y,obj_key);
+
 
 for(i = 0; i &lt; (irandom_range(5,15)); i += 1) {
     instance_create(x + (irandom_range(-32,32)), y + (irandom_range(-32,32)), obj_coin);

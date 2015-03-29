@@ -29,7 +29,7 @@
 
 depth = y * -1;
 
-message_battlemage = "You are about to switch with the BATTLE-MAGE. This class is a melee hero that deals massive damage, has higher than average defense, and acts as a hybrid spellcaster, but attacks very slowly.";
+message_battlemage = "Quit messing around. We've got demons and monsters to kill, and my patience is wearing thin.";
 </string>
           </argument>
         </arguments>

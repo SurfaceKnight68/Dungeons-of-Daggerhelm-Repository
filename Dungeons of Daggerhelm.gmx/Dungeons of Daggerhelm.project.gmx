@@ -25,6 +25,7 @@
         <sound>sound\snd_male_grunt_6</sound>
         <sound>sound\snd_male_grunt_7</sound>
       </sounds>
+      <sound>sound\snd_potion_pickup</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -122,6 +123,10 @@
         </sprites>
         <sprites name="Pyromancer">
           <sprite>sprites\spr_pyro_idle_left</sprite>
+          <sprite>sprites\spr_pyro_left</sprite>
+          <sprite>sprites\spr_pyro_right</sprite>
+          <sprite>sprites\spr_pyro_down</sprite>
+          <sprite>sprites\spr_pyro_up</sprite>
         </sprites>
       </sprites>
       <sprites name="NPCs">
@@ -393,7 +398,9 @@
           <sprite>sprites\spr_melee_swing</sprite>
           <sprite>sprites\spr_blank</sprite>
           <sprite>sprites\spr_fireball</sprite>
+          <sprite>sprites\spr_fire_sphere</sprite>
           <sprite>sprites\spr_ice_blast</sprite>
+          <sprite>sprites\spr_flame_lash</sprite>
         </sprites>
         <sprites name="Secondary">
           <sprite>sprites\spr_blast_wave</sprite>
@@ -402,6 +409,7 @@
           <sprite>sprites\spr_flame_cone</sprite>
           <sprite>sprites\spr_ice_cone</sprite>
           <sprite>sprites\spr_electric_lash</sprite>
+          <sprite>sprites\spr_flame_orb</sprite>
         </sprites>
       </sprites>
       <sprites name="Grassland">
@@ -499,7 +507,9 @@
         <sprite>sprites\spr_HUD_coin</sprite>
         <sprites name="Items">
           <sprite>sprites\spr_health_potion</sprite>
+          <sprite>sprites\spr_HUD_potion</sprite>
           <sprites name="Weapons">
+            <sprite>sprites\spr_items</sprite>
             <sprite>sprites\spr_1h_sword</sprite>
             <sprite>sprites\spr_2h_sword</sprite>
             <sprite>sprites\spr_1h_mace</sprite>
@@ -581,8 +591,11 @@
       <script>scripts\scr_player_attack.gml</script>
     </scripts>
     <scripts name="Item Scripts">
-      <script>scripts\scr_item_db.gml</script>
-      <script>scripts\scr_get_item_value.gml</script>
+      <script>scripts\scr_item_pickup.gml</script>
+      <script>scripts\scr_item_check.gml</script>
+      <script>scripts\scr_item_drop.gml</script>
+      <script>scripts\scr_item_pickup_slot.gml</script>
+      <script>scripts\scr_item_drop_slot.gml</script>
     </scripts>
     <scripts name="Particle Scripts">
       <script>scripts\scr_part_blood_init.gml</script>
@@ -706,6 +719,7 @@
           <object>objects\obj_risen_corpse</object>
           <object>objects\obj_frost_atronauch</object>
           <object>objects\obj_half_dead_cultist</object>
+          <object>objects\obj_cryptmaster_cultist</object>
           <object>objects\obj_soulmass</object>
           <object>objects\obj_summoning_circle</object>
           <object>objects\obj_special_circle</object>
@@ -736,13 +750,20 @@
       <object>objects\obj_hud</object>
       <object>objects\obj_recall_button</object>
       <objects name="Inventory">
+        <object>objects\obj_item_parent</object>
         <object>objects\obj_coin</object>
         <object>objects\obj_key</object>
+        <object>objects\obj_potion</object>
+        <object>objects\obj_sword</object>
+        <object>objects\obj_mace</object>
+        <object>objects\obj_invbutton</object>
+        <object>objects\obj_mouseitem</object>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>
         <object>objects\obj_game_restart</object>
       </objects>
+      <object>objects\obj_ability_cooldown</object>
     </objects>
     <objects name="World_Objects">
       <objects name="Spawn_Level">
@@ -780,6 +801,7 @@
         <objects name="Primary">
           <object>objects\par_projectile</object>
           <object>objects\obj_melee_swing</object>
+          <object>objects\obj_flame_lash</object>
           <object>objects\obj_ice_blast</object>
           <object>objects\obj_arrow</object>
           <object>objects\obj_fireball</object>
@@ -787,6 +809,7 @@
         <objects name="Secondary">
           <object>objects\par_projectile_sec</object>
           <object>objects\obj_swift_arrow</object>
+          <object>objects\obj_flame_orb</object>
           <object>objects\obj_blast_wave</object>
           <object>objects\obj_electric_lash</object>
           <object>objects\obj_flame_cone</object>

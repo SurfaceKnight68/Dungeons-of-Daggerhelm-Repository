@@ -370,9 +370,9 @@ if(dist_player &lt;= 60) {
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>4,12</point>
-    <point>26,12</point>
-    <point>26,32</point>
-    <point>4,32</point>
+    <point>20,20</point>
+    <point>48,20</point>
+    <point>48,64</point>
+    <point>20,64</point>
   </PhysicsShapePoints>
 </object>

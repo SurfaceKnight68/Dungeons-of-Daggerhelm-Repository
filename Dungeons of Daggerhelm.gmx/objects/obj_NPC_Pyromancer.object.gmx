@@ -67,6 +67,7 @@ if(dist &lt; 32) {
     
         show_message(message_pyromancer);
         
+        global.identity = 6;        
         
     }
 }

@@ -29,7 +29,7 @@
 
 depth = y * -1;
 
-message_ranger = "You are about to switch with the RANGER. This class is a ranged hero that shoots arrows quickly to handle multiple foes at once, but deals weaker damage.";
+message_ranger = "Perfection with every arrow is my specialty. My bow is your bow.";
 </string>
           </argument>
         </arguments>

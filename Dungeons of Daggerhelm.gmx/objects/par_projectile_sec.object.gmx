@@ -410,9 +410,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>part_particles_create(global.ps,x,y,global.pt_blood,15);
-if(global.identity != 1) {
-    instance_destroy();
-}
+instance_destroy();
 </string>
           </argument>
         </arguments>

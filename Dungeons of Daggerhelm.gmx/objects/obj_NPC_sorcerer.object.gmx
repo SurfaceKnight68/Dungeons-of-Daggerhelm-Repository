@@ -29,7 +29,7 @@
 
 depth = y * -1;
 
-message_sorcerer = "You are about to switch with the SORCERER. This class is a ranged hero that deals huge amounts of damage with spells and can cast defensive spells, but attacks  slowly and has low defenses.";
+message_sorcerer = "You can't handle the true extent of my power, but you can use my abilities for a short time.";
 </string>
           </argument>
         </arguments>

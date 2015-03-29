@@ -266,6 +266,29 @@ with(arrow2) {
 }
 }
 
+if(global.identity == 6) {
+    arrow1 = instance_create(x+4,y+4,obj_flame_lash);
+    arrow2 = instance_create(x+4,y+4,obj_flame_lash);
+
+    with(arrow1) {
+        phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+        ldx = lengthdir_x(1.2,-other.mouse_dir+38);
+        ldy = lengthdir_y(1.2,-other.mouse_dir+38);
+        physics_apply_impulse(x,y,ldx,ldy);
+    }
+
+        with(arrow2) {
+            phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+    
+    
+            ldx = lengthdir_x(1.2,-other.mouse_dir+52);
+            ldy = lengthdir_y(1.2,-other.mouse_dir+52);
+            physics_apply_impulse(x,y,ldx,ldy);
+    }
+}
+
 
 </string>
           </argument>
@@ -473,7 +496,7 @@ with(arrow) {
             <string>alarm[0] = room_speed/2;
 if(global.player_hp &gt;= 1) {
     global.player_hp += global.total_for;
-    global.player_mp += global.total_wis/2;
+    global.player_mp += floor(global.total_wis/3);
 }
 </string>
           </argument>
@@ -584,59 +607,6 @@ if(mouse_check_button(mb_left)) {
     scr_player_move();
     
     }
-}
-if(sword != -1) {
-    damage = scr_get_item_value(sword, 'damage');
-} else {
-    damage = 1;
-
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Health, mana and xp values
-
-
-if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
-    global.lv += 1;
-    global.player_mxp = round(global.player_mxp*1.8);
-    global.player_mhp = round(global.player_mhp*1.5);
-    global.player_hv = round(global.player_hv*1.5);
-    global.player_mmp = round(global.player_mmp*1.2);
-    global.player_xp = 0;
-    global.player_hp = global.player_mhp;
-    global.player_mp = global.player_mmp;
-    
-}
-
-if(global.player_hp &gt; global.player_mhp) {
-    global.player_hp = global.player_mhp;
-}
-
-if(global.player_mp &gt; global.player_mmp) {
-    global.player_mp = global.player_mmp;
-}
-
-if(global.player_hp &lt; 0) {
-    global.player_hp = 0;
 }
 </string>
           </argument>
@@ -1780,7 +1750,7 @@ if(global.identity == 4) {
     alarm[4] = 0;
 }
 
-if(global.identity == 2 || global.identity == 3) {
+if(global.identity == 2 || global.identity == 3 || global.identity == 6) {
     alarm[5] = 0;
 }
 
@@ -2011,6 +1981,42 @@ if(global.identity == 1) {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Pyromancer secondary attack
+
+if(global.identity == 6) {
+    if(global.player_mp &gt;= 30) {
+        arrow = instance_create(x,y,obj_flame_orb);
+        
+        with(arrow) {
+   
+        
+            ldx = lengthdir_x(2.7,-other.mouse_dir+45);
+            ldy = lengthdir_y(2.7,-other.mouse_dir+45);
+            physics_apply_impulse(x,y,ldx,ldy);
+        }
+        global.player_mp -= 30;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="6" enumb="53">
       <action>
@@ -2039,7 +2045,7 @@ if(global.identity == 4) {
     scr_player_attack();
 }
 
-if(global.identity == 2 || global.identity == 3) {
+if(global.identity == 2 || global.identity == 3 || global.identity == 6) {
     alarm[5] = 20;
     scr_player_attack();
 }

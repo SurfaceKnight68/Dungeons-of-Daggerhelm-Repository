@@ -21,6 +21,7 @@
             <kind>1</kind>
             <string>// Bone spike attack
 state = 'attack1';
+alarm[0] = 30;
 </string>
           </argument>
         </arguments>
@@ -48,6 +49,8 @@ state = 'attack1';
             <kind>1</kind>
             <string>// Reset to wait
 state = 'wait';
+alarm[1] = 30;
+alarm[0] = 0;
 </string>
           </argument>
         </arguments>
@@ -75,6 +78,7 @@ state = 'wait';
             <kind>1</kind>
             <string>// Skeleton summon
 state = 'summon';
+
 </string>
           </argument>
         </arguments>
@@ -102,6 +106,8 @@ state = 'summon';
             <kind>1</kind>
             <string>// Reset to wait
 state = 'wait';
+alarm[1] = 0;
+alarm[2] = 60;
 </string>
           </argument>
         </arguments>
@@ -129,6 +135,7 @@ state = 'wait';
             <kind>1</kind>
             <string>// Spitfire missile attack
 state = 'attack2';
+
 </string>
           </argument>
         </arguments>
@@ -156,6 +163,8 @@ state = 'attack2';
             <kind>1</kind>
             <string>// Reset timeline
 state = 'wait';
+alarm[2] = 0;
+
 </string>
           </argument>
         </arguments>

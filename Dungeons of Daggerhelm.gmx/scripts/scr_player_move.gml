@@ -166,6 +166,30 @@ if(keyboard_check(ord("S"))) {
     phy_position_y += move_speed;
     }
 }
+
+if(global.identity == 6) {
+
+depth = y * -1;
+if(keyboard_check(ord("A"))) {
+    sprite_index = spr_pyro_left;
+    phy_position_x -= move_speed;
+    }
+    
+if(keyboard_check(ord("D"))) {
+    sprite_index = spr_pyro_right;
+    phy_position_x += move_speed;
+    }
+
+if(keyboard_check(ord("W"))) {
+    sprite_index = spr_pyro_up;
+    phy_position_y -= move_speed;
+    }
+
+if(keyboard_check(ord("S"))) {
+    sprite_index = spr_pyro_down;
+    phy_position_y += move_speed;
+    }
+}
 image_speed = 0.1;
 if(keyboard_check(ord("E"))) {
     //Interaction
@@ -177,7 +201,7 @@ if(keyboard_check(ord("E"))) {
 }
 
 
-if(global.identity == 1 || global.identity == 2 || global.identity == 3 || global.identity == 4 || global.identity == 5) && (!keyboard_check(ord("A"))) && (!keyboard_check(ord("D"))) && (!keyboard_check(ord("W"))) && (!keyboard_check(ord("S"))) { 
+if(global.identity == 1 || global.identity == 2 || global.identity == 3 || global.identity == 4 || global.identity == 5 || global.identity == 6) && (!keyboard_check(ord("A"))) && (!keyboard_check(ord("D"))) && (!keyboard_check(ord("W"))) && (!keyboard_check(ord("S"))) { 
     image_speed = 0;
     
         }

@@ -261,7 +261,7 @@
     <instance objName="obj_castle_outside" x="368" y="400" name="inst_A5A7F836" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_outside" x="368" y="416" name="inst_DC60A368" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_necromancer_tyrranus" x="327" y="176" name="inst_DD62D05F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_view_darkness" x="48" y="0" name="inst_B7AE03EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_controller_lava_boss" x="48" y="0" name="inst_EDD3CFEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_floor_tile" x="608" y="272" w="16" h="16" xo="0" yo="0" id="10036987" name="inst_27FC7478" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
