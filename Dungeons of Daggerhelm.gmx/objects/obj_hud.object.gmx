@@ -25,32 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-Inventory Items
-0 = 1h Sword
-1 = 2h Sword
-2 = 1h Mace
-3 = 2h Mace
-4 = 1h Staff
-5 = 2h Staff
-6 = Bow
-7 = Crossbow
-*/
-
-globalvar maxItems; // Total item slots
-maxItems = 4; // Initialize variable
-inv_rows = 3
-inv_columns = 4;
-
-for(i = 0; i &lt; maxItems; i += 1) { // Loops through maxItems
-    global.inventory[i] = -1; // Creates inventory slots for every maxItem check
-    button[i] = instance_create(0,0,obj_invbutton);
-    button[i].slot = i;
+            <string>for(i = 0; i &lt; 4; i += 1) {
+    for(ii = 0; ii &lt; 3; ii += 1) {
+        instance_create(x+210+(i*24),y+240+(ii*24),obj_inventory_box);
+    }
 }
-
-globalvar mouseItem;
-mouseItem = -1;
-instance_create(0,0,obj_mouseitem);
 </string>
           </argument>
         </arguments>
@@ -75,7 +54,7 @@ instance_create(0,0,obj_mouseitem);
             <kind>1</kind>
             <string>/// Draw HUD boxes
 draw_set_alpha(.99);
-draw_roundrect(0,690,900,900,false);
+draw_roundrect(0,690,570,900,false);
 draw_set_alpha(1);
 
 // Draw stats borders
@@ -93,7 +72,7 @@ draw_set_color(c_black);
 // Draw HUD border
 draw_set_alpha(1);
 draw_set_color(c_silver);
-draw_roundrect(0,689,901,901,true);
+draw_roundrect(0,689,571,901,true);
 draw_set_alpha(1);
 draw_set_color(c_black);
 
@@ -311,6 +290,8 @@ draw_set_color(c_black);
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -327,16 +308,12 @@ draw_set_color(c_black);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Draw inventory
-
-for(i = 0; i &lt; maxItems; i += 1) {
-    draw_sprite(spr_inventory_border,0,600+34+(i * 68),730); // Draws the inventory slots 
-            if(global.inventory[i] != -1) {
-                button[i].x = (600+34+(i * 68))/3;
-                button[i].y = 730/3;
-        }    
-    }
-
+            <string>/// Draw layer for inventory section
+draw_set_color(c_black);
+draw_roundrect(view_xview[0]+191,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,false);
+draw_set_color(c_silver);
+draw_roundrect(view_xview[0]+191,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,true);
+draw_set_color(c_black);
 </string>
           </argument>
         </arguments>

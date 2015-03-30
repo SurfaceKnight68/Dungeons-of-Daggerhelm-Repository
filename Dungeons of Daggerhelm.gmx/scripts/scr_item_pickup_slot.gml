@@ -1,8 +1,9 @@
 /// scr_item_pickup_slot(item,slot);
 
-if(global.inventory[argument1] == -1) {
+if(global.inv1[argument1,argument2] == -1) {
 
-    global.inventory[argument1] = argument0;
+    global.inv1[argument1,argument2] = argument0;
     return(1);
+
 }
 return(0);

@@ -751,19 +751,20 @@
       <object>objects\obj_recall_button</object>
       <objects name="Inventory">
         <object>objects\obj_item_parent</object>
+        <object>objects\obj_invbutton</object>
+        <object>objects\obj_mouseitem</object>
         <object>objects\obj_coin</object>
         <object>objects\obj_key</object>
         <object>objects\obj_potion</object>
         <object>objects\obj_sword</object>
         <object>objects\obj_mace</object>
-        <object>objects\obj_invbutton</object>
-        <object>objects\obj_mouseitem</object>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>
         <object>objects\obj_game_restart</object>
       </objects>
       <object>objects\obj_ability_cooldown</object>
+      <object>objects\obj_inventory_box</object>
     </objects>
     <objects name="World_Objects">
       <objects name="Spawn_Level">

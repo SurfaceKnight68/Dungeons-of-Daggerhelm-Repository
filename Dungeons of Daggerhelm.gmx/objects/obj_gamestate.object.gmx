@@ -3,7 +3,7 @@
   <spriteName>spr_inv_slot</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-20</depth>
+  <depth>-1000002</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -40,6 +40,46 @@ global.switches = ds_map_create();
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="56">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.item != -1) {
+    if(instance_place(mouse_x,mouse_y,obj_inventory_box)) {
+        var box = instance_place(mouse_x,mouse_y,obj_inventory_box);
+        
+        if(box.item == -1) {
+            box.item = global.item;
+            global.item = -1;
+        } else {
+        // Drop item on ground
+        instance_create(obj_player.x+(irandom_range(-32,32)),obj_player.y+(irandom_range(-32,32)),global.item);
+        global.item = -1;
+        
+        }
+    } else {
+        instance_create(obj_player.x+(irandom_range(-32,32)),obj_player.y+(irandom_range(-32,32)),global.item);
+        global.item = -1;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -60,7 +100,7 @@ global.switches = ds_map_create();
             <string>/// Draw the held item
 
 if (global.item != -1) {
-    draw_sprite(object_get_sprite(global.item), 0 ,mouse_x-6, mouse_y-6);
+    draw_sprite(object_get_sprite(global.item), 0 ,mouse_x, mouse_y);
 }
 </string>
           </argument>
