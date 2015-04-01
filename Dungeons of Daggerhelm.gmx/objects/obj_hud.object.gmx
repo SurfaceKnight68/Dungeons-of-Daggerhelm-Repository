@@ -30,6 +30,11 @@
         instance_create(x+210+(i*24),y+240+(ii*24),obj_inventory_box);
     }
 }
+instance_create(x+(150-22),y+(120-16),obj_equipment_weapon);
+instance_create(x+(150-22),y+(120+8),obj_equipment_offhand);
+instance_create(x+(150+22),y+(120-16),obj_equipment_helm);
+instance_create(x+(150+22),y+(120),obj_equipment_chest);
+instance_create(x+(150+22),y+(120+16),obj_equipment_legs);
 </string>
           </argument>
         </arguments>
@@ -286,6 +291,40 @@ draw_text(515,735,string(global.potion_num));
 draw_text(550,700,"F");
 
 draw_set_color(c_black);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw equipment inventory text
+
+if(global.game_state == 'pause') {
+    draw_set_color(c_silver);
+    draw_set_font(fnt_HUD);
+    draw_text(410,230,"Equipment");
+    draw_text((120-22)*3,(115-16)*3,"Weapon");
+    draw_text((120-22)*3,(115+8)*3,"Offhand");
+    draw_text((160+22)*3,(115-16)*3,"Head");
+    draw_text((160+22)*3,(115)*3,"Chest");
+    draw_text((160+22)*3,(115+16)*3,"Legs");
+    
+    draw_set_color(c_black);
+}
 </string>
           </argument>
         </arguments>

@@ -501,6 +501,10 @@
       <sprites name="Inventory">
         <sprite>sprites\spr_inv_slot</sprite>
         <sprite>sprites\spr_inventory_border</sprite>
+        <sprite>sprites\spr_equipment_legs</sprite>
+        <sprite>sprites\spr_equipment_chest</sprite>
+        <sprite>sprites\spr_equipment_weapon</sprite>
+        <sprite>sprites\spr_equipment_helm</sprite>
         <sprite>sprites\spr_gold_coin</sprite>
         <sprite>sprites\spr_key</sprite>
         <sprite>sprites\spr_HUD_key</sprite>
@@ -591,11 +595,8 @@
       <script>scripts\scr_player_attack.gml</script>
     </scripts>
     <scripts name="Item Scripts">
-      <script>scripts\scr_item_pickup.gml</script>
-      <script>scripts\scr_item_check.gml</script>
-      <script>scripts\scr_item_drop.gml</script>
-      <script>scripts\scr_item_pickup_slot.gml</script>
-      <script>scripts\scr_item_drop_slot.gml</script>
+      <script>scripts\scr_item_db.gml</script>
+      <script>scripts\scr_get_item_value.gml</script>
     </scripts>
     <scripts name="Particle Scripts">
       <script>scripts\scr_part_blood_init.gml</script>
@@ -758,6 +759,7 @@
         <object>objects\obj_potion</object>
         <object>objects\obj_sword</object>
         <object>objects\obj_mace</object>
+        <object>objects\obj_items</object>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>
@@ -765,6 +767,11 @@
       </objects>
       <object>objects\obj_ability_cooldown</object>
       <object>objects\obj_inventory_box</object>
+      <object>objects\obj_equipment_weapon</object>
+      <object>objects\obj_equipment_offhand</object>
+      <object>objects\obj_equipment_helm</object>
+      <object>objects\obj_equipment_chest</object>
+      <object>objects\obj_equipment_legs</object>
     </objects>
     <objects name="World_Objects">
       <objects name="Spawn_Level">

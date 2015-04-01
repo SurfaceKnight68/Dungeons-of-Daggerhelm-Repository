@@ -56,12 +56,9 @@ show_debug_message("Player initialized!");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Set some variables
+            <string>/// View follow offset
 
-sword = -1;
-damage = 1;
-
-
+instance_create(x,y+32,obj_view_follow);
 </string>
           </argument>
         </arguments>
@@ -82,9 +79,13 @@ damage = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// View follow offset
+            <string>/// Do we have a weapon?
 
-instance_create(x,y+32,obj_view_follow);
+weapon = -1; // We currently do not have a weapon
+
+/*
+    if weapon &gt; -1, we are holding a weapon
+*/
 </string>
           </argument>
         </arguments>
