@@ -602,6 +602,7 @@
       <script>scripts\scr_part_blood_init.gml</script>
       <script>scripts\scr_part_snow_init.gml</script>
       <script>scripts\scr_part_fire_init.gml</script>
+      <script>scripts\scr_part_rarity_init_new.gml</script>
     </scripts>
     <scripts name="Miscillaneous Scripts">
       <script>scripts\scr_dungeon_walls.gml</script>
@@ -757,8 +758,10 @@
         <object>objects\obj_coin</object>
         <object>objects\obj_key</object>
         <object>objects\obj_potion</object>
-        <object>objects\obj_sword</object>
-        <object>objects\obj_mace</object>
+        <object>objects\obj_basic_sword</object>
+        <object>objects\obj_basic_mace</object>
+        <object>objects\obj_basic_wand</object>
+        <object>objects\obj_basic_bow</object>
         <object>objects\obj_items</object>
       </objects>
       <objects name="Screen effects">

@@ -35,6 +35,7 @@ part_emitter_region(global.ps,em,0,room_width,-16,0,ps_shape_rectangle,ps_distr_
 scr_part_snow_init();
 scr_part_blood_init();
 scr_part_fire_init();
+scr_part_rarity_init_new();
 
 
 </string>

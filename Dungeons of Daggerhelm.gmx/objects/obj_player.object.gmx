@@ -655,7 +655,7 @@ if(mouse_check_button(mb_left)) {
             <kind>1</kind>
             <string>/// Level requirements for hero class activation
 
-if(global.lv &lt; 12) {
+if(global.lv &lt; 4) {
     instance_deactivate_object(obj_NPC_Thaumaturge);
 } else {
     instance_activate_object(obj_NPC_Thaumaturge);

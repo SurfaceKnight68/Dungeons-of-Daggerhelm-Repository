@@ -62,16 +62,27 @@ global.switches = ds_map_create();
         var box = instance_position(mouse_x,mouse_y,obj_inventory_box);
         
         if(box.item == -1 &amp;&amp; (box.type == scr_get_item_value(global.item, 'type') || box.type == '')) {
-            box.item = global.item;
-            global.item = -1;
+            if(box.type == 'weapon') {
+                global.bonus_str = global.bonus_str + scr_get_item_value(global.item, 'strength');
+                global.bonus_wis = global.bonus_wis + scr_get_item_value(global.item, 'wisdom');
+                global.bonus_for = global.bonus_for + scr_get_item_value(global.item, 'fortitude');
+                box.item = global.item;
+                global.item = -1;
+                
+            } else {
+                box.item = global.item;
+                global.item = -1;
+                
+            }          
+            
         } else {
         // Drop item on ground
-        instance_create(obj_player.x+(irandom_range(-32,32)),obj_player.y+(irandom_range(-32,32)),global.item);
+        instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
         global.item = -1;
         
         }
     } else {
-        instance_create(obj_player.x+(irandom_range(-32,32)),obj_player.y+(irandom_range(-32,32)),global.item);
+        instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
         global.item = -1;
     }
 }

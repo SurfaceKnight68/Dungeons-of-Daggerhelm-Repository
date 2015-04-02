@@ -78,15 +78,7 @@ y = ystart+view_yview[0];
           <argument>
             <kind>1</kind>
             <string>/// Take item from box
-if(type != '') {
-    if(item != -1) {
-        global.item = item;
-        global.bonus_str = global.bonus_str - scr_get_item_value(global.item, 'strength');
-        global.bonus_wis = global.bonus_wis - scr_get_item_value(global.item, 'wisdom');
-        global.bonus_for = global.bonus_for - scr_get_item_value(global.item, 'fortitude');
-        item = -1;    
-    }
-}
+
 if(item != -1) {
     global.item = item;
     item = -1;
