@@ -20,6 +20,6 @@
   <width>16</width>
   <height>16</height>
   <frames>
-    <frame index="0">images\spr_2h_sword_0.png</frame>
+    <frame index="0">images\spr_grieve_0.png</frame>
   </frames>
 </sprite>

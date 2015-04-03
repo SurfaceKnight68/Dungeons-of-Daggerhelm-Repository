@@ -515,13 +515,26 @@
           <sprites name="Weapons">
             <sprite>sprites\spr_items</sprite>
             <sprite>sprites\spr_1h_sword</sprite>
-            <sprite>sprites\spr_2h_sword</sprite>
+            <sprite>sprites\spr_large_sword</sprite>
             <sprite>sprites\spr_1h_mace</sprite>
-            <sprite>sprites\spr_2h_mace</sprite>
-            <sprite>sprites\spr_2h_staff</sprite>
+            <sprite>sprites\spr_large_mace</sprite>
+            <sprite>sprites\spr_large_staff</sprite>
             <sprite>sprites\spr_1h_wand</sprite>
             <sprite>sprites\spr_bow</sprite>
             <sprite>sprites\spr_crossbow</sprite>
+            <sprites name="Legendary">
+              <sprite>sprites\spr_drake_blade</sprite>
+              <sprite>sprites\spr_dark_pummeler</sprite>
+              <sprite>sprites\spr_faerie_blasting_wand</sprite>
+              <sprite>sprites\spr_snakesting_caster</sprite>
+            </sprites>
+            <sprites name="Godlike">
+              <sprite>sprites\spr_facelifter</sprite>
+              <sprite>sprites\spr_deathrattle</sprite>
+              <sprite>sprites\spr_widowfury</sprite>
+              <sprite>sprites\spr_grieve</sprite>
+              <sprite>sprites\spr_trueshot_recurve</sprite>
+            </sprites>
           </sprites>
         </sprites>
       </sprites>
@@ -758,11 +771,26 @@
         <object>objects\obj_coin</object>
         <object>objects\obj_key</object>
         <object>objects\obj_potion</object>
-        <object>objects\obj_basic_sword</object>
-        <object>objects\obj_basic_mace</object>
-        <object>objects\obj_basic_wand</object>
-        <object>objects\obj_basic_bow</object>
         <object>objects\obj_items</object>
+        <objects name="Weapons">
+          <object>objects\obj_basic_bow</object>
+          <object>objects\obj_basic_wand</object>
+          <object>objects\obj_basic_mace</object>
+          <object>objects\obj_basic_sword</object>
+          <objects name="Legendary">
+            <object>objects\obj_drake_blade</object>
+            <object>objects\obj_dark_pummeler</object>
+            <object>objects\obj_faerie_blasting_wand</object>
+            <object>objects\obj_snakesting_caster</object>
+          </objects>
+          <objects name="Godlike">
+            <object>objects\obj_facelifter</object>
+            <object>objects\obj_widowfury</object>
+            <object>objects\obj_grieve</object>
+            <object>objects\obj_deathrattle</object>
+            <object>objects\obj_trueshot_recurve</object>
+          </objects>
+        </objects>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>

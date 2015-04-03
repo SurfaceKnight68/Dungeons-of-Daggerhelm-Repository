@@ -50,8 +50,46 @@ alarm[0] = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(rarity == 1) {    
-    part_particles_create(global.ps,x,y,global.pt_common,1);    
+            <string>if(rarity == 1) { // Basic   
+    part_particles_create(global.ps,x,y-2,global.pt_common,1);
+    part_particles_create(global.ps,x-2,y,global.pt_common,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_common,1);      
+}
+if(rarity == 2) { // Novice
+
+}
+if(rarity == 3) { // Uncommon
+
+}
+if(rarity == 4) { // Exceptional
+
+}
+if(rarity == 5) { // Tremendous
+
+}
+if(rarity == 6) { // Epic
+
+}
+
+if(rarity == 7) { // Legendary    
+    part_particles_create(global.ps,x,y-4,global.pt_legendary,1);
+    part_particles_create(global.ps,x,y-2,global.pt_legendary,1);
+    part_particles_create(global.ps,x-2,y,global.pt_legendary,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_legendary,1);
+    part_particles_create(global.ps,x-4,y+4,global.pt_legendary,1);
+    part_particles_create(global.ps,x+4,y+4,global.pt_legendary,1);       
+}
+
+if(rarity == 8) { // Godlike
+    part_particles_create(global.ps,x,y-4,global.pt_godlike,1);
+    part_particles_create(global.ps,x,y-2,global.pt_godlike,1);
+    part_particles_create(global.ps,x-2,y,global.pt_godlike,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_godlike,1);
+    part_particles_create(global.ps,x-4,y+4,global.pt_godlike,1);
+    part_particles_create(global.ps,x+4,y+4,global.pt_godlike,1);    
+    part_particles_create(global.ps,x-6,y+6,global.pt_godlike,1);
+    part_particles_create(global.ps,x+6,y+6,global.pt_godlike,1);
+
 }
 </string>
           </argument>

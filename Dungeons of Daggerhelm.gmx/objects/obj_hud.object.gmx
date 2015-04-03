@@ -349,9 +349,9 @@ if(global.game_state == 'pause') {
             <kind>1</kind>
             <string>/// Draw layer for inventory section
 draw_set_color(c_black);
-draw_roundrect(view_xview[0]+191,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,false);
+draw_roundrect(view_xview[0]+181,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,false);
 draw_set_color(c_silver);
-draw_roundrect(view_xview[0]+191,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,true);
+draw_roundrect(view_xview[0]+181,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,true);
 draw_set_color(c_black);
 </string>
           </argument>
