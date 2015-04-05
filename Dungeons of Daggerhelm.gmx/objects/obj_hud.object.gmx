@@ -377,7 +377,7 @@ draw_set_color(c_black);
             <kind>1</kind>
             <string>if(global.potion_num &gt;= 1) {
     if(!instance_exists(obj_ability_cooldown)) {
-        if(global.player_hp == global.player_mhp) {
+        if(global.player_hp != global.player_mhp) {
             global.potion_num -= 1;
             global.player_hp += (global.player_mhp * 0.4);
             instance_create(x,y,obj_ability_cooldown);

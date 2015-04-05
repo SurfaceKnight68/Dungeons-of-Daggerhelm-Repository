@@ -63,18 +63,27 @@ global.switches = ds_map_create();
         
         if(box.item == -1 &amp;&amp; (box.type == scr_get_item_value(global.item, 'type') || box.type == '')) {
             if(box.type == 'weapon') {
-                global.bonus_str = global.bonus_str + scr_get_item_value(global.item, 'strength');
-                global.bonus_wis = global.bonus_wis + scr_get_item_value(global.item, 'wisdom');
-                global.bonus_for = global.bonus_for + scr_get_item_value(global.item, 'fortitude');
-                box.item = global.item;
-                global.item = -1;
+                if((scr_get_item_value(global.item, 'spec1') == global.identity) || (scr_get_item_value(global.item, 'spec2') == global.identity)) {
+                    global.bonus_str = global.bonus_str + scr_get_item_value(global.item, 'strength');
+                    global.bonus_wis = global.bonus_wis + scr_get_item_value(global.item, 'wisdom');
+                    global.bonus_for = global.bonus_for + scr_get_item_value(global.item, 'fortitude');
+                    box.item = global.item;
+                    global.item = -1;
                 
             } else {
-                box.item = global.item;
-                global.item = -1;
-                
-            }          
             
+            // Drop item on ground
+            instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
+            global.item = -1;
+            
+            }
+            
+            } else {
+                box.item = global.item;
+                global.item = -1;       
+                      
+            }
+        
         } else {
         // Drop item on ground
         instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
@@ -84,8 +93,11 @@ global.switches = ds_map_create();
     } else {
         instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
         global.item = -1;
-    }
-}
+            }
+        }
+
+
+
 </string>
           </argument>
         </arguments>

@@ -514,14 +514,48 @@
           <sprite>sprites\spr_HUD_potion</sprite>
           <sprites name="Weapons">
             <sprite>sprites\spr_items</sprite>
-            <sprite>sprites\spr_1h_sword</sprite>
-            <sprite>sprites\spr_large_sword</sprite>
-            <sprite>sprites\spr_1h_mace</sprite>
-            <sprite>sprites\spr_large_mace</sprite>
-            <sprite>sprites\spr_large_staff</sprite>
-            <sprite>sprites\spr_1h_wand</sprite>
-            <sprite>sprites\spr_bow</sprite>
-            <sprite>sprites\spr_crossbow</sprite>
+            <sprites name="Basic">
+              <sprite>sprites\spr_1h_sword</sprite>
+              <sprite>sprites\spr_1h_mace</sprite>
+              <sprite>sprites\spr_1h_wand</sprite>
+              <sprite>sprites\spr_bow</sprite>
+            </sprites>
+            <sprites name="Novice">
+              <sprite>sprites\spr_large_sword</sprite>
+              <sprite>sprites\spr_large_mace</sprite>
+              <sprite>sprites\spr_large_staff</sprite>
+              <sprite>sprites\spr_crossbow</sprite>
+            </sprites>
+            <sprites name="Uncommon">
+              <sprite>sprites\spr_uncommon_blade</sprite>
+              <sprite>sprites\spr_uncommon_hammer</sprite>
+              <sprite>sprites\spr_uncommon_charmer</sprite>
+              <sprite>sprites\spr_uncommon_bolter</sprite>
+            </sprites>
+            <sprites name="Exceptional">
+              <sprite>sprites\spr_exceptional_claymore</sprite>
+              <sprite>sprites\spr_exceptional_wand</sprite>
+              <sprite>sprites\spr_exceptional_bow</sprite>
+              <sprite>sprites\spr_exceptional_mace</sprite>
+              <sprite>sprites\spr_exceptional_staff</sprite>
+              <sprite>sprites\spr_exceptional_maul</sprite>
+              <sprite>sprites\spr_exceptional_scimitar</sprite>
+            </sprites>
+            <sprites name="Tremendous">
+              <sprite>sprites\spr_tremendous_claymore</sprite>
+              <sprite>sprites\spr_tremendous_wand</sprite>
+              <sprite>sprites\spr_tremendous_bow</sprite>
+              <sprite>sprites\spr_tremendous_club</sprite>
+              <sprite>sprites\spr_tremendous_staff</sprite>
+              <sprite>sprites\spr_tremendous_maul</sprite>
+              <sprite>sprites\spr_tremendous_blade</sprite>
+            </sprites>
+            <sprites name="Epic">
+              <sprite>sprites\spr_harpoon_of_spikes</sprite>
+              <sprite>sprites\spr_staff_of_stars</sprite>
+              <sprite>sprites\spr_sword_of_spite</sprite>
+              <sprite>sprites\spr_searing_bludgeon</sprite>
+            </sprites>
             <sprites name="Legendary">
               <sprite>sprites\spr_drake_blade</sprite>
               <sprite>sprites\spr_dark_pummeler</sprite>
@@ -534,6 +568,14 @@
               <sprite>sprites\spr_widowfury</sprite>
               <sprite>sprites\spr_grieve</sprite>
               <sprite>sprites\spr_trueshot_recurve</sprite>
+            </sprites>
+          </sprites>
+          <sprites name="On Player">
+            <sprites name="Basic">
+              <sprites name="basic_sword">
+                <sprite>sprites\spr_basic_sword_drawn_right</sprite>
+                <sprite>sprites\spr_basic_sword_drawn_left</sprite>
+              </sprites>
             </sprites>
           </sprites>
         </sprites>
@@ -773,10 +815,33 @@
         <object>objects\obj_potion</object>
         <object>objects\obj_items</object>
         <objects name="Weapons">
-          <object>objects\obj_basic_bow</object>
-          <object>objects\obj_basic_wand</object>
-          <object>objects\obj_basic_mace</object>
-          <object>objects\obj_basic_sword</object>
+          <objects name="Basic">
+            <object>objects\obj_basic_mace</object>
+            <object>objects\obj_basic_sword</object>
+            <object>objects\obj_basic_wand</object>
+            <object>objects\obj_basic_bow</object>
+          </objects>
+          <objects name="Novice">
+            <object>objects\obj_large_sword</object>
+            <object>objects\obj_large_mace</object>
+            <object>objects\obj_large_staff</object>
+            <object>objects\obj_crossbow</object>
+          </objects>
+          <objects name="Uncommon">
+            <object>objects\obj_uncommon_blade</object>
+            <object>objects\obj_uncommon_hammer</object>
+            <object>objects\obj_uncommon_charmer</object>
+            <object>objects\obj_uncommon_bolter</object>
+          </objects>
+          <objects name="Exceptional">
+            <object>objects\obj_exceptional_claymore</object>
+            <object>objects\obj_exceptional_wand</object>
+            <object>objects\obj_exceptional_bow</object>
+            <object>objects\obj_exceptional_mace</object>
+            <object>objects\obj_exceptional_staff</object>
+            <object>objects\obj_exceptional_maul</object>
+            <object>objects\obj_exceptional_scimitar</object>
+          </objects>
           <objects name="Legendary">
             <object>objects\obj_drake_blade</object>
             <object>objects\obj_dark_pummeler</object>
