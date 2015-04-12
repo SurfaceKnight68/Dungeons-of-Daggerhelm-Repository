@@ -26,6 +26,9 @@
         <sound>sound\snd_male_grunt_7</sound>
       </sounds>
       <sound>sound\snd_potion_pickup</sound>
+      <sound>sound\snd_item_drop</sound>
+      <sound>sound\snd_item_pickup</sound>
+      <sound>sound\snd_item_inv</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -512,6 +515,19 @@
         <sprites name="Items">
           <sprite>sprites\spr_health_potion</sprite>
           <sprite>sprites\spr_HUD_potion</sprite>
+          <sprites name="Armor">
+            <sprites name="Basic">
+              <sprite>sprites\spr_basic_cap</sprite>
+              <sprite>sprites\spr_basic_shirt</sprite>
+              <sprite>sprites\spr_basic_pants</sprite>
+              <sprite>sprites\spr_basic_helm</sprite>
+              <sprite>sprites\spr_basic_mail</sprite>
+              <sprite>sprites\spr_basic_plates</sprite>
+              <sprite>sprites\spr_basic_hood</sprite>
+              <sprite>sprites\spr_basic_robe</sprite>
+              <sprite>sprites\spr_basic_legwraps</sprite>
+            </sprites>
+          </sprites>
           <sprites name="Weapons">
             <sprite>sprites\spr_items</sprite>
             <sprites name="Basic">
@@ -648,10 +664,13 @@
       <script>scripts\scr_draw_shadow_bridge.gml</script>
       <script>scripts\scr_player_move.gml</script>
       <script>scripts\scr_player_attack.gml</script>
+      <script>scripts\scr_exp_gain.gml</script>
     </scripts>
     <scripts name="Item Scripts">
       <script>scripts\scr_item_db.gml</script>
       <script>scripts\scr_get_item_value.gml</script>
+      <script>scripts\scr_item_drop_weapon.gml</script>
+      <script>scripts\scr_item_drop_armor.gml</script>
     </scripts>
     <scripts name="Particle Scripts">
       <script>scripts\scr_part_blood_init.gml</script>
@@ -740,6 +759,7 @@
           <object>objects\obj_dark_succor</object>
           <object>objects\obj_necromancer_tyrranus</object>
           <object>objects\obj_necromancer_tyrranus_escape</object>
+          <object>objects\obj_boss_parent</object>
         </objects>
         <objects name="Prime Slate Imp">
           <object>objects\obj_prime_slate_imp</object>
@@ -854,6 +874,19 @@
             <object>objects\obj_grieve</object>
             <object>objects\obj_deathrattle</object>
             <object>objects\obj_trueshot_recurve</object>
+          </objects>
+        </objects>
+        <objects name="Armor">
+          <objects name="Basic">
+            <object>objects\obj_basic_cap</object>
+            <object>objects\obj_basic_shirt</object>
+            <object>objects\obj_basic_pants</object>
+            <object>objects\obj_basic_helm</object>
+            <object>objects\obj_basic_mail</object>
+            <object>objects\obj_basic_plates</object>
+            <object>objects\obj_basic_hood</object>
+            <object>objects\obj_basic_robe</object>
+            <object>objects\obj_basic_legwraps</object>
           </objects>
         </objects>
       </objects>

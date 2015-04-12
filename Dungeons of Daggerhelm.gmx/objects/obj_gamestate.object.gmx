@@ -61,43 +61,54 @@ global.switches = ds_map_create();
     if(instance_position(mouse_x,mouse_y,obj_inventory_box)) {
         var box = instance_position(mouse_x,mouse_y,obj_inventory_box);
         
+        //Make sure slot is empty
         if(box.item == -1 &amp;&amp; (box.type == scr_get_item_value(global.item, 'type') || box.type == '')) {
+                //Put item in box
+                box.item = global.item;                
             if(box.type == 'weapon') {
-                if((scr_get_item_value(global.item, 'spec1') == global.identity) || (scr_get_item_value(global.item, 'spec2') == global.identity)) {
-                    global.bonus_str = global.bonus_str + scr_get_item_value(global.item, 'strength');
-                    global.bonus_wis = global.bonus_wis + scr_get_item_value(global.item, 'wisdom');
-                    global.bonus_for = global.bonus_for + scr_get_item_value(global.item, 'fortitude');
-                    box.item = global.item;
-                    global.item = -1;
-                
-            } else {
-            
-            // Drop item on ground
-            instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
-            global.item = -1;
-            
+                if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    global.bonus_str += scr_get_item_value(global.item, 'strength');
+                    global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
+                    global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                }
             }
-            
-            } else {
-                box.item = global.item;
-                global.item = -1;       
-                      
+            if(box.type == 'head') {
+                if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    global.bonus_str += scr_get_item_value(global.item, 'strength');
+                    global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
+                    global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                }
             }
-        
+            if(box.type == 'chest') {
+                if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    global.bonus_str += scr_get_item_value(global.item, 'strength');
+                    global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
+                    global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                }
+            }
+            if(box.type == 'legs') {
+                if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    global.bonus_str += scr_get_item_value(global.item, 'strength');
+                    global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
+                    global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                }
+            }
+                audio_play_sound(snd_item_inv,10,false);
+                global.item = -1;               
         } else {
-        // Drop item on ground
-        instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
-        global.item = -1;
+        
+            // Drop item on ground
+            instance_create(obj_player.x,obj_player.y,global.item);
+            global.item = -1;
         
         }
+        
     } else {
-        instance_create(obj_player.x+(irandom_range(-16,16)),obj_player.y+(irandom_range(-16,16)),global.item);
+        //Drop item on ground
+        instance_create(obj_player.x,obj_player.y,global.item);
         global.item = -1;
-            }
-        }
-
-
-
+    }
+}
 </string>
           </argument>
         </arguments>

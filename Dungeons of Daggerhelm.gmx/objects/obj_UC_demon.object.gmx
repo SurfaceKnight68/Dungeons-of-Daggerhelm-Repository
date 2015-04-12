@@ -240,14 +240,7 @@ if(hp &lt;= 0) {
         instance_create(x,y,obj_health_globe);   
     }
     instance_destroy();
-        if(global.lv &lt; 8) {
-            global.player_xp = global.player_xp+46;
-        } else if(global.lv &gt; 8 &amp;&amp; global.lv &lt; 14) {
-            global.player_xp = global.player_xp+30;
-        } else if(global.lv &gt; 14 &amp;&amp; global.lv &lt; 24) {
-            global.player_xp = global.player_xp+14;
         
-    }
 }
 </string>
           </argument>
@@ -401,7 +394,7 @@ with(arrow3) {
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>14,28</point>
+    <point>26,28</point>
     <point>10,16</point>
   </PhysicsShapePoints>
 </object>

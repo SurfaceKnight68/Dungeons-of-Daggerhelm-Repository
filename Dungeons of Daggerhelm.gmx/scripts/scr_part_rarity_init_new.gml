@@ -13,6 +13,19 @@ part_type_direction(pc,0,359,0,5);
 part_type_gravity(pc,.6,90);
 part_type_life(pc,5,7);
 
+global.pt_novice = part_type_create();
+var pn = global.pt_novice;
+part_system_depth(global.pt_novice,0);
+
+// Settings for fire particle
+part_type_shape(pn,pt_shape_sphere);
+part_type_size(pn,.06,.08,0,0);
+part_type_color3(pn,c_black,c_gray,c_white);
+part_type_speed(pn,.03,.04,-.1,0);
+part_type_direction(pn,0,359,0,5);
+part_type_gravity(pn,.6,90);
+part_type_life(pn,5,7);
+
 global.pt_uncommon = part_type_create();
 var puc = global.pt_uncommon;
 part_system_depth(global.pt_uncommon,0);

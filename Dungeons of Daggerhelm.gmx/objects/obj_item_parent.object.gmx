@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 0;
 rarity = -1;
-alarm[0] = 5;
+item = '';
+audio_play_sound(snd_item_drop,10,false);
 </string>
           </argument>
         </arguments>
@@ -56,18 +57,35 @@ alarm[0] = 5;
     part_particles_create(global.ps,x+2,y,global.pt_common,1);      
 }
 if(rarity == 2) { // Novice
+    part_particles_create(global.ps,x,y-2,global.pt_novice,1);
+    part_particles_create(global.ps,x-2,y,global.pt_novice,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_novice,1);
 
 }
 if(rarity == 3) { // Uncommon
+    part_particles_create(global.ps,x,y-2,global.pt_uncommon,1);
+    part_particles_create(global.ps,x-2,y,global.pt_uncommon,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_uncommon,1);
 
 }
 if(rarity == 4) { // Exceptional
+    part_particles_create(global.ps,x,y-2,global.pt_exceptional,1);
+    part_particles_create(global.ps,x-2,y,global.pt_exceptional,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_exceptional,1);
 
 }
 if(rarity == 5) { // Tremendous
+    part_particles_create(global.ps,x,y-2,global.pt_tremendous,1);
+    part_particles_create(global.ps,x-2,y,global.pt_tremendous,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_tremendous,1);
 
 }
 if(rarity == 6) { // Epic
+    part_particles_create(global.ps,x,y-2,global.pt_epic,1);
+    part_particles_create(global.ps,x-2,y,global.pt_epic,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_epic,1);
+    part_particles_create(global.ps,x,y+2,global.pt_epic,1);
+    
 
 }
 
@@ -119,6 +137,7 @@ if(rarity == 8) { // Godlike
 
 if(global.item == -1) {
     global.item = object_index;
+    audio_play_sound(snd_item_pickup,10,false);
     instance_destroy();
 }
 </string>

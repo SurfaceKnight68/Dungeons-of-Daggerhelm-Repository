@@ -218,14 +218,7 @@ if(hp &lt;= 0) {
         instance_create(x,y,obj_health_globe);   
     }
     instance_destroy();
-        if(global.lv &lt; 8) {
-            global.player_xp = global.player_xp+86;
-        } else if(global.lv &gt; 8 &amp;&amp; global.lv &lt; 14) {
-            global.player_xp = global.player_xp+40;
-        } else if(global.lv &gt; 14 &amp;&amp; global.lv &lt; 24) {
-            global.player_xp = global.player_xp+24;
-        
-    }
+       
 }
 </string>
           </argument>

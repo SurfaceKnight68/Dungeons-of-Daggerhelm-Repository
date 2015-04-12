@@ -193,14 +193,7 @@ phy_fixed_rotation = true;
 if(hp &lt;= 0) {
     part_particles_create(global.ps,x,y,global.pt_shadow_death,35);
     instance_destroy();
-        if(global.lv &lt; 6) {
-            global.player_xp = global.player_xp+60;
-        } else if(global.lv &gt; 6 &amp;&amp; global.lv &lt; 12) {
-            global.player_xp = global.player_xp+32;
-        } else if(global.lv &gt; 12 &amp;&amp; global.lv &lt; 20) {
-            global.player_xp = global.player_xp+6;
-        
-    }
+    
 }
 </string>
           </argument>

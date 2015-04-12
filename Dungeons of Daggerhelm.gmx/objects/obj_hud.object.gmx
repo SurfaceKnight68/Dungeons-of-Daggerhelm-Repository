@@ -31,7 +31,7 @@
     }
 }
 instance_create(x+(150-22),y+(120-16),obj_equipment_weapon);
-instance_create(x+(150-22),y+(120+8),obj_equipment_offhand);
+instance_create(x+(150-22),y+(120+16),obj_equipment_offhand);
 instance_create(x+(150+22),y+(120-16),obj_equipment_helm);
 instance_create(x+(150+22),y+(120),obj_equipment_chest);
 instance_create(x+(150+22),y+(120+16),obj_equipment_legs);
@@ -379,7 +379,7 @@ draw_set_color(c_black);
     if(!instance_exists(obj_ability_cooldown)) {
         if(global.player_hp != global.player_mhp) {
             global.potion_num -= 1;
-            global.player_hp += (global.player_mhp * 0.4);
+            global.player_hp += floor(global.player_mhp * 0.4);
             instance_create(x,y,obj_ability_cooldown);
         }
     }

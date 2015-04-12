@@ -112,7 +112,7 @@ weapon = -1; // We currently do not have a weapon
             <kind>1</kind>
             <string>alarm[7] = 10;
 if(global.identity == 4) {
-if(global.player_mp &gt;= 2) {
+if(global.player_mp &gt;= 4) {
 arrow1 = instance_create(x,y,obj_flame_cone);
 arrow2 = instance_create(x,y,obj_flame_cone);
 arrow3 = instance_create(x,y,obj_flame_cone);
@@ -151,12 +151,12 @@ with(arrow4) {
     ldy = lengthdir_y(1.2,-other.mouse_dir+60);
     physics_apply_impulse(x,y,ldx,ldy);
         }  
-    global.player_mp = global.player_mp - 2;
+    global.player_mp = global.player_mp - 4;
     }
 }
 
 if(global.identity == 5) {
-    if(global.player_mp &gt;= 2) {
+    if(global.player_mp &gt;= 4) {
 arrow1 = instance_create(x,y,obj_ice_cone);
 arrow2 = instance_create(x,y,obj_ice_cone);
 arrow3 = instance_create(x,y,obj_ice_cone);
@@ -195,7 +195,7 @@ with(arrow4) {
     ldy = lengthdir_y(1.2,-other.mouse_dir+60);
     physics_apply_impulse(x,y,ldx,ldy);
         }  
-    global.player_mp = global.player_mp - 2;
+    global.player_mp = global.player_mp - 4;
     }
 }
 
@@ -1784,7 +1784,7 @@ if(global.identity == 5) {
             <kind>1</kind>
             <string>///Sorcerer secondary attack
 if(global.identity == 4) {
-    if(global.player_mp &gt;= 2) {
+    if(global.player_mp &gt;= 4) {
         alarm[7] = 1;
     }
 }
@@ -1811,7 +1811,7 @@ if(global.identity == 4) {
             <kind>1</kind>
             <string>///Thaumaturge secondary attack
 if(global.identity == 5) {
-    if(global.player_mp &gt;= 2) {
+    if(global.player_mp &gt;= 4) {
         alarm[7] = 1;
     }
 }

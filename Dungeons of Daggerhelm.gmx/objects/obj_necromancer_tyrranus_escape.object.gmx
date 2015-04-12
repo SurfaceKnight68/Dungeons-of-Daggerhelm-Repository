@@ -94,6 +94,8 @@ instance_create(x+(irandom_range(-96,96)),y+(irandom_range(-96,96)),obj_coin);
 instance_create(x+(irandom_range(-96,96)),y+(irandom_range(-96,96)),obj_coin);
 
 instance_create(x,y,obj_guide_arrow_UI);
+scr_item_drop_weapon();
+scr_item_drop_armor();
 </string>
           </argument>
         </arguments>

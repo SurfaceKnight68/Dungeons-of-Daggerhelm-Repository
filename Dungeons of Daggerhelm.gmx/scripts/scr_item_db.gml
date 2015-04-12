@@ -1,8 +1,8 @@
 /// scr_item_db()
 
-//** BASIC ITEMS **//
+//** Spec = global.identity **//
 
-                //** Spec = global.identity **//
+//** BASIC WEAPONS **//
                 
 // Basic Sword
 basic_sword = ds_map_create();
@@ -37,7 +37,7 @@ ds_map_add(basic_bow, 'fortitude', 0);
 ds_map_add(basic_bow, 'spec1', 1);
 ds_map_add(basic_bow, 'spec2', 1);
 
-//** NOVICE ITEMS **//
+//** NOVICE WEAPONS **//
 novice_greatsword = ds_map_create();
 ds_map_add(novice_greatsword, 'type', 'weapon');
 ds_map_add(novice_greatsword, 'strength', 3);
@@ -47,7 +47,7 @@ ds_map_add(novice_greatsword, 'spec1', 2);
 ds_map_add(novice_greatsword, 'spec2', 5);
 
 
-//** LEGENDARY ITEMS **//
+//** LEGENDARY WEAPONS **//
 drake_blade = ds_map_create();
 ds_map_add(drake_blade, 'type', 'weapon');
 ds_map_add(drake_blade, 'strength', 12);
@@ -80,7 +80,7 @@ ds_map_add(snakesting_caster, 'fortitude', 3);
 ds_map_add(snakesting_caster, 'spec1', 1);
 ds_map_add(snakesting_caster, 'spec2', 1);
 
-//** GODLIKE ITEMS**//
+//** GODLIKE WEAPONS**//
 facelifter = ds_map_create();
 ds_map_add(facelifter, 'type', 'weapon');
 ds_map_add(facelifter, 'strength', 99);
@@ -122,8 +122,168 @@ ds_map_add(trueshot, 'spec1', 1);
 ds_map_add(trueshot, 'spec2', 1);
 
 
+
+//** BASIC ARMOR **//
+
+//** LEATHER **//
+basic_cap = ds_map_create();
+ds_map_add(basic_cap, 'type', 'head');
+ds_map_add(basic_cap, 'strength', 2);
+ds_map_add(basic_cap, 'wisdom', 1);
+ds_map_add(basic_cap, 'fortitude', 0);
+ds_map_add(basic_cap, 'spec1', 1);
+ds_map_add(basic_cap, 'spec2', 3);
+
+basic_shirt = ds_map_create();
+ds_map_add(basic_shirt, 'type', 'chest');
+ds_map_add(basic_shirt, 'strength', 0);
+ds_map_add(basic_shirt, 'wisdom', 2);
+ds_map_add(basic_shirt, 'fortitude', 1);
+ds_map_add(basic_shirt, 'spec1', 1);
+ds_map_add(basic_shirt, 'spec2', 3);
+
+basic_pants = ds_map_create();
+ds_map_add(basic_pants, 'type', 'legs');
+ds_map_add(basic_pants, 'strength', 2);
+ds_map_add(basic_pants, 'wisdom', 0);
+ds_map_add(basic_pants, 'fortitude', 1);
+ds_map_add(basic_pants, 'spec1', 1);
+ds_map_add(basic_pants, 'spec2', 3);
+
+//** PLATE **//
+
+basic_helm = ds_map_create();
+ds_map_add(basic_helm, 'type', 'head');
+ds_map_add(basic_helm, 'strength', 1);
+ds_map_add(basic_helm, 'wisdom', 0);
+ds_map_add(basic_helm, 'fortitude', 2);
+ds_map_add(basic_helm, 'spec1', 2);
+ds_map_add(basic_helm, 'spec2', 5);
+
+basic_mail = ds_map_create();
+ds_map_add(basic_mail, 'type', 'chest');
+ds_map_add(basic_mail, 'strength', 0);
+ds_map_add(basic_mail, 'wisdom', 1);
+ds_map_add(basic_mail, 'fortitude', 2);
+ds_map_add(basic_mail, 'spec1', 2);
+ds_map_add(basic_mail, 'spec2', 5);
+
+basic_plates = ds_map_create();
+ds_map_add(basic_plates, 'type', 'legs');
+ds_map_add(basic_plates, 'strength', 1);
+ds_map_add(basic_plates, 'wisdom', 1);
+ds_map_add(basic_plates, 'fortitude', 1);
+ds_map_add(basic_plates, 'spec1', 2);
+ds_map_add(basic_plates, 'spec2', 5);
+
+//** CLOTH **//
+
+basic_hood = ds_map_create();
+ds_map_add(basic_hood, 'type', 'head');
+ds_map_add(basic_hood, 'strength', 2);
+ds_map_add(basic_hood, 'wisdom', 1);
+ds_map_add(basic_hood, 'fortitude', 0);
+ds_map_add(basic_hood, 'spec1', 4);
+ds_map_add(basic_hood, 'spec2', 6);
+
+basic_robe = ds_map_create();
+ds_map_add(basic_robe, 'type', 'chest');
+ds_map_add(basic_robe, 'strength', 2);
+ds_map_add(basic_robe, 'wisdom', 2);
+ds_map_add(basic_robe, 'fortitude', 0);
+ds_map_add(basic_robe, 'spec1', 4);
+ds_map_add(basic_robe, 'spec2', 6);
+
+basic_legwraps = ds_map_create();
+ds_map_add(basic_legwraps, 'type', 'legs');
+ds_map_add(basic_legwraps, 'strength', 1);
+ds_map_add(basic_legwraps, 'wisdom', 2);
+ds_map_add(basic_legwraps, 'fortitude', 0);
+ds_map_add(basic_legwraps, 'spec1', 4);
+ds_map_add(basic_legwraps, 'spec2', 6);
+
+//** NOVICE ARMOR **//
+
+//** LEATHER **//
+novice_hat = ds_map_create();
+ds_map_add(novice_hat, 'type', 'head');
+ds_map_add(novice_hat, 'strength', 3);
+ds_map_add(novice_hat, 'wisdom', 2);
+ds_map_add(novice_hat, 'fortitude', 0);
+ds_map_add(novice_hat, 'spec1', 1);
+ds_map_add(novice_hat, 'spec2', 3);
+
+novice_jacket = ds_map_create();
+ds_map_add(novice_jacket, 'type', 'head');
+ds_map_add(novice_jacket, 'strength', 2);
+ds_map_add(novice_jacket, 'wisdom', 3);
+ds_map_add(novice_jacket, 'fortitude', 1);
+ds_map_add(novice_jacket, 'spec1', 1);
+ds_map_add(novice_jacket, 'spec2', 3);
+
+novice_trousers = ds_map_create();
+ds_map_add(novice_trousers, 'type', 'head');
+ds_map_add(novice_trousers, 'strength', 3);
+ds_map_add(novice_trousers, 'wisdom', 1);
+ds_map_add(novice_trousers, 'fortitude', 1);
+ds_map_add(novice_trousers, 'spec1', 1);
+ds_map_add(novice_trousers, 'spec2', 3);
+
+//** PLATE **//
+novice_helmet = ds_map_create();
+ds_map_add(novice_helmet, 'type', 'head');
+ds_map_add(novice_helmet, 'strength', 2);
+ds_map_add(novice_helmet, 'wisdom', 1);
+ds_map_add(novice_helmet, 'fortitude', 3);
+ds_map_add(novice_helmet, 'spec1', 2);
+ds_map_add(novice_helmet, 'spec2', 5);
+
+novice_chestplate = ds_map_create();
+ds_map_add(novice_chestplate, 'type', 'chest');
+ds_map_add(novice_chestplate, 'strength', 1);
+ds_map_add(novice_chestplate, 'wisdom', 2);
+ds_map_add(novice_chestplate, 'fortitude', 3);
+ds_map_add(novice_chestplate, 'spec1', 2);
+ds_map_add(novice_chestplate, 'spec2', 5);
+
+novice_legguards = ds_map_create();
+ds_map_add(novice_legguards, 'type', 'legs');
+ds_map_add(novice_legguards, 'strength', 2);
+ds_map_add(novice_legguards, 'wisdom', 1);
+ds_map_add(novice_legguards, 'fortitude', 2);
+ds_map_add(novice_legguards, 'spec1', 2);
+ds_map_add(novice_legguards, 'spec2', 5);
+
+//** CLOTH **//
+novice_cover = ds_map_create();
+ds_map_add(novice_cover, 'type', 'head');
+ds_map_add(novice_cover, 'strength', 2);
+ds_map_add(novice_cover, 'wisdom', 3);
+ds_map_add(novice_cover, 'fortitude', 0);
+ds_map_add(novice_cover, 'spec1', 4);
+ds_map_add(novice_cover, 'spec2', 6);
+
+novice_drape = ds_map_create();
+ds_map_add(novice_drape, 'type', 'chest');
+ds_map_add(novice_drape, 'strength', 3);
+ds_map_add(novice_drape, 'wisdom', 3);
+ds_map_add(novice_drape, 'fortitude', 1);
+ds_map_add(novice_drape, 'spec1', 4);
+ds_map_add(novice_drape, 'spec2', 6);
+
+novice_leggings = ds_map_create();
+ds_map_add(novice_leggings, 'type', 'legs');
+ds_map_add(novice_leggings, 'strength', 3);
+ds_map_add(novice_leggings, 'wisdom', 3);
+ds_map_add(novice_leggings, 'fortitude', 0);
+ds_map_add(novice_leggings, 'spec1', 4);
+ds_map_add(novice_leggings, 'spec2', 6);
+
+
 // Create items database
 global.items = ds_map_create();
+
+//** WEAPONS **//
 //** BASIC DATABASE **//
 ds_map_add(global.items, 'obj_basic_sword', basic_sword);
 ds_map_add(global.items, 'obj_basic_mace', basic_mace);
@@ -142,3 +302,25 @@ ds_map_add(global.items, 'obj_deathrattle', deathrattle);
 ds_map_add(global.items, 'obj_widowfury', widowfury);
 ds_map_add(global.items, 'obj_grieve', grieve);
 ds_map_add(global.items, 'obj_trueshot_recurve', trueshot);
+
+//** ARMOR **//
+//** BASIC **//
+ds_map_add(global.items, 'obj_basic_cap', basic_cap);
+ds_map_add(global.items, 'obj_basic_shirt', basic_shirt);
+ds_map_add(global.items, 'obj_basic_pants', basic_pants);
+ds_map_add(global.items, 'obj_basic_helm', basic_helm);
+ds_map_add(global.items, 'obj_basic_mail', basic_mail);
+ds_map_add(global.items, 'obj_basic_plates', basic_plates);
+ds_map_add(global.items, 'obj_basic_hood', basic_hood);
+ds_map_add(global.items, 'obj_basic_robe', basic_robe);
+ds_map_add(global.items, 'obj_basic_legwraps', basic_legwraps);
+//** NOVICE **//
+ds_map_add(global.items, 'obj_novice_hat', novice_hat);
+ds_map_add(global.items, 'obj_novice_jacket', novice_jacket);
+ds_map_add(global.items, 'obj_novice_trousers', novice_trousers);
+ds_map_add(global.items, 'obj_novice_helmet', novice_helmet);
+ds_map_add(global.items, 'obj_novice_chestplate', novice_chestplate);
+ds_map_add(global.items, 'obj_novice_legguards', novice_legguards);
+ds_map_add(global.items, 'obj_novice_cover', novice_cover);
+ds_map_add(global.items, 'obj_novice_drapes', novice_drapes);
+ds_map_add(global.items, 'obj_novice_leggings', novice_leggings);

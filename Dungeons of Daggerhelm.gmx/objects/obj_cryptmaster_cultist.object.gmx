@@ -231,14 +231,7 @@ if(hp &lt;= 0) {
     part_particles_create(global.ps,x,y,global.pt_shadow_death,15);
     
     instance_destroy();
-        if(global.lv &lt; 8) {
-            global.player_xp = global.player_xp+46;
-        } else if(global.lv &gt; 8 &amp;&amp; global.lv &lt; 14) {
-            global.player_xp = global.player_xp+30;
-        } else if(global.lv &gt; 14 &amp;&amp; global.lv &lt; 24) {
-            global.player_xp = global.player_xp+14;
         
-    }
 }
 </string>
           </argument>

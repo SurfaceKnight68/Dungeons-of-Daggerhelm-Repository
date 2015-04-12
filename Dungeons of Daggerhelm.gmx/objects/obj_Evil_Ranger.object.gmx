@@ -169,14 +169,7 @@ phy_fixed_rotation = true;
 if(hp &lt;= 0) {
     part_particles_create(global.ps,x,y,global.pt_enemy_death,20);
     instance_destroy();
-        if(global.lv &lt; 6) {
-            global.player_xp = global.player_xp+24;
-        } else if(global.lv &gt; 6 &amp;&amp; global.lv &lt; 12) {
-            global.player_xp = global.player_xp+12;
-        } else if(global.lv &gt; 12 &amp;&amp; global.lv &lt; 20) {
-            global.player_xp = global.player_xp+2;
-        
-    }
+      
 }
 </string>
           </argument>
