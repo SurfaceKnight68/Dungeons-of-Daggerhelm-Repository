@@ -52,9 +52,9 @@ audio_play_sound(snd_item_drop,10,false);
           <argument>
             <kind>1</kind>
             <string>if(rarity == 1) { // Basic   
-    part_particles_create(global.ps,x,y-2,global.pt_common,1);
-    part_particles_create(global.ps,x-2,y,global.pt_common,1);  
-    part_particles_create(global.ps,x+2,y,global.pt_common,1);      
+    part_particles_create(global.ps,x,y-2,global.pt_basic,1);
+    part_particles_create(global.ps,x-2,y,global.pt_basic,1);  
+    part_particles_create(global.ps,x+2,y,global.pt_basic,1);      
 }
 if(rarity == 2) { // Novice
     part_particles_create(global.ps,x,y-2,global.pt_novice,1);

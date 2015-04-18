@@ -98,7 +98,7 @@ do
     yy=random(room_height); //Set random y
     }
 until place_empty(xx,yy);
-    if(instance_number(obj_stalagmite) &lt; 300) {
+    if(instance_number(obj_stalagmite) &lt; 600) {
         //The loop has ended, create the enemy if there are less than 30
         instance_create(xx,yy,obj_stalagmite); //Create object
    
@@ -137,7 +137,7 @@ do
     }
 until place_empty(xx,yy);
 
-    if(instance_number(obj_lava_geyser) &lt; 300) {
+    if(instance_number(obj_lava_geyser) &lt; 500) {
         instance_create(xx,yy,obj_lava_geyser); //Create object
 } else {
     // do nothing

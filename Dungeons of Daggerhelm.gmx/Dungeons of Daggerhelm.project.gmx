@@ -116,10 +116,10 @@
           <sprite>sprites\spr_player_sorcerer_down</sprite>
         </sprites>
         <sprites name="Thaumaturge">
-          <sprite>sprites\spr_player_thau_down</sprite>
-          <sprite>sprites\spr_player_thau_up</sprite>
           <sprite>sprites\spr_player_thau_left</sprite>
           <sprite>sprites\spr_player_thau_right</sprite>
+          <sprite>sprites\spr_player_thau_down</sprite>
+          <sprite>sprites\spr_player_thau_up</sprite>
         </sprites>
         <sprites name="Swaiyar">
           <sprite>sprites\spr_swaiyar_right</sprite>
@@ -165,6 +165,10 @@
         </sprites>
         <sprites name="Light's Bastion NPCs">
           <sprite>sprites\spr_bastion_guard</sprite>
+        </sprites>
+        <sprites name="Dewie Honeybrew">
+          <sprite>sprites\spr_dewie</sprite>
+          <sprite>sprites\spr_hole</sprite>
         </sprites>
       </sprites>
       <sprites name="Enemies">
@@ -527,6 +531,17 @@
               <sprite>sprites\spr_basic_robe</sprite>
               <sprite>sprites\spr_basic_legwraps</sprite>
             </sprites>
+            <sprites name="Novice">
+              <sprite>sprites\spr_novice_hat</sprite>
+              <sprite>sprites\spr_novice_jacket</sprite>
+              <sprite>sprites\spr_novice_trousers</sprite>
+              <sprite>sprites\spr_novice_helmet</sprite>
+              <sprite>sprites\spr_novice_chestplate</sprite>
+              <sprite>sprites\spr_novice_legguards</sprite>
+              <sprite>sprites\spr_novice_cover</sprite>
+              <sprite>sprites\spr_novice_drape</sprite>
+              <sprite>sprites\spr_novice_leggings</sprite>
+            </sprites>
           </sprites>
           <sprites name="Weapons">
             <sprite>sprites\spr_items</sprite>
@@ -805,6 +820,8 @@
       <objects name="Guides">
         <object>objects\obj_NPC_controls_guide</object>
         <object>objects\obj_NPC_adventure_guide</object>
+        <object>objects\obj_NPC_dewie</object>
+        <object>objects\obj_hole</object>
       </objects>
       <objects name="Vendors">
         <object>objects\obj_NPC_Holly</object>
@@ -887,6 +904,17 @@
             <object>objects\obj_basic_hood</object>
             <object>objects\obj_basic_robe</object>
             <object>objects\obj_basic_legwraps</object>
+          </objects>
+          <objects name="Novice">
+            <object>objects\obj_novice_hat</object>
+            <object>objects\obj_novice_jacket</object>
+            <object>objects\obj_novice_trousers</object>
+            <object>objects\obj_novice_helmet</object>
+            <object>objects\obj_novice_chestplate</object>
+            <object>objects\obj_novice_legguards</object>
+            <object>objects\obj_novice_cover</object>
+            <object>objects\obj_novice_drape</object>
+            <object>objects\obj_novice_leggings</object>
           </objects>
         </objects>
       </objects>

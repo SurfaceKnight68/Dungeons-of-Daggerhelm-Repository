@@ -73,6 +73,8 @@
     <instance objName="obj_snow_spawn_ctrl" x="256" y="0" name="inst_72563E39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Minimap" x="320" y="0" name="inst_A471260E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minimap_visible" x="352" y="0" name="inst_1D274D96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_NPC_dewie" x="4000" y="2464" name="inst_7A4D0F40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hole" x="3984" y="2475" name="inst_5E8D58F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_snow" x="0" y="0" w="256" h="256" xo="0" yo="0" id="10018337" name="inst_5B5AFCD8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -822,12 +822,14 @@
     <instance objName="obj_Minimap" x="208" y="0" name="inst_1A6698D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minimap_visible" x="224" y="0" name="inst_53EE612B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_items" x="56" y="8" name="inst_CD64FCAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_basic_mace" x="448" y="960" name="inst_0072C462" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_large_sword" x="496" y="944" name="inst_836ED384" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_uncommon_bolter" x="400" y="976" name="inst_4A03C279" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_exceptional_scimitar" x="416" y="912" name="inst_EDE6C842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dark_pummeler" x="512" y="976" name="inst_0227398D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_grieve" x="384" y="1008" name="inst_10842014" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basic_mace" x="400" y="944" name="inst_EBDA9195" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basic_sword" x="448" y="912" name="inst_F1DAA626" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basic_wand" x="448" y="944" name="inst_C3159A95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basic_cap" x="464" y="976" name="inst_66E1E3FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basic_mail" x="496" y="928" name="inst_6C6D371D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_basic_legwraps" x="528" y="960" name="inst_3B116E8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_NPC_dewie" x="192" y="144" name="inst_7C4E3E3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hole" x="173" y="156" name="inst_14BD9E20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tileset_spawn" x="0" y="32" w="16" h="16" xo="0" yo="0" id="10000026" name="inst_CE69AD59" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

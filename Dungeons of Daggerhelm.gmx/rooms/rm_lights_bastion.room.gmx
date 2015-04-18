@@ -766,15 +766,15 @@
     <instance objName="obj_weapon_rack" x="207" y="355" name="inst_6EAA3FDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_weapon_rack" x="288" y="355" name="inst_9A9809C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_weapon_rack" x="813" y="353" name="inst_146C7162" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_loot_chest" x="233" y="388" name="inst_38C9A591" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_loot_chest" x="793" y="389" name="inst_1C3808E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bastion_guard" x="337" y="781" name="inst_4D7E8847" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bastion_guard" x="736" y="785" name="inst_B18308D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bastion_guard" x="307" y="380" name="inst_4AC5EB52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bastion_guard" x="766" y="372" name="inst_CB470C05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bastion_guard" x="815" y="159" name="inst_026C8604" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bastion_guard" x="209" y="160" name="inst_61EC8612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bastion_statue" x="544" y="384" name="inst_67D7C560" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bastion_statue" x="544" y="560" name="inst_67D7C560" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ladder" x="256" y="640" name="inst_9D8974FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ladder" x="816" y="640" name="inst_4C2D1A4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_bastion_floor" x="160" y="160" w="16" h="16" xo="0" yo="0" id="10034556" name="inst_9724172D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

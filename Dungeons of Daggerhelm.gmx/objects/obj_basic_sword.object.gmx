@@ -58,9 +58,9 @@ event_inherited();
     draw_roundrect(device_mouse_x_to_gui(0) - 10, device_mouse_y_to_gui(0) - 210, device_mouse_x_to_gui(0) + 190, device_mouse_y_to_gui(0) - 10, true);
     draw_text(device_mouse_x_to_gui(0) + 40, device_mouse_y_to_gui(0) - 200, "BASIC SWORD");
     draw_set_color(c_white);
-    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 150, "STR +1");
-    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 100, "WIS +0");
-    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 50, "FOR +1");
+    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 150, "STR +5");
+    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 100, "WIS +1");
+    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 50, "FOR +5");
     
     draw_set_color(c_black);
 }

@@ -57,9 +57,9 @@
     draw_roundrect(device_mouse_x_to_gui(0) - 10, device_mouse_y_to_gui(0) - 210, device_mouse_x_to_gui(0) + 190, device_mouse_y_to_gui(0) - 10, true);
     draw_text(device_mouse_x_to_gui(0) + 40, device_mouse_y_to_gui(0) - 200, "BASIC SHIRT");
     draw_set_color(c_white);
-    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 150, "DEX +0");
-    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 100, "WIS +2");
-    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 50, "FOR +1");
+    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 150, "DEX +1");
+    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 100, "WIS +6");
+    draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 50, "FOR +2");
     
     draw_set_color(c_black);
 }

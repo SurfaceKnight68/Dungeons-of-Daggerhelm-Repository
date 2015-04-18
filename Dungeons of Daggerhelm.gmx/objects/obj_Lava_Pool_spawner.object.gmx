@@ -31,7 +31,7 @@ rows = 2 + (room_height div TILESIZE);
 // +2 size to avoid having to cheeck for borders when iterating in scr_iterate()
 grid = ds_grid_create(cols, rows); // Used to store the raw, non-iterated grid
 final_grid = ds_grid_create(cols, rows); // The final grid after iterations used to draw
-wall_chance = 6; // 3% chance to generate wall piece by default
+wall_chance = 3; // 3% chance to generate wall piece by default
 iterations = 4; // How many iterations to do on the grid
 // Generate new grid
 alarm[0] = 2;

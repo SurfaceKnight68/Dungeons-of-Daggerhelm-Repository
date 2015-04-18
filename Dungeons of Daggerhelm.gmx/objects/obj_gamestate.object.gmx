@@ -64,35 +64,58 @@ global.switches = ds_map_create();
         //Make sure slot is empty
         if(box.item == -1 &amp;&amp; (box.type == scr_get_item_value(global.item, 'type') || box.type == '')) {
                 //Put item in box
-                box.item = global.item;                
+                                
             if(box.type == 'weapon') {
                 if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    box.item = global.item;
                     global.bonus_str += scr_get_item_value(global.item, 'strength');
                     global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
                     global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                } else {
+                    instance_create(obj_player.x,obj_player.y,global.item);
+                    global.item = -1;
                 }
             }
             if(box.type == 'head') {
                 if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    box.item = global.item;
                     global.bonus_str += scr_get_item_value(global.item, 'strength');
                     global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
                     global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                } else {
+                    instance_create(obj_player.x,obj_player.y,global.item);
+                    global.item = -1;
                 }
             }
             if(box.type == 'chest') {
                 if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    box.item = global.item;
                     global.bonus_str += scr_get_item_value(global.item, 'strength');
                     global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
                     global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                } else {
+                    instance_create(obj_player.x,obj_player.y,global.item);
+                    global.item = -1;
                 }
             }
             if(box.type == 'legs') {
                 if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    box.item = global.item;
                     global.bonus_str += scr_get_item_value(global.item, 'strength');
                     global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
                     global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                } else {
+                    instance_create(obj_player.x,obj_player.y,global.item);
+                    global.item = -1;
                 }
             }
+                box.item = global.item;
+                with(box.item) {
+                            if(file_exists("savedata.ini")) {
+                                ini_open("savedata.ini");
+                                ini_write_real("Save1","inv_slot",global.item);
+                            }
+                        }
                 audio_play_sound(snd_item_inv,10,false);
                 global.item = -1;               
         } else {

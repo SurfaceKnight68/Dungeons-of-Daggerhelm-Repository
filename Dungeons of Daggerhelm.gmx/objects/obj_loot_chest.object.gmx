@@ -127,6 +127,8 @@ coin_drop = irandom_range(1,10);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
         instance_create(x + (irandom_range(-16,16)),y + (irandom_range(-16,16)), obj_coin);
     }
+    scr_item_drop_weapon();
+    scr_item_drop_armor();
     instance_destroy();
 }
 </string>

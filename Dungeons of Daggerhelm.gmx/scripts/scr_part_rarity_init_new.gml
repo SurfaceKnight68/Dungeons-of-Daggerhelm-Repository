@@ -1,17 +1,17 @@
 // Initialize global fire particle
 
-global.pt_common = part_type_create();
-var pc = global.pt_common;
-part_system_depth(global.pt_common,0);
+global.pt_basic = part_type_create();
+var pb = global.pt_basic;
+part_system_depth(global.pt_basic,0);
 
 // Settings for fire particle
-part_type_shape(pc,pt_shape_sphere);
-part_type_size(pc,.06,.08,0,0);
-part_type_color3(pc,c_gray,c_silver,c_white);
-part_type_speed(pc,.03,.04,-.1,0);
-part_type_direction(pc,0,359,0,5);
-part_type_gravity(pc,.6,90);
-part_type_life(pc,5,7);
+part_type_shape(pb,pt_shape_sphere);
+part_type_size(pb,.06,.08,0,0);
+part_type_color3(pb,c_gray,c_silver,c_white);
+part_type_speed(pb,.03,.04,-.1,0);
+part_type_direction(pb,0,359,0,5);
+part_type_gravity(pb,.6,90);
+part_type_life(pb,5,7);
 
 global.pt_novice = part_type_create();
 var pn = global.pt_novice;
