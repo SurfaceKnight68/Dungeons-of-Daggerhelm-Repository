@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000001</depth>
-  <persistent>0</persistent>
+  <depth>-1000002</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,15 +25,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var item = global.inv1[slot1,slot2];
+            <string>var item = global.slot[slot];
 var click = mouse_check_button_pressed(mb_left);
 
 if(abs(mouse_x - x) &lt; 8) &amp;&amp; (abs(mouse_y - y) &lt; 8) {
     draw_set_color(c_yellow);
-    draw_set_alpha(.6);
-    draw_rectangle(x-8,y-8,x+8,y+8,0);
+    draw_set_alpha(.7)
+    draw_rectangle(x-8,y-8,x+8,y+8,false);
     draw_set_color(c_black);
     draw_set_alpha(1);
+    if(click) {
+        if(item != -1) {
+            scr_item_drop_slot(slot);
+            audio_play_sound(snd_item_inv,10,false);
+        }
+        if(mouseItem != -1) {
+            scr_item_pickup_slot(mouseItem,slot);
+            audio_play_sound(snd_item_pickup,10,false);
+        }
+        mouseItem = item;
+    }
+    
+}
+
+if(item != -1) {
+    draw_sprite(spr_items,item,x,y);
 }
 </string>
           </argument>

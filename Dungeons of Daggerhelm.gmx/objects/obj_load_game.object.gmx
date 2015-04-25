@@ -75,7 +75,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_loadgame();
+            <string>instance_create(x,y,obj_inventory);
+scr_loadgame();
 </string>
           </argument>
         </arguments>

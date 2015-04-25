@@ -27,8 +27,116 @@
             <kind>1</kind>
             <string>/// Create item variable
 
-item = -1;
+item = '';
 type = 'chest';
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.item != '') {
+    if(instance_position(mouse_x,mouse_y,obj_equipment_chest)) {
+        
+        
+        //Make sure slot is empty
+        if(item == '') {
+                //Put item in box
+                                
+            
+            if(type == 'chest') {
+                if(global.identity == scr_get_item_value(global.item, 'spec1') || global.identity == scr_get_item_value(global.item, 'spec2')) {
+                    item = global.item;
+                    global.bonus_str += scr_get_item_value(global.item, 'strength');
+                    global.bonus_wis += scr_get_item_value(global.item, 'wisdom');
+                    global.bonus_for += scr_get_item_value(global.item, 'fortitude');
+                    audio_play_sound(snd_item_inv,10,false);
+                        ini_open("savedata.ini");
+                        ini_write_real("Save1","chestslot",object_get_name(item));
+                        ini_close();
+                    global.item = '';
+                } else {
+                    instance_create(obj_player.x,obj_player.y,global.item);
+                    global.item = '';
+                }
+            } else {
+                    instance_create(obj_player.x,obj_player.y,global.item);
+                    global.item = '';
+                }
+                                           
+        } else {
+        
+            // Drop item on ground
+            instance_create(obj_player.x,obj_player.y,global.item);
+            global.item = '';
+        
+        }
+        
+    } else {
+        //Drop item on ground
+        instance_create(obj_player.x,obj_player.y,global.item);
+        global.item = '';
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Take item from box
+if(type != '') {
+    if(item != '') {
+        global.item = item;
+        global.bonus_str = global.bonus_str - scr_get_item_value(global.item, 'strength');
+        global.bonus_wis = global.bonus_wis - scr_get_item_value(global.item, 'wisdom');
+        global.bonus_for = global.bonus_for - scr_get_item_value(global.item, 'fortitude');
+                
+        item = ''; 
+        ini_open("savedata.ini");
+        ini_write_real("Save1","chestslot",item);
+        ini_close();   
+    }
+}
+if(item != '') {
+    global.item = item;
+    ini_open("savedata.ini");
+    ini_write_real("Save1","inventory",global.item);
+    ini_close(); 
+    item = '';
+}
 </string>
           </argument>
         </arguments>

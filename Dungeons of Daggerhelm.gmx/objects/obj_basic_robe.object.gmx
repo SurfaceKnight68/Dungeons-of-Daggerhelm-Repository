@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>rarity = 1;
+event_inherited();
+item_id = 11;
 </string>
           </argument>
         </arguments>

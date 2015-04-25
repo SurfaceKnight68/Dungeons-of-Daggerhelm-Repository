@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 0;
 rarity = -1;
-item = '';
+item = -1;
+item_id = noone;
 audio_play_sound(snd_item_drop,10,false);
 </string>
           </argument>
@@ -134,11 +135,12 @@ if(rarity == 8) { // Godlike
             <string>/// Pick up item
 
 // Don't have item
-
-if(global.item == -1) {
-    global.item = object_index;
+var picked_up = scr_item_pickup(item_id);
+if(picked_up == 1) {
     audio_play_sound(snd_item_pickup,10,false);
     instance_destroy();
+} else if(picked_up != 1) {
+    // Do absolutely nothing!
 }
 </string>
           </argument>

@@ -7,6 +7,8 @@
 // Basic Sword
 basic_sword = ds_map_create();
 ds_map_add(basic_sword, 'type', 'weapon');
+ds_map_add(basic_sword, 'sprite',spr_1h_sword);
+ds_map_add(basic_sword, 'id', 1);
 ds_map_add(basic_sword, 'strength', 5);
 ds_map_add(basic_sword, 'wisdom', 1);
 ds_map_add(basic_sword, 'fortitude', 5);
@@ -15,6 +17,8 @@ ds_map_add(basic_sword, 'spec2', 5);
 // Basic Mace
 basic_mace = ds_map_create();
 ds_map_add(basic_mace, 'type', 'weapon');
+ds_map_add(basic_sword, 'sprite',spr_1h_mace);
+ds_map_add(basic_mace, 'id', 2);
 ds_map_add(basic_mace, 'strength', 1);
 ds_map_add(basic_mace, 'wisdom', 4);
 ds_map_add(basic_mace, 'fortitude', 4);
@@ -23,6 +27,7 @@ ds_map_add(basic_mace, 'spec2', 2);
 // Basic Wand
 basic_wand = ds_map_create();
 ds_map_add(basic_wand, 'type', 'weapon');
+ds_map_add(basic_wand, 'id', 3);
 ds_map_add(basic_wand, 'strength', 5);
 ds_map_add(basic_wand, 'wisdom', 4);
 ds_map_add(basic_wand, 'fortitude', 1);
@@ -31,6 +36,7 @@ ds_map_add(basic_wand, 'spec2', 6);
 /// Basic Bow
 basic_bow = ds_map_create();
 ds_map_add(basic_bow, 'type', 'weapon');
+ds_map_add(basic_bow, 'id', 4);
 ds_map_add(basic_bow, 'strength', 6);
 ds_map_add(basic_bow, 'wisdom', 2);
 ds_map_add(basic_bow, 'fortitude', 1);
@@ -128,6 +134,7 @@ ds_map_add(trueshot, 'spec2', 1);
 //** LEATHER **//
 basic_cap = ds_map_create();
 ds_map_add(basic_cap, 'type', 'head');
+ds_map_add(basic_cap, 'id', 5);
 ds_map_add(basic_cap, 'strength', 6);
 ds_map_add(basic_cap, 'wisdom', 2);
 ds_map_add(basic_cap, 'fortitude', 1);
@@ -136,6 +143,7 @@ ds_map_add(basic_cap, 'spec2', 3);
 
 basic_shirt = ds_map_create();
 ds_map_add(basic_shirt, 'type', 'chest');
+ds_map_add(basic_shirt, 'id', 6);
 ds_map_add(basic_shirt, 'strength', 1);
 ds_map_add(basic_shirt, 'wisdom', 6);
 ds_map_add(basic_shirt, 'fortitude', 2);
@@ -144,6 +152,7 @@ ds_map_add(basic_shirt, 'spec2', 3);
 
 basic_pants = ds_map_create();
 ds_map_add(basic_pants, 'type', 'legs');
+ds_map_add(basic_pants, 'id', 7);
 ds_map_add(basic_pants, 'strength', 5);
 ds_map_add(basic_pants, 'wisdom', 3);
 ds_map_add(basic_pants, 'fortitude', 1);
@@ -154,6 +163,7 @@ ds_map_add(basic_pants, 'spec2', 3);
 
 basic_helm = ds_map_create();
 ds_map_add(basic_helm, 'type', 'head');
+ds_map_add(basic_helm, 'id', 8);
 ds_map_add(basic_helm, 'strength', 5);
 ds_map_add(basic_helm, 'wisdom', 1);
 ds_map_add(basic_helm, 'fortitude', 4);
@@ -162,6 +172,7 @@ ds_map_add(basic_helm, 'spec2', 5);
 
 basic_mail = ds_map_create();
 ds_map_add(basic_mail, 'type', 'chest');
+ds_map_add(basic_mail, 'id', 9);
 ds_map_add(basic_mail, 'strength', 1);
 ds_map_add(basic_mail, 'wisdom', 5);
 ds_map_add(basic_mail, 'fortitude', 4);
@@ -170,6 +181,7 @@ ds_map_add(basic_mail, 'spec2', 5);
 
 basic_plates = ds_map_create();
 ds_map_add(basic_plates, 'type', 'legs');
+ds_map_add(basic_plates, 'id', 10);
 ds_map_add(basic_plates, 'strength', 4);
 ds_map_add(basic_plates, 'wisdom', 4);
 ds_map_add(basic_plates, 'fortitude', 3);
@@ -180,6 +192,7 @@ ds_map_add(basic_plates, 'spec2', 5);
 
 basic_hood = ds_map_create();
 ds_map_add(basic_hood, 'type', 'head');
+ds_map_add(basic_hood, 'id', 11);
 ds_map_add(basic_hood, 'strength', 7);
 ds_map_add(basic_hood, 'wisdom', 2);
 ds_map_add(basic_hood, 'fortitude', 0);
@@ -188,6 +201,7 @@ ds_map_add(basic_hood, 'spec2', 6);
 
 basic_robe = ds_map_create();
 ds_map_add(basic_robe, 'type', 'chest');
+ds_map_add(basic_robe, 'id', 12);
 ds_map_add(basic_robe, 'strength', 6);
 ds_map_add(basic_robe, 'wisdom', 6);
 ds_map_add(basic_robe, 'fortitude', 0);
@@ -196,6 +210,7 @@ ds_map_add(basic_robe, 'spec2', 6);
 
 basic_legwraps = ds_map_create();
 ds_map_add(basic_legwraps, 'type', 'legs');
+ds_map_add(basic_legwraps, 'id', 13);
 ds_map_add(basic_legwraps, 'strength', 3);
 ds_map_add(basic_legwraps, 'wisdom', 6);
 ds_map_add(basic_legwraps, 'fortitude', 0);

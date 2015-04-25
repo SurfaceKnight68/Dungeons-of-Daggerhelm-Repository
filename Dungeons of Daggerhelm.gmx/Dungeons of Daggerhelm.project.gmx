@@ -149,7 +149,7 @@
           <sprite>sprites\spr_sorcerer_idle</sprite>
         </sprites>
         <sprites name="Thaumaturge">
-          <sprite>sprites\spr_thau_idle</sprite>
+          <sprite>sprites\spr_thau_idle_left</sprite>
         </sprites>
         <sprites name="Astor_of_Sartorius">
           <sprite>sprites\spr_Astor_idle</sprite>
@@ -516,6 +516,7 @@
         <sprite>sprites\spr_key</sprite>
         <sprite>sprites\spr_HUD_key</sprite>
         <sprite>sprites\spr_HUD_coin</sprite>
+        <sprite>sprites\spr_items</sprite>
         <sprites name="Items">
           <sprite>sprites\spr_health_potion</sprite>
           <sprite>sprites\spr_HUD_potion</sprite>
@@ -544,7 +545,6 @@
             </sprites>
           </sprites>
           <sprites name="Weapons">
-            <sprite>sprites\spr_items</sprite>
             <sprites name="Basic">
               <sprite>sprites\spr_1h_sword</sprite>
               <sprite>sprites\spr_1h_mace</sprite>
@@ -686,6 +686,11 @@
       <script>scripts\scr_get_item_value.gml</script>
       <script>scripts\scr_item_drop_weapon.gml</script>
       <script>scripts\scr_item_drop_armor.gml</script>
+      <script>scripts\scr_item_pickup.gml</script>
+      <script>scripts\scr_item_drop.gml</script>
+      <script>scripts\scr_item_check.gml</script>
+      <script>scripts\scr_item_pickup_slot.gml</script>
+      <script>scripts\scr_item_drop_slot.gml</script>
     </scripts>
     <scripts name="Particle Scripts">
       <script>scripts\scr_part_blood_init.gml</script>
@@ -917,6 +922,7 @@
             <object>objects\obj_novice_leggings</object>
           </objects>
         </objects>
+        <object>objects\obj_inventory</object>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>
@@ -924,6 +930,9 @@
       </objects>
       <object>objects\obj_ability_cooldown</object>
       <object>objects\obj_inventory_box</object>
+      <object>objects\obj_slot1</object>
+      <object>objects\obj_slot2</object>
+      <object>objects\obj_slot3</object>
       <object>objects\obj_equipment_weapon</object>
       <object>objects\obj_equipment_offhand</object>
       <object>objects\obj_equipment_helm</object>

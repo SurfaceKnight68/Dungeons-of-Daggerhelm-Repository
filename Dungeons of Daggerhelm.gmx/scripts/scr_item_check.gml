@@ -1,8 +1,7 @@
-for(i = 0; i < inv_columns; i += 1) {
-    for(ii = 0; ii < inv_rows; ii += 1) {
-    if(global.inv1[i,ii] == argument0) {
+for(var i = 0; i < maxItems; i++) {
+    if(global.slot[i] == argument0) {// If slot i contains...
+    
         return(1);
-        }
     }
 }
 return(0);

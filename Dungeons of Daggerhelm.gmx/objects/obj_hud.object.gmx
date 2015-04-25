@@ -25,16 +25,28 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(i = 0; i &lt; 4; i += 1) {
-    for(ii = 0; ii &lt; 3; ii += 1) {
-        instance_create(x+210+(i*24),y+240+(ii*24),obj_inventory_box);
-    }
-}
+            <string>/*
+instance_create(x+210,y+240,obj_slot1);
+instance_create(x+234,y+240,obj_slot2);
+instance_create(x+258,y+240,obj_slot3);
+
+instance_create(x+282,y+240,obj_slot4);
+instance_create(x+210,y+264,obj_slot5);
+instance_create(x+234,y+264,obj_slot6);
+instance_create(x+258,y+264,obj_slot7);
+instance_create(x+282,y+264,obj_slot8);
+instance_create(x+210,y+288,obj_slot9);
+instance_create(x+234,y+288,obj_slot10);
+instance_create(x+258,y+288,obj_slot11);
+instance_create(x+282,y+288,obj_slot12);
+
+
 instance_create(x+(150-22),y+(120-16),obj_equipment_weapon);
 instance_create(x+(150-22),y+(120+16),obj_equipment_offhand);
 instance_create(x+(150+22),y+(120-16),obj_equipment_helm);
 instance_create(x+(150+22),y+(120),obj_equipment_chest);
 instance_create(x+(150+22),y+(120+16),obj_equipment_legs);
+*/
 </string>
           </argument>
         </arguments>

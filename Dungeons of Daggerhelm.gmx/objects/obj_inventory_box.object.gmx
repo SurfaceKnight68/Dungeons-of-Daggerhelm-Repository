@@ -8,32 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Create item variable
-
-item = -1;
-type = '';
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
@@ -55,71 +29,6 @@ type = '';
 
 x = xstart+view_xview[0];
 y = ystart+view_yview[0];
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Take item from box
-if(type != '') {
-    if(item != -1) {
-        global.item = item;
-        global.bonus_str = global.bonus_str - scr_get_item_value(global.item, 'strength');
-        global.bonus_wis = global.bonus_wis - scr_get_item_value(global.item, 'wisdom');
-        global.bonus_for = global.bonus_for - scr_get_item_value(global.item, 'fortitude');
-        item = -1;    
-    }
-}
-if(item != -1) {
-    global.item = item;
-    item = -1;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw inventory box
-
-draw_sprite(spr_inventory_border,0,view_xview[0]+xstart,view_yview[0]+ystart);
-
-if(item != -1) {
-    draw_sprite(object_get_sprite(item), 0, view_xview[0]+xstart,view_yview[0]+ystart);
-}
 </string>
           </argument>
         </arguments>
