@@ -325,7 +325,7 @@ draw_set_color(c_black);
             <kind>1</kind>
             <string>/// Draw equipment inventory text
 
-if(global.game_state == 'pause') {
+if(showInv) {
     draw_set_color(c_silver);
     draw_set_font(fnt_HUD);
     draw_text(410,230,"Equipment");

@@ -50,6 +50,12 @@ ini_write_real("Save1","slot22",global.slot[21]);
 ini_write_real("Save1","slot23",global.slot[22]);
 ini_write_real("Save1","slot24",global.slot[23]);
 
+ini_write_real("Save1","weapon",global.equip[0]);
+ini_write_real("Save1","offhand",global.equip[1]);
+ini_write_real("Save1","head",global.equip[2]);
+ini_write_real("Save1","chest",global.equip[3]);
+ini_write_real("Save1","legs",global.equip[4]);
+
 // Close ini file
 ini_close();
 show_debug_message("Save file activated!");

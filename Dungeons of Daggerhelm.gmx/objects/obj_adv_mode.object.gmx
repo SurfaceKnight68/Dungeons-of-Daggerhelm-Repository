@@ -76,6 +76,8 @@
           <argument>
             <kind>1</kind>
             <string>room_goto(rm_broken_shield_castle);
+instance_create(0,0,obj_hud);
+instance_create(x,y,obj_inventory);
 </string>
           </argument>
         </arguments>

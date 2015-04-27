@@ -686,11 +686,19 @@
       <script>scripts\scr_get_item_value.gml</script>
       <script>scripts\scr_item_drop_weapon.gml</script>
       <script>scripts\scr_item_drop_armor.gml</script>
-      <script>scripts\scr_item_pickup.gml</script>
-      <script>scripts\scr_item_drop.gml</script>
-      <script>scripts\scr_item_check.gml</script>
-      <script>scripts\scr_item_pickup_slot.gml</script>
-      <script>scripts\scr_item_drop_slot.gml</script>
+      <scripts name="Inventory">
+        <script>scripts\scr_item_pickup.gml</script>
+        <script>scripts\scr_item_drop_slot.gml</script>
+        <script>scripts\scr_item_pickup_slot.gml</script>
+        <script>scripts\scr_item_check.gml</script>
+        <script>scripts\scr_item_drop.gml</script>
+      </scripts>
+      <scripts name="Inventory to equip">
+        <script>scripts\scr_item_drop_equip.gml</script>
+        <script>scripts\scr_item_pickup_equip.gml</script>
+        <script>scripts\scr_item_add_value.gml</script>
+        <script>scripts\scr_item_add_load.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Particle Scripts">
       <script>scripts\scr_part_blood_init.gml</script>
@@ -850,7 +858,7 @@
       <object>objects\obj_recall_button</object>
       <objects name="Inventory">
         <object>objects\obj_item_parent</object>
-        <object>objects\obj_invbutton</object>
+        <object>objects\obj_inventory</object>
         <object>objects\obj_mouseitem</object>
         <object>objects\obj_coin</object>
         <object>objects\obj_key</object>
@@ -858,8 +866,8 @@
         <object>objects\obj_items</object>
         <objects name="Weapons">
           <objects name="Basic">
-            <object>objects\obj_basic_mace</object>
             <object>objects\obj_basic_sword</object>
+            <object>objects\obj_basic_mace</object>
             <object>objects\obj_basic_wand</object>
             <object>objects\obj_basic_bow</object>
           </objects>
@@ -922,7 +930,8 @@
             <object>objects\obj_novice_leggings</object>
           </objects>
         </objects>
-        <object>objects\obj_inventory</object>
+        <object>objects\obj_invbutton</object>
+        <object>objects\obj_equipbutton</object>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>

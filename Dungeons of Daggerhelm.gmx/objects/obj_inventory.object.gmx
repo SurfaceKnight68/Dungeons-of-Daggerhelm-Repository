@@ -41,7 +41,10 @@
 12 = basic_legwraps
 */
 
-
+globalvar showInv;
+showInv = 0;
+globalvar equipInv;
+equipInv = 5;
 inv_width = 6;
 inv_height = 4;
 
@@ -51,8 +54,31 @@ for(var i = 0; i &lt; maxItems; i++) {
     button[i].slot = i;
 }
 
+for(var n = 0; n &lt; equipInv; n++) {
+    global.equip[n] = -1;
+    equip_but[n] = instance_create(0,0,obj_equipbutton);
+    equip_but[n].equip = n;
+}
+
 globalvar mouseItem;
 mouseItem = -1;
+
+with(equip_but[0]) {
+    type = 'weapon';
+}
+
+with(equip_but[1]) {
+    type = 'offhand';
+}
+with(equip_but[2]) {
+    type = 'head';
+}
+with(equip_but[3]) {
+    type = 'chest';
+}
+with(equip_but[4]) {
+    type = 'legs';
+}
 </string>
           </argument>
         </arguments>
@@ -82,6 +108,27 @@ mouseItem = -1;
         button[i].x = (view_xview[0]+205)+(xx*16);
         button[i].y = (view_yview[0]+240)+(yy*16);
             
+}
+if(showInv == 1) {
+    equip_but[0].x = (view_xview[0])+(150-22);
+    equip_but[0].y = (view_yview[0])+(120-16);
+    draw_sprite(spr_inventory_border,0,(view_xview[0])+(150-22),(view_yview[0])+(120-16));
+    
+    equip_but[1].x = (view_xview[0])+(150-22);
+    equip_but[1].y = (view_yview[0])+(120+16);
+    draw_sprite(spr_inventory_border,0,(view_xview[0])+(150-22),(view_yview[0])+(120+16));
+    
+    equip_but[2].x = (view_xview[0])+(150+22);
+    equip_but[2].y = (view_yview[0])+(120-16);
+    draw_sprite(spr_inventory_border,0,(view_xview[0])+(150+22),(view_yview[0])+(120-16));
+    
+    equip_but[3].x = (view_xview[0])+(150+22);
+    equip_but[3].y = (view_yview[0])+(120);
+    draw_sprite(spr_inventory_border,0,(view_xview[0])+(150+22),(view_yview[0])+(120));
+    
+    equip_but[4].x = (view_xview[0])+(150+22);
+    equip_but[4].y = (view_yview[0])+(120+16);
+    draw_sprite(spr_inventory_border,0,(view_xview[0])+(150+22),(view_yview[0])+(120+16));
 }
 </string>
           </argument>

@@ -71,7 +71,6 @@
     <instance objName="obj_NPC_Holly" x="720" y="1056" name="inst_95616672" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="448" y="1136" name="inst_3D11751B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brickwall" x="800" y="912" name="inst_C92B9164" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hud" x="0" y="0" name="inst_108DF3AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_ranger" x="160" y="1008" name="inst_C92090B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_paladin" x="224" y="944" name="inst_6907E05C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_battlemage" x="767" y="1023" name="inst_0625E683" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

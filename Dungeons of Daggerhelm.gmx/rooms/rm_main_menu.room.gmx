@@ -56,7 +56,7 @@
     <instance objName="obj_exit" x="247" y="288" name="inst_5F059895" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_heading" x="248" y="124" name="inst_44AADDB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_version_number" x="315" y="172" name="inst_4CF04314" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gamestate" x="0" y="32" name="inst_C605F8F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gamestate" x="128" y="32" name="inst_C605F8F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_menu_cursor" x="0" y="0" name="inst_560D33A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_load_game" x="245" y="267" name="inst_131F723D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_stats" x="32" y="0" name="inst_DD7A7419" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

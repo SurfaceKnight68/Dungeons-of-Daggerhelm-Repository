@@ -29,6 +29,10 @@
 strength = 0;
 wisdom = 0;
 fortitude = 0;
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -51,33 +55,58 @@ fortitude = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var item = global.slot[slot];
-var click = mouse_check_button_pressed(mb_left);
+            <string>item = global.equip[equip];
+click = mouse_check_button_pressed(mb_left);
 
 if(abs(mouse_x - x) &lt; 8) &amp;&amp; (abs(mouse_y - y) &lt; 8) {
-    draw_set_color(c_yellow);
+    draw_set_color(c_orange);
     draw_set_alpha(.7)
     draw_rectangle(x-8,y-8,x+8,y+8,false);
     draw_set_color(c_black);
     draw_set_alpha(1);
     if(click) {
-        if(item != -1) {
-            scr_item_drop_slot(slot);
-            audio_play_sound(snd_item_inv,10,false);
-            
+        
+        if(item != -1) { //If we have an item equipped
+            if(mouseItem == -1) {//If our mouse slot is empty
+                         
+              check_drop = scr_item_drop_equip(equip);
+              scr_item_add_load();
+              if(check_drop == 1) {
+                audio_play_sound(snd_item_inv,10,false);
+                mouseItem = item;
+                global.bonus_str -= strength;
+                global.bonus_wis -= wisdom; 
+                global.bonus_for -= fortitude;
+                } else {
+                // Do nothing
+                
+                }
+             } else if(mouseItem != -1) {//If our mouse slot is full
+                //Do nothing
+                }
+             }           
+               
+        if(mouseItem != -1) { //If we are holding an item       
+                if(item == -1) { //If the equip slot is empty
+                    check_pickup = scr_item_add_value();
+                        if(check_pickup == 1) { //If everything checks out
+                        mouseItem = item;
+                        global.bonus_str += strength;
+                        global.bonus_wis += wisdom; 
+                        global.bonus_for += fortitude;
+                        } else {                        
+                        //Do nothing
+                }                          
+            } else {
+                //Do nothing
+            }                 
         }
-        if(mouseItem != -1) {
-            scr_item_pickup_slot(mouseItem,slot);
-            audio_play_sound(snd_item_pickup,10,false);
-            
-        }
-        mouseItem = item;
     }
-    
 }
-
-if(item != -1) {
-    draw_sprite(spr_items,item,x,y);
+if(showInv) {
+    if(item != -1) {
+        draw_sprite(spr_items,item,x,y);
+    }
 }
 </string>
           </argument>

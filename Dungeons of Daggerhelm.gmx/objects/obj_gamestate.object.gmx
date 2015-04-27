@@ -130,13 +130,13 @@ if(chest_dist &gt; 48) {
             <kind>1</kind>
             <string>/// Control game state
 
-switch (global.game_state) {
+switch (showInv) {
 
-    case 'run':
-        global.game_state = 'pause';
+    case 1:
+        showInv = 0;
         break;
-    case 'pause':
-        global.game_state = 'run';
+    case 0:
+        showInv = 1;
         break;
     default:
         break;

@@ -48,6 +48,12 @@ if(file_exists("savedata.ini")) {
     global.slot[21] = ini_read_real("Save1","slot22",-1);
     global.slot[22] = ini_read_real("Save1","slot23",-1);
     global.slot[23] = ini_read_real("Save1","slot24",-1);
+    
+    global.equip[0] = ini_read_real("Save1","weapon",-1);
+    global.equip[1] = ini_read_real("Save1","offhand",-1);
+    global.equip[2] = ini_read_real("Save1","head",-1);
+    global.equip[3] = ini_read_real("Save1","chest",-1);
+    global.equip[4] = ini_read_real("Save1","legs",-1);
             
     ini_close();
     room_goto(rm_broken_shield_castle);

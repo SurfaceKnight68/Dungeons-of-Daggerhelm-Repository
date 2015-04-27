@@ -17,7 +17,7 @@ ds_map_add(basic_sword, 'spec2', 5);
 // Basic Mace
 basic_mace = ds_map_create();
 ds_map_add(basic_mace, 'type', 'weapon');
-ds_map_add(basic_sword, 'sprite',spr_1h_mace);
+ds_map_add(basic_mace, 'sprite',spr_1h_mace);
 ds_map_add(basic_mace, 'id', 2);
 ds_map_add(basic_mace, 'strength', 1);
 ds_map_add(basic_mace, 'wisdom', 4);
