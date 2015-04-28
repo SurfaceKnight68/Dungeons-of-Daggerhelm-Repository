@@ -17,8 +17,7 @@
 if(mouseItem == 0) {
     if(type == scr_get_item_value(obj_basic_sword, 'type')) {
         if(global.identity == scr_get_item_value(obj_basic_sword, 'spec1') || global.identity == scr_get_item_value(obj_basic_sword, 'spec2')) {
-            scr_item_pickup_equip(mouseItem,equip);
-            
+            scr_item_pickup_equip(mouseItem,equip);            
             audio_play_sound(snd_item_pickup,10,false);
                 strength = scr_get_item_value(obj_basic_sword, 'strength');
                 wisdom = scr_get_item_value(obj_basic_sword, 'wisdom');
@@ -84,8 +83,6 @@ if(mouseItem == 3) {
     }
 }
 
-return(0);
-
 if(mouseItem == 4) {
     if(type == scr_get_item_value(obj_basic_cap, 'type')) {
         if(global.identity == scr_get_item_value(obj_basic_cap, 'spec1') || global.identity == scr_get_item_value(obj_basic_cap, 'spec2')) {
@@ -102,8 +99,6 @@ if(mouseItem == 4) {
     return(0);
     }
 }
-
-return(0);
 
 if(mouseItem == 5) {
     if(type == scr_get_item_value(obj_basic_shirt, 'type')) {
@@ -122,8 +117,6 @@ if(mouseItem == 5) {
     }
 }
 
-return(0);
-
 if(mouseItem == 6) {
     if(type == scr_get_item_value(obj_basic_pants, 'type')) {
         if(global.identity == scr_get_item_value(obj_basic_pants, 'spec1') || global.identity == scr_get_item_value(obj_basic_pants, 'spec2')) {
@@ -140,8 +133,6 @@ if(mouseItem == 6) {
     return(0);
     }
 }
-
-return(0);
 
 if(mouseItem == 7) {
     if(type == scr_get_item_value(obj_basic_helm, 'type')) {
@@ -160,8 +151,6 @@ if(mouseItem == 7) {
     }
 }
 
-return(0);
-
 if(mouseItem == 8) {
     if(type == scr_get_item_value(obj_basic_mail, 'type')) {
         if(global.identity == scr_get_item_value(obj_basic_mail, 'spec1') || global.identity == scr_get_item_value(obj_basic_mail, 'spec2')) {
@@ -178,8 +167,6 @@ if(mouseItem == 8) {
     return(0);
     }
 }
-
-return(0);
 
 if(mouseItem == 9) {
     if(type == scr_get_item_value(obj_basic_plates, 'type')) {
@@ -198,8 +185,6 @@ if(mouseItem == 9) {
     }
 }
 
-return(0);
-
 if(mouseItem == 10) {
     if(type == scr_get_item_value(obj_basic_hood, 'type')) {
         if(global.identity == scr_get_item_value(obj_basic_hood, 'spec1') || global.identity == scr_get_item_value(obj_basic_hood, 'spec2')) {
@@ -217,8 +202,6 @@ if(mouseItem == 10) {
     }
 }
 
-return(0);
-
 if(mouseItem == 11) {
     if(type == scr_get_item_value(obj_basic_robe, 'type')) {
         if(global.identity == scr_get_item_value(obj_basic_robe, 'spec1') || global.identity == scr_get_item_value(obj_basic_robe, 'spec2')) {
@@ -235,7 +218,6 @@ if(mouseItem == 11) {
     return(0);
     }
 }
-return(0);
 
 if(mouseItem == 12) {
     if(type == scr_get_item_value(obj_basic_legwraps, 'type')) {
@@ -253,4 +235,3 @@ if(mouseItem == 12) {
     return(0);
     }
 }
-return(0);

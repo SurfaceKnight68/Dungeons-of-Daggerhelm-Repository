@@ -57,7 +57,7 @@ fortitude = 0;
             <kind>1</kind>
             <string>item = global.equip[equip];
 click = mouse_check_button_pressed(mb_left);
-
+if(showInv) {
 if(abs(mouse_x - x) &lt; 8) &amp;&amp; (abs(mouse_y - y) &lt; 8) {
     draw_set_color(c_orange);
     draw_set_alpha(.7)
@@ -83,6 +83,7 @@ if(abs(mouse_x - x) &lt; 8) &amp;&amp; (abs(mouse_y - y) &lt; 8) {
                 }
              } else if(mouseItem != -1) {//If our mouse slot is full
                 //Do nothing
+                instance_create(x,y,obj_cantplace);
                 }
              }           
                
@@ -96,12 +97,14 @@ if(abs(mouse_x - x) &lt; 8) &amp;&amp; (abs(mouse_y - y) &lt; 8) {
                         global.bonus_for += fortitude;
                         } else {                        
                         //Do nothing
+                        instance_create(x,y,obj_cantequip);
                 }                          
             } else {
                 //Do nothing
             }                 
         }
     }
+}
 }
 if(showInv) {
     if(item != -1) {

@@ -1,5 +1,5 @@
 randomize();
-basic_chance = irandom_range(0,5);
+basic_chance = irandom_range(0,4);
 novice_chance = irandom_range(0,8);
 uncommon_chance = irandom_range(0,10);
 exceptional_chance = irandom_range(0,14);
@@ -49,6 +49,8 @@ if(global.lv <= 60) {
         }
     }
 }
+
+/*
 
 if(global.lv <= 60 && global.lv >= 8) {
     if(novice_chance == 0) {

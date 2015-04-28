@@ -932,6 +932,9 @@
         </objects>
         <object>objects\obj_invbutton</object>
         <object>objects\obj_equipbutton</object>
+        <object>objects\obj_cantequip</object>
+        <object>objects\obj_invfull</object>
+        <object>objects\obj_cantplace</object>
       </objects>
       <objects name="Screen effects">
         <object>objects\obj_death_warning</object>

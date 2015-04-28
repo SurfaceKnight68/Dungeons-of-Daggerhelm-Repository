@@ -148,7 +148,7 @@ var picked_up = scr_item_pickup(item_id);
         
     } else {
         // Do absolutely nothing!
-
+        instance_create(x,y,obj_invfull);
     }      
 
     
