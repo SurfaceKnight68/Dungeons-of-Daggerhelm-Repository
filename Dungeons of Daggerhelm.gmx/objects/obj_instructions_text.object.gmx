@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -32,12 +32,12 @@ draw_set_color(c_red);
 draw_set_alpha(1);
 draw_set_font(fnt_HUD);
 
-draw_text(view_xview[0]+20,view_yview[0]+20,"Movement:");
+draw_text(120,120,"Movement:");
 draw_set_color(c_red);
-draw_text(view_xview[0]+20,view_yview[0]+40,"W = Up");
-draw_text(view_xview[0]+20,view_yview[0]+55,"S = Down");
-draw_text(view_xview[0]+20,view_yview[0]+70,"A = Left");
-draw_text(view_xview[0]+20,view_yview[0]+85,"D = Right");
+draw_text(120,170,"W = Up");
+draw_text(120,200,"S = Down");
+draw_text(120,230,"A = Left");
+draw_text(120,260,"D = Right");
 
 draw_set_color(c_black);
 </string>

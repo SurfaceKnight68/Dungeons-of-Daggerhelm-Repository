@@ -36,6 +36,7 @@
       <sprites name="Spawn_Level">
         <sprite>sprites\spr_floor</sprite>
         <sprite>sprites\spr_grass</sprite>
+        <sprite>sprites\spr_grass_brick</sprite>
         <sprite>sprites\spr_brickwall</sprite>
         <sprites name="Castle">
           <sprite>sprites\spr_castle_top_left</sprite>
@@ -481,6 +482,7 @@
       <sprite>sprites\spr_main_menu_cursor</sprite>
       <sprite>sprites\spr_main_cursor</sprite>
       <sprite>sprites\spr_Game_Maker</sprite>
+      <sprite>sprites\spr_mouse_pointer</sprite>
     </sprites>
     <sprites name="Headings">
       <sprite>sprites\spr_main_heading</sprite>
@@ -697,6 +699,7 @@
         <script>scripts\scr_item_drop_equip.gml</script>
         <script>scripts\scr_item_pickup_equip.gml</script>
         <script>scripts\scr_item_add_value.gml</script>
+        <script>scripts\scr_item_drop_onground.gml</script>
         <script>scripts\scr_item_add_load.gml</script>
       </scripts>
     </scripts>

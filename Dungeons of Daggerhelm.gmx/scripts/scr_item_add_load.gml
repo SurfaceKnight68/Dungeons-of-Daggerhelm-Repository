@@ -22,7 +22,7 @@ if(item == 0) {
        return(1);
         
 }
-return(0);
+
 if(item == 1) {
        strength = scr_get_item_value(obj_basic_mace, 'strength');
        wisdom = scr_get_item_value(obj_basic_mace, 'wisdom');
@@ -31,7 +31,7 @@ if(item == 1) {
        return(1);
         
 }
-return(0)
+
 
 if(item == 2) {
        strength = scr_get_item_value(obj_basic_wand, 'strength');
@@ -41,7 +41,7 @@ if(item == 2) {
        return(1);
         
 }
-return(0)
+
 
 if(item == 3) {
        strength = scr_get_item_value(obj_basic_bow, 'strength');
@@ -51,7 +51,7 @@ if(item == 3) {
        return(1);
         
 }
-return(0)
+
 
 if(item == 4) {
     strength = scr_get_item_value(obj_basic_cap, 'strength');
@@ -61,7 +61,6 @@ if(item == 4) {
             return(1);
 }
 
-return(0);
 
 if(item == 5) {
             strength = scr_get_item_value(obj_basic_shirt, 'strength');
@@ -71,7 +70,6 @@ if(item == 5) {
             return(1);
 }
 
-return(0);
 
 if(item == 6) {
             strength = scr_get_item_value(obj_basic_pants, 'strength');
@@ -82,7 +80,6 @@ if(item == 6) {
         
 }
 
-return(0);
 
 if(item == 7) {
             strength = scr_get_item_value(obj_basic_helm, 'strength');
@@ -93,7 +90,6 @@ if(item == 7) {
         
 }
 
-return(0);
 
 if(item == 8) {
             strength = scr_get_item_value(obj_basic_mail, 'strength');
@@ -104,8 +100,6 @@ if(item == 8) {
         
 }
 
-return(0);
-
 if(item == 9) {
             strength = scr_get_item_value(obj_basic_plates, 'strength');
             wisdom = scr_get_item_value(obj_basic_plates, 'wisdom');
@@ -114,8 +108,6 @@ if(item == 9) {
             return(1);
         
 }
-
-return(0);
 
 if(item == 10) {
             strength = scr_get_item_value(obj_basic_hood, 'strength');
@@ -126,8 +118,6 @@ if(item == 10) {
         
 }
 
-return(0);
-
 if(item == 11) {
             strength = scr_get_item_value(obj_basic_robe, 'strength');
             wisdom = scr_get_item_value(obj_basic_robe, 'wisdom');
@@ -136,7 +126,7 @@ if(item == 11) {
             return(1);
         
 }
-return(0);
+
 
 if(item == 12) {
             strength = scr_get_item_value(obj_basic_legwraps, 'strength');
@@ -146,4 +136,4 @@ if(item == 12) {
             return(1);
         
 }
-return(0);
+
