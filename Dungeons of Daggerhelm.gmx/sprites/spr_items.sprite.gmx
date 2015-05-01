@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>15</bbox_right>
-  <bbox_top>1</bbox_top>
+  <bbox_top>0</bbox_top>
   <bbox_bottom>15</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -33,5 +33,18 @@
     <frame index="10">images\spr_items_10.png</frame>
     <frame index="11">images\spr_items_11.png</frame>
     <frame index="12">images\spr_items_12.png</frame>
+    <frame index="13">images\spr_items_13.png</frame>
+    <frame index="14">images\spr_items_14.png</frame>
+    <frame index="15">images\spr_items_15.png</frame>
+    <frame index="16">images\spr_items_16.png</frame>
+    <frame index="17">images\spr_items_17.png</frame>
+    <frame index="18">images\spr_items_18.png</frame>
+    <frame index="19">images\spr_items_19.png</frame>
+    <frame index="20">images\spr_items_20.png</frame>
+    <frame index="21">images\spr_items_21.png</frame>
+    <frame index="22">images\spr_items_22.png</frame>
+    <frame index="23">images\spr_items_23.png</frame>
+    <frame index="24">images\spr_items_24.png</frame>
+    <frame index="25">images\spr_items_25.png</frame>
   </frames>
 </sprite>

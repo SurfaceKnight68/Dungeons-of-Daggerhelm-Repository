@@ -37,6 +37,9 @@ global.dest_y = 1136;
 globalvar maxItems;
 maxItems = 24;
 
+globalvar mouseItem;
+mouseItem = -1;
+
 global.switches = ds_map_create();
 </string>
           </argument>

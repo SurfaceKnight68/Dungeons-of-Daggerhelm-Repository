@@ -12,6 +12,11 @@
 10 = basic_hood
 11 = basic_robe
 12 = basic_legwraps
+
+13 = large_sword
+14 = large_mace
+15 = large_staff
+16 = crossbow
 */
 
 if(mouseItem == 0) {
@@ -64,4 +69,44 @@ if(mouseItem == 11) {
 
 if(mouseItem == 12) {
     instance_create(obj_player.x+16,obj_player.y,obj_basic_legwraps);
+}
+if(mouseItem == 13) {
+    instance_create(obj_player.x+16,obj_player.y,obj_large_sword);
+}
+if(mouseItem == 14) {
+    instance_create(obj_player.x+16,obj_player.y,obj_large_mace);
+}
+if(mouseItem == 15) {
+    instance_create(obj_player.x+16,obj_player.y,obj_large_staff);
+}
+if(mouseItem == 16) {
+    instance_create(obj_player.x+16,obj_player.y,obj_crossbow);
+}
+
+if(mouseItem == 17) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_hat);
+}
+if(mouseItem == 18) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_jacket);
+}
+if(mouseItem == 19) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_trousers);
+}
+if(mouseItem == 20) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_helmet);
+}
+if(mouseItem == 21) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_chestplate);
+}
+if(mouseItem == 22) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_legguards);
+}
+if(mouseItem == 23) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_cover);
+}
+if(mouseItem == 24) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_drape);
+}
+if(mouseItem == 25) {
+    instance_create(obj_player.x+16,obj_player.y,obj_novice_leggings);
 }

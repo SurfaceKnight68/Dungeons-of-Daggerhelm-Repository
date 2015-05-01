@@ -12,6 +12,10 @@
 10 = basic_hood
 11 = basic_robe
 12 = basic_legwraps
+13 = large_sword
+14 = large_mace
+15 = large_staff
+16 = crossbow
 */
 
 if(item == 0) {
@@ -137,3 +141,37 @@ if(item == 12) {
         
 }
 
+if(item == 13) {
+            strength = scr_get_item_value(obj_large_sword, 'strength');
+            wisdom = scr_get_item_value(obj_large_sword, 'wisdom');
+            fortitude = scr_get_item_value(obj_large_sword, 'fortitude');
+            
+            return(1);
+        
+}
+
+if(item == 14) {
+            strength = scr_get_item_value(obj_large_mace, 'strength');
+            wisdom = scr_get_item_value(obj_large_mace, 'wisdom');
+            fortitude = scr_get_item_value(obj_large_mace, 'fortitude');
+            
+            return(1);
+        
+}
+
+if(item == 15) {
+            strength = scr_get_item_value(obj_large_staff, 'strength');
+            wisdom = scr_get_item_value(obj_large_staff, 'wisdom');
+            fortitude = scr_get_item_value(obj_large_staff, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 16) {
+            strength = scr_get_item_value(obj_crossbow, 'strength');
+            wisdom = scr_get_item_value(obj_crossbow, 'wisdom');
+            fortitude = scr_get_item_value(obj_crossbow, 'fortitude');
+            
+            return(1);
+        
+}

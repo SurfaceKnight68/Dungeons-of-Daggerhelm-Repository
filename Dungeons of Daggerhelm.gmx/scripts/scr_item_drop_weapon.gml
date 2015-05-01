@@ -34,7 +34,7 @@ if(global.lv <= 60) {
         }
     }
 }
-/*
+
 if(global.lv <= 60 && global.lv >= 6) {
     if(novice_chance == 0) {
         instance_create(x,y,(choose(obj_large_mace,

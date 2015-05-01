@@ -12,6 +12,21 @@
 10 = basic_hood
 11 = basic_robe
 12 = basic_legwraps
+
+13 = large_sword
+14 = large_mace
+15 = large_staff
+16 = crossbow
+
+17 = novice_hat
+18 = novice_jacket
+19 = novice_trousers
+20 = novice_helmet
+21 = novice_chestplate
+22 = novice_legguards
+23 = novice_cover
+24 = novice_drape
+25 = novice_leggings
 */
 
 if(mouseItem == 0) {
@@ -226,6 +241,214 @@ if(mouseItem == 12) {
             strength = scr_get_item_value(obj_basic_legwraps, 'strength');
             wisdom = scr_get_item_value(obj_basic_legwraps, 'wisdom');
             fortitude = scr_get_item_value(obj_basic_legwraps, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 13) {
+    if(type == scr_get_item_value(obj_large_sword, 'type')) {
+        if(global.identity == scr_get_item_value(obj_large_sword, 'spec1') || global.identity == scr_get_item_value(obj_large_sword, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_large_sword, 'strength');
+            wisdom = scr_get_item_value(obj_large_sword, 'wisdom');
+            fortitude = scr_get_item_value(obj_large_sword, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 14) {
+    if(type == scr_get_item_value(obj_large_mace, 'type')) {
+        if(global.identity == scr_get_item_value(obj_large_mace, 'spec1') || global.identity == scr_get_item_value(obj_large_mace, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_large_mace, 'strength');
+            wisdom = scr_get_item_value(obj_large_mace, 'wisdom');
+            fortitude = scr_get_item_value(obj_large_mace, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 15) {
+    if(type == scr_get_item_value(obj_large_staff, 'type')) {
+        if(global.identity == scr_get_item_value(obj_large_staff, 'spec1') || global.identity == scr_get_item_value(obj_large_staff, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_large_staff, 'strength');
+            wisdom = scr_get_item_value(obj_large_staff, 'wisdom');
+            fortitude = scr_get_item_value(obj_large_staff, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 16) {
+    if(type == scr_get_item_value(obj_crossbow, 'type')) {
+        if(global.identity == scr_get_item_value(obj_crossbow, 'spec1') || global.identity == scr_get_item_value(obj_crossbow, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_crossbow, 'strength');
+            wisdom = scr_get_item_value(obj_crossbow, 'wisdom');
+            fortitude = scr_get_item_value(obj_crossbow, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 17) {
+    if(type == scr_get_item_value(obj_novice_hat, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_hat, 'spec1') || global.identity == scr_get_item_value(obj_novice_hat, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_hat, 'strength');
+            wisdom = scr_get_item_value(obj_novice_hat, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_hat, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 18) {
+    if(type == scr_get_item_value(obj_novice_jacket, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_jacket, 'spec1') || global.identity == scr_get_item_value(obj_novice_jacket, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_jacket, 'strength');
+            wisdom = scr_get_item_value(obj_novice_jacket, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_jacket, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 19) {
+    if(type == scr_get_item_value(obj_novice_trousers, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_trousers, 'spec1') || global.identity == scr_get_item_value(obj_novice_trousers, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_trousers, 'strength');
+            wisdom = scr_get_item_value(obj_novice_trousers, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_trousers, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 20) {
+    if(type == scr_get_item_value(obj_novice_helmet, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_helmet, 'spec1') || global.identity == scr_get_item_value(obj_novice_helmet, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_helmet, 'strength');
+            wisdom = scr_get_item_value(obj_novice_helmet, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_helmet, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 21) {
+    if(type == scr_get_item_value(obj_novice_chestplate, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_chestplate, 'spec1') || global.identity == scr_get_item_value(obj_novice_chestplate, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_chestplate, 'strength');
+            wisdom = scr_get_item_value(obj_novice_chestplate, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_chestplate, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 22) {
+    if(type == scr_get_item_value(obj_novice_legguards, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_legguards, 'spec1') || global.identity == scr_get_item_value(obj_novice_legguards, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_legguards, 'strength');
+            wisdom = scr_get_item_value(obj_novice_legguards, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_legguards, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 23) {
+    if(type == scr_get_item_value(obj_novice_cover, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_cover, 'spec1') || global.identity == scr_get_item_value(obj_novice_cover, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_cover, 'strength');
+            wisdom = scr_get_item_value(obj_novice_cover, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_cover, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 24) {
+    if(type == scr_get_item_value(obj_novice_drape, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_drape, 'spec1') || global.identity == scr_get_item_value(obj_novice_drape, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_drape, 'strength');
+            wisdom = scr_get_item_value(obj_novice_drape, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_drape, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 25) {
+    if(type == scr_get_item_value(obj_novice_leggings, 'type')) {
+        if(global.identity == scr_get_item_value(obj_novice_leggings, 'spec1') || global.identity == scr_get_item_value(obj_novice_leggings, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_novice_leggings, 'strength');
+            wisdom = scr_get_item_value(obj_novice_leggings, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_leggings, 'fortitude');
             
             return(1);
         } else {

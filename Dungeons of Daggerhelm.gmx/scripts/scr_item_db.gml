@@ -52,6 +52,29 @@ ds_map_add(novice_greatsword, 'fortitude', 9);
 ds_map_add(novice_greatsword, 'spec1', 2);
 ds_map_add(novice_greatsword, 'spec2', 5);
 
+novice_mace = ds_map_create();
+ds_map_add(novice_mace, 'type', 'weapon');
+ds_map_add(novice_mace, 'strength', 3);
+ds_map_add(novice_mace, 'wisdom', 8);
+ds_map_add(novice_mace, 'fortitude', 6);
+ds_map_add(novice_mace, 'spec1', 3);
+ds_map_add(novice_mace, 'spec2', 2);
+
+novice_staff = ds_map_create();
+ds_map_add(novice_staff, 'type', 'weapon');
+ds_map_add(novice_staff, 'strength', 6);
+ds_map_add(novice_staff, 'wisdom', 7);
+ds_map_add(novice_staff, 'fortitude', 3);
+ds_map_add(novice_staff, 'spec1', 4);
+ds_map_add(novice_staff, 'spec2', 6);
+
+crossbow = ds_map_create();
+ds_map_add(crossbow, 'type', 'weapon');
+ds_map_add(crossbow, 'strength', 11);
+ds_map_add(crossbow, 'wisdom', 3);
+ds_map_add(crossbow, 'fortitude', 2);
+ds_map_add(crossbow, 'spec1', 1);
+ds_map_add(crossbow, 'spec2', 1);
 
 //** LEGENDARY WEAPONS **//
 drake_blade = ds_map_create();
@@ -305,7 +328,7 @@ ds_map_add(global.items, 'obj_basic_mace', basic_mace);
 ds_map_add(global.items, 'obj_basic_wand', basic_wand);
 ds_map_add(global.items, 'obj_basic_bow', basic_bow);
 //** NOVICE DATABASE **//
-ds_map_add(global.items, 'obj_novice_greatsword', novice_greatsword);
+ds_map_add(global.items, 'obj_large_sword', novice_greatsword);
 //** LEGENDARY DATABASE **//
 ds_map_add(global.items, 'obj_drake_blade', drake_blade);
 ds_map_add(global.items, 'obj_dark_pummeler', dark_pummeler);

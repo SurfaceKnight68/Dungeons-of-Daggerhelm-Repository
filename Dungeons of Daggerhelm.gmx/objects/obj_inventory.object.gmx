@@ -60,9 +60,6 @@ for(var n = 0; n &lt; equipInv; n++) {
     equip_but[n].equip = n;
 }
 
-globalvar mouseItem;
-mouseItem = -1;
-
 with(equip_but[0]) {
     type = 'weapon';
 }

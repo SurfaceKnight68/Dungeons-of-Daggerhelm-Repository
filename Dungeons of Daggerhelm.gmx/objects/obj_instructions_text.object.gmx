@@ -28,16 +28,16 @@
             <string>/// Draw movement instructions
 
 display_set_gui_maximise();
-draw_set_color(c_red);
+draw_set_color(c_black);
 draw_set_alpha(1);
-draw_set_font(fnt_HUD);
+draw_set_font(fnt_menu);
 
-draw_text(120,120,"Movement:");
-draw_set_color(c_red);
-draw_text(120,170,"W = Up");
-draw_text(120,200,"S = Down");
-draw_text(120,230,"A = Left");
-draw_text(120,260,"D = Right");
+draw_text(120,300,"Movement:");
+draw_set_color(c_black);
+draw_text(120,340,"W = Up");
+draw_text(120,380,"S = Down");
+draw_text(120,420,"A = Left");
+draw_text(120,460,"D = Right");
 
 draw_set_color(c_black);
 </string>
@@ -63,15 +63,15 @@ draw_set_color(c_black);
             <string>/// Draw action instructions
 
 display_set_gui_maximise();
-draw_set_color(c_red);
+draw_set_color(c_black);
 draw_set_alpha(1);
-draw_set_font(fnt_HUD);
+draw_set_font(fnt_menu);
 
-draw_text(view_xview[0]+100,view_yview[0]+20,"Attacking:");
-draw_text(view_xview[0]+100,view_yview[0]+40,"LMB = Main Attack");
-draw_text(view_xview[0]+100,view_yview[0]+55,"RMB = Special Attack (when available)");
-draw_text(view_xview[0]+100,view_yview[0]+80,"E = Interact/Talk");
-draw_text(view_xview[0]+100,view_yview[0]+95,"I = Inventory");
+draw_text(120,100,"Attacking:");
+draw_text(120,140,"LMB = Main Attack");
+draw_text(120,180,"RMB = Special Attack");
+draw_text(120,220,"E = Interact/Talk");
+draw_text(120,260,"C = Equipped Items (Toggle)");
 
 
 draw_set_color(c_black);

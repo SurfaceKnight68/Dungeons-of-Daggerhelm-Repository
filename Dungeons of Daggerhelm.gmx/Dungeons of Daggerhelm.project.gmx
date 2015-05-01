@@ -1019,6 +1019,7 @@
         <object>objects\obj_guide_arrow_left</object>
         <object>objects\obj_guide_arrow_right</object>
         <object>objects\obj_guide_arrow_up</object>
+        <object>objects\obj_direction_arrow</object>
       </objects>
       <objects name="Snowy Mountains">
         <object>objects\obj_snowy_boulder</object>
