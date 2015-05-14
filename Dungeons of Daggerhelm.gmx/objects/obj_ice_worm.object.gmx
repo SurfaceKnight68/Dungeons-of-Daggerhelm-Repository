@@ -236,7 +236,7 @@ player_dist = distance_to_object(obj_player);
 if(player_dist &lt;= 120) {
     instance_create(obj_player.x+(irandom_range(-48,48)),obj_player.y+(irandom_range(-48,48)),obj_ice_spike);
 }
-alarm[0] = 90;
+alarm[0] = 45;
 </string>
           </argument>
         </arguments>

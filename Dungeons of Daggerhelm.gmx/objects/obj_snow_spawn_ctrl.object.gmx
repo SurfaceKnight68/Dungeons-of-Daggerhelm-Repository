@@ -52,6 +52,7 @@
 instance_create(x,y,obj_snow_spawner_2);
 instance_create(x,y,obj_snow_spawner_3);
 instance_create(x,y,obj_snow_spawner_4);
+instance_create(x,y,obj_directional_arrow_sm);
 alarm[3] = 0;
 </string>
           </argument>

@@ -466,6 +466,7 @@
     <sprites name="Cursor">
       <sprite>sprites\spr_cursor</sprite>
       <sprite>sprites\spr_direction_arrow</sprite>
+      <sprite>sprites\spr_secondary_arrow</sprite>
     </sprites>
     <sprites name="Main_Menu">
       <sprite>sprites\spr_adv_mode_off</sprite>
@@ -1011,6 +1012,7 @@
         <object>objects\obj_boulder</object>
         <object>objects\obj_rock</object>
         <object>objects\obj_rose_bush</object>
+        <object>objects\obj_directional_arrow_gl</object>
       </objects>
       <objects name="General">
         <object>objects\obj_health_globe</object>
@@ -1019,13 +1021,13 @@
         <object>objects\obj_guide_arrow_left</object>
         <object>objects\obj_guide_arrow_right</object>
         <object>objects\obj_guide_arrow_up</object>
-        <object>objects\obj_direction_arrow</object>
       </objects>
       <objects name="Snowy Mountains">
         <object>objects\obj_snowy_boulder</object>
         <object>objects\obj_tree_stump</object>
         <object>objects\obj_snowy_log</object>
         <object>objects\obj_ice</object>
+        <object>objects\obj_directional_arrow_sm</object>
       </objects>
       <objects name="Undercore">
         <object>objects\obj_lava_geyser</object>
@@ -1049,6 +1051,8 @@
         <object>objects\obj_blue_torch_1</object>
         <object>objects\obj_blue_torch_2</object>
         <object>objects\obj_view_darkness</object>
+        <object>objects\obj_direction_arrow_df</object>
+        <object>objects\obj_secondary_objective_df</object>
       </objects>
       <objects name="Class Specific zones">
         <objects name="Light's Bastion">
@@ -1180,6 +1184,7 @@
     <room>rooms\rm_how_to_play</room>
     <room>rooms\rm_broken_shield_castle</room>
     <room>rooms\rm_armory</room>
+    <room>rooms\rm_undead_crypt</room>
     <room>rooms\rm_dungeon</room>
     <room>rooms\rm_lava_golem_boss</room>
     <room>rooms\rm_dungeon_lv2</room>

@@ -53,7 +53,7 @@ instance_create(x,y,obj_DF_spawner_2);
 instance_create(x,y,obj_DF_spawner_3);
 instance_create(x,y,obj_DF_spawner_4);
 instance_create(x,y,obj_DF_spawner_5);
-instance_create(x,y,obj_direction_arrow);
+instance_create(x,y,obj_direction_arrow_df);
 alarm[4] = 0;
 </string>
           </argument>
