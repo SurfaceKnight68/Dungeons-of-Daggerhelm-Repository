@@ -171,6 +171,9 @@
           <sprite>sprites\spr_dewie</sprite>
           <sprite>sprites\spr_hole</sprite>
         </sprites>
+        <sprites name="Siegemund">
+          <sprite>sprites\spr_Siegemund_idle</sprite>
+        </sprites>
       </sprites>
       <sprites name="Enemies">
         <sprites name="Bosses">
@@ -841,7 +844,7 @@
         <object>objects\obj_hole</object>
       </objects>
       <objects name="Vendors">
-        <object>objects\obj_NPC_Holly</object>
+        <object>objects\obj_NPC_Liana</object>
         <object>objects\obj_NPC_Astor</object>
         <object>objects\obj_NPC_sleeping_colossus</object>
       </objects>
@@ -855,6 +858,7 @@
       </objects>
       <objects name="Light's Bastion NPCs">
         <object>objects\obj_bastion_guard</object>
+        <object>objects\obj_Siegemund</object>
       </objects>
     </objects>
     <objects name="HUD">

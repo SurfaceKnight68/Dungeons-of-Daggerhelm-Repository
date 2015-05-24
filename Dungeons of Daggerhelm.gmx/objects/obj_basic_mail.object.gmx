@@ -62,7 +62,9 @@ item_id = 8;
     draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 150, "STR +1");
     draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 100, "WIS +5");
     draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 50, "FOR +4");
-    
+    draw_set_color(c_red);
+    draw_text(device_mouse_x_to_gui(0) + 75, device_mouse_y_to_gui(0) - 150, "Paladin");
+    draw_text(device_mouse_x_to_gui(0) + 75, device_mouse_y_to_gui(0) - 120, "Thaumaturge");
     draw_set_color(c_black);
 }
 </string>

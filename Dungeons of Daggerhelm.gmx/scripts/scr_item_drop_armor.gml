@@ -1,12 +1,12 @@
 randomize();
-basic_chance = irandom_range(0,4);
-novice_chance = irandom_range(0,8);
-uncommon_chance = irandom_range(0,10);
-exceptional_chance = irandom_range(0,14);
-tremendous_chance = irandom_range(0,15);
-epic_chance = irandom_range(0,40);
-legendary_chance = irandom_range(0,60);
-godlike_chance = irandom_range(0,110);
+basic_chance = irandom_range(0,8);
+novice_chance = irandom_range(0,12);
+uncommon_chance = irandom_range(0,20);
+exceptional_chance = irandom_range(0,28);
+tremendous_chance = irandom_range(0,38);
+epic_chance = irandom_range(0,50);
+legendary_chance = irandom_range(0,85);
+godlike_chance = irandom_range(0,150);
 
 drop_double = irandom_range(0,10);
 drop_triple = irandom_range(0,15);
@@ -49,8 +49,6 @@ if(global.lv <= 60) {
         }
     }
 }
-
-/*
 
 if(global.lv <= 60 && global.lv >= 8) {
     if(novice_chance == 0) {

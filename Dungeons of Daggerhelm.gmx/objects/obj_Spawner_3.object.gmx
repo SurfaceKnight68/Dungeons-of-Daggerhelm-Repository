@@ -65,7 +65,7 @@ until place_empty(xx,yy);
 if(player_dist &gt;= 400) {
     if(player_dist &lt;= 800) {
     // Check if there are 30 rangers
-    if(imp_amount &lt; 100) {
+    if(imp_amount &lt; 250) {
         //The loop has ended, create the enemy if there are less than 30
         instance_create(xx,yy,obj_prime_slate_imp); //Create object
     }

@@ -775,6 +775,9 @@
     <instance objName="obj_bastion_statue" x="544" y="560" name="inst_67D7C560" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="256" y="640" name="inst_9D8974FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="816" y="640" name="inst_4C2D1A4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Siegemund" x="546" y="465" name="inst_A9B7D6D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bastion_guard" x="396" y="160" name="inst_D5978247" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bastion_guard" x="608" y="160" name="inst_2B21E639" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_bastion_floor" x="160" y="160" w="16" h="16" xo="0" yo="0" id="10034556" name="inst_9724172D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

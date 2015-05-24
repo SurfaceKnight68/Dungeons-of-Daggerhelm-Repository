@@ -29,7 +29,7 @@
 draw = false;
 depth = y * -1;
 
-message = "Hello, my name is Holly, and welcome to Broken Shield Castle. I haven't yet mixed any potions, but they should be available soon!";
+message = "Hello, my name is Liana, and welcome to Broken Shield Castle. I haven't yet mixed any potions, but they should be available soon!";
 </string>
           </argument>
         </arguments>

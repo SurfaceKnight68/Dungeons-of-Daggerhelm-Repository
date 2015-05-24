@@ -62,6 +62,8 @@ item_id = 16;
     draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 150, "DEX +11");
     draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 100, "WIS +3");
     draw_text(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0) - 50, "FOR +2");
+    draw_set_color(c_red);
+    draw_text(device_mouse_x_to_gui(0) + 75, device_mouse_y_to_gui(0) - 150, "Ranger");
     
     draw_set_color(c_black);
 }

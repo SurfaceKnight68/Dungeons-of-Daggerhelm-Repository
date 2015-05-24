@@ -1394,7 +1394,7 @@ if(global.identity == 1 &amp;&amp; global.identity == 2) {
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_NPC_Holly">
+    <event eventtype="4" ename="obj_NPC_Liana">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -2009,8 +2009,8 @@ if(global.identity == 6) {
         with(arrow) {
    
         
-            ldx = lengthdir_x(2.7,-other.mouse_dir+45);
-            ldy = lengthdir_y(2.7,-other.mouse_dir+45);
+            ldx = lengthdir_x(1.5,-other.mouse_dir+45);
+            ldy = lengthdir_y(1.5,-other.mouse_dir+45);
             physics_apply_impulse(x,y,ldx,ldy);
         }
         global.player_mp -= 30;
