@@ -175,3 +175,180 @@ if(item == 16) {
             return(1);
         
 }
+if(item == 17) {
+            strength = scr_get_item_value(obj_novice_hat, 'strength');
+            wisdom = scr_get_item_value(obj_novice_hat, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_hat, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 18) {
+            strength = scr_get_item_value(obj_novice_jacket, 'strength');
+            wisdom = scr_get_item_value(obj_novice_jacket, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_jacket, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 19) {
+            strength = scr_get_item_value(obj_novice_trousers, 'strength');
+            wisdom = scr_get_item_value(obj_novice_trousers, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_trousers, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 20) {
+            strength = scr_get_item_value(obj_novice_helmet, 'strength');
+            wisdom = scr_get_item_value(obj_novice_helmet, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_helmet, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 21) {
+            strength = scr_get_item_value(obj_novice_chestplate, 'strength');
+            wisdom = scr_get_item_value(obj_novice_chestplate, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_chestplate, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 22) {
+            strength = scr_get_item_value(obj_novice_legguards, 'strength');
+            wisdom = scr_get_item_value(obj_novice_legguards, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_legguards, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 23) {
+            strength = scr_get_item_value(obj_novice_cover, 'strength');
+            wisdom = scr_get_item_value(obj_novice_cover, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_cover, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 24) {
+            strength = scr_get_item_value(obj_novice_drape, 'strength');
+            wisdom = scr_get_item_value(obj_novice_drape, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_drape, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 25) {
+            strength = scr_get_item_value(obj_novice_leggings, 'strength');
+            wisdom = scr_get_item_value(obj_novice_leggings, 'wisdom');
+            fortitude = scr_get_item_value(obj_novice_leggings, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 26) {
+            strength = scr_get_item_value(obj_uncommon_blade, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_blade, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_blade, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 27) {
+            strength = scr_get_item_value(obj_uncommon_hammer, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_hammer, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_hammer, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 28) {
+            strength = scr_get_item_value(obj_uncommon_charmer, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_charmer, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_charmer, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 29) {
+            strength = scr_get_item_value(obj_uncommon_bolter, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_bolter, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_bolter, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 30) {
+            strength = scr_get_item_value(obj_uncommon_halberd, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_halberd, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_halberd, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 31) {
+            strength = scr_get_item_value(obj_basic_dagger, 'strength');
+            wisdom = scr_get_item_value(obj_basic_dagger, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_dagger, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 32) {
+            strength = scr_get_item_value(obj_basic_shield, 'strength');
+            wisdom = scr_get_item_value(obj_basic_shield, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_shield, 'fortitude');
+            
+            return(1);
+        
+}
+
+if(item == 33) {
+            strength = scr_get_item_value(obj_basic_talisman, 'strength');
+            wisdom = scr_get_item_value(obj_basic_talisman, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_talisman, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 34) {
+            strength = scr_get_item_value(obj_basic_spellbook, 'strength');
+            wisdom = scr_get_item_value(obj_basic_spellbook, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_spellbook, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 35) {
+            strength = scr_get_item_value(obj_drake_blade, 'strength');
+            wisdom = scr_get_item_value(obj_drake_blade, 'wisdom');
+            fortitude = scr_get_item_value(obj_drake_blade, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 36) {
+            strength = scr_get_item_value(obj_dark_pummeler, 'strength');
+            wisdom = scr_get_item_value(obj_dark_pummeler, 'wisdom');
+            fortitude = scr_get_item_value(obj_dark_pummeler, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 37) {
+            strength = scr_get_item_value(obj_faerie_blasting_wand, 'strength');
+            wisdom = scr_get_item_value(obj_faerie_blasting_wand, 'wisdom');
+            fortitude = scr_get_item_value(obj_faerie_blasting_wand, 'fortitude');
+            
+            return(1);
+        
+}
+if(item == 38) {
+            strength = scr_get_item_value(obj_faerie_blasting_wand, 'strength');
+            wisdom = scr_get_item_value(obj_faerie_blasting_wand, 'wisdom');
+            fortitude = scr_get_item_value(obj_faerie_blasting_wand, 'fortitude');
+            
+            return(1);
+        
+}

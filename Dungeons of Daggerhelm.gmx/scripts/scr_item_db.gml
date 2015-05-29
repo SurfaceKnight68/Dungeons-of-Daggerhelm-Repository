@@ -43,6 +43,38 @@ ds_map_add(basic_bow, 'fortitude', 1);
 ds_map_add(basic_bow, 'spec1', 1);
 ds_map_add(basic_bow, 'spec2', 1);
 
+basic_shield = ds_map_create();
+ds_map_add(basic_shield, 'type', 'offhand');
+ds_map_add(basic_shield, 'strength', 0);
+ds_map_add(basic_shield, 'wisdom', 0);
+ds_map_add(basic_shield, 'fortitude', 6);
+ds_map_add(basic_shield, 'spec1', 2);
+ds_map_add(basic_shield, 'spec2', 3);
+
+basic_talisman = ds_map_create();
+ds_map_add(basic_talisman, 'type', 'offhand');
+ds_map_add(basic_talisman, 'strength', 0);
+ds_map_add(basic_talisman, 'wisdom', 6);
+ds_map_add(basic_talisman, 'fortitude', 0);
+ds_map_add(basic_talisman, 'spec1', 4);
+ds_map_add(basic_talisman, 'spec2', 6);
+
+basic_spellbook = ds_map_create();
+ds_map_add(basic_spellbook, 'type', 'offhand');
+ds_map_add(basic_spellbook, 'strength', 5);
+ds_map_add(basic_spellbook, 'wisdom', 1);
+ds_map_add(basic_spellbook, 'fortitude', 0);
+ds_map_add(basic_spellbook, 'spec1', 4);
+ds_map_add(basic_spellbook, 'spec2', 6);
+
+basic_dagger = ds_map_create();
+ds_map_add(basic_dagger, 'type', 'offhand');
+ds_map_add(basic_dagger, 'strength', 6);
+ds_map_add(basic_dagger, 'wisdom', 0);
+ds_map_add(basic_dagger, 'fortitude', 0);
+ds_map_add(basic_dagger, 'spec1', 1);
+ds_map_add(basic_dagger, 'spec2', 5);
+
 //** NOVICE WEAPONS **//
 novice_greatsword = ds_map_create();
 ds_map_add(novice_greatsword, 'type', 'weapon');
@@ -75,6 +107,47 @@ ds_map_add(crossbow, 'wisdom', 3);
 ds_map_add(crossbow, 'fortitude', 2);
 ds_map_add(crossbow, 'spec1', 1);
 ds_map_add(crossbow, 'spec2', 1);
+
+//** UNCOMMON WEAPONS **//
+uncommon_blade = ds_map_create();
+ds_map_add(uncommon_blade, 'type', 'weapon');
+ds_map_add(uncommon_blade, 'strength', 15);
+ds_map_add(uncommon_blade, 'wisdom', 5);
+ds_map_add(uncommon_blade, 'fortitude', 13);
+ds_map_add(uncommon_blade, 'spec1', 2);
+ds_map_add(uncommon_blade, 'spec2', 5);
+
+uncommon_hammer = ds_map_create();
+ds_map_add(uncommon_hammer, 'type', 'weapon');
+ds_map_add(uncommon_hammer, 'strength', 8);
+ds_map_add(uncommon_hammer, 'wisdom', 14);
+ds_map_add(uncommon_hammer, 'fortitude', 10);
+ds_map_add(uncommon_hammer, 'spec1', 3);
+ds_map_add(uncommon_hammer, 'spec2', 2);
+
+uncommon_charmer = ds_map_create();
+ds_map_add(uncommon_charmer, 'type', 'weapon');
+ds_map_add(uncommon_charmer, 'strength', 10);
+ds_map_add(uncommon_charmer, 'wisdom', 12);
+ds_map_add(uncommon_charmer, 'fortitude', 4);
+ds_map_add(uncommon_charmer, 'spec1', 4);
+ds_map_add(uncommon_charmer, 'spec2', 6);
+
+uncommon_bolter = ds_map_create();
+ds_map_add(uncommon_bolter, 'type', 'weapon');
+ds_map_add(uncommon_bolter, 'strength', 16);
+ds_map_add(uncommon_bolter, 'wisdom', 6);
+ds_map_add(uncommon_bolter, 'fortitude', 5);
+ds_map_add(uncommon_bolter, 'spec1', 1);
+ds_map_add(uncommon_bolter, 'spec2', 1);
+
+uncommon_halberd = ds_map_create();
+ds_map_add(uncommon_halberd, 'type', 'weapon');
+ds_map_add(uncommon_halberd, 'strength', 12);
+ds_map_add(uncommon_halberd, 'wisdom', 5);
+ds_map_add(uncommon_halberd, 'fortitude', 9);
+ds_map_add(uncommon_halberd, 'spec1', 2);
+ds_map_add(uncommon_halberd, 'spec2', 3);
 
 //** LEGENDARY WEAPONS **//
 drake_blade = ds_map_create();
@@ -139,8 +212,8 @@ ds_map_add(grieve, 'type', 'weapon');
 ds_map_add(grieve, 'strength', 210);
 ds_map_add(grieve, 'wisdom', 132);
 ds_map_add(grieve, 'fortitude', 127);
-ds_map_add(grieve, 'spec1', 2);
-ds_map_add(grieve, 'spec2', 3);
+ds_map_add(grieve, 'spec1', 3);
+ds_map_add(grieve, 'spec2', 5);
 
 trueshot = ds_map_create();
 ds_map_add(trueshot, 'type', 'weapon');
@@ -327,8 +400,21 @@ ds_map_add(global.items, 'obj_basic_sword', basic_sword);
 ds_map_add(global.items, 'obj_basic_mace', basic_mace);
 ds_map_add(global.items, 'obj_basic_wand', basic_wand);
 ds_map_add(global.items, 'obj_basic_bow', basic_bow);
+ds_map_add(global.items, 'obj_basic_dagger', basic_dagger);
+ds_map_add(global.items, 'obj_basic_shield', basic_shield);
+ds_map_add(global.items, 'obj_basic_talisman', basic_talisman);
+ds_map_add(global.items, 'obj_basic_spellbook', basic_spellbook);
 //** NOVICE DATABASE **//
 ds_map_add(global.items, 'obj_large_sword', novice_greatsword);
+ds_map_add(global.items, 'obj_large_mace', novice_mace);
+ds_map_add(global.items, 'obj_large_staff', novice_staff);
+ds_map_add(global.items, 'obj_crossbow', crossbow);
+//** UNCOMMON DATABASE**//
+ds_map_add(global.items, 'obj_uncommon_blade', uncommon_blade);
+ds_map_add(global.items, 'obj_uncommon_hammer', uncommon_hammer);
+ds_map_add(global.items, 'obj_uncommon_charmer', uncommon_charmer);
+ds_map_add(global.items, 'obj_uncommon_bolter', uncommon_bolter);
+ds_map_add(global.items, 'obj_uncommon_halberd', uncommon_halberd);
 //** LEGENDARY DATABASE **//
 ds_map_add(global.items, 'obj_drake_blade', drake_blade);
 ds_map_add(global.items, 'obj_dark_pummeler', dark_pummeler);

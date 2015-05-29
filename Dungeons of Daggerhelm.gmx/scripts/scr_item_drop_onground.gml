@@ -110,3 +110,42 @@ if(mouseItem == 24) {
 if(mouseItem == 25) {
     instance_create(obj_player.x+16,obj_player.y,obj_novice_leggings);
 }
+if(mouseItem == 26) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_blade);
+}
+if(mouseItem == 27) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_hammer);
+}
+if(mouseItem == 28) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_charmer);
+}
+if(mouseItem == 29) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_bolter);
+}
+if(mouseItem == 30) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_halberd);
+}
+if(mouseItem == 31) {
+    instance_create(obj_player.x+16,obj_player.y,obj_basic_dagger);
+}
+if(mouseItem == 32) {
+    instance_create(obj_player.x+16,obj_player.y,obj_basic_shield);
+}
+if(mouseItem == 33) {
+    instance_create(obj_player.x+16,obj_player.y,obj_basic_talisman);
+}
+if(mouseItem == 34) {
+    instance_create(obj_player.x+16,obj_player.y,obj_basic_spellbook);
+}
+if(mouseItem == 35) {
+    instance_create(obj_player.x+16,obj_player.y,obj_drake_blade);
+}
+if(mouseItem == 36) {
+    instance_create(obj_player.x+16,obj_player.y,obj_dark_pummeler);
+}
+if(mouseItem == 37) {
+    instance_create(obj_player.x+16,obj_player.y,obj_faerie_blasting_wand);
+}
+if(mouseItem == 38) {
+    instance_create(obj_player.x+16,obj_player.y,obj_snakesting_caster);
+}

@@ -458,3 +458,211 @@ if(mouseItem == 25) {
     return(0);
     }
 }
+if(mouseItem == 26) {
+    if(type == scr_get_item_value(obj_uncommon_blade, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_blade, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_blade, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_blade, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_blade, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_blade, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 27) {
+    if(type == scr_get_item_value(obj_uncommon_hammer, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_hammer, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_hammer, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_hammer, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_hammer, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_hammer, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 28) {
+    if(type == scr_get_item_value(obj_uncommon_charmer, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_charmer, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_charmer, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_charmer, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_charmer, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_charmer, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 29) {
+    if(type == scr_get_item_value(obj_uncommon_bolter, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_bolter, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_bolter, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_bolter, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_bolter, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_bolter, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 30) {
+    if(type == scr_get_item_value(obj_uncommon_halberd, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_halberd, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_halberd, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_halberd, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_halberd, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_halberd, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 31) {
+    if(type == scr_get_item_value(obj_basic_dagger, 'type')) {
+        if(global.identity == scr_get_item_value(obj_basic_dagger, 'spec1') || global.identity == scr_get_item_value(obj_basic_dagger, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_basic_dagger, 'strength');
+            wisdom = scr_get_item_value(obj_basic_dagger, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_dagger, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 32) {
+    if(type == scr_get_item_value(obj_basic_shield, 'type')) {
+        if(global.identity == scr_get_item_value(obj_basic_shield, 'spec1') || global.identity == scr_get_item_value(obj_basic_shield, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_basic_shield, 'strength');
+            wisdom = scr_get_item_value(obj_basic_shield, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_shield, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 33) {
+    if(type == scr_get_item_value(obj_basic_talisman, 'type')) {
+        if(global.identity == scr_get_item_value(obj_basic_talisman, 'spec1') || global.identity == scr_get_item_value(obj_basic_talisman, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_basic_talisman, 'strength');
+            wisdom = scr_get_item_value(obj_basic_talisman, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_talisman, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 34) {
+    if(type == scr_get_item_value(obj_basic_spellbook, 'type')) {
+        if(global.identity == scr_get_item_value(obj_basic_spellbook, 'spec1') || global.identity == scr_get_item_value(obj_basic_spellbook, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_basic_spellbook, 'strength');
+            wisdom = scr_get_item_value(obj_basic_spellbook, 'wisdom');
+            fortitude = scr_get_item_value(obj_basic_spellbook, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 35) {
+    if(type == scr_get_item_value(obj_drake_blade, 'type')) {
+        if(global.identity == scr_get_item_value(obj_drake_blade, 'spec1') || global.identity == scr_get_item_value(obj_drake_blade, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_drake_blade, 'strength');
+            wisdom = scr_get_item_value(obj_drake_blade, 'wisdom');
+            fortitude = scr_get_item_value(obj_drake_blade, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 36) {
+    if(type == scr_get_item_value(obj_dark_pummeler, 'type')) {
+        if(global.identity == scr_get_item_value(obj_dark_pummeler, 'spec1') || global.identity == scr_get_item_value(obj_dark_pummeler, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_dark_pummeler, 'strength');
+            wisdom = scr_get_item_value(obj_dark_pummeler, 'wisdom');
+            fortitude = scr_get_item_value(obj_dark_pummeler, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 37) {
+    if(type == scr_get_item_value(obj_faerie_blasting_wand, 'type')) {
+        if(global.identity == scr_get_item_value(obj_faerie_blasting_wand, 'spec1') || global.identity == scr_get_item_value(obj_faerie_blasting_wand, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_faerie_blasting_wand, 'strength');
+            wisdom = scr_get_item_value(obj_faerie_blasting_wand, 'wisdom');
+            fortitude = scr_get_item_value(obj_faerie_blasting_wand, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 38) {
+    if(type == scr_get_item_value(obj_snakesting_caster, 'type')) {
+        if(global.identity == scr_get_item_value(obj_snakesting_caster, 'spec1') || global.identity == scr_get_item_value(obj_snakesting_caster, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_snakesting_caster, 'strength');
+            wisdom = scr_get_item_value(obj_snakesting_caster, 'wisdom');
+            fortitude = scr_get_item_value(obj_snakesting_caster, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}

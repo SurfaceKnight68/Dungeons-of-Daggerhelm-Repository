@@ -251,6 +251,12 @@
           <sprite>sprites\spr_evil_paladin_left</sprite>
           <sprite>sprites\spr_evil_paladin_right</sprite>
         </sprites>
+        <sprites name="Undead Warrior">
+          <sprite>sprites\spr_U_W_right</sprite>
+          <sprite>sprites\spr_U_W_left</sprite>
+          <sprite>sprites\spr_U_W_idle_right</sprite>
+          <sprite>sprites\spr_U_W_idle_left</sprite>
+        </sprites>
         <sprites name="Evil_Ranger">
           <sprite>sprites\spr_evil_ranger_right</sprite>
           <sprite>sprites\spr_evil_ranger_left</sprite>
@@ -549,6 +555,17 @@
               <sprite>sprites\spr_novice_drape</sprite>
               <sprite>sprites\spr_novice_leggings</sprite>
             </sprites>
+            <sprites name="Uncommon">
+              <sprite>sprites\spr_uncommon_bandore</sprite>
+              <sprite>sprites\spr_uncommon_tunic</sprite>
+              <sprite>sprites\spr_uncommon_breeches</sprite>
+              <sprite>sprites\spr_uncommon_helm</sprite>
+              <sprite>sprites\spr_uncommon_chestplate</sprite>
+              <sprite>sprites\spr_uncommon_legguards</sprite>
+              <sprite>sprites\spr_uncommon_coif</sprite>
+              <sprite>sprites\spr_uncommon_vestment</sprite>
+              <sprite>sprites\spr_uncommon_leggings</sprite>
+            </sprites>
           </sprites>
           <sprites name="Weapons">
             <sprites name="Basic">
@@ -556,6 +573,10 @@
               <sprite>sprites\spr_1h_mace</sprite>
               <sprite>sprites\spr_1h_wand</sprite>
               <sprite>sprites\spr_bow</sprite>
+              <sprite>sprites\spr_basic_dagger</sprite>
+              <sprite>sprites\spr_basic_shield</sprite>
+              <sprite>sprites\spr_basic_talisman</sprite>
+              <sprite>sprites\spr_basic_spellbook</sprite>
             </sprites>
             <sprites name="Novice">
               <sprite>sprites\spr_large_sword</sprite>
@@ -568,6 +589,7 @@
               <sprite>sprites\spr_uncommon_hammer</sprite>
               <sprite>sprites\spr_uncommon_charmer</sprite>
               <sprite>sprites\spr_uncommon_bolter</sprite>
+              <sprite>sprites\spr_uncommon_halberd</sprite>
             </sprites>
             <sprites name="Exceptional">
               <sprite>sprites\spr_exceptional_claymore</sprite>
@@ -766,6 +788,9 @@
         <objects name="Evils">
           <object>objects\obj_Evil_Ranger</object>
         </objects>
+        <objects name="Undead Warrior">
+          <object>objects\obj_undead_warrior</object>
+        </objects>
         <objects name="Shadowsoul">
           <object>objects\obj_shadowsoul</object>
         </objects>
@@ -878,6 +903,10 @@
             <object>objects\obj_basic_mace</object>
             <object>objects\obj_basic_wand</object>
             <object>objects\obj_basic_bow</object>
+            <object>objects\obj_basic_dagger</object>
+            <object>objects\obj_basic_shield</object>
+            <object>objects\obj_basic_talisman</object>
+            <object>objects\obj_basic_spellbook</object>
           </objects>
           <objects name="Novice">
             <object>objects\obj_large_sword</object>
@@ -890,6 +919,7 @@
             <object>objects\obj_uncommon_hammer</object>
             <object>objects\obj_uncommon_charmer</object>
             <object>objects\obj_uncommon_bolter</object>
+            <object>objects\obj_uncommon_halberd</object>
           </objects>
           <objects name="Exceptional">
             <object>objects\obj_exceptional_claymore</object>
@@ -1112,6 +1142,7 @@
           <object>objects\obj_Spawner</object>
           <object>objects\obj_Spawner_2</object>
           <object>objects\obj_Spawner_3</object>
+          <object>objects\obj_Spawner_4</object>
           <object>objects\obj_grass_spawn_ctrl</object>
         </objects>
         <objects name="Snowy Mountains">
