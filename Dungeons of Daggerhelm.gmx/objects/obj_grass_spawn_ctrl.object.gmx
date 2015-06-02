@@ -51,6 +51,7 @@
             <string>instance_create(x,y, obj_Spawner);
 instance_create(x,y, obj_Spawner_2);
 instance_create(x,y, obj_Spawner_3);
+instance_create(x,y, obj_Spawner_4);
 instance_create(x,y,obj_directional_arrow_gl);
 alarm[4] = 0;
 </string>

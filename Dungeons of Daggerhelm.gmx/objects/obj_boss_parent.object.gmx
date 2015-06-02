@@ -50,10 +50,6 @@
             <kind>1</kind>
             <string>scr_item_drop_weapon();
 scr_item_drop_armor();
-    randomize();
-    if(legendary_drop == 0) {
-        instance_create(x+(irandom_range(-32,32)),y+(irandom_range(-32,32)),choose(obj_drake_blade,obj_dark_pummeler,obj_faerie_blasting_wand,obj_snakesting_caster));
-    }
 </string>
           </argument>
         </arguments>
