@@ -35,19 +35,6 @@ if(file_exists("savedata.ini")) {
     global.slot[8] = ini_read_real("Save1","slot9",-1);
     global.slot[9] = ini_read_real("Save1","slot10",-1);
     global.slot[10] = ini_read_real("Save1","slot11",-1);
-    global.slot[11] = ini_read_real("Save1","slot12",-1);
-    global.slot[12] = ini_read_real("Save1","slot13",-1);
-    global.slot[13] = ini_read_real("Save1","slot14",-1);
-    global.slot[14] = ini_read_real("Save1","slot15",-1);
-    global.slot[15] = ini_read_real("Save1","slot16",-1);
-    global.slot[16] = ini_read_real("Save1","slot17",-1);
-    global.slot[17] = ini_read_real("Save1","slot18",-1);
-    global.slot[18] = ini_read_real("Save1","slot19",-1);
-    global.slot[19] = ini_read_real("Save1","slot20",-1);
-    global.slot[20] = ini_read_real("Save1","slot21",-1);
-    global.slot[21] = ini_read_real("Save1","slot22",-1);
-    global.slot[22] = ini_read_real("Save1","slot23",-1);
-    global.slot[23] = ini_read_real("Save1","slot24",-1);
     
     global.equip[0] = ini_read_real("Save1","weapon",-1);
     global.equip[1] = ini_read_real("Save1","offhand",-1);

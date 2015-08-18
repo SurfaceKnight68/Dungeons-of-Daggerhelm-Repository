@@ -273,7 +273,7 @@ if(dir == 270) {
 
 
 if(dist_player &lt;= 80) {
-if(shoot &lt;= 15) {
+if(shoot &lt;= 40) {
 
 arrow2 = instance_create(x,y,obj_enemy_phaseshot);
 arrow3 = instance_create(x,y,obj_enemy_phaseshot);

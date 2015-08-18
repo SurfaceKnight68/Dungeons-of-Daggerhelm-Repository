@@ -390,6 +390,58 @@ ds_map_add(novice_leggings, 'fortitude', 1);
 ds_map_add(novice_leggings, 'spec1', 4);
 ds_map_add(novice_leggings, 'spec2', 6);
 
+//** LEGENDARY ARMOR **//
+//**LEATHER**//
+quandiros_ward = ds_map_create();
+ds_map_add(quandiros_ward, 'type', 'head');
+ds_map_add(quandiros_ward, 'strength', 80);
+ds_map_add(quandiros_ward, 'wisdom', 30);
+ds_map_add(quandiros_ward, 'fortitude', 10);
+ds_map_add(quandiros_ward, 'spec1', 1);
+ds_map_add(quandiros_ward, 'spec2', 3);
+
+nemean_lionchest = ds_map_create();
+ds_map_add(nemean_lionchest, 'type', 'chest');
+ds_map_add(nemean_lionchest, 'strength', 60);
+ds_map_add(nemean_lionchest, 'wisdom', 25);
+ds_map_add(nemean_lionchest, 'fortitude', 35);
+ds_map_add(nemean_lionchest, 'spec1', 1);
+ds_map_add(nemean_lionchest, 'spec2', 3);
+//**PLATE**//
+
+knight_astors_heart = ds_map_create();
+ds_map_add(knight_astors_heart, 'type', 'chest');
+ds_map_add(knight_astors_heart, 'strength', 50);
+ds_map_add(knight_astors_heart, 'wisdom', 40);
+ds_map_add(knight_astors_heart, 'fortitude', 60);
+ds_map_add(knight_astors_heart, 'spec1', 2);
+ds_map_add(knight_astors_heart, 'spec2', 5);
+
+demilord_shins = ds_map_create();
+ds_map_add(demilord_shins, 'type', 'legs');
+ds_map_add(demilord_shins, 'strength', 60);
+ds_map_add(demilord_shins, 'wisdom', 55);
+ds_map_add(demilord_shins, 'fortitude', 45);
+ds_map_add(demilord_shins, 'spec1', 2);
+ds_map_add(demilord_shins, 'spec2', 5);
+
+//**CLOTH**//
+wizards_undergarments = ds_map_create();
+ds_map_add(wizards_undergarments, 'type', 'legs');
+ds_map_add(wizards_undergarments, 'strength', 25);
+ds_map_add(wizards_undergarments, 'wisdom', 75);
+ds_map_add(wizards_undergarments, 'fortitude', 15);
+ds_map_add(wizards_undergarments, 'spec1', 4);
+ds_map_add(wizards_undergarments, 'spec2', 6);
+
+whitecap = ds_map_create();
+ds_map_add(whitecap, 'type', 'head');
+ds_map_add(whitecap, 'strength', 12);
+ds_map_add(whitecap, 'wisdom', 94);
+ds_map_add(whitecap, 'fortitude', 20);
+ds_map_add(whitecap, 'spec1', 4);
+ds_map_add(whitecap, 'spec2', 6);
+
 
 // Create items database
 global.items = ds_map_create();
@@ -448,3 +500,11 @@ ds_map_add(global.items, 'obj_novice_legguards', novice_legguards);
 ds_map_add(global.items, 'obj_novice_cover', novice_cover);
 ds_map_add(global.items, 'obj_novice_drapes', novice_drape);
 ds_map_add(global.items, 'obj_novice_leggings', novice_leggings);
+
+//**LEGENDARY**//
+ds_map_add(global.items, 'obj_quandiros_ward', quandiros_ward);
+ds_map_add(global.items, 'obj_knight_astors_heart', knight_astors_heart);
+ds_map_add(global.items, 'obj_wizards_undergarments', wizards_undergarments);
+ds_map_add(global.items, 'obj_nemean_lionchest', nemean_lionchest);
+ds_map_add(global.items, 'obj_demilord_shins', demilord_shins);
+ds_map_add(global.items, 'obj_whitecap', whitecap);

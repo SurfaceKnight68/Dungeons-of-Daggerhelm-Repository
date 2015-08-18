@@ -277,20 +277,20 @@ dist_player = distance_to_object(obj_player);
 player_dir = point_direction(x, y, obj_player.x, obj_player.y);
 if(dist_player &lt;= 80) {
     
-    ldx = lengthdir_x(1.2,player_dir);
-    ldy = lengthdir_y(1.2,player_dir);
+    ldx = lengthdir_x(0.9,player_dir);
+    ldy = lengthdir_y(0.9,player_dir);
     phy_position_x += ldx;
     phy_position_y += ldy;
     // Right
     if(ldx &gt;= 0) {
-        if((ldy &lt;= 1.2) &amp;&amp; (ldy &gt;= -1.2)) {
+        if((ldy &lt;= 0.9) &amp;&amp; (ldy &gt;= -0.9)) {
             sprite_index = spr_slain_hero_right;
             image_speed = 0.2;
         }
     }
     // Left
     if(ldx &lt; 0) {
-        if((ldy &lt;= 1.2) &amp;&amp; (ldy &gt;= -1.2)) {
+        if((ldy &lt;= 0.9) &amp;&amp; (ldy &gt;= -0.9)) {
             sprite_index = spr_slain_hero_left;
             image_speed = 0.2;
         }
@@ -324,7 +324,7 @@ randomize();
 shoot = random(1000);
 
 if(shoot_player &lt;= 70) {
-    if(shoot &lt;= 5) {
+    if(shoot &lt;= 25) {
         arrow1 = instance_create(x,y,obj_imp_spitfire);
         arrow2 = instance_create(x,y,obj_imp_spitfire);
         arrow3 = instance_create(x,y,obj_imp_spitfire);

@@ -26,8 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-
-message_story_mode = "Story Mode coming soon!";
+buttons = 0;
 </string>
           </argument>
         </arguments>
@@ -59,6 +58,37 @@ message_story_mode = "Story Mode coming soon!";
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(buttons == 1) {
+    instance_activate_object(obj_act_1);
+    instance_activate_object(obj_act_2);
+    instance_activate_object(obj_act_3);
+    instance_activate_object(obj_act_4);
+} else if(buttons == 0) {
+    instance_deactivate_object(obj_act_1);
+    instance_deactivate_object(obj_act_2);
+    instance_deactivate_object(obj_act_3);
+    instance_deactivate_object(obj_act_4);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="6" enumb="4">
       <action>
@@ -77,7 +107,15 @@ message_story_mode = "Story Mode coming soon!";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_message(message_story_mode);
+            <string>switch(buttons) {
+    case 0:
+    buttons = 1;
+    break;
+    
+    case 1:
+    buttons = 0;
+    break;
+}
 </string>
           </argument>
         </arguments>

@@ -30,6 +30,9 @@ minimap_sprite = spr_enemy;
 depth = phy_position_y * -1;
 armor = 0;
 hp = 1;
+if(distance_to_object(obj_player) &lt; 150) {
+    instance_deactivate_object(self);
+}
 </string>
           </argument>
         </arguments>

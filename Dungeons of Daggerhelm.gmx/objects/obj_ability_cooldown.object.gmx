@@ -74,7 +74,7 @@ alarm[0] = room_speed * 15;
             <kind>1</kind>
             <string>draw_set_color(c_red);
 draw_set_alpha(0.8);
-draw_roundrect(500,695,540,735,false);
+draw_roundrect(935,315,965,350,false);
 draw_set_alpha(1);
 draw_set_color(c_black);
 </string>

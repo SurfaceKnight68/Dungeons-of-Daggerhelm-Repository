@@ -57,28 +57,6 @@ dir = 0;
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(x,y,obj_slate_bat);
-instance_create(x,y,obj_slate_bat);
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -297,7 +275,7 @@ if(dir == 270) {
 
 
 if(dist_player &lt;= 60) {
-if(shoot &lt;= 18) {
+if(shoot &lt;= 30) {
 arrow1 = instance_create(x,y,obj_imp_spitfire);
 arrow2 = instance_create(x,y,obj_imp_spitfire);
 arrow3 = instance_create(x,y,obj_imp_spitfire);

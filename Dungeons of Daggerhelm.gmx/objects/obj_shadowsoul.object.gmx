@@ -250,7 +250,7 @@ if(dir == 270) {
 
 
 if(dist_player &lt;= 80) {
-if(shoot &lt;= 10) {
+if(shoot &lt;= 50) {
 arrow = instance_create(x,y,obj_enemy_phaseshot);
 with(arrow) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;

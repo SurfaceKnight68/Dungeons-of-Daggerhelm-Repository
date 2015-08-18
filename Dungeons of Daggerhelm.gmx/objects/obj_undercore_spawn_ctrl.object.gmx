@@ -51,8 +51,7 @@
             <string>instance_create(x,y,obj_lava_pool_spawner);
 instance_create(x,y,obj_undercore_spawner_1);
 instance_create(x,y,obj_undercore_spawner_2);
-instance_create(x,y,obj_undercore_spawner_3);
-instance_create(x,y,obj_undercore_spawner_4);
+instance_create(x,y,obj_undercore_node);
 alarm[3] = 0;
 </string>
           </argument>

@@ -45,7 +45,7 @@ globalvar showInv;
 showInv = 0;
 globalvar equipInv;
 equipInv = 5;
-inv_width = 6;
+inv_width = 4;
 inv_height = 4;
 
 for(var i = 0; i &lt; maxItems; i++) {
@@ -100,9 +100,9 @@ with(equip_but[4]) {
             <string>for(var i = 0; i &lt; maxItems; i++) {
     var xx = i mod inv_width;
     var yy = i div inv_width;
-        draw_sprite(spr_inventory_border,0,(view_xview[0]+205)+(xx*16),(view_yview[0]+240)+(yy*16));
-        button[i].x = (view_xview[0]+205)+(xx*16);
-        button[i].y = (view_yview[0]+240)+(yy*16);
+        draw_sprite(spr_inventory_border,0,(view_xview[0]+315)+(xx*14),(view_yview[0]+178)+(yy*14));
+        button[i].x = (view_xview[0]+315)+(xx*14);
+        button[i].y = (view_yview[0]+178)+(yy*14);
             
 }
 if(showInv == 1) {

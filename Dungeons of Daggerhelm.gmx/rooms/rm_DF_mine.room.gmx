@@ -52,12 +52,9 @@
   </views>
   <instances>
     <instance objName="obj_player_reposition" x="160" y="0" name="inst_6F5FA9B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_DF_mines_spawn_ctrl" x="192" y="0" name="inst_9D4068FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_loading_long" x="67" y="23" name="inst_D3C12F1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_loading_graph_long" x="180" y="47" name="inst_E6B07DAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_loading_object_long" x="256" y="0" name="inst_6F5B0026" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ladder" x="3952" y="3984" name="inst_88F6EF74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="3935" y="3978" name="inst_C7066F5C" locked="0" code="event_inherited();&#xA;&#xA;dest_room = rm_death_foundry;&#xA;randomize();&#xA;location = irandom(10);&#xA;&#xA;if(location &lt;= 5) {&#xA;&#xA;    dest_x = 1072;&#xA;    dest_y = 1856;&#xA;} else if(location &gt; 5) {&#xA;&#xA;    dest_x = 5376;&#xA;    dest_y = 1456;&#xA;}&#xA;" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_DF_mines_floor_placer" x="0" y="0" name="inst_8C4F0265" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

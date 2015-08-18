@@ -299,7 +299,7 @@ if(dir == 270) {
 
 
 if(dist_player &lt;= 120) {
-if(shoot &lt;= 15) {
+if(shoot &lt;= 35) {
 arrow1 = instance_create(x,y,obj_enemy_fireball);
 
 with(arrow1) {

@@ -31,52 +31,6 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[0] = 2;
-player_dist = distance_to_object(obj_player);
-// Place Enemies
-imp_amount = instance_number(obj_slate_imp);
-shadowsoul_amount = instance_number(obj_shadowsoul);
-//Keep creating new coordinates until I find a place free from any object
-do
-    {
-    var xx,yy;
-
-    xx=random(room_width); //Set random x
-    yy=random(room_height); //Set random y
-    }
-until place_empty(xx,yy);
-if(player_dist &gt;= 400) {
-    // Check if there are 30 rangers
-    if(imp_amount &lt; 150) {
-        //The loop has ended, create the enemy if there are less than 30
-        instance_create(xx,yy,obj_slate_imp); //Create object
-    }
-    if(shadowsoul_amount &lt; 100) {    
-    shadowsoul_amount = instance_number(obj_shadowsoul);
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>

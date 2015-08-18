@@ -35,7 +35,7 @@ global.dest_x = 448;
 global.dest_y = 1136;
 
 globalvar maxItems;
-maxItems = 24;
+maxItems = 16;
 
 globalvar mouseItem;
 mouseItem = -1;

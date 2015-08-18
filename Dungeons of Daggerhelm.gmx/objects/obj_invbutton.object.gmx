@@ -54,10 +54,10 @@ fortitude = 0;
             <string>var item = global.slot[slot];
 var click = mouse_check_button_pressed(mb_left);
 
-if(abs(mouse_x - x) &lt; 8) &amp;&amp; (abs(mouse_y - y) &lt; 8) {
+if(abs(mouse_x - x) &lt; 7) &amp;&amp; (abs(mouse_y - y) &lt; 7) {
     draw_set_color(c_yellow);
     draw_set_alpha(.7)
-    draw_rectangle(x-8,y-8,x+8,y+8,false);
+    draw_rectangle(x-8,y-8,x+7,y+7,false);
     draw_set_color(c_black);
     draw_set_alpha(1);
     if(click) {

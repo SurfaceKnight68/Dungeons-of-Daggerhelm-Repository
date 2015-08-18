@@ -25,34 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
-enemy_choose = choose(obj_risen_skeleton,obj_risen_corpse,obj_half_dead_cultist);
-
-enemy_spawn = irandom(20); // Chance to spawn an enemy
-chest_spawn = irandom(50); // Chance to spawn a chest
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[0] = room_speed * 6;
+            <string>if(place_meeting(x,y,obj_DF_mines_floor)) {
+    instance_destroy();
+}
+alarm[0] = room_speed * 10;
 </string>
           </argument>
         </arguments>
@@ -75,28 +51,20 @@ chest_spawn = irandom(50); // Chance to spawn a chest
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(i = -32; i &lt;= 32; i += 32) {
-    for (j = -32; j &lt;= 32; j += 32) {
-        if place_empty(x + i,y + j) {
-            instance_create(x + i,y + j,obj_DF_mines_wall);
-     
-        }
+            <string>randomize();
+
+var enemy_chance = irandom_range(0,15);
+var chest_chance = irandom_range(0,50);
+if(distance_to_point(4000,4000) &gt; 300) {
+    if(enemy_chance == 0 &amp;&amp; chest_chance != 0) {
+        instance_create(x,y,choose(obj_half_dead_cultist,obj_risen_skeleton,obj_risen_corpse));
     }
 }
-
-if distance_to_point(room_width/2,room_height/2) &gt; 320 {
-    if enemy_spawn = 0 { //if the enemy spawn hits the right number
-            
-        instance_create(x,y,enemy_choose); // Chooses random enemy to place
-        
-    }
-}
-
-if distance_to_point(room_width/2,room_height/2) &gt; 320 {
-    if chest_spawn = 0 {
+if(distance_to_point(4000,4000) &gt; 300) {
+    if(chest_chance == 0 &amp;&amp; enemy_chance != 0) {
         instance_create(x,y,obj_loot_chest);
     }
-} 
+}
 alarm[0] = 0;
 </string>
           </argument>

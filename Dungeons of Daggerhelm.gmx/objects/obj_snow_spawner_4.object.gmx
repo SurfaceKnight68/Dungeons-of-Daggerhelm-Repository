@@ -61,7 +61,7 @@ do
 until place_empty(xx,yy);
 if(player_dist &gt;= 400) {
     // Check if there are 30 rangers
-    if(instance_number(obj_z_penguin) &lt; 250) {    
+    if(instance_number(obj_z_penguin) &lt; 150) {    
         instance_create(xx,yy,obj_z_penguin);
     } else {
         // do nothing

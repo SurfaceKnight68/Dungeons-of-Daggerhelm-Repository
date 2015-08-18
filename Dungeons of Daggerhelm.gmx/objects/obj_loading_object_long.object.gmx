@@ -78,7 +78,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_black);
-draw_rectangle(0,0,900,900, false);
+draw_rectangle(0,0,1100,690, false);
 </string>
           </argument>
         </arguments>

@@ -37,18 +37,6 @@ ini_write_real("Save1","slot9",global.slot[8]);
 ini_write_real("Save1","slot10",global.slot[9]);
 ini_write_real("Save1","slot11",global.slot[10]);
 ini_write_real("Save1","slot12",global.slot[11]);
-ini_write_real("Save1","slot13",global.slot[12]);
-ini_write_real("Save1","slot14",global.slot[13]);
-ini_write_real("Save1","slot15",global.slot[14]);
-ini_write_real("Save1","slot16",global.slot[15]);
-ini_write_real("Save1","slot17",global.slot[16]);
-ini_write_real("Save1","slot18",global.slot[17]);
-ini_write_real("Save1","slot19",global.slot[18]);
-ini_write_real("Save1","slot20",global.slot[19]);
-ini_write_real("Save1","slot21",global.slot[20]);
-ini_write_real("Save1","slot22",global.slot[21]);
-ini_write_real("Save1","slot23",global.slot[22]);
-ini_write_real("Save1","slot24",global.slot[23]);
 
 ini_write_real("Save1","weapon",global.equip[0]);
 ini_write_real("Save1","offhand",global.equip[1]);

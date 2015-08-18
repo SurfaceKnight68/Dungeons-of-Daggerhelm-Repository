@@ -498,7 +498,7 @@ with(arrow) {
             <kind>1</kind>
             <string>alarm[0] = room_speed/2;
 if(global.player_hp &gt;= 1) {
-    global.player_hp += global.total_for;
+    global.player_hp += floor(global.total_for/3);
     global.player_mp += floor(global.total_wis/3);
 }
 </string>
@@ -524,8 +524,8 @@ if(global.player_hp &gt;= 1) {
           <argument>
             <kind>1</kind>
             <string>/// View follow object movement
-obj_view_follow.x = x;
-obj_view_follow.y = y + 32;
+obj_view_follow.x = x + 32;
+obj_view_follow.y = y;
 </string>
           </argument>
         </arguments>
@@ -1839,82 +1839,18 @@ if(global.identity == 5) {
             <string>/// Battle-Mage secondary
 
 if(global.identity == 3) {
-    if(global.player_mp &gt;= 40) {
-        wave1 = instance_create(x,y,obj_blast_wave); //Follows mouse
-        wave2 = instance_create(x,y,obj_blast_wave); //Follows mouse + 45 degrees
-        wave3 = instance_create(x,y,obj_blast_wave); //Follows mouse + 90 degrees
-        wave4 = instance_create(x,y,obj_blast_wave); //Follows mouse + 135 degrees
-        wave5 = instance_create(x,y,obj_blast_wave); //Follows mouse + 180 degrees
-        wave6 = instance_create(x,y,obj_blast_wave); //Follows mouse + 225 degrees        
-        wave7 = instance_create(x,y,obj_blast_wave); //Follows mouse + 270 degrees
-        wave8 = instance_create(x,y,obj_blast_wave); //Follows mouse + 315 degrees
+    if(global.player_mp &gt;= 10) {
+        arrow = instance_create(x,y,obj_lightning_bolt);
         
-
-            with(wave1) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
+        with(arrow) {
+            phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
     
     
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+45);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+45);
-                    physics_apply_impulse(x,y,ldx,ldy);
+            ldx = lengthdir_x(2.5,-other.mouse_dir+45);
+            ldy = lengthdir_y(2.5,-other.mouse_dir+45);
+            physics_apply_impulse(x,y,ldx,ldy);
         }
-            with(wave2) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+90;
-    
-    
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+90);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+90);
-                    physics_apply_impulse(x,y,ldx,ldy);
-        }
-            with(wave3) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+135;
-    
-    
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+135);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+135);
-                    physics_apply_impulse(x,y,ldx,ldy);
-        }
-            with(wave4) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+180;
-    
-    
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+180);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+180);
-                    physics_apply_impulse(x,y,ldx,ldy);
-        }
-            with(wave5) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+225;
-    
-    
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+225);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+225);
-                    physics_apply_impulse(x,y,ldx,ldy);
-        }
-            with(wave6) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+270;
-    
-    
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+270);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+270);
-                    physics_apply_impulse(x,y,ldx,ldy);
-        }
-            with(wave7) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+315;
-    
-    
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+315);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+315);
-                    physics_apply_impulse(x,y,ldx,ldy);
-        }
-            with(wave8) {
-                phy_rotation = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+360;
-    
-    
-                    ldx = lengthdir_x(1.0,-other.mouse_dir+360);
-                    ldy = lengthdir_y(1.0,-other.mouse_dir+360);
-                    physics_apply_impulse(x,y,ldx,ldy);
-        }
-        global.player_mp = global.player_mp - 40;
+        global.player_mp = global.player_mp - 10;
     }
 }
 </string>

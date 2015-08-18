@@ -71,25 +71,24 @@ instance_create(x+(150+22),y+(120+16),obj_equipment_legs);
             <kind>1</kind>
             <string>/// Draw HUD boxes
 draw_set_alpha(.99);
-draw_roundrect(0,690,570,900,false);
+draw_roundrect(900,-1,1110,475,false);
 draw_set_alpha(1);
 
 // Draw stats borders
 draw_set_alpha(1);
 draw_set_color(c_silver);
-draw_roundrect(0,689,309,901,true);
-draw_roundrect(0,689,475,901,true);
-draw_roundrect(500,695,540,735,true);
+draw_roundrect(899,-1,1110,309,true);
+draw_roundrect(899,-1,1110,475,true);
 draw_set_color(c_gray);
-draw_roundrect(0,689,310,901,true);
-draw_roundrect(0,689,476,901,true);
+draw_roundrect(898,-1,1110,310,true);
+draw_roundrect(898,-1,1110,476,true);
 draw_set_alpha(1);
 draw_set_color(c_black);
 
 // Draw HUD border
 draw_set_alpha(1);
 draw_set_color(c_silver);
-draw_roundrect(0,689,571,901,true);
+draw_roundrect(899,-1,1110,476,true);
 draw_set_alpha(1);
 draw_set_color(c_black);
 
@@ -114,7 +113,7 @@ draw_set_color(c_black);
           <argument>
             <kind>1</kind>
             <string>/// Draw healthbar
-draw_healthbar(10, 765, 300, 790, global.player_hp/global.player_mhp*100, c_gray, c_red, c_green, 0, true, true); 
+draw_healthbar(910, 80, 1100, 100, global.player_hp/global.player_mhp*100, c_gray, c_red, c_green, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -136,7 +135,7 @@ draw_healthbar(10, 765, 300, 790, global.player_hp/global.player_mhp*100, c_gray
           <argument>
             <kind>1</kind>
             <string>/// Draw manabar
-draw_healthbar(10, 800, 300, 825, global.player_mp/global.player_mmp*100, c_gray, c_aqua, c_blue, 0, true, true); 
+draw_healthbar(910, 110, 1100, 130, global.player_mp/global.player_mmp*100, c_gray, c_aqua, c_blue, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -158,7 +157,7 @@ draw_healthbar(10, 800, 300, 825, global.player_mp/global.player_mmp*100, c_gray
           <argument>
             <kind>1</kind>
             <string>/// Draw xp bar
-draw_healthbar(10, 720, 250, 730, global.player_xp/global.player_mxp*100, c_olive, c_purple, c_green, 0, true, true); 
+draw_healthbar(910, 40, 1100, 45, global.player_xp/global.player_mxp*100, c_olive, c_purple, c_green, 0, true, true); 
 </string>
           </argument>
         </arguments>
@@ -185,80 +184,16 @@ draw_set_color(c_red);
 draw_set_alpha(1);
 draw_set_font(fnt_HUD);
 
-draw_text(12,695,"Level: "+string(global.lv));
+draw_text(910,15,"Level: "+string(global.lv));
 draw_set_color(c_lime);
-draw_text(12,765,"Health: "+string(global.player_hp)+"/ "+string(global.player_mhp));
+draw_text(911,77,"Health: "+string(global.player_hp)+"/ "+string(global.player_mhp));
 draw_set_color(c_aqua);
-draw_text(12,800,"Mana: "+string(global.player_mp)+"/ "+string(global.player_mmp));
+draw_text(911,107,"Mana: "+string(global.player_mp)+"/ "+string(global.player_mmp));
 draw_set_color(c_yellow);
-draw_text(38,735," x " +string(global.coin_num));
-draw_text(175,735," x " +string(global.key_num));
-
-draw_set_color(c_black);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw class faces
-draw_sprite(spr_hud_faces,0,20,850);
-draw_sprite(spr_hud_faces,1,65,850);
-draw_sprite(spr_hud_faces,2,110,850);
-draw_sprite(spr_hud_faces,3,155,850);
-draw_sprite(spr_hud_faces,4,200,850);
-draw_sprite(spr_HUD_coin,0,20,747);
-draw_sprite(spr_HUD_key,0,150,738);
-draw_sprite(spr_HUD_potion,0,520,715);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Selected class border
-draw_set_color(c_silver);
-if(global.identity == 0) {
-    //do nothing
-} else if(global.identity == 1) {
-    draw_roundrect(14,840,55,880,true)
-} else if(global.identity == 2) {
-    draw_roundrect(55,840,100,880,true)
-} else if(global.identity == 3) {
-    draw_roundrect(100,840,145,880,true)
-} else if(global.identity == 4) {
-    draw_roundrect(145,840,190,880,true)
-} else if(global.identity == 5) {
-    draw_roundrect(180,840,225,880,true)
-}
+draw_text(970,50," x " +string(global.coin_num));
+draw_sprite(spr_HUD_coin,0,950,63);
+draw_text(1050,50," x " +string(global.key_num));
+draw_sprite(spr_HUD_key,0,1030,55);
 
 draw_set_color(c_black);
 </string>
@@ -287,20 +222,21 @@ draw_set_color(c_silver);
 draw_set_alpha(1);
 draw_set_font(fnt_HUD);
 if(global.identity == 0 || global.identity == 2 || global.identity == 3) {
-    draw_text(320,700,"STRENGTH: " + string(global.total_str));
+    draw_text(910,150,"STRENGTH: " + string(global.total_str));
 } else if(global.identity == 4 || global.identity == 5 || global.identity == 6) {
-    draw_text(320,700,"INTELLECT: " + string(global.total_str));
+    draw_text(910,150,"INTELLECT: " + string(global.total_str));
 } else if(global.identity == 1) {
-    draw_text(320,700,"DEXTERITY: " + string(global.total_str));
+    draw_text(910,150,"DEXTERITY: " + string(global.total_str));
 }
-draw_text(320,750,"WISDOM: " + string(global.total_wis));
-draw_text(320,800,"FORTITUDE: " + string(global.total_for));
-draw_text(320,850,"ARMOR: " + string(global.total_armor));
+draw_text(910,190,"WISDOM: " + string(global.total_wis));
+draw_text(910,230,"FORTITUDE: " + string(global.total_for));
+draw_text(910,270,"ARMOR: " + string(global.total_armor));
 
 //Potion amount
-draw_text(515,735,string(global.potion_num));
+draw_text(970,320," x "+string(global.potion_num));
 //Potion key
-draw_text(550,700,"F");
+draw_text(920,320,"F");
+draw_sprite(spr_HUD_potion,0,950,335);
 
 draw_set_color(c_black);
 </string>
@@ -361,9 +297,9 @@ if(showInv) {
             <kind>1</kind>
             <string>/// Draw layer for inventory section
 draw_set_color(c_black);
-draw_roundrect(view_xview[0]+181,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,false);
+draw_roundrect(view_xview[0]+300,view_yview[0]+155,view_xview[0]+370,view_yview[0]+230,false);
 draw_set_color(c_silver);
-draw_roundrect(view_xview[0]+181,view_yview[0]+229,view_xview[0]+301,view_yview[0]+301,true);
+draw_roundrect(view_xview[0]+300,view_yview[0]+155,view_xview[0]+370,view_yview[0]+230,true);
 draw_set_color(c_black);
 </string>
           </argument>

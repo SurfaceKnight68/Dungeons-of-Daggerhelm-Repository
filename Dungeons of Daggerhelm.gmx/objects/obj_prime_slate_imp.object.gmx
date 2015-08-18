@@ -275,7 +275,7 @@ if(dir == 270) {
 
 
 if(dist_player &lt;= 70) {
-if(shoot &lt;= 34) {
+if(shoot &lt;= 45) {
 arrow1 = instance_create(x,y,obj_imp_spitfire);
 arrow2 = instance_create(x,y,obj_imp_spitfire);
 arrow3 = instance_create(x,y,obj_imp_spitfire);

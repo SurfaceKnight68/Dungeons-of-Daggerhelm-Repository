@@ -67,6 +67,9 @@
         <sprite>sprites\spr_lava_large</sprite>
       </sprites>
       <sprite>sprites\spr_collision_space</sprite>
+      <sprites name="Ironhand Dockworks">
+        <sprite>sprites\spr_dock_floor</sprite>
+      </sprites>
     </sprites>
     <sprites name="Character_Sprites">
       <sprites name="Player">
@@ -365,6 +368,24 @@
           <sprite>sprites\spr_MS_idle_left</sprite>
           <sprite>sprites\spr_matured_soulmass_left</sprite>
         </sprites>
+        <sprites name="Swashbuckler">
+          <sprite>sprites\spr_swashbuckler_down</sprite>
+          <sprite>sprites\spr_swashbuckler_up</sprite>
+          <sprite>sprites\spr_swashbuckler_left</sprite>
+          <sprite>sprites\spr_swashbuckler_right</sprite>
+        </sprites>
+        <sprites name="Barbary Corsair">
+          <sprite>sprites\spr_corsair_down</sprite>
+          <sprite>sprites\spr_corsair_up</sprite>
+          <sprite>sprites\spr_corsair_left</sprite>
+          <sprite>sprites\spr_corsair_right</sprite>
+        </sprites>
+        <sprites name="Outlaw">
+          <sprite>sprites\spr_outlaw_down</sprite>
+          <sprite>sprites\spr_outlaw_up</sprite>
+          <sprite>sprites\spr_outlaw_left</sprite>
+          <sprite>sprites\spr_outlaw_right</sprite>
+        </sprites>
       </sprites>
       <sprites name="Necromancer">
         <sprite>sprites\spr_necromancer_illusion</sprite>
@@ -426,7 +447,9 @@
           <sprite>sprites\spr_flame_cone</sprite>
           <sprite>sprites\spr_ice_cone</sprite>
           <sprite>sprites\spr_electric_lash</sprite>
+          <sprite>sprites\spr_lightning_lash</sprite>
           <sprite>sprites\spr_flame_orb</sprite>
+          <sprite>sprites\spr_lightning</sprite>
         </sprites>
       </sprites>
       <sprites name="Grassland">
@@ -470,6 +493,10 @@
         <sprites name="Lights Bastion">
           <sprite>sprites\spr_bastion_statue</sprite>
         </sprites>
+      </sprites>
+      <sprites name="Ironhand Dockworks">
+        <sprite>sprites\spr_rum_bottle</sprite>
+        <sprite>sprites\spr_barrel</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -567,6 +594,17 @@
               <sprite>sprites\spr_uncommon_vestment</sprite>
               <sprite>sprites\spr_uncommon_leggings</sprite>
             </sprites>
+            <sprites name="Legendary">
+              <sprite>sprites\spr_quandiros_ward</sprite>
+              <sprite>sprites\spr_knight_astors_heart</sprite>
+              <sprite>sprites\spr_wizards_undergarments</sprite>
+              <sprite>sprites\spr_nemean_lionchest</sprite>
+              <sprite>sprites\spr_demilord_shins</sprite>
+              <sprite>sprites\spr_whitecap</sprite>
+              <sprite>sprites\spr_legs_of_the_hunt</sprite>
+              <sprite>sprites\spr_ancient_warder</sprite>
+              <sprite>sprites\spr_robe_of_blessings</sprite>
+            </sprites>
           </sprites>
           <sprites name="Weapons">
             <sprites name="Basic">
@@ -653,6 +691,18 @@
       <sprites name="Joanne">
         <sprite>sprites\spri_joanne_young_l</sprite>
         <sprite>sprites\spr_joanne_young_R</sprite>
+      </sprites>
+      <sprites name="ACT I">
+        <sprite>sprites\spr_act_1</sprite>
+      </sprites>
+      <sprites name="ACT II">
+        <sprite>sprites\spr_act_2</sprite>
+      </sprites>
+      <sprites name="ACT III">
+        <sprite>sprites\spr_act_3</sprite>
+      </sprites>
+      <sprites name="ACT IV">
+        <sprite>sprites\spr_act_4</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -1040,6 +1090,7 @@
           <object>objects\obj_flame_cone</object>
           <object>objects\obj_ice_cone</object>
           <object>objects\obj_paladin_hammer</object>
+          <object>objects\obj_lightning_bolt</object>
         </objects>
       </objects>
       <objects name="Grassland">
@@ -1110,6 +1161,12 @@
           <object>objects\obj_instructions_text</object>
           <object>objects\obj_back</object>
         </objects>
+        <objects name="Story Mode">
+          <object>objects\obj_act_1</object>
+          <object>objects\obj_act_2</object>
+          <object>objects\obj_act_3</object>
+          <object>objects\obj_act_4</object>
+        </objects>
       </objects>
       <objects name="Warps">
         <object>objects\obj_player_reposition</object>
@@ -1145,6 +1202,7 @@
           <object>objects\obj_Spawner_3</object>
           <object>objects\obj_Spawner_4</object>
           <object>objects\obj_grass_spawn_ctrl</object>
+          <object>objects\obj_grass_node</object>
         </objects>
         <objects name="Snowy Mountains">
           <object>objects\obj_snow_grid</object>
@@ -1154,6 +1212,7 @@
           <object>objects\obj_snow_spawner_3</object>
           <object>objects\obj_snow_spawner_4</object>
           <object>objects\obj_snow_spawn_ctrl</object>
+          <object>objects\obj_snowy_node</object>
         </objects>
         <objects name="Undercore">
           <object>objects\obj_undercore_grid</object>
@@ -1164,6 +1223,7 @@
           <object>objects\obj_undercore_spawner_3</object>
           <object>objects\obj_undercore_spawner_4</object>
           <object>objects\obj_undercore_spawn_ctrl</object>
+          <object>objects\obj_undercore_node</object>
         </objects>
         <objects name="Death Foundry">
           <object>objects\obj_DF_grid</object>
@@ -1176,8 +1236,8 @@
           <object>objects\obj_DF_spawner_5</object>
           <object>objects\obj_DF_spawn_ctrl</object>
           <objects name="Death Foundry mines">
-            <object>objects\obj_DF_mines_spawn_ctrl</object>
-            <object>objects\obj_DF_mines_spawner</object>
+            <object>objects\obj_DF_mines_floor_placer</object>
+            <object>objects\obj_DF_mines_wall_placer</object>
           </objects>
         </objects>
       </objects>
@@ -1245,9 +1305,8 @@
       <room>rooms\rm_lights_bastion</room>
     </rooms>
   </rooms>
-  <constants number="2">
-    <constant name="GM_build_date">41964.0560678704</constant>
-    <constant name="GM_version">'100'</constant>
+  <constants number="1">
+    <constant name="DIFFICULTY">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

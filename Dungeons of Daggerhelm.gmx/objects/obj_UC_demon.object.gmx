@@ -297,7 +297,7 @@ if(dir == 270) {
 
 
 if(dist_player &lt;= 60) {
-if(shoot &lt;= 8) {
+if(shoot &lt;= 30) {
 arrow1 = instance_create(x,y,obj_enemy_melee);
 arrow2 = instance_create(x,y,obj_enemy_phaseshot);
 arrow3 = instance_create(x,y,obj_enemy_phaseshot);
