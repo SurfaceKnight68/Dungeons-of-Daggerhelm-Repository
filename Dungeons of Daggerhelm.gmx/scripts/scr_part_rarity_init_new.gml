@@ -52,16 +52,16 @@ part_type_gravity(pe,.6,90);
 part_type_life(pe,5,7);
 
 global.pt_tremendous = part_type_create();
-var ptr = global.pt_tremendous;
+var ptt = global.pt_tremendous;
 part_system_depth(global.pt_tremendous,0);
 
-part_type_shape(ptr,pt_shape_sphere);
-part_type_size(ptr,.06,.08,0,0);
-part_type_color3(ptr,c_silver,c_blue,c_aqua);
-part_type_speed(ptr,.03,.04,-.1,0);
-part_type_direction(ptr,0,359,0,5);
-part_type_gravity(ptr,.6,90);
-part_type_life(ptr,5,7);
+part_type_shape(ptt,pt_shape_sphere);
+part_type_size(ptt,.06,.08,0,0);
+part_type_color3(ptt,c_silver,c_blue,c_aqua);
+part_type_speed(ptt,.03,.04,-.1,0);
+part_type_direction(ptt,0,359,0,5);
+part_type_gravity(ptt,.6,90);
+part_type_life(ptt,5,7);
 
 global.pt_epic = part_type_create();
 var pep = global.pt_epic;

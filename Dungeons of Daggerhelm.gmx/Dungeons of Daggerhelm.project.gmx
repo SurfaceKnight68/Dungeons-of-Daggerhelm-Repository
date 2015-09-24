@@ -247,12 +247,14 @@
               <sprite>sprites\spr_necro_summon</sprite>
             </sprites>
           </sprites>
-        </sprites>
-        <sprites name="Evil_Paladin">
-          <sprite>sprites\spr_evil_paladin_down</sprite>
-          <sprite>sprites\spr_evil_paladin_up</sprite>
-          <sprite>sprites\spr_evil_paladin_left</sprite>
-          <sprite>sprites\spr_evil_paladin_right</sprite>
+          <sprites name="Roaming Bosses">
+            <sprites name="Demon Captain">
+              <sprite>sprites\spr_demon_captain_down</sprite>
+              <sprite>sprites\spr_demon_captain_up</sprite>
+              <sprite>sprites\spr_demon_captain_left</sprite>
+              <sprite>sprites\spr_demon_captain_right</sprite>
+            </sprites>
+          </sprites>
         </sprites>
         <sprites name="Undead Warrior">
           <sprite>sprites\spr_U_W_right</sprite>
@@ -520,6 +522,15 @@
       <sprite>sprites\spr_main_cursor</sprite>
       <sprite>sprites\spr_Game_Maker</sprite>
       <sprite>sprites\spr_mouse_pointer</sprite>
+      <sprites name="How to Play">
+        <sprite>sprites\spr_key_W</sprite>
+        <sprite>sprites\spr_key_A</sprite>
+        <sprite>sprites\spr_key_S</sprite>
+        <sprite>sprites\spr_key_D</sprite>
+        <sprite>sprites\spr_key_E</sprite>
+        <sprite>sprites\spr_key_C</sprite>
+        <sprite>sprites\spr_mouse_buttons</sprite>
+      </sprites>
     </sprites>
     <sprites name="Headings">
       <sprite>sprites\spr_main_heading</sprite>
@@ -528,6 +539,15 @@
       <sprite>sprites\spr_recall_on</sprite>
       <sprite>sprites\spr_loading_graphic</sprite>
       <sprite>sprites\spr_main_gui_heading</sprite>
+      <sprites name="Pause">
+        <sprite>sprites\spr_pause_btn1</sprite>
+        <sprite>sprites\spr_pause_btn2</sprite>
+        <sprite>sprites\spr_pause_btn3</sprite>
+        <sprite>sprites\spr_pause_btn4</sprite>
+        <sprite>sprites\spr_easy</sprite>
+        <sprite>sprites\spr_medium</sprite>
+        <sprite>sprites\spr_hard</sprite>
+      </sprites>
     </sprites>
     <sprites name="Warp">
       <sprite>sprites\spr_player_start</sprite>
@@ -593,6 +613,17 @@
               <sprite>sprites\spr_uncommon_coif</sprite>
               <sprite>sprites\spr_uncommon_vestment</sprite>
               <sprite>sprites\spr_uncommon_leggings</sprite>
+            </sprites>
+            <sprites name="Epic">
+              <sprite>sprites\spr_stalwart_coif</sprite>
+              <sprite>sprites\spr_stalwart_jacket</sprite>
+              <sprite>sprites\spr_stalwart_trousers</sprite>
+              <sprite>sprites\spr_minds_bastion</sprite>
+              <sprite>sprites\spr_hearts_bastion</sprite>
+              <sprite>sprites\spr_feets_bastion</sprite>
+              <sprite>sprites\spr_spellwoven_hood</sprite>
+              <sprite>sprites\spr_spellwoven_robe</sprite>
+              <sprite>sprites\spr_spellwoven_dress</sprite>
             </sprites>
             <sprites name="Legendary">
               <sprite>sprites\spr_quandiros_ward</sprite>
@@ -694,6 +725,8 @@
       </sprites>
       <sprites name="ACT I">
         <sprite>sprites\spr_act_1</sprite>
+        <sprite>sprites\spr_house_roof</sprite>
+        <sprite>sprites\spr_house_roof_small</sprite>
       </sprites>
       <sprites name="ACT II">
         <sprite>sprites\spr_act_2</sprite>
@@ -748,6 +781,7 @@
     </backgrounds>
     <backgrounds name="Light's Bastion">
       <background>background\bg_bastion_floor</background>
+      <background>background\background30</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -765,6 +799,7 @@
       <script>scripts\scr_get_item_value.gml</script>
       <script>scripts\scr_item_drop_weapon.gml</script>
       <script>scripts\scr_item_drop_armor.gml</script>
+      <script>scripts\scr_item_vendor.gml</script>
       <scripts name="Inventory">
         <script>scripts\scr_item_pickup.gml</script>
         <script>scripts\scr_item_drop_slot.gml</script>
@@ -856,6 +891,7 @@
         </objects>
         <objects name="Bosses">
           <object>objects\obj_lava_golem</object>
+          <object>objects\obj_demon_captain</object>
           <object>objects\obj_sentinel</object>
           <object>objects\obj_black_knight</object>
           <object>objects\obj_pyromancer</object>
@@ -1243,6 +1279,13 @@
       </objects>
       <objects name="Pause Menu">
         <object>objects\obj_pause</object>
+        <object>objects\obj_pause_btn1</object>
+        <object>objects\obj_pause_btn2</object>
+        <object>objects\obj_pause_btn3</object>
+        <object>objects\obj_pause_btn4</object>
+        <object>objects\obj_easy</object>
+        <object>objects\obj_medium</object>
+        <object>objects\obj_hard</object>
       </objects>
       <objects name="Minimap">
         <object>objects\obj_minimap_visible</object>
@@ -1267,6 +1310,12 @@
       </objects>
       <object>objects\obj_player_stats</object>
       <object>objects\obj_enemy_stats</object>
+    </objects>
+    <objects name="STORY MODE">
+      <objects name="ACT I">
+        <object>objects\obj_house_roof_large</object>
+        <object>objects\obj_house_roof_small</object>
+      </objects>
     </objects>
   </objects>
   <timelines name="timelines">
@@ -1303,6 +1352,9 @@
     </rooms>
     <rooms name="Class Specific locations">
       <room>rooms\rm_lights_bastion</room>
+    </rooms>
+    <rooms name="ACT I">
+      <room>rooms\rm_lightsbastion_city</room>
     </rooms>
   </rooms>
   <constants number="1">

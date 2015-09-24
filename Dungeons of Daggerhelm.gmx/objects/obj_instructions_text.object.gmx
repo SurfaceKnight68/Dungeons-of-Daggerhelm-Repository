@@ -31,13 +31,29 @@ display_set_gui_maximise();
 draw_set_color(c_black);
 draw_set_alpha(1);
 draw_set_font(fnt_menu);
-
+/*
 draw_text(120,300,"Movement:");
 draw_set_color(c_black);
 draw_text(120,340,"W = Up");
 draw_text(120,380,"S = Down");
 draw_text(120,420,"A = Left");
 draw_text(120,460,"D = Right");
+*/
+draw_sprite(spr_key_S,0,300,300);
+draw_sprite(spr_key_W,0,300,231);
+draw_sprite(spr_key_A,0,231,300);
+draw_sprite(spr_key_D,0,369,300);
+
+draw_text(280,160,"Up");
+draw_text(270,340,"Down");
+draw_text(140,290,"Left");
+draw_text(410,290,"Right");
+
+draw_sprite(spr_key_E,0,231,500);
+draw_sprite(spr_key_C,0,369,500);
+
+draw_text(180,440,"Interact");
+draw_text(300,440,"Equipment");
 
 draw_set_color(c_black);
 </string>
@@ -66,15 +82,43 @@ display_set_gui_maximise();
 draw_set_color(c_black);
 draw_set_alpha(1);
 draw_set_font(fnt_menu);
-
+/*
 draw_text(120,100,"Attacking:");
-draw_text(120,140,"LMB = Main Attack");
-draw_text(120,180,"RMB = Special Attack");
+
 draw_text(120,220,"E = Interact/Talk");
 draw_text(120,260,"C = Equipped Items (Toggle)");
+*/
+
+draw_sprite(spr_mouse_buttons,0,800,350);
+
+draw_text(580,200,"Main Attack");
+draw_text(880,200,"Special Attack");
 
 
 draw_set_color(c_black);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(view_xview[0]+10,view_yview[0]+5,"Controls");
 </string>
           </argument>
         </arguments>

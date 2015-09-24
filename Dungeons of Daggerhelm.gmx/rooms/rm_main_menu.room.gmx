@@ -62,7 +62,7 @@
     <instance objName="obj_player_stats" x="32" y="0" name="inst_DD7A7419" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_stats" x="64" y="0" name="inst_93745B0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death_warning" x="96" y="0" name="inst_C2933FC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_story_mode" x="244" y="231" name="inst_8D1967DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_story_mode" x="246" y="229" name="inst_8D1967DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_act_1" x="356" y="230" name="inst_CFA71045" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_act_2" x="356" y="247" name="inst_6DC5EF92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_act_3" x="356" y="264" name="inst_3318281E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -1,1 +1,1 @@
-global.player_xp += 40*(floor(global.lv*1.5));
+global.player_xp += floor(global.difficulty * (40*(floor(global.lv*1.5))));

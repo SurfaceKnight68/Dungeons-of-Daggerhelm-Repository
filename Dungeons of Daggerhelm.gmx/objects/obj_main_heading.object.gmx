@@ -133,7 +133,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_Game_Maker,-1,75,860);
+            <string>draw_sprite(spr_Game_Maker,-1,75,650);
 </string>
           </argument>
         </arguments>

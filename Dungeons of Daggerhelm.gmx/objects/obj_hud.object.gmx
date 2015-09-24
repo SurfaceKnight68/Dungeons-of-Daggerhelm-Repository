@@ -231,6 +231,7 @@ if(global.identity == 0 || global.identity == 2 || global.identity == 3) {
 draw_text(910,190,"WISDOM: " + string(global.total_wis));
 draw_text(910,230,"FORTITUDE: " + string(global.total_for));
 draw_text(910,270,"ARMOR: " + string(global.total_armor));
+draw_text(910,480,"INVENTORY");
 
 //Potion amount
 draw_text(970,320," x "+string(global.potion_num));

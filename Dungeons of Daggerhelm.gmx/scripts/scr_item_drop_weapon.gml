@@ -1,15 +1,15 @@
 randomize();
-basic_chance = irandom_range(0,8);
-novice_chance = irandom_range(0,12);
-uncommon_chance = irandom_range(0,20);
-exceptional_chance = irandom_range(0,28);
+basic_chance = irandom_range(0,20);
+novice_chance = irandom_range(0,22);
+uncommon_chance = irandom_range(0,26);
+exceptional_chance = irandom_range(0,30);
 tremendous_chance = irandom_range(0,38);
 epic_chance = irandom_range(0,50);
-legendary_chance = irandom_range(0,85);
-godlike_chance = irandom_range(0,150);
+legendary_chance = irandom_range(0,65);
+godlike_chance = irandom_range(0,80);
 
-drop_double = irandom_range(0,10);
-drop_triple = irandom_range(0,15);
+drop_double = irandom_range(0,20);
+drop_triple = irandom_range(0,25);
 
 if(global.lv <= 60) {
     if(basic_chance == 0) {
@@ -92,6 +92,29 @@ if(global.lv <= 60 && global.lv >= 6) {
                                     obj_uncommon_charmer,
                                     obj_uncommon_bolter,
                                     obj_uncommon_halberd)));
+            audio_play_sound(snd_item_drop,10,false);
+        }
+    }
+}
+if(global.lv <= 60 && global.lv >= 12) {
+    if(legendary_chance == 0) {
+        instance_create(x,y,(choose(obj_drake_blade,
+                                    obj_dark_pummeler,
+                                    obj_faerie_blasting_wand,
+                                    obj_snakesting_caster)));
+        audio_play_sound(snd_item_drop,10,false);
+        if(drop_double == 0) {
+            instance_create(x,y,(choose(obj_drake_blade,
+                                    obj_dark_pummeler,
+                                    obj_faerie_blasting_wand,
+                                    obj_snakesting_caster)));
+            audio_play_sound(snd_item_drop,10,false);
+        }
+        if(drop_triple == 0) {
+            instance_create(x,y,(choose(obj_drake_blade,
+                                    obj_dark_pummeler,
+                                    obj_faerie_blasting_wand,
+                                    obj_snakesting_caster)));
             audio_play_sound(snd_item_drop,10,false);
         }
     }

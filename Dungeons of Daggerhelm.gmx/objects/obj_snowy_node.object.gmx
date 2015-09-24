@@ -54,7 +54,7 @@ alarm[0] = room_speed * (60 * 1.5);
           <argument>
             <kind>1</kind>
             <string>randomize();
-for(i = 0; i &lt; irandom_range(25,35); i++) {
+for(i = 0; i &lt; irandom_range(35,45); i++) {
     instance_create(obj_player.x+irandom_range(400,-400),obj_player.y+irandom_range(400,-400),choose(obj_slain_hero,obj_z_penguin,obj_ice_burrower,obj_red_gromling));
 }
 

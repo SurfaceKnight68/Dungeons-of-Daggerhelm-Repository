@@ -6,7 +6,7 @@ exceptional_chance = irandom_range(0,28);
 tremendous_chance = irandom_range(0,38);
 epic_chance = irandom_range(0,50);
 legendary_chance = irandom_range(0,85);
-godlike_chance = irandom_range(0,150);
+godlike_chance = irandom_range(0,110);
 
 drop_double = irandom_range(0,10);
 drop_triple = irandom_range(0,15);

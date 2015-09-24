@@ -26,6 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>global.pause = 0;
+instance_deactivate_object(obj_pause_btn1);
+instance_deactivate_object(obj_pause_btn2);
+instance_deactivate_object(obj_pause_btn3);
+instance_deactivate_object(obj_pause_btn4);
+instance_deactivate_object(obj_easy);
+instance_deactivate_object(obj_medium);
+instance_deactivate_object(obj_hard);
 </string>
           </argument>
         </arguments>
@@ -49,14 +56,8 @@
           <argument>
             <kind>1</kind>
             <string>if(global.pause) {
-    draw_set_color(c_black);
-    draw_rectangle(0,0,900,900,0);
-    draw_set_font(fnt_menu);
-    draw_set_color(c_white);
-    draw_text(390,300,"Game Paused");
     draw_set_color(c_red);
-    draw_text(350,400,"Press K to Save Game");
-    draw_text(355,500,"Press ESC to Resume");
+    draw_text(500,50,"Game Paused");
     draw_set_color(c_black);
 }
 </string>
@@ -64,7 +65,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="75">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -81,8 +82,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.pause){
-    scr_savegame();
+            <string>if(global.pause) {
+    draw_set_color(c_black);
+    draw_rectangle(view_xview[0],view_yview[0],view_xview[0]+1110,view_yview[0]+690,0);
 }
 </string>
           </argument>
@@ -109,6 +111,11 @@
             <string>if(!global.pause) {
     global.pause = 1;
     instance_deactivate_all(true);
+    instance_activate_object(obj_cursor);
+    instance_create(x,y,obj_pause_btn1);
+    instance_create(x,y,obj_pause_btn2);
+    instance_create(x,y,obj_pause_btn3);
+    instance_create(x,y,obj_pause_btn4);
 } else {
     global.pause = 0;
     instance_activate_all();

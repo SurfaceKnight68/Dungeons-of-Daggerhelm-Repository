@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mmsize = 600;
+            <string>mmsize = 250;
 sMap = surface_create(mmsize,mmsize);
 map_visible = 'nonvisible';
 </string>
@@ -87,7 +87,7 @@ map_visible = 'nonvisible';
             <string>if(map_visible == 'visible') {
    
         draw_set_alpha(.5);
-        draw_surface(sMap, 150, 75);
+        draw_surface(sMap, 30, 30);
         draw_set_alpha(1);
     
 }

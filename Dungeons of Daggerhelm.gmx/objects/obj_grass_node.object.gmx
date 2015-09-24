@@ -26,11 +26,38 @@
           <argument>
             <kind>1</kind>
             <string>randomize();
-for(i = 0; i &lt; irandom_range(25,35); i++) {
+for(i = 0; i &lt; irandom_range(35,45); i++) {
     instance_create(obj_player.x+irandom_range(400,-400),obj_player.y+irandom_range(400,-400),choose(obj_slate_imp,obj_prime_slate_imp,obj_undead_warrior));
 }
 
 alarm[0] = room_speed * (60 * 1.5);
+alarm[1] = room_speed * (60 * 6);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(obj_player.x+irandom_range(400,-400),obj_player.y+irandom_range(400,-400),obj_demon_captain);
+
+
+alarm[1] = room_speed * (60 * 6);
 </string>
           </argument>
         </arguments>
@@ -54,7 +81,7 @@ alarm[0] = room_speed * (60 * 1.5);
           <argument>
             <kind>1</kind>
             <string>randomize();
-for(i = 0; i &lt; irandom_range(25,35); i++) {
+for(i = 0; i &lt; irandom_range(35,45); i++) {
     instance_create(obj_player.x+irandom_range(400,-400),obj_player.y+irandom_range(400,-400),choose(obj_slate_imp,obj_prime_slate_imp,obj_undead_warrior,obj_slate_bat));
 }
 

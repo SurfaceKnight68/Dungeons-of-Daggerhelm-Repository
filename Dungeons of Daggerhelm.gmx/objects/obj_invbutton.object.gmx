@@ -74,7 +74,7 @@ if(abs(mouse_x - x) &lt; 7) &amp;&amp; (abs(mouse_y - y) &lt; 7) {
         mouseItem = item;
     }
     
-} else if(mouse_y &lt; view_yview[0]+225){
+} else if(mouse_x &lt; view_xview[0]+300){
     if(!showInv) {
         if(click) {
             if(mouseItem != -1) {

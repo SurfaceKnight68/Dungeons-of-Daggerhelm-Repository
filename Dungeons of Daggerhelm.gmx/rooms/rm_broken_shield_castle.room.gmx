@@ -61,7 +61,7 @@
     <instance objName="obj_ps" x="32" y="16" name="inst_DCC623B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music_controller_spawn" x="16" y="16" name="inst_724DC90B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warp" x="163" y="872" name="inst_55A96B1A" locked="0" code="&#xA;event_inherited();&#xA;dest_room = rm_undead_crypt;&#xA;    dest_x = 4032;&#xA;    dest_y = 4000;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_NPC_Astor" x="784" y="880" name="inst_E3AF83F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_NPC_Astor" x="800" y="880" name="inst_E3AF83F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_armory_door" x="152" y="880" name="inst_8181D8CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_reposition" x="16" y="0" name="inst_4E9911BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_NPC_sleeping_colossus" x="315" y="1148" name="inst_DA96AF11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
