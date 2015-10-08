@@ -149,3 +149,30 @@ if(mouseItem == 37) {
 if(mouseItem == 38) {
     instance_create(obj_player.x+16,obj_player.y,obj_snakesting_caster);
 }
+if(mouseItem == 39) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_bandore);
+}
+if(mouseItem == 40) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_tunic);
+}
+if(mouseItem == 41) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_breeches);
+}
+if(mouseItem == 42) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_helm);
+}
+if(mouseItem == 43) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_chestplate);
+}
+if(mouseItem == 44) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_legguards);
+}
+if(mouseItem == 45) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_coif);
+}
+if(mouseItem == 46) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_vestiment);
+}
+if(mouseItem == 47) {
+    instance_create(obj_player.x+16,obj_player.y,obj_uncommon_leggings);
+}

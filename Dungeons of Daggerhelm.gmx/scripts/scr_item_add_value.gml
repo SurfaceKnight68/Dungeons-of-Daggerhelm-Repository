@@ -666,3 +666,147 @@ if(mouseItem == 38) {
     return(0);
     }
 }
+if(mouseItem == 39) {
+    if(type == scr_get_item_value(obj_uncommon_bandore, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_bandore, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_bandore, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_bandore, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_bandore, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_bandore, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 40) {
+    if(type == scr_get_item_value(obj_uncommon_tunic, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_tunic, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_tunic, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_tunic, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_tunic, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_tunic, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 41) {
+    if(type == scr_get_item_value(obj_uncommon_breeches, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_breeches, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_breeches, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_breeches, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_breeches, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_breeches, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 42) {
+    if(type == scr_get_item_value(obj_uncommon_helm, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_helm, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_helm, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_helm, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_helm, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_helm, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 43) {
+    if(type == scr_get_item_value(obj_uncommon_chestplate, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_chestplate, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_chestplate, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_chestplate, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_chestplate, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_chestplate, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 44) {
+    if(type == scr_get_item_value(obj_uncommon_legguards, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_legguards, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_legguards, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_legguards, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_legguards, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_legguards, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 45) {
+    if(type == scr_get_item_value(obj_uncommon_coif, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_coif, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_coif, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_coif, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_coif, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_coif, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 46) {
+    if(type == scr_get_item_value(obj_uncommon_vestiment, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_vestiment, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_vestiment, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_vestiment, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_vestiment, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_vestiment, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}
+if(mouseItem == 47) {
+    if(type == scr_get_item_value(obj_uncommon_leggings, 'type')) {
+        if(global.identity == scr_get_item_value(obj_uncommon_leggings, 'spec1') || global.identity == scr_get_item_value(obj_uncommon_leggings, 'spec2')) {
+            scr_item_pickup_equip(mouseItem,equip);
+            strength = scr_get_item_value(obj_uncommon_leggings, 'strength');
+            wisdom = scr_get_item_value(obj_uncommon_leggings, 'wisdom');
+            fortitude = scr_get_item_value(obj_uncommon_leggings, 'fortitude');
+            
+            return(1);
+        } else {
+        return(0);
+        }
+    } else {
+    return(0);
+    }
+}

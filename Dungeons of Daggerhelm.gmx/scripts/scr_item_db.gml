@@ -390,6 +390,85 @@ ds_map_add(novice_leggings, 'fortitude', 1);
 ds_map_add(novice_leggings, 'spec1', 4);
 ds_map_add(novice_leggings, 'spec2', 6);
 
+//**UNCOMMON ARMOR**//
+//**LEATHER**//
+
+uncommon_bandore = ds_map_create();
+ds_map_add(uncommon_bandore, 'type', 'head');
+ds_map_add(uncommon_bandore, 'strength', 15);
+ds_map_add(uncommon_bandore, 'wisdom', 9);
+ds_map_add(uncommon_bandore, 'fortitude', 6);
+ds_map_add(uncommon_bandore, 'spec1', 1);
+ds_map_add(uncommon_bandore, 'spec2', 3);
+
+uncommon_tunic = ds_map_create();
+ds_map_add(uncommon_tunic, 'type', 'chest');
+ds_map_add(uncommon_tunic, 'strength', 9);
+ds_map_add(uncommon_tunic, 'wisdom', 14);
+ds_map_add(uncommon_tunic, 'fortitude', 6);
+ds_map_add(uncommon_tunic, 'spec1', 1);
+ds_map_add(uncommon_tunic, 'spec2', 3);
+
+uncommon_breeches = ds_map_create();
+ds_map_add(uncommon_breeches, 'type', 'legs');
+ds_map_add(uncommon_breeches, 'strength', 13);
+ds_map_add(uncommon_breeches, 'wisdom', 8);
+ds_map_add(uncommon_breeches, 'fortitude', 6);
+ds_map_add(uncommon_breeches, 'spec1', 1);
+ds_map_add(uncommon_breeches, 'spec2', 3);
+
+//**PLATE**//
+
+uncommon_helm = ds_map_create();
+ds_map_add(uncommon_helm, 'type', 'head');
+ds_map_add(uncommon_helm, 'strength', 16);
+ds_map_add(uncommon_helm, 'wisdom', 6);
+ds_map_add(uncommon_helm, 'fortitude', 10);
+ds_map_add(uncommon_helm, 'spec1', 2);
+ds_map_add(uncommon_helm, 'spec2', 5);
+
+uncommon_chestplate = ds_map_create();
+ds_map_add(uncommon_chestplate, 'type', 'chest');
+ds_map_add(uncommon_chestplate, 'strength', 13);
+ds_map_add(uncommon_chestplate, 'wisdom', 7);
+ds_map_add(uncommon_chestplate, 'fortitude', 12);
+ds_map_add(uncommon_chestplate, 'spec1', 2);
+ds_map_add(uncommon_chestplate, 'spec2', 5);
+
+uncommon_legguards = ds_map_create();
+ds_map_add(uncommon_legguards, 'type', 'legs');
+ds_map_add(uncommon_legguards, 'strength', 14);
+ds_map_add(uncommon_legguards, 'wisdom', 9);
+ds_map_add(uncommon_legguards, 'fortitude', 13);
+ds_map_add(uncommon_legguards, 'spec1', 2);
+ds_map_add(uncommon_legguards, 'spec2', 5);
+
+//**CLOTH**//
+
+uncommon_coif = ds_map_create();
+ds_map_add(uncommon_coif, 'type', 'head');
+ds_map_add(uncommon_coif, 'strength', 16);
+ds_map_add(uncommon_coif, 'wisdom', 14);
+ds_map_add(uncommon_coif, 'fortitude', 2);
+ds_map_add(uncommon_coif, 'spec1', 4);
+ds_map_add(uncommon_coif, 'spec2', 6);
+
+uncommon_vestiment = ds_map_create();
+ds_map_add(uncommon_vestiment, 'type', 'chest');
+ds_map_add(uncommon_vestiment, 'strength', 14);
+ds_map_add(uncommon_vestiment, 'wisdom', 13);
+ds_map_add(uncommon_vestiment, 'fortitude', 5);
+ds_map_add(uncommon_vestiment, 'spec1', 4);
+ds_map_add(uncommon_vestiment, 'spec2', 6);
+
+uncommon_leggings = ds_map_create();
+ds_map_add(uncommon_leggings, 'type', 'legs');
+ds_map_add(uncommon_leggings, 'strength', 14);
+ds_map_add(uncommon_leggings, 'wisdom', 14);
+ds_map_add(uncommon_leggings, 'fortitude', 3);
+ds_map_add(uncommon_leggings, 'spec1', 4);
+ds_map_add(uncommon_leggings, 'spec2', 6);
+
 //** LEGENDARY ARMOR **//
 //**LEATHER**//
 quandiros_ward = ds_map_create();
@@ -500,6 +579,16 @@ ds_map_add(global.items, 'obj_novice_legguards', novice_legguards);
 ds_map_add(global.items, 'obj_novice_cover', novice_cover);
 ds_map_add(global.items, 'obj_novice_drapes', novice_drape);
 ds_map_add(global.items, 'obj_novice_leggings', novice_leggings);
+//**UNCOMMON**//
+ds_map_add(global.items, 'obj_uncommon_bandore', uncommon_bandore);
+ds_map_add(global.items, 'obj_uncommon_tunic', uncommon_tunic);
+ds_map_add(global.items, 'obj_uncommon_breeches', uncommon_breeches);
+ds_map_add(global.items, 'obj_uncommon_helm', uncommon_helm);
+ds_map_add(global.items, 'obj_uncommon_chestplate', uncommon_chestplate);
+ds_map_add(global.items, 'obj_uncommon_legguards', uncommon_legguards);
+ds_map_add(global.items, 'obj_uncommon_coif', uncommon_coif);
+ds_map_add(global.items, 'obj_uncommon_vestiment', uncommon_vestiment);
+ds_map_add(global.items, 'obj_uncommon_leggings', uncommon_leggings);
 
 //**LEGENDARY**//
 ds_map_add(global.items, 'obj_quandiros_ward', quandiros_ward);

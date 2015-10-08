@@ -31,33 +31,8 @@ depth = phy_position_y * -1;
 armor = 0;
 hp = 1;
 if(distance_to_object(obj_player) &lt; 150) {
-    instance_deactivate_object(self);
+    instance_destroy();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>scr_exp_gain();
-scr_item_drop_weapon();
-scr_item_drop_armor();
 </string>
           </argument>
         </arguments>
@@ -132,6 +107,9 @@ potion_drop = irandom_range(1,10);
     if(potion_drop == 1) {
         instance_create(x,y,obj_potion);
     }
+    scr_exp_gain();
+    scr_item_drop_weapon();
+    scr_item_drop_armor();
 }
 </string>
           </argument>

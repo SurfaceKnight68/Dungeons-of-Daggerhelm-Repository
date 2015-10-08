@@ -254,6 +254,19 @@
               <sprite>sprites\spr_demon_captain_left</sprite>
               <sprite>sprites\spr_demon_captain_right</sprite>
             </sprites>
+            <sprites name="Frost Golem">
+              <sprite>sprites\spr_frost_golem_idle</sprite>
+              <sprite>sprites\spr_frost_golem_down</sprite>
+              <sprite>sprites\spr_frost_golem_up</sprite>
+              <sprite>sprites\spr_frost_golem_left</sprite>
+              <sprite>sprites\spr_frost_golem_right</sprite>
+            </sprites>
+            <sprites name="Demon Lord">
+              <sprite>sprites\spr_demon_lord_down</sprite>
+              <sprite>sprites\spr_demon_lord_up</sprite>
+              <sprite>sprites\spr_demon_lord_left</sprite>
+              <sprite>sprites\spr_demon_lord_right</sprite>
+            </sprites>
           </sprites>
         </sprites>
         <sprites name="Undead Warrior">
@@ -636,6 +649,16 @@
               <sprite>sprites\spr_ancient_warder</sprite>
               <sprite>sprites\spr_robe_of_blessings</sprite>
             </sprites>
+            <sprites name="Godlike">
+              <sprites name="Sets">
+                <sprites name="Fel Originator">
+                  <sprite>sprites\spr_fel_arbitor</sprite>
+                  <sprite>sprites\spr_fel_abrogator</sprite>
+                  <sprite>sprites\spr_fel_demolisher</sprite>
+                </sprites>
+              </sprites>
+              <sprite>sprites\spr_cataclysm_centarian</sprite>
+            </sprites>
           </sprites>
           <sprites name="Weapons">
             <sprites name="Basic">
@@ -727,6 +750,7 @@
         <sprite>sprites\spr_act_1</sprite>
         <sprite>sprites\spr_house_roof</sprite>
         <sprite>sprites\spr_house_roof_small</sprite>
+        <sprite>sprites\spr_cathedral_entrance</sprite>
       </sprites>
       <sprites name="ACT II">
         <sprite>sprites\spr_act_2</sprite>
@@ -891,7 +915,9 @@
         </objects>
         <objects name="Bosses">
           <object>objects\obj_lava_golem</object>
+          <object>objects\obj_frost_golem</object>
           <object>objects\obj_demon_captain</object>
+          <object>objects\obj_demon_lord</object>
           <object>objects\obj_sentinel</object>
           <object>objects\obj_black_knight</object>
           <object>objects\obj_pyromancer</object>
@@ -1053,6 +1079,17 @@
             <object>objects\obj_novice_cover</object>
             <object>objects\obj_novice_drape</object>
             <object>objects\obj_novice_leggings</object>
+          </objects>
+          <objects name="Uncommon">
+            <object>objects\obj_uncommon_bandore</object>
+            <object>objects\obj_uncommon_tunic</object>
+            <object>objects\obj_uncommon_breeches</object>
+            <object>objects\obj_uncommon_helm</object>
+            <object>objects\obj_uncommon_chestplate</object>
+            <object>objects\obj_uncommon_legguards</object>
+            <object>objects\obj_uncommon_coif</object>
+            <object>objects\obj_uncommon_vestiment</object>
+            <object>objects\obj_uncommon_leggings</object>
           </objects>
         </objects>
         <object>objects\obj_invbutton</object>
@@ -1315,6 +1352,10 @@
       <objects name="ACT I">
         <object>objects\obj_house_roof_large</object>
         <object>objects\obj_house_roof_small</object>
+        <object>objects\obj_cathedral_door</object>
+        <objects name="Quests">
+          <object>objects\obj_act1_quest_controller</object>
+        </objects>
       </objects>
     </objects>
   </objects>
