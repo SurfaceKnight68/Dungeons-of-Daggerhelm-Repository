@@ -571,33 +571,6 @@ obj_view_follow.y = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///rotation fix and room clamp
-
-phy_fixed_rotation = true;
-x = clamp(x,0,room_width - sprite_width);
-y = clamp(y,0,room_height - sprite_height);
-randomize();
-hit_play = irandom_range(1,100);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>/// Controls player stats
 mouse_dir = -point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y)+45;
 if(global.player_hp &gt;= 1) {
@@ -610,30 +583,6 @@ if(mouse_check_button(mb_left)) {
     scr_player_move();
     
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
-    audio_play_sound(snd_lvl_up,10,false);
-    show_debug_message("Player stat change");
 }
 </string>
           </argument>
@@ -689,6 +638,33 @@ if(place_meeting(x,y,obj_lava_pool)) {
 
 scr_draw_shadow(1);
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///rotation fix and room clamp
+
+phy_fixed_rotation = true;
+x = clamp(x,0,room_width - sprite_width);
+y = clamp(y,0,room_height - sprite_height);
+randomize();
+hit_play = irandom_range(1,100);
 </string>
           </argument>
         </arguments>

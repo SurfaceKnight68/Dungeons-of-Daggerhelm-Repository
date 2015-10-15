@@ -96,57 +96,6 @@ global.potion_num = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Health, mana and xp values
-
-if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
-    global.lv += 1;
-    global.player_mxp = round(global.player_mxp*1.8);
-    global.player_mhp = round(global.player_mhp*1.5);
-    global.player_hv = round(global.player_hv*1.5);
-    global.player_mmp = round(global.player_mmp*1.2);
-    global.player_xp = 0;
-    global.player_hp = global.player_mhp;
-    global.player_mp = global.player_mmp;
-    global.bonus_str += 4;
-    global.bonus_wis += 2;
-    global.bonus_for += 2;
-    
-}
-
-if(global.player_hp &gt; global.player_mhp) {
-    global.player_hp = global.player_mhp;
-}
-
-if(global.player_mp &gt; global.player_mmp) {
-    global.player_mp = global.player_mmp;
-}
-
-if(global.player_hp &lt; 0) {
-    global.player_hp = 0;
-}
-if(global.potion_num &gt; 100) {
-    global.potion_num = 100;
-} 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>/// Strength, wisdom, dexterity, attack values
 
 if(global.identity == 1) {
@@ -227,6 +176,57 @@ global.total_pri = global.base_pri + global.bonus_pri;
 global.total_sec = global.base_sec + global.bonus_sec;
 
 global.total_armor = global.base_armor + global.bonus_armor;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Health, mana and xp values
+
+if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
+    global.lv += 1;
+    global.player_mxp = round(global.player_mxp*1.6);
+    global.player_mhp = round(global.player_mhp*1.5);
+    global.player_hv = round(global.player_hv*1.5);
+    global.player_mmp = round(global.player_mmp*1.2);
+    global.player_xp = 0;
+    global.player_hp = global.player_mhp;
+    global.player_mp = global.player_mmp;
+    global.bonus_str += 5;
+    global.bonus_wis += 3;
+    global.bonus_for += 2;
+    audio_play_sound(snd_level_up,9,false);    
+}
+
+if(global.player_hp &gt; global.player_mhp) {
+    global.player_hp = global.player_mhp;
+}
+
+if(global.player_mp &gt; global.player_mmp) {
+    global.player_mp = global.player_mmp;
+}
+
+if(global.player_hp &lt; 0) {
+    global.player_hp = 0;
+}
+if(global.potion_num &gt; 100) {
+    global.potion_num = 100;
+} 
 </string>
           </argument>
         </arguments>

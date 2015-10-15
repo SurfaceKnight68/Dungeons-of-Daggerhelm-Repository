@@ -2,11 +2,11 @@ randomize();
 basic_chance = irandom_range(0,20);
 novice_chance = irandom_range(0,22);
 uncommon_chance = irandom_range(0,26);
-exceptional_chance = irandom_range(0,30);
-tremendous_chance = irandom_range(0,38);
-epic_chance = irandom_range(0,50);
-legendary_chance = irandom_range(0,65);
-godlike_chance = irandom_range(0,80);
+exceptional_chance = irandom_range(0,30-(floor(global.lv/4)));
+tremendous_chance = irandom_range(0,38-(floor(global.lv/4)));
+epic_chance = irandom_range(0,50-(floor(global.lv/3)));
+legendary_chance = irandom_range(0,85-(floor(global.lv/2)));
+godlike_chance = irandom_range(0,110-(floor(global.lv)));
 
 drop_double = irandom_range(0,20);
 drop_triple = irandom_range(0,25);

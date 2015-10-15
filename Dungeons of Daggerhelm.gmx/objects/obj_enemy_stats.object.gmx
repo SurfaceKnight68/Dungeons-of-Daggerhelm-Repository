@@ -53,8 +53,8 @@ global.health_3 = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.damage_1 = floor(global.difficulty * (floor(10 * (floor(global.lv * 1.6)))));
-global.damage_2 = floor(global.difficulty * (floor(20 * (floor(global.lv * 1.6)))));
+            <string>global.damage_1 = floor(global.difficulty * (floor(15 * (floor(global.lv * 1.6)))));
+global.damage_2 = floor(global.difficulty * (floor(25 * (floor(global.lv * 1.6)))));
 
 global.health_1 = floor(global.difficulty * (floor(80 * (floor(global.lv * 1.2)))));
 global.health_2 = floor(global.difficulty * (floor(175 * (floor(global.lv * 1.2)))));

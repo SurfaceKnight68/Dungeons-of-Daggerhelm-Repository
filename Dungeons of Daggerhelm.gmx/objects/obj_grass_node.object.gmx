@@ -55,10 +55,10 @@ alarm[1] = room_speed * (60 * 6);
           <argument>
             <kind>1</kind>
             <string>randomize();
-instance_create(obj_player.x+irandom_range(400,-400),obj_player.y+irandom_range(400,-400),choose(obj_demon_captain,obj_frost_golem));
+instance_create(obj_player.x+choose(200,-200,250,-250),obj_player.y+choose(200,-200,250,-250),choose(obj_demon_captain,obj_frost_golem));
 
 
-alarm[1] = room_speed * (60 * 5);
+alarm[1] = room_speed * (60 * 6);
 </string>
           </argument>
         </arguments>

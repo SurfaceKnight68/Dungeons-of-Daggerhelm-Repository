@@ -14,7 +14,6 @@
     </sounds>
     <sounds name="Sounds">
       <sound>sound\snd_hit</sound>
-      <sound>sound\snd_lvl_up</sound>
       <sound>sound\snd_pickup</sound>
       <sounds name="Male">
         <sound>sound\snd_male_grunt_1</sound>
@@ -29,6 +28,7 @@
       <sound>sound\snd_item_drop</sound>
       <sound>sound\snd_item_pickup</sound>
       <sound>sound\snd_item_inv</sound>
+      <sound>sound\snd_level_up</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -823,6 +823,8 @@
       <script>scripts\scr_get_item_value.gml</script>
       <script>scripts\scr_item_drop_weapon.gml</script>
       <script>scripts\scr_item_drop_armor.gml</script>
+      <script>scripts\scr_boss_drop_weapon_new.gml</script>
+      <script>scripts\scr_boss_drop_armor_new.gml</script>
       <script>scripts\scr_item_vendor.gml</script>
       <scripts name="Inventory">
         <script>scripts\scr_item_pickup.gml</script>

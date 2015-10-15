@@ -1,15 +1,15 @@
 randomize();
-basic_chance = irandom_range(0,8);
-novice_chance = irandom_range(0,12);
-uncommon_chance = irandom_range(0,20);
-exceptional_chance = irandom_range(0,28);
-tremendous_chance = irandom_range(0,38);
-epic_chance = irandom_range(0,50);
-legendary_chance = irandom_range(0,85);
-godlike_chance = irandom_range(0,110);
+basic_chance = irandom_range(0,20);
+novice_chance = irandom_range(0,22);
+uncommon_chance = irandom_range(0,26);
+exceptional_chance = irandom_range(0,30-(floor(global.lv/3)));
+tremendous_chance = irandom_range(0,38-(floor(global.lv/3)));
+epic_chance = irandom_range(0,50-(floor(global.lv/2)));
+legendary_chance = irandom_range(0,85-(floor(global.lv/2)));
+godlike_chance = irandom_range(0,110-(floor(global.lv)));
 
-drop_double = irandom_range(0,10);
-drop_triple = irandom_range(0,15);
+drop_double = irandom_range(0,20);
+drop_triple = irandom_range(0,25);
 
 if(global.lv <= 60) {
     if(basic_chance == 0) {
@@ -84,6 +84,44 @@ if(global.lv <= 60 && global.lv >= 8) {
                                         obj_novice_cover,
                                         obj_novice_drape,
                                         obj_novice_leggings)));
+            audio_play_sound(snd_item_drop,10,false);
+        }
+    }
+}
+if(global.lv <= 60 && global.lv >= 18) {
+    if(novice_chance == 0) {
+        instance_create(x,y,(choose(obj_uncommon_bandore,
+                                    obj_uncommon_tunic,
+                                    obj_uncommon_breeches,
+                                    obj_uncommon_helm,
+                                    obj_uncommon_chestplate,
+                                    obj_uncommon_legguards,
+                                    obj_uncommon_coif,
+                                    obj_uncommon_vestiment,
+                                    obj_uncommon_leggings)));
+        audio_play_sound(snd_item_drop,10,false);
+        if(drop_double == 0) {
+            instance_create(x,y,(choose(obj_uncommon_bandore,
+                                    obj_uncommon_tunic,
+                                    obj_uncommon_breeches,
+                                    obj_uncommon_helm,
+                                    obj_uncommon_chestplate,
+                                    obj_uncommon_legguards,
+                                    obj_uncommon_coif,
+                                    obj_uncommon_vestiment,
+                                    obj_uncommon_leggings)));
+            audio_play_sound(snd_item_drop,10,false);
+        }
+        if(drop_triple == 0) {
+            instance_create(x,y,(choose(obj_uncommon_bandore,
+                                    obj_uncommon_tunic,
+                                    obj_uncommon_breeches,
+                                    obj_uncommon_helm,
+                                    obj_uncommon_chestplate,
+                                    obj_uncommon_legguards,
+                                    obj_uncommon_coif,
+                                    obj_uncommon_vestiment,
+                                    obj_uncommon_leggings)));
             audio_play_sound(snd_item_drop,10,false);
         }
     }
