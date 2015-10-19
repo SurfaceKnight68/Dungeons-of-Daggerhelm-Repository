@@ -445,6 +445,7 @@
           <sprite>sprites\spr_fire_bullet</sprite>
           <sprite>sprites\spr_unholy_bullet</sprite>
           <sprite>sprites\spr_dark_bullet</sprite>
+          <sprite>sprites\spr_bones</sprite>
         </sprites>
         <sprites name="Primary">
           <sprite>sprites\spr_arrow</sprite>
@@ -1145,6 +1146,7 @@
           <object>objects\obj_fire_bullet</object>
           <object>objects\obj_unholy_bullet</object>
           <object>objects\obj_dark_bullet</object>
+          <object>objects\obj_bones</object>
           <object>objects\obj_bonespike</object>
           <object>objects\obj_ice_spike</object>
         </objects>

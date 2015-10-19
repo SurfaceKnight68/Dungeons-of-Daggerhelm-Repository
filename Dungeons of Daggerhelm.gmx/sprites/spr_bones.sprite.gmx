@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>4</xorig>
-  <yorigin>4</yorigin>
+  <yorigin>3</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
@@ -20,6 +20,6 @@
   <width>8</width>
   <height>8</height>
   <frames>
-    <frame index="0">images\spr_fire_bullet_0.png</frame>
+    <frame index="0">images\spr_bones_0.png</frame>
   </frames>
 </sprite>

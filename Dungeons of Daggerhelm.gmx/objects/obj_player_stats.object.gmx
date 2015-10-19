@@ -201,9 +201,9 @@ global.total_armor = global.base_armor + global.bonus_armor;
 if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
     global.lv += 1;
     global.player_mxp = round(global.player_mxp*1.3);
-    global.player_mhp = round(global.player_mhp*1.2);
+    global.player_mhp = round(global.player_mhp*1.3);
     global.player_hv = round(global.player_hv*1.5);
-    global.player_mmp = round(global.player_mmp*1.2);
+    global.player_mmp = round(global.player_mmp*1.01);
     global.player_xp = 0;
     global.player_hp = global.player_mhp;
     global.player_mp = global.player_mmp;

@@ -30,6 +30,7 @@ depth = phy_position_y * -1;
 
 image_speed = 0.06;
 alarm[0] = random(25);
+alarm[2] = 90;
 dir = 0;
 </string>
           </argument>
@@ -75,6 +76,63 @@ dir = 0;
             <string>if(distance_to_object(obj_player) &lt;= 105) {
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[2] = 90;
+player_dir = -point_direction(x, y, obj_player.x, obj_player.y)+45;
+if(dist_player &lt;= 90) {
+arrow1 = instance_create(x,y,obj_bones);
+arrow2 = instance_create(x,y,obj_bones);
+arrow3 = instance_create(x,y,obj_bones);
+with(arrow1) {
+    phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
+    
+    
+    ldx = lengthdir_x(0.8,-other.player_dir+45);
+    ldy = lengthdir_y(0.8,-other.player_dir+45);
+    physics_apply_impulse(x,y,ldx,ldy);
+}
+
+with(arrow2) {
+    phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y);
+    
+    
+    ldx = lengthdir_x(0.8,-other.player_dir+35);
+    ldy = lengthdir_y(0.8,-other.player_dir+30);
+    physics_apply_impulse(x,y,ldx,ldy);
+}
+
+with(arrow3) {
+    phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
+    
+    
+    ldx = lengthdir_x(0.8,-other.player_dir+55);
+    ldy = lengthdir_y(0.8,-other.player_dir+55);
+    physics_apply_impulse(x,y,ldx,ldy);
+    }
+
+}
+
 </string>
           </argument>
         </arguments>

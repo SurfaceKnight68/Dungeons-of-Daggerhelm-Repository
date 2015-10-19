@@ -86,8 +86,8 @@ with(arrow1) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(0.7,-other.player_dir+45);
-    ldy = lengthdir_y(0.7,-other.player_dir+45);
+    ldx = lengthdir_x(1.0,-other.player_dir+45);
+    ldy = lengthdir_y(1.0,-other.player_dir+45);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
@@ -95,8 +95,8 @@ with(arrow2) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y);
     
     
-    ldx = lengthdir_x(0.7,-other.player_dir+30);
-    ldy = lengthdir_y(0.7,-other.player_dir+30);
+    ldx = lengthdir_x(1.0,-other.player_dir+35);
+    ldy = lengthdir_y(1.0,-other.player_dir+35);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
@@ -104,8 +104,8 @@ with(arrow3) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(0.7,-other.player_dir+60);
-    ldy = lengthdir_y(0.7,-other.player_dir+60);
+    ldx = lengthdir_x(1.0,-other.player_dir+55);
+    ldy = lengthdir_y(1.0,-other.player_dir+55);
     physics_apply_impulse(x,y,ldx,ldy);
     }
 
@@ -299,49 +299,48 @@ if(hp &lt;= 0) {
           <argument>
             <kind>1</kind>
             <string>/// Movement
-event_inherited();
 dist_player = distance_to_object(obj_player);
 
 if(dist_player &lt;= 100) {
 if(dir == 0 || dir == 360) {
-   sprite_index = spr_prime_imp_left;
+   sprite_index = spr_slate_imp_fly_left;
     phy_position_y -= 1.0;
 }
 
 if(dir == 45) {
-    sprite_index = spr_prime_imp_left;
+    sprite_index = spr_slate_imp_fly_left;
     phy_position_y -= 0.5;
     phy_position_x -= 0.5;
 }
 
 if(dir == 90) {
-    sprite_index = spr_prime_imp_left;
+    sprite_index = spr_slate_imp_fly_left;
     phy_position_x -= 1.0;
 }
 
 if(dir == 135) {
-    sprite_index = spr_prime_imp_left;
+    sprite_index = spr_slate_imp_fly_left;
     phy_position_x -= 0.5;
     phy_position_y += 0.5;
 }
 
 if(dir == 180) {
-    sprite_index = spr_prime_imp_right;
+    sprite_index = spr_slate_imp_fly_right;
     phy_position_y += 1.0;
 }
 
 if(dir == 225) {
-    sprite_index = spr_prime_imp_right;
+    sprite_index = spr_slate_imp_fly_right;
     phy_position_y += 0.5;
     phy_position_x += 0.5;
 }
 
 if(dir == 270) {
-    sprite_index = spr_prime_imp_right;
+    sprite_index = spr_slate_imp_fly_right;
     phy_position_x += 1.0;
 }
 if(dir == 315) {
-    sprite_index = spr_prime_imp_right;
+    sprite_index = spr_slate_imp_fly_right;
     phy_position_x += 0.5;
     phy_position_y -= 0.5;
 }

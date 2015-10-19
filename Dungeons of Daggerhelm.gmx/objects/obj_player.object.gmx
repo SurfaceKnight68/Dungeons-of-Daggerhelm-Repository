@@ -112,7 +112,7 @@ weapon = -1; // We currently do not have a weapon
             <kind>1</kind>
             <string>alarm[7] = 10;
 if(global.identity == 4) {
-if(global.player_mp &gt;= 4) {
+if(global.player_mp &gt;= 10) {
 arrow1 = instance_create(x,y,obj_flame_cone);
 arrow2 = instance_create(x,y,obj_flame_cone);
 arrow3 = instance_create(x,y,obj_flame_cone);
@@ -151,12 +151,12 @@ with(arrow4) {
     ldy = lengthdir_y(1.2,-other.mouse_dir+60);
     physics_apply_impulse(x,y,ldx,ldy);
         }  
-    global.player_mp = global.player_mp - 4;
+    global.player_mp = global.player_mp - 10;
     }
 }
 
 if(global.identity == 5) {
-    if(global.player_mp &gt;= 4) {
+    if(global.player_mp &gt;= 10) {
 arrow1 = instance_create(x,y,obj_ice_cone);
 arrow2 = instance_create(x,y,obj_ice_cone);
 arrow3 = instance_create(x,y,obj_ice_cone);
@@ -195,7 +195,7 @@ with(arrow4) {
     ldy = lengthdir_y(1.2,-other.mouse_dir+60);
     physics_apply_impulse(x,y,ldx,ldy);
         }  
-    global.player_mp = global.player_mp - (10+global.lv);
+    global.player_mp = global.player_mp - 10;
     }
 }
 
@@ -1815,7 +1815,7 @@ if(global.identity == 5) {
             <string>/// Battle-Mage secondary
 
 if(global.identity == 3) {
-    if(global.player_mp &gt;= 10) {
+    if(global.player_mp &gt;= 20) {
         arrow = instance_create(x,y,obj_lightning_bolt);
         
         with(arrow) {
@@ -1826,7 +1826,7 @@ if(global.identity == 3) {
             ldy = lengthdir_y(2.5,-other.mouse_dir+45);
             physics_apply_impulse(x,y,ldx,ldy);
         }
-        global.player_mp = global.player_mp - 10;
+        global.player_mp = global.player_mp - 20;
     }
 }
 </string>
@@ -1853,7 +1853,7 @@ if(global.identity == 3) {
 if(global.identity == 2) {
     if(global.player_mp &gt;= 80) {
         instance_create(mouse_x,mouse_y,obj_paladin_hammer);
-        global.player_mp = global.player_mp - 80;
+        global.player_mp = global.player_mp - 70;
     }
 }
 </string>
