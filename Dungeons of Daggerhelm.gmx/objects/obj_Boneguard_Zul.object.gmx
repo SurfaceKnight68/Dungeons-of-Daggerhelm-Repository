@@ -28,8 +28,8 @@
             <string>image_speed = 0.02;
 armor = 0;
 
-hp = global.health_3 + 10000;
-max_hp = global.health_3 + 10000;
+hp = global.health_3*3 + 10000;
+max_hp = global.health_3*3 + 10000;
 state = 'wait';
 timeline_index = tl_boneguard_zul;
 timeline_position = 0;

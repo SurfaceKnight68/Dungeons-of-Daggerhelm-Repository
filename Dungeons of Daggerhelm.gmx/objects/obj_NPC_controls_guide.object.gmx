@@ -58,7 +58,7 @@ var dist = point_distance(obj_player.phy_position_x,obj_player.phy_position_y,x,
 
 if(dist &lt; 32) {
     if(obj_player.action == true) {
-        show_message_async(message);
+        show_message(message);
     }
 }
 </string>

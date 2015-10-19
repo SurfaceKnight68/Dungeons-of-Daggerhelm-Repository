@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.03;
-hp = global.health_3 + 3000;
-max_hp = global.health_3 + 3000;
+hp = global.health_3*3 + 5000;
+max_hp = global.health_3*3 + 5000;
 
 state = 'path1';
 alarm[1] = 120;

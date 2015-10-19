@@ -34,8 +34,8 @@ alarm[5] = 120;
 armor = 0;
 
 move = 'wait';
-hp = global.health_3 + 13000;
-max_hp = global.health_3 + 13000;
+hp = global.health_3*3 + 10000;
+max_hp = global.health_3*3 + 10000;
 </string>
           </argument>
         </arguments>

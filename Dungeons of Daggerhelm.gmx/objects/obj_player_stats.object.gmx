@@ -126,10 +126,10 @@ if(global.identity == 3) {
     
 }
 if(global.identity == 4) {
-    global.base_pri = 14;
+    global.base_pri = 10;
     global.base_sec = 2;
     
-    global.base_str = 18;
+    global.base_str = 14;
     global.base_wis = 6;
     global.base_for = 1;
     
@@ -200,8 +200,8 @@ global.total_armor = global.base_armor + global.bonus_armor;
 
 if(global.player_xp &gt;= global.player_mxp &amp;&amp; global.lv &lt;= global.mlv) {
     global.lv += 1;
-    global.player_mxp = round(global.player_mxp*1.6);
-    global.player_mhp = round(global.player_mhp*1.5);
+    global.player_mxp = round(global.player_mxp*1.3);
+    global.player_mhp = round(global.player_mhp*1.2);
     global.player_hv = round(global.player_hv*1.5);
     global.player_mmp = round(global.player_mmp*1.2);
     global.player_xp = 0;

@@ -195,7 +195,7 @@ with(arrow4) {
     ldy = lengthdir_y(1.2,-other.mouse_dir+60);
     physics_apply_impulse(x,y,ldx,ldy);
         }  
-    global.player_mp = global.player_mp - 4;
+    global.player_mp = global.player_mp - (10+global.lv);
     }
 }
 
@@ -1760,7 +1760,7 @@ if(global.identity == 5) {
             <kind>1</kind>
             <string>///Sorcerer secondary attack
 if(global.identity == 4) {
-    if(global.player_mp &gt;= 4) {
+    if(global.player_mp &gt;= 8) {
         alarm[7] = 1;
     }
 }

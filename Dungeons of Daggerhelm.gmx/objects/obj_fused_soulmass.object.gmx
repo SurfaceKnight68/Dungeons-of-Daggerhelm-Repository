@@ -30,8 +30,8 @@ alarm[0] = 240;
 alarm[1] = 480;
 armor = 0;
 
-hp = global.health_3 + 8500;
-max_hp = global.health_3 + 8500;
+hp = global.health_3*3 + 8500;
+max_hp = global.health_3*3 + 8500;
 </string>
           </argument>
         </arguments>

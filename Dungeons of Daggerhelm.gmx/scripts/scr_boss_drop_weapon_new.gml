@@ -1,4 +1,7 @@
 randomize();
+basic_chance = irandom_range(0,20);
+novice_chance = irandom_range(0,22);
+uncommon_chance = irandom_range(0,26);
 exceptional_chance = irandom_range(0,20-(floor(global.lv/4)));
 tremendous_chance = irandom_range(0,28-(floor(global.lv/4)));
 epic_chance = irandom_range(0,30-(floor(global.lv/3)));

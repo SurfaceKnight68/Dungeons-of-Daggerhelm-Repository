@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.2;
+
+if(place_meeting(x,y,obj_DF_mines_wall)) {
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

@@ -50,7 +50,7 @@
             <string>
 dist_swing = distance_to_object(obj_player);
 
-if(dist_swing &gt;= 85) {
+if(dist_swing &gt;= 80) {
     instance_destroy();
 }
 </string>
