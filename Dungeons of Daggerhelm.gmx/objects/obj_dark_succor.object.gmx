@@ -49,7 +49,7 @@
             <kind>1</kind>
             <string>if(place_meeting(x,y,obj_player)) {
 
-    global.player_hp -= 1;
+    global.player_hp -= 1+global.lv;
     
 
 }

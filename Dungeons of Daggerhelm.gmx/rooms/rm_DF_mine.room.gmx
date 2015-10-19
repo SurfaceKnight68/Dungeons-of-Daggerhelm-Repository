@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="obj_view_follow" xview="0" yview="0" wview="300" hview="300" xport="0" yport="0" wport="900" hport="900" hborder="150" vborder="150" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="obj_view_follow" xview="0" yview="0" wview="370" hview="230" xport="0" yport="0" wport="1110" hport="690" hborder="150" vborder="150" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="obj_player" xview="0" yview="0" wview="450" hview="450" xport="400" yport="800" wport="150" hport="150" hborder="150" vborder="150" hspeed="-1" vspeed="-1"/>
     <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="8000" hview="8000" xport="0" yport="0" wport="900" hport="900" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
