@@ -29,7 +29,7 @@
 depth = phy_position_y * -1;
 
 image_speed = 0.04;
-hp = global.health_1;
+hp = global.health_2;
 dir = 0;
 alarm[0] = random(20);
 agressive = 0;

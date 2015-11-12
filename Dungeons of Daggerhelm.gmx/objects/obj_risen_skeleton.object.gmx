@@ -106,28 +106,28 @@ arrow2 = instance_create(x,y,obj_bones);
 arrow3 = instance_create(x,y,obj_bones);
 with(arrow1) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
+    phy_fixed_rotation = true;
     
-    
-    ldx = lengthdir_x(0.8,-other.player_dir+45);
-    ldy = lengthdir_y(0.8,-other.player_dir+45);
+    ldx = lengthdir_x(5.0,-other.player_dir+45);
+    ldy = lengthdir_y(5.0,-other.player_dir+45);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
 with(arrow2) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y);
+    phy_fixed_rotation = true;
     
-    
-    ldx = lengthdir_x(0.8,-other.player_dir+35);
-    ldy = lengthdir_y(0.8,-other.player_dir+30);
+    ldx = lengthdir_x(5.0,-other.player_dir+35);
+    ldy = lengthdir_y(5.0,-other.player_dir+30);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
 with(arrow3) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
+    phy_fixed_rotation = true;
     
-    
-    ldx = lengthdir_x(0.8,-other.player_dir+55);
-    ldy = lengthdir_y(0.8,-other.player_dir+55);
+    ldx = lengthdir_x(5.0,-other.player_dir+55);
+    ldy = lengthdir_y(5.0,-other.player_dir+55);
     physics_apply_impulse(x,y,ldx,ldy);
     }
 

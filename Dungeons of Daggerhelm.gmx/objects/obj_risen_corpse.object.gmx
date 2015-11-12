@@ -108,8 +108,8 @@ with(arrow1) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(1.0,-other.player_dir+45);
-    ldy = lengthdir_y(1.0,-other.player_dir+45);
+    ldx = lengthdir_x(5.0,-other.player_dir+45);
+    ldy = lengthdir_y(5.0,-other.player_dir+45);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
@@ -117,8 +117,8 @@ with(arrow2) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y);
     
     
-    ldx = lengthdir_x(1.0,-other.player_dir+35);
-    ldy = lengthdir_y(1.0,-other.player_dir+30);
+    ldx = lengthdir_x(5.0,-other.player_dir+35);
+    ldy = lengthdir_y(5.0,-other.player_dir+30);
     physics_apply_impulse(x,y,ldx,ldy);
 }
 
@@ -126,8 +126,8 @@ with(arrow3) {
     phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
     
     
-    ldx = lengthdir_x(1.0,-other.player_dir+55);
-    ldy = lengthdir_y(1.0,-other.player_dir+55);
+    ldx = lengthdir_x(5.0,-other.player_dir+55);
+    ldy = lengthdir_y(5.0,-other.player_dir+55);
     physics_apply_impulse(x,y,ldx,ldy);
     }
 

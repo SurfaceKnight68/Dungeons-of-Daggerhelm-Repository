@@ -28,8 +28,8 @@
             <string>depth = phy_position_y * -1;
 image_speed = 0.05;
 
-hp = global.health_3*3 + 16000;
-max_hp = global.health_3*3 + 16000;
+hp = global.health_3*6 + 26000;
+max_hp = global.health_3*6 + 26000;
 
 move = 'wait';
 message = 0;
@@ -340,56 +340,6 @@ switch( move ) {
             <kind>1</kind>
             <string>randomize();
 globe_drop = random(100);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="par_projectile_sec">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hp = hp - global.total_sec;
-i = instance_create(x+(sprite_width/2),y,obj_damage_counter);
-i.str = string(global.total_sec - armor);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="par_projectile">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hp = hp - global.total_pri;
-i = instance_create(x+(sprite_width/2),y,obj_damage_counter);
-i.str = string(global.total_pri - armor);
 </string>
           </argument>
         </arguments>

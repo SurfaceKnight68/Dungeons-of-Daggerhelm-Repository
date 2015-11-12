@@ -30,8 +30,8 @@ for(i = 0; i &lt; irandom_range(35,45); i++) {
     instance_create(obj_player.x+irandom_range(400,-400),obj_player.y+irandom_range(400,-400),choose(obj_slate_imp,obj_prime_slate_imp,obj_undead_warrior));
 }
 
-alarm[0] = room_speed * (60 * 1.5);
-alarm[1] = room_speed * (60 * 6);
+alarm[0] = room_speed * 60;
+alarm[1] = room_speed * (60 * 4);
 </string>
           </argument>
         </arguments>
@@ -86,7 +86,7 @@ for(i = 0; i &lt; irandom_range(35,45); i++) {
     instance_create(obj_player.x+irandom_range(400,-400),obj_player.y+irandom_range(400,-400),choose(obj_slate_imp,obj_prime_slate_imp,obj_undead_warrior,obj_slate_bat));
 }
 
-alarm[0] = room_speed * (60 * 2.5);
+alarm[0] = room_speed * (60 * 1);
 </string>
           </argument>
         </arguments>

@@ -108,6 +108,38 @@ ds_map_add(crossbow, 'fortitude', 2);
 ds_map_add(crossbow, 'spec1', 1);
 ds_map_add(crossbow, 'spec2', 1);
 
+swift_buckler = ds_map_create();
+ds_map_add(swift_buckler, 'type', 'offhand');
+ds_map_add(swift_buckler, 'strength', 1);
+ds_map_add(swift_buckler, 'wisdom', 1);
+ds_map_add(swift_buckler, 'fortitude', 12);
+ds_map_add(swift_buckler, 'spec1', 2);
+ds_map_add(swift_buckler, 'spec2', 3);
+
+radiant_gemstone = ds_map_create();
+ds_map_add(radiant_gemstone, 'type', 'offhand');
+ds_map_add(radiant_gemstone, 'strength', 1);
+ds_map_add(radiant_gemstone, 'wisdom', 11);
+ds_map_add(radiant_gemstone, 'fortitude', 0);
+ds_map_add(radiant_gemstone, 'spec1', 4);
+ds_map_add(radiant_gemstone, 'spec2', 6);
+
+burned_book = ds_map_create();
+ds_map_add(burned_book, 'type', 'offhand');
+ds_map_add(burned_book, 'strength', 8);
+ds_map_add(burned_book, 'wisdom', 3);
+ds_map_add(burned_book, 'fortitude', 0);
+ds_map_add(burned_book, 'spec1', 4);
+ds_map_add(burned_book, 'spec2', 6);
+
+deft_shank = ds_map_create();
+ds_map_add(deft_shank, 'type', 'offhand');
+ds_map_add(deft_shank, 'strength', 10);
+ds_map_add(deft_shank, 'wisdom', 0);
+ds_map_add(deft_shank, 'fortitude', 2);
+ds_map_add(deft_shank, 'spec1', 1);
+ds_map_add(deft_shank, 'spec2', 5);
+
 //** UNCOMMON WEAPONS **//
 uncommon_blade = ds_map_create();
 ds_map_add(uncommon_blade, 'type', 'weapon');
@@ -148,6 +180,38 @@ ds_map_add(uncommon_halberd, 'wisdom', 5);
 ds_map_add(uncommon_halberd, 'fortitude', 9);
 ds_map_add(uncommon_halberd, 'spec1', 2);
 ds_map_add(uncommon_halberd, 'spec2', 3);
+
+uncommon_parma = ds_map_create();
+ds_map_add(uncommon_parma, 'type', 'offhand');
+ds_map_add(uncommon_parma, 'strength', 2);
+ds_map_add(uncommon_parma, 'wisdom', 1);
+ds_map_add(uncommon_parma, 'fortitude', 15);
+ds_map_add(uncommon_parma, 'spec1', 2);
+ds_map_add(uncommon_parma, 'spec2', 3);
+
+uncommon_pearl = ds_map_create();
+ds_map_add(uncommon_pearl, 'type', 'offhand');
+ds_map_add(uncommon_pearl, 'strength', 3);
+ds_map_add(uncommon_pearl, 'wisdom', 14);
+ds_map_add(uncommon_pearl, 'fortitude', 0);
+ds_map_add(uncommon_pearl, 'spec1', 4);
+ds_map_add(uncommon_pearl, 'spec2', 6);
+
+uncommon_runestone = ds_map_create();
+ds_map_add(uncommon_runestone, 'type', 'offhand');
+ds_map_add(uncommon_runestone, 'strength', 11);
+ds_map_add(uncommon_runestone, 'wisdom', 4);
+ds_map_add(uncommon_runestone, 'fortitude', 1);
+ds_map_add(uncommon_runestone, 'spec1', 4);
+ds_map_add(uncommon_runestone, 'spec2', 6);
+
+uncommon_shiv = ds_map_create();
+ds_map_add(uncommon_shiv, 'type', 'offhand');
+ds_map_add(uncommon_shiv, 'strength', 13);
+ds_map_add(uncommon_shiv, 'wisdom', 1);
+ds_map_add(uncommon_shiv, 'fortitude', 4);
+ds_map_add(uncommon_shiv, 'spec1', 1);
+ds_map_add(uncommon_shiv, 'spec2', 5);
 
 //** LEGENDARY WEAPONS **//
 drake_blade = ds_map_create();
@@ -325,7 +389,7 @@ ds_map_add(novice_hat, 'spec1', 1);
 ds_map_add(novice_hat, 'spec2', 3);
 
 novice_jacket = ds_map_create();
-ds_map_add(novice_jacket, 'type', 'head');
+ds_map_add(novice_jacket, 'type', 'chest');
 ds_map_add(novice_jacket, 'strength', 7);
 ds_map_add(novice_jacket, 'wisdom', 9);
 ds_map_add(novice_jacket, 'fortitude', 3);
@@ -333,7 +397,7 @@ ds_map_add(novice_jacket, 'spec1', 1);
 ds_map_add(novice_jacket, 'spec2', 3);
 
 novice_trousers = ds_map_create();
-ds_map_add(novice_trousers, 'type', 'head');
+ds_map_add(novice_trousers, 'type', 'legs');
 ds_map_add(novice_trousers, 'strength', 10);
 ds_map_add(novice_trousers, 'wisdom', 6);
 ds_map_add(novice_trousers, 'fortitude', 3);
@@ -577,7 +641,7 @@ ds_map_add(global.items, 'obj_novice_helmet', novice_helmet);
 ds_map_add(global.items, 'obj_novice_chestplate', novice_chestplate);
 ds_map_add(global.items, 'obj_novice_legguards', novice_legguards);
 ds_map_add(global.items, 'obj_novice_cover', novice_cover);
-ds_map_add(global.items, 'obj_novice_drapes', novice_drape);
+ds_map_add(global.items, 'obj_novice_drape', novice_drape);
 ds_map_add(global.items, 'obj_novice_leggings', novice_leggings);
 //**UNCOMMON**//
 ds_map_add(global.items, 'obj_uncommon_bandore', uncommon_bandore);

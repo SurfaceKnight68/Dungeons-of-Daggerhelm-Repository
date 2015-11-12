@@ -79,6 +79,55 @@ dir = 0;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[1] = 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(obj_player) &lt;= 135) {
+for(i = 0; i &lt; 6; i++) {
+    instance_create(x,y,obj_shadowblaze);
+    }
+}
+alarm[1] = 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -242,8 +291,7 @@ if(hp &lt;= 0) {
 
 dist_player = distance_to_object(obj_player);
 player_dir = -point_direction(x, y, obj_player.x, obj_player.y)+45;
-randomize();
-shoot = random(1000);
+
 if(dist_player &lt;= 80) {
 if(dir == 0 || dir == 360) {
    sprite_index = spr_VK_left;
@@ -271,33 +319,6 @@ if(dir == 270) {
 }
 }
 
-
-if(dist_player &lt;= 80) {
-if(shoot &lt;= 40) {
-
-arrow2 = instance_create(x,y,obj_enemy_phaseshot);
-arrow3 = instance_create(x,y,obj_enemy_phaseshot);
-
-with(arrow2) {
-    phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y);
-    
-    
-    ldx = lengthdir_x(1.0,-other.player_dir+35);
-    ldy = lengthdir_y(1.0,-other.player_dir+35);
-    physics_apply_impulse(x,y,ldx,ldy);
-}
-
-with(arrow3) {
-    phy_rotation = -point_direction(x,y, obj_player.x, obj_player.y)+45;
-    
-    
-    ldx = lengthdir_x(1.0,-other.player_dir+55);
-    ldy = lengthdir_y(1.0,-other.player_dir+55);
-    physics_apply_impulse(x,y,ldx,ldy);
-}
-
-}
-}
 </string>
           </argument>
         </arguments>

@@ -29,6 +29,12 @@
       <sound>sound\snd_item_pickup</sound>
       <sound>sound\snd_item_inv</sound>
       <sound>sound\snd_level_up</sound>
+      <sounds name="Farts">
+        <sound>sound\snd_fart1</sound>
+        <sound>sound\snd_fart2</sound>
+        <sound>sound\snd_fart3</sound>
+        <sound>sound\snd_fart4</sound>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -69,6 +75,8 @@
       <sprite>sprites\spr_collision_space</sprite>
       <sprites name="Ironhand Dockworks">
         <sprite>sprites\spr_dock_floor</sprite>
+        <sprite>sprites\spr_wood_wall</sprite>
+        <sprite>sprites\spr_dock_edge</sprite>
       </sprites>
     </sprites>
     <sprites name="Character_Sprites">
@@ -401,6 +409,14 @@
           <sprite>sprites\spr_outlaw_left</sprite>
           <sprite>sprites\spr_outlaw_right</sprite>
         </sprites>
+        <sprites name="Drunk">
+          <sprite>sprites\spr_drunk_down</sprite>
+          <sprite>sprites\spr_drunk_idle</sprite>
+          <sprite>sprites\spr_drunk_up</sprite>
+          <sprite>sprites\spr_drunk_fart</sprite>
+          <sprite>sprites\spr_drunk_left</sprite>
+          <sprite>sprites\spr_drunk_right</sprite>
+        </sprites>
       </sprites>
       <sprites name="Necromancer">
         <sprite>sprites\spr_necromancer_illusion</sprite>
@@ -426,6 +442,7 @@
         <sprite>sprites\spr_portal_maroon</sprite>
         <sprite>sprites\spr_portal_black</sprite>
         <sprite>sprites\spr_portal_green</sprite>
+        <sprite>sprites\spr_dockworks_portal</sprite>
         <sprite>sprites\spr_health_globe</sprite>
         <sprite>sprites\spr_guide_arrow</sprite>
         <sprite>sprites\spr_guide_arrow_left</sprite>
@@ -436,6 +453,8 @@
         <sprites name="Enemy_Projectiles">
           <sprite>sprites\spr_evil_arrow</sprite>
           <sprite>sprites\spr_phaseshot</sprite>
+          <sprite>sprites\spr_fireblaze</sprite>
+          <sprite>sprites\spr_shadowblaze</sprite>
           <sprite>sprites\spr_imp_spitfire</sprite>
           <sprite>sprites\spr_boss_laser</sprite>
           <sprite>sprites\spr_bonespike</sprite>
@@ -446,6 +465,7 @@
           <sprite>sprites\spr_unholy_bullet</sprite>
           <sprite>sprites\spr_dark_bullet</sprite>
           <sprite>sprites\spr_bones</sprite>
+          <sprite>sprites\spr_magic_barrier</sprite>
         </sprites>
         <sprites name="Primary">
           <sprite>sprites\spr_arrow</sprite>
@@ -513,6 +533,11 @@
       <sprites name="Ironhand Dockworks">
         <sprite>sprites\spr_rum_bottle</sprite>
         <sprite>sprites\spr_barrel</sprite>
+        <sprite>sprites\spr_flatulence</sprite>
+        <sprite>sprites\spr_oil_drill</sprite>
+        <sprite>sprites\spr_box_small</sprite>
+        <sprite>sprites\spr_box_medium</sprite>
+        <sprite>sprites\spr_box_large</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -808,6 +833,10 @@
       <background>background\bg_bastion_floor</background>
       <background>background\background30</background>
     </backgrounds>
+    <backgrounds name="Ironhand Dockworks">
+      <background>background\bg_dock_floor</background>
+      <background>background\bg_dock_post</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -869,6 +898,7 @@
     <font>fonts\fnt_damage_counter</font>
     <font>fonts\fnt_menu</font>
     <font>fonts\fnt_textbox</font>
+    <font>fonts\fnt_main_heading</font>
   </fonts>
   <objects name="objects">
     <objects name="Tiles">
@@ -976,6 +1006,10 @@
           <object>objects\obj_soulmass</object>
           <object>objects\obj_summoning_circle</object>
           <object>objects\obj_special_circle</object>
+        </objects>
+        <objects name="Ironhand Dockworks">
+          <object>objects\obj_drunk</object>
+          <object>objects\obj_flatulence_cloud</object>
         </objects>
       </objects>
       <objects name="Guides">
@@ -1137,6 +1171,9 @@
           <object>objects\obj_enemy_phaseshot</object>
           <object>objects\obj_dark_hex</object>
           <object>objects\obj_enemy_fireball</object>
+          <object>objects\obj_fireblaze</object>
+          <object>objects\obj_magic_barrier</object>
+          <object>objects\obj_shadowblaze</object>
           <object>objects\obj_unholy_implosion</object>
           <object>objects\obj_imp_spitfire</object>
           <object>objects\obj_enemy_melee</object>
@@ -1222,6 +1259,13 @@
           <object>objects\obj_bastion_statue</object>
         </objects>
       </objects>
+      <objects name="Ironhand Dockworks">
+        <object>objects\obj_docks_post</object>
+        <object>objects\obj_oil_drill</object>
+        <object>objects\obj_boxes</object>
+        <object>objects\obj_barrel</object>
+        <object>objects\obj_building_wall</object>
+      </objects>
     </objects>
     <objects name="Utility">
       <object>objects\obj_cursor</object>
@@ -1252,6 +1296,7 @@
           <object>objects\obj_portal_blue</object>
           <object>objects\obj_portal_green</object>
           <object>objects\obj_portal_red</object>
+          <object>objects\obj_portal_maroon</object>
           <object>objects\obj_portal_black</object>
           <object>objects\obj_portal_cyan</object>
           <object>objects\obj_grassland_portal</object>
@@ -1316,6 +1361,9 @@
             <object>objects\obj_DF_mines_floor_placer</object>
             <object>objects\obj_DF_mines_wall_placer</object>
           </objects>
+        </objects>
+        <objects name="Ironhand Dockworks">
+          <object>objects\obj_dock_autotile</object>
         </objects>
       </objects>
       <objects name="Pause Menu">
@@ -1384,6 +1432,7 @@
     <room>rooms\rm_undercore</room>
     <room>rooms\rm_pyromancer_boss</room>
     <room>rooms\rm_death_foundry</room>
+    <room>rooms\rm_ironhand_dockworks</room>
     <rooms name="Death Foundry rooms">
       <room>rooms\rm_DF_mine</room>
       <room>rooms\rm_DF_atrium</room>
